@@ -46,6 +46,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MantenedorSitiosInteres.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MantenedorSitiosInteres.designer.cs">
+      <DependentUpon>MantenedorSitiosInteres.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MModificarSitiosInteres.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MModificarSitiosInteres.Designer.cs">
+      <DependentUpon>MModificarSitiosInteres.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MRegistrarSitioInteres.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MRegistrarSitioInteres.Designer.cs">
+      <DependentUpon>MRegistrarSitioInteres.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MVerSitiosInteres.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MVerSitiosInteres.designer.cs">
+      <DependentUpon>MVerSitiosInteres.cs</DependentUpon>
+    </Compile>
     <Compile Include="RegistrarCliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,6 +86,18 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="MantenedorCliente.resx">
       <DependentUpon>MantenedorCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MantenedorSitiosInteres.resx">
+      <DependentUpon>MantenedorSitiosInteres.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MModificarSitiosInteres.resx">
+      <DependentUpon>MModificarSitiosInteres.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MRegistrarSitioInteres.resx">
+      <DependentUpon>MRegistrarSitioInteres.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MVerSitiosInteres.resx">
+      <DependentUpon>MVerSitiosInteres.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
