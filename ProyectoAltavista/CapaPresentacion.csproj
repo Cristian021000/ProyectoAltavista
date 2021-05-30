@@ -58,11 +58,23 @@
     <Compile Include="MantenedorSitiosInteres.designer.cs">
       <DependentUpon>MantenedorSitiosInteres.cs</DependentUpon>
     </Compile>
+    <Compile Include="MenuPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuPrincipal.Designer.cs">
+      <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    </Compile>
     <Compile Include="MModificarSitiosInteres.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MModificarSitiosInteres.Designer.cs">
       <DependentUpon>MModificarSitiosInteres.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarInhabilitarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarInhabilitarCliente.Designer.cs">
+      <DependentUpon>ModificarInhabilitarCliente.cs</DependentUpon>
     </Compile>
     <Compile Include="MRegistrarSitioInteres.cs">
       <SubType>Form</SubType>
@@ -99,8 +111,14 @@
     <EmbeddedResource Include="MantenedorSitiosInteres.resx">
       <DependentUpon>MantenedorSitiosInteres.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MenuPrincipal.resx">
+      <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MModificarSitiosInteres.resx">
       <DependentUpon>MModificarSitiosInteres.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarInhabilitarCliente.resx">
+      <DependentUpon>ModificarInhabilitarCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MRegistrarSitioInteres.resx">
       <DependentUpon>MRegistrarSitioInteres.cs</DependentUpon>

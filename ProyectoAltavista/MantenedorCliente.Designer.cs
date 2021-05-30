@@ -32,6 +32,7 @@ namespace ProyectoAltavista
             this.lbMenuCliente = new System.Windows.Forms.Label();
             this.btRegistrarCliente = new System.Windows.Forms.Button();
             this.btListaCliente = new System.Windows.Forms.Button();
+            this.btRegresar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbMenuCliente
@@ -48,7 +49,7 @@ namespace ProyectoAltavista
             // btRegistrarCliente
             // 
             this.btRegistrarCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btRegistrarCliente.Location = new System.Drawing.Point(141, 221);
+            this.btRegistrarCliente.Location = new System.Drawing.Point(135, 164);
             this.btRegistrarCliente.Name = "btRegistrarCliente";
             this.btRegistrarCliente.Size = new System.Drawing.Size(179, 74);
             this.btRegistrarCliente.TabIndex = 1;
@@ -59,7 +60,7 @@ namespace ProyectoAltavista
             // btListaCliente
             // 
             this.btListaCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btListaCliente.Location = new System.Drawing.Point(496, 220);
+            this.btListaCliente.Location = new System.Drawing.Point(506, 164);
             this.btListaCliente.Name = "btListaCliente";
             this.btListaCliente.Size = new System.Drawing.Size(173, 75);
             this.btListaCliente.TabIndex = 4;
@@ -67,11 +68,22 @@ namespace ProyectoAltavista
             this.btListaCliente.UseVisualStyleBackColor = true;
             this.btListaCliente.Click += new System.EventHandler(this.btListaCliente_Click);
             // 
+            // btRegresar
+            // 
+            this.btRegresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btRegresar.Location = new System.Drawing.Point(324, 284);
+            this.btRegresar.Name = "btRegresar";
+            this.btRegresar.Size = new System.Drawing.Size(179, 74);
+            this.btRegresar.TabIndex = 5;
+            this.btRegresar.Text = "Regresar";
+            this.btRegresar.UseVisualStyleBackColor = true;
+            // 
             // MantenedorCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(818, 448);
+            this.Controls.Add(this.btRegresar);
             this.Controls.Add(this.btListaCliente);
             this.Controls.Add(this.btRegistrarCliente);
             this.Controls.Add(this.lbMenuCliente);
@@ -87,6 +99,7 @@ namespace ProyectoAltavista
         private System.Windows.Forms.Label lbMenuCliente;
         private System.Windows.Forms.Button btRegistrarCliente;
         private System.Windows.Forms.Button btListaCliente;
+        private System.Windows.Forms.Button btRegresar;
     }
 }
 
