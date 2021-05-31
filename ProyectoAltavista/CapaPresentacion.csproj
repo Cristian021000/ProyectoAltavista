@@ -52,6 +52,18 @@
     <Compile Include="ConsultarCliente.Designer.cs">
       <DependentUpon>ConsultarCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="ConsultarCliPropietario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarCliPropietario.Designer.cs">
+      <DependentUpon>ConsultarCliPropietario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MantenedorCliPropietario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MantenedorCliPropietario.Designer.cs">
+      <DependentUpon>MantenedorCliPropietario.cs</DependentUpon>
+    </Compile>
     <Compile Include="MantenedorSitiosInteres.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,6 +87,12 @@
     </Compile>
     <Compile Include="ModificarInhabilitarCliente.Designer.cs">
       <DependentUpon>ModificarInhabilitarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarInhabilitarCliPropietario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarInhabilitarCliPropietario.Designer.cs">
+      <DependentUpon>ModificarInhabilitarCliPropietario.cs</DependentUpon>
     </Compile>
     <Compile Include="MRegistrarSitioInteres.cs">
       <SubType>Form</SubType>
@@ -102,11 +120,23 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegistrarCliPropietario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistrarCliPropietario.Designer.cs">
+      <DependentUpon>RegistrarCliPropietario.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="ConsultarCliente.resx">
       <DependentUpon>ConsultarCliente.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarCliPropietario.resx">
+      <DependentUpon>ConsultarCliPropietario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MantenedorCliente.resx">
       <DependentUpon>MantenedorCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MantenedorCliPropietario.resx">
+      <DependentUpon>MantenedorCliPropietario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MantenedorSitiosInteres.resx">
       <DependentUpon>MantenedorSitiosInteres.cs</DependentUpon>
@@ -119,6 +149,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ModificarInhabilitarCliente.resx">
       <DependentUpon>ModificarInhabilitarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarInhabilitarCliPropietario.resx">
+      <DependentUpon>ModificarInhabilitarCliPropietario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MRegistrarSitioInteres.resx">
       <DependentUpon>MRegistrarSitioInteres.cs</DependentUpon>
@@ -137,6 +170,9 @@
     </Compile>
     <EmbeddedResource Include="RegistrarCliente.resx">
       <DependentUpon>RegistrarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistrarCliPropietario.resx">
+      <DependentUpon>RegistrarCliPropietario.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

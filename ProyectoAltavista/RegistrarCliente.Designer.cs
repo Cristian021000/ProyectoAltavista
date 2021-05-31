@@ -48,7 +48,7 @@ namespace ProyectoAltavista
             // 
             this.lbRegistrarCliente.AutoSize = true;
             this.lbRegistrarCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbRegistrarCliente.Location = new System.Drawing.Point(248, 36);
+            this.lbRegistrarCliente.Location = new System.Drawing.Point(219, 36);
             this.lbRegistrarCliente.Name = "lbRegistrarCliente";
             this.lbRegistrarCliente.Size = new System.Drawing.Size(295, 42);
             this.lbRegistrarCliente.TabIndex = 0;
