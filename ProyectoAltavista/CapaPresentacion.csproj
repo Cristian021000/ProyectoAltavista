@@ -58,6 +58,30 @@
     <Compile Include="ConsultarCliPropietario.Designer.cs">
       <DependentUpon>ConsultarCliPropietario.cs</DependentUpon>
     </Compile>
+    <Compile Include="MNuevoSector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MNuevoSector.Designer.cs">
+      <DependentUpon>MNuevoSector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MModificarSector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MModificarSector.Designer.cs">
+      <DependentUpon>MModificarSector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MMostrarSector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MMostrarSector.Designer.cs">
+      <DependentUpon>MMostrarSector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MantenedorSector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MantenedorSector.Designer.cs">
+      <DependentUpon>MantenedorSector.cs</DependentUpon>
+    </Compile>
     <Compile Include="MantenedorCliPropietario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -132,6 +156,12 @@
     <EmbeddedResource Include="ConsultarCliPropietario.resx">
       <DependentUpon>ConsultarCliPropietario.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MNuevoSector.resx">
+      <DependentUpon>MNuevoSector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MantenedorSector.resx">
+      <DependentUpon>MantenedorSector.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MantenedorCliente.resx">
       <DependentUpon>MantenedorCliente.cs</DependentUpon>
     </EmbeddedResource>
@@ -144,8 +174,14 @@
     <EmbeddedResource Include="MenuPrincipal.resx">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MModificarSector.resx">
+      <DependentUpon>MModificarSector.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MModificarSitiosInteres.resx">
       <DependentUpon>MModificarSitiosInteres.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MMostrarSector.resx">
+      <DependentUpon>MMostrarSector.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ModificarInhabilitarCliente.resx">
       <DependentUpon>ModificarInhabilitarCliente.cs</DependentUpon>

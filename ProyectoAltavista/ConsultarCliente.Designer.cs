@@ -54,6 +54,7 @@ namespace ProyectoAltavista
             this.lbIngreseDni.Size = new System.Drawing.Size(188, 31);
             this.lbIngreseDni.TabIndex = 1;
             this.lbIngreseDni.Text = "Ingrese el DNI";
+            this.lbIngreseDni.Click += new System.EventHandler(this.lbIngreseDni_Click);
             // 
             // txtIngreseDni
             // 

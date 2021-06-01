@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace ProyectoAltavista
 {
-    public partial class ConsultarCliente : Form
+    public partial class MMostrarSector : Form
     {
-        public ConsultarCliente()
+        public MMostrarSector()
         {
             InitializeComponent();
         }
 
-        private void lbIngreseDni_Click(object sender, EventArgs e)
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

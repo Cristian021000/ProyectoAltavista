@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace ProyectoAltavista
 {
-    public partial class ConsultarCliente : Form
+    public partial class MNuevoSector : Form
     {
-        public ConsultarCliente()
+        public MNuevoSector()
         {
             InitializeComponent();
-        }
-
-        private void lbIngreseDni_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
