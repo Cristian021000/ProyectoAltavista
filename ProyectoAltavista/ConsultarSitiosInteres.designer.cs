@@ -1,7 +1,7 @@
 ﻿
 namespace ProyectoAltavista
 {
-    partial class MVerSitiosInteres
+    partial class ConsultarSitiosInteres
     {
         /// <summary>
         /// Required designer variable.

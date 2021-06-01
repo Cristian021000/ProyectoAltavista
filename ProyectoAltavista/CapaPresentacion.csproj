@@ -58,11 +58,23 @@
     <Compile Include="ConsultarCliPropietario.Designer.cs">
       <DependentUpon>ConsultarCliPropietario.cs</DependentUpon>
     </Compile>
+    <Compile Include="ConsultarInmueble.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarInmueble.designer.cs">
+      <DependentUpon>ConsultarInmueble.cs</DependentUpon>
+    </Compile>
     <Compile Include="MantenedorCliPropietario.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MantenedorCliPropietario.Designer.cs">
       <DependentUpon>MantenedorCliPropietario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MantenedorInmueble.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MantenedorInmueble.designer.cs">
+      <DependentUpon>MantenedorInmueble.cs</DependentUpon>
     </Compile>
     <Compile Include="MantenedorSitiosInteres.cs">
       <SubType>Form</SubType>
@@ -100,11 +112,11 @@
     <Compile Include="MRegistrarSitioInteres.Designer.cs">
       <DependentUpon>MRegistrarSitioInteres.cs</DependentUpon>
     </Compile>
-    <Compile Include="MVerSitiosInteres.cs">
+    <Compile Include="ConsultarSitiosInteres.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MVerSitiosInteres.designer.cs">
-      <DependentUpon>MVerSitiosInteres.cs</DependentUpon>
+    <Compile Include="ConsultarSitiosInteres.designer.cs">
+      <DependentUpon>ConsultarSitiosInteres.cs</DependentUpon>
     </Compile>
     <Compile Include="RegistrarCliente.cs">
       <SubType>Form</SubType>
@@ -132,11 +144,17 @@
     <EmbeddedResource Include="ConsultarCliPropietario.resx">
       <DependentUpon>ConsultarCliPropietario.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarInmueble.resx">
+      <DependentUpon>ConsultarInmueble.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MantenedorCliente.resx">
       <DependentUpon>MantenedorCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MantenedorCliPropietario.resx">
       <DependentUpon>MantenedorCliPropietario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MantenedorInmueble.resx">
+      <DependentUpon>MantenedorInmueble.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MantenedorSitiosInteres.resx">
       <DependentUpon>MantenedorSitiosInteres.cs</DependentUpon>
@@ -156,8 +174,8 @@
     <EmbeddedResource Include="MRegistrarSitioInteres.resx">
       <DependentUpon>MRegistrarSitioInteres.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MVerSitiosInteres.resx">
-      <DependentUpon>MVerSitiosInteres.cs</DependentUpon>
+    <EmbeddedResource Include="ConsultarSitiosInteres.resx">
+      <DependentUpon>ConsultarSitiosInteres.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
