@@ -125,6 +125,12 @@
     <Compile Include="MModificarSitiosInteres.Designer.cs">
       <DependentUpon>MModificarSitiosInteres.cs</DependentUpon>
     </Compile>
+    <Compile Include="ModificarInhabilitarCiudad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarInhabilitarCiudad.Designer.cs">
+      <DependentUpon>ModificarInhabilitarCiudad.cs</DependentUpon>
+    </Compile>
     <Compile Include="ModificarInhabilitarCliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -216,6 +222,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MNuevoSector.resx">
       <DependentUpon>MNuevoSector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarInhabilitarCiudad.resx">
+      <DependentUpon>ModificarInhabilitarCiudad.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ModificarInhabilitarCliente.resx">
       <DependentUpon>ModificarInhabilitarCliente.cs</DependentUpon>
