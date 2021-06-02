@@ -149,6 +149,12 @@
     <Compile Include="ConsultarSitiosInteres.designer.cs">
       <DependentUpon>ConsultarSitiosInteres.cs</DependentUpon>
     </Compile>
+    <Compile Include="RegistrarCiudad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistrarCiudad.Designer.cs">
+      <DependentUpon>RegistrarCiudad.cs</DependentUpon>
+    </Compile>
     <Compile Include="RegistrarCliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -232,6 +238,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="RegistrarCiudad.resx">
+      <DependentUpon>RegistrarCiudad.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="RegistrarCliente.resx">
       <DependentUpon>RegistrarCliente.cs</DependentUpon>
     </EmbeddedResource>
