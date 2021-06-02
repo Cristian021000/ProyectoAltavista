@@ -64,6 +64,12 @@
     <Compile Include="ConsultarInmueble.designer.cs">
       <DependentUpon>ConsultarInmueble.cs</DependentUpon>
     </Compile>
+    <Compile Include="MantenedorCiudad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MantenedorCiudad.Designer.cs">
+      <DependentUpon>MantenedorCiudad.cs</DependentUpon>
+    </Compile>
     <Compile Include="MNuevoSector.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -171,6 +177,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ConsultarInmueble.resx">
       <DependentUpon>ConsultarInmueble.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MantenedorCiudad.resx">
+      <DependentUpon>MantenedorCiudad.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MantenedorSector.resx">
       <DependentUpon>MantenedorSector.cs</DependentUpon>
