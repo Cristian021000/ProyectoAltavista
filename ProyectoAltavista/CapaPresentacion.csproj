@@ -58,11 +58,54 @@
     <Compile Include="ConsultarCliPropietario.Designer.cs">
       <DependentUpon>ConsultarCliPropietario.cs</DependentUpon>
     </Compile>
+    <Compile Include="ConsultarInmueble.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarInmueble.designer.cs">
+      <DependentUpon>ConsultarInmueble.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MantenedorCiudad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MantenedorCiudad.Designer.cs">
+      <DependentUpon>MantenedorCiudad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MNuevoSector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include=".Designer.cs">
+      <DependentUpon>MNuevoSector.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MMostrarSector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MMostrarSector.Designer.cs">
+      <DependentUpon>MMostrarSector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MModificarSector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MModificarSector.Designer.cs">
+      <DependentUpon>MModificarSector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MantenedorSector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MantenedorSector.Designer.cs">
+      <DependentUpon>MantenedorSector.cs</DependentUpon>
+    </Compile>
     <Compile Include="MantenedorCliPropietario.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MantenedorCliPropietario.Designer.cs">
       <DependentUpon>MantenedorCliPropietario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MantenedorInmueble.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MantenedorInmueble.designer.cs">
+      <DependentUpon>MantenedorInmueble.cs</DependentUpon>
     </Compile>
     <Compile Include="MantenedorSitiosInteres.cs">
       <SubType>Form</SubType>
@@ -82,6 +125,12 @@
     <Compile Include="MModificarSitiosInteres.Designer.cs">
       <DependentUpon>MModificarSitiosInteres.cs</DependentUpon>
     </Compile>
+    <Compile Include="ModificarInhabilitarCiudad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarInhabilitarCiudad.Designer.cs">
+      <DependentUpon>ModificarInhabilitarCiudad.cs</DependentUpon>
+    </Compile>
     <Compile Include="ModificarInhabilitarCliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,11 +149,17 @@
     <Compile Include="MRegistrarSitioInteres.Designer.cs">
       <DependentUpon>MRegistrarSitioInteres.cs</DependentUpon>
     </Compile>
-    <Compile Include="MVerSitiosInteres.cs">
+    <Compile Include="ConsultarSitiosInteres.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MVerSitiosInteres.designer.cs">
-      <DependentUpon>MVerSitiosInteres.cs</DependentUpon>
+    <Compile Include="ConsultarSitiosInteres.designer.cs">
+      <DependentUpon>ConsultarSitiosInteres.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrarCiudad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistrarCiudad.Designer.cs">
+      <DependentUpon>RegistrarCiudad.cs</DependentUpon>
     </Compile>
     <Compile Include="RegistrarCliente.cs">
       <SubType>Form</SubType>
@@ -132,11 +187,23 @@
     <EmbeddedResource Include="ConsultarCliPropietario.resx">
       <DependentUpon>ConsultarCliPropietario.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarInmueble.resx">
+      <DependentUpon>ConsultarInmueble.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MantenedorCiudad.resx">
+      <DependentUpon>MantenedorCiudad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MantenedorSector.resx">
+      <DependentUpon>MantenedorSector.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MantenedorCliente.resx">
       <DependentUpon>MantenedorCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MantenedorCliPropietario.resx">
       <DependentUpon>MantenedorCliPropietario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MantenedorInmueble.resx">
+      <DependentUpon>MantenedorInmueble.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MantenedorSitiosInteres.resx">
       <DependentUpon>MantenedorSitiosInteres.cs</DependentUpon>
@@ -144,8 +211,20 @@
     <EmbeddedResource Include="MenuPrincipal.resx">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MModificarSector.resx">
+      <DependentUpon>MModificarSector.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MModificarSitiosInteres.resx">
       <DependentUpon>MModificarSitiosInteres.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MMostrarSector.resx">
+      <DependentUpon>MMostrarSector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MNuevoSector.resx">
+      <DependentUpon>MNuevoSector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarInhabilitarCiudad.resx">
+      <DependentUpon>ModificarInhabilitarCiudad.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ModificarInhabilitarCliente.resx">
       <DependentUpon>ModificarInhabilitarCliente.cs</DependentUpon>
@@ -156,8 +235,8 @@
     <EmbeddedResource Include="MRegistrarSitioInteres.resx">
       <DependentUpon>MRegistrarSitioInteres.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MVerSitiosInteres.resx">
-      <DependentUpon>MVerSitiosInteres.cs</DependentUpon>
+    <EmbeddedResource Include="ConsultarSitiosInteres.resx">
+      <DependentUpon>ConsultarSitiosInteres.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -168,6 +247,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="RegistrarCiudad.resx">
+      <DependentUpon>RegistrarCiudad.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="RegistrarCliente.resx">
       <DependentUpon>RegistrarCliente.cs</DependentUpon>
     </EmbeddedResource>

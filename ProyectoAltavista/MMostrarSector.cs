@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ProyectoAltavista
 {
-    public partial class MVerSitiosInteres : Form
+    public partial class MMostrarSector : Form
     {
-        public MVerSitiosInteres()
+        public MMostrarSector()
         {
             InitializeComponent();
         }
