@@ -64,6 +64,18 @@
     <Compile Include="ConsultarInmueble.designer.cs">
       <DependentUpon>ConsultarInmueble.cs</DependentUpon>
     </Compile>
+    <Compile Include="MantenedorBanco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MantenedorBanco.Designer.cs">
+      <DependentUpon>MantenedorBanco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MostrandoBanco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MostrandoBanco.Designer.cs">
+      <DependentUpon>MostrandoBanco.cs</DependentUpon>
+    </Compile>
     <Compile Include="MantenedorAgente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -199,6 +211,12 @@
     <Compile Include="RegistrarCliPropietario.Designer.cs">
       <DependentUpon>RegistrarCliPropietario.cs</DependentUpon>
     </Compile>
+    <Compile Include="RegistroBanco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistroBanco.Designer.cs">
+      <DependentUpon>RegistroBanco.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="ConsultarCliente.resx">
       <DependentUpon>ConsultarCliente.cs</DependentUpon>
     </EmbeddedResource>
@@ -207,6 +225,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ConsultarInmueble.resx">
       <DependentUpon>ConsultarInmueble.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MantenedorBanco.resx">
+      <DependentUpon>MantenedorBanco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MostrandoBanco.resx">
+      <DependentUpon>MostrandoBanco.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MantenedorAgente.resx">
       <DependentUpon>MantenedorAgente.cs</DependentUpon>
@@ -282,6 +306,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="RegistrarCliPropietario.resx">
       <DependentUpon>RegistrarCliPropietario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistroBanco.resx">
+      <DependentUpon>RegistroBanco.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
