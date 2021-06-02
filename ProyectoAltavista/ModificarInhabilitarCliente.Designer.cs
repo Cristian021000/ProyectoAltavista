@@ -38,10 +38,10 @@ namespace ProyectoAltavista
             this.txtApellido = new System.Windows.Forms.TextBox();
             this.txtEdad = new System.Windows.Forms.TextBox();
             this.txtCelular = new System.Windows.Forms.TextBox();
-            this.chbHabilitar = new System.Windows.Forms.CheckBox();
             this.btModificar = new System.Windows.Forms.Button();
             this.btCancelar = new System.Windows.Forms.Button();
             this.btRegresar = new System.Windows.Forms.Button();
+            this.chbHabilitar = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // lbDatCliente
@@ -122,17 +122,6 @@ namespace ProyectoAltavista
             this.txtCelular.Size = new System.Drawing.Size(193, 20);
             this.txtCelular.TabIndex = 8;
             // 
-            // chbHabilitar
-            // 
-            this.chbHabilitar.AutoSize = true;
-            this.chbHabilitar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chbHabilitar.Location = new System.Drawing.Point(151, 356);
-            this.chbHabilitar.Name = "chbHabilitar";
-            this.chbHabilitar.Size = new System.Drawing.Size(127, 29);
-            this.chbHabilitar.TabIndex = 9;
-            this.chbHabilitar.Text = "Habilitado";
-            this.chbHabilitar.UseVisualStyleBackColor = true;
-            // 
             // btModificar
             // 
             this.btModificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -162,6 +151,17 @@ namespace ProyectoAltavista
             this.btRegresar.TabIndex = 12;
             this.btRegresar.Text = "Regresar";
             this.btRegresar.UseVisualStyleBackColor = true;
+            // 
+            // chbHabilitar
+            // 
+            this.chbHabilitar.AutoSize = true;
+            this.chbHabilitar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chbHabilitar.Location = new System.Drawing.Point(151, 356);
+            this.chbHabilitar.Name = "chbHabilitar";
+            this.chbHabilitar.Size = new System.Drawing.Size(127, 29);
+            this.chbHabilitar.TabIndex = 9;
+            this.chbHabilitar.Text = "Habilitado";
+            this.chbHabilitar.UseVisualStyleBackColor = true;
             // 
             // ModificarInhabilitarCliente
             // 
@@ -199,9 +199,9 @@ namespace ProyectoAltavista
         private System.Windows.Forms.TextBox txtApellido;
         private System.Windows.Forms.TextBox txtEdad;
         private System.Windows.Forms.TextBox txtCelular;
-        private System.Windows.Forms.CheckBox chbHabilitar;
         private System.Windows.Forms.Button btModificar;
         private System.Windows.Forms.Button btCancelar;
         private System.Windows.Forms.Button btRegresar;
+        private System.Windows.Forms.CheckBox chbHabilitar;
     }
 }
