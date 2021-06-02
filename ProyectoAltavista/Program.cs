@@ -16,7 +16,7 @@ namespace ProyectoAltavista
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MantenedorCliente());
+            Application.Run(new MenuPrincipal());
         }
     }
 }

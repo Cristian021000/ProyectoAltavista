@@ -163,6 +163,7 @@ namespace ProyectoAltavista
             this.btCancelarDatClientes.TabIndex = 12;
             this.btCancelarDatClientes.Text = "Cancelar";
             this.btCancelarDatClientes.UseVisualStyleBackColor = true;
+            this.btCancelarDatClientes.Click += new System.EventHandler(this.btCancelarDatClientes_Click);
             // 
             // RegistrarCliente
             // 
