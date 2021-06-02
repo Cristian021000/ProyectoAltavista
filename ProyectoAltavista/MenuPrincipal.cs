@@ -16,5 +16,17 @@ namespace ProyectoAltavista
         {
             InitializeComponent();
         }
+
+        private void btCliente_Click(object sender, EventArgs e)
+        {
+            
+            MantenedorCliente mantenedorCli = new MantenedorCliente();
+            this.Hide();
+            mantenedorCli.ShowDialog();
+            
+            
+            
+            
+        }
     }
 }

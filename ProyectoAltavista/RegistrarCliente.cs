@@ -41,5 +41,12 @@ namespace ProyectoAltavista
         {
 
         }
+
+        private void btCancelarDatClientes_Click(object sender, EventArgs e)
+        {
+            MantenedorCliente mantenedorCliente = new MantenedorCliente();
+            mantenedorCliente.Show();
+            this.Close();
+        }
     }
 }
