@@ -21,5 +21,20 @@ namespace ProyectoAltavista
         {
 
         }
+
+        private void btRegresarCiudad_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btRegistrarCiudad_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbMenuCiudad_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

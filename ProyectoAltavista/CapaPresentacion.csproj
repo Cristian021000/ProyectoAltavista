@@ -64,6 +64,12 @@
     <Compile Include="ConsultarInmueble.designer.cs">
       <DependentUpon>ConsultarInmueble.cs</DependentUpon>
     </Compile>
+    <Compile Include="MantenedorAgente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MantenedorAgente.Designer.cs">
+      <DependentUpon>MantenedorAgente.cs</DependentUpon>
+    </Compile>
     <Compile Include="MantenedorCiudad.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -155,6 +161,12 @@
     <Compile Include="ConsultarSitiosInteres.designer.cs">
       <DependentUpon>ConsultarSitiosInteres.cs</DependentUpon>
     </Compile>
+    <Compile Include="RegistrarAgente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistrarAgente.Designer.cs">
+      <DependentUpon>RegistrarAgente.cs</DependentUpon>
+    </Compile>
     <Compile Include="RegistrarCiudad.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -189,6 +201,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ConsultarInmueble.resx">
       <DependentUpon>ConsultarInmueble.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MantenedorAgente.resx">
+      <DependentUpon>MantenedorAgente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MantenedorCiudad.resx">
       <DependentUpon>MantenedorCiudad.cs</DependentUpon>
@@ -247,6 +262,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="RegistrarAgente.resx">
+      <DependentUpon>RegistrarAgente.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="RegistrarCiudad.resx">
       <DependentUpon>RegistrarCiudad.cs</DependentUpon>
     </EmbeddedResource>

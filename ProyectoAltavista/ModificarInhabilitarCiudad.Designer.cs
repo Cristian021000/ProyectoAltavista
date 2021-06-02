@@ -29,6 +29,7 @@ namespace ProyectoAltavista
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ModificarInhabilitarCiudad));
             this.btCancelarCiudad = new System.Windows.Forms.Button();
             this.btRegistrarCiudad = new System.Windows.Forms.Button();
             this.textReferenciasCiudad = new System.Windows.Forms.TextBox();
@@ -168,6 +169,7 @@ namespace ProyectoAltavista
             this.Controls.Add(this.lbCodigoPostal);
             this.Controls.Add(this.lbDireccionCiudad);
             this.Controls.Add(this.lbNombreCiudad);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ModificarInhabilitarCiudad";
             this.Text = "ModificarInhabilitarCiudad";
             this.ResumeLayout(false);
