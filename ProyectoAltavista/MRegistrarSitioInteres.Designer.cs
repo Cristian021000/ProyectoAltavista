@@ -30,47 +30,47 @@ namespace ProyectoAltavista
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MRegistrarSitioInteres));
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.labelCodigoRSI = new System.Windows.Forms.Label();
+            this.labelNombreRSI = new System.Windows.Forms.Label();
+            this.labelDireccionRSI = new System.Windows.Forms.Label();
             this.txtModificarDireccionSI = new System.Windows.Forms.TextBox();
             this.txtModificarNombreSI = new System.Windows.Forms.TextBox();
             this.txtCodigoRegistrarSI = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.labelRegistrarSitionInteres = new System.Windows.Forms.Label();
+            this.checkBoxHabilitarRSI = new System.Windows.Forms.CheckBox();
             this.btnCancelarSI = new System.Windows.Forms.Button();
             this.btnRegistrarSI = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // label2
+            // labelCodigoRSI
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(17, 82);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(59, 20);
-            this.label2.TabIndex = 10;
-            this.label2.Text = "Código";
+            this.labelCodigoRSI.AutoSize = true;
+            this.labelCodigoRSI.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCodigoRSI.Location = new System.Drawing.Point(17, 82);
+            this.labelCodigoRSI.Name = "labelCodigoRSI";
+            this.labelCodigoRSI.Size = new System.Drawing.Size(59, 20);
+            this.labelCodigoRSI.TabIndex = 10;
+            this.labelCodigoRSI.Text = "Código";
             // 
-            // label3
+            // labelNombreRSI
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(17, 192);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(200, 20);
-            this.label3.TabIndex = 11;
-            this.label3.Text = " Nombre del sitio de interés";
+            this.labelNombreRSI.AutoSize = true;
+            this.labelNombreRSI.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNombreRSI.Location = new System.Drawing.Point(17, 192);
+            this.labelNombreRSI.Name = "labelNombreRSI";
+            this.labelNombreRSI.Size = new System.Drawing.Size(200, 20);
+            this.labelNombreRSI.TabIndex = 11;
+            this.labelNombreRSI.Text = " Nombre del sitio de interés";
             // 
-            // label4
+            // labelDireccionRSI
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(17, 302);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(206, 20);
-            this.label4.TabIndex = 12;
-            this.label4.Text = "Dirección del sitio de interés";
+            this.labelDireccionRSI.AutoSize = true;
+            this.labelDireccionRSI.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelDireccionRSI.Location = new System.Drawing.Point(17, 302);
+            this.labelDireccionRSI.Name = "labelDireccionRSI";
+            this.labelDireccionRSI.Size = new System.Drawing.Size(206, 20);
+            this.labelDireccionRSI.TabIndex = 12;
+            this.labelDireccionRSI.Text = "Dirección del sitio de interés";
             // 
             // txtModificarDireccionSI
             // 
@@ -94,26 +94,26 @@ namespace ProyectoAltavista
             this.txtCodigoRegistrarSI.Size = new System.Drawing.Size(131, 20);
             this.txtCodigoRegistrarSI.TabIndex = 15;
             // 
-            // label1
+            // labelRegistrarSitionInteres
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(133, 22);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(485, 25);
-            this.label1.TabIndex = 16;
-            this.label1.Text = "REGISTAR RESEÑAS DE SITIO DE INTERÉS";
+            this.labelRegistrarSitionInteres.AutoSize = true;
+            this.labelRegistrarSitionInteres.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelRegistrarSitionInteres.Location = new System.Drawing.Point(133, 22);
+            this.labelRegistrarSitionInteres.Name = "labelRegistrarSitionInteres";
+            this.labelRegistrarSitionInteres.Size = new System.Drawing.Size(485, 25);
+            this.labelRegistrarSitionInteres.TabIndex = 16;
+            this.labelRegistrarSitionInteres.Text = "REGISTAR RESEÑAS DE SITIO DE INTERÉS";
             // 
-            // checkBox1
+            // checkBoxHabilitarRSI
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.Location = new System.Drawing.Point(156, 388);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(86, 24);
-            this.checkBox1.TabIndex = 17;
-            this.checkBox1.Text = "Habilitar";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBoxHabilitarRSI.AutoSize = true;
+            this.checkBoxHabilitarRSI.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxHabilitarRSI.Location = new System.Drawing.Point(156, 388);
+            this.checkBoxHabilitarRSI.Name = "checkBoxHabilitarRSI";
+            this.checkBoxHabilitarRSI.Size = new System.Drawing.Size(86, 24);
+            this.checkBoxHabilitarRSI.TabIndex = 17;
+            this.checkBoxHabilitarRSI.Text = "Habilitar";
+            this.checkBoxHabilitarRSI.UseVisualStyleBackColor = true;
             // 
             // btnCancelarSI
             // 
@@ -142,14 +142,14 @@ namespace ProyectoAltavista
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnCancelarSI);
             this.Controls.Add(this.btnRegistrarSI);
-            this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.checkBoxHabilitarRSI);
+            this.Controls.Add(this.labelRegistrarSitionInteres);
             this.Controls.Add(this.txtCodigoRegistrarSI);
             this.Controls.Add(this.txtModificarNombreSI);
             this.Controls.Add(this.txtModificarDireccionSI);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.labelDireccionRSI);
+            this.Controls.Add(this.labelNombreRSI);
+            this.Controls.Add(this.labelCodigoRSI);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MRegistrarSitioInteres";
             this.Text = "MRegistrarSitioInteres";
@@ -160,14 +160,14 @@ namespace ProyectoAltavista
 
         #endregion
 
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label labelCodigoRSI;
+        private System.Windows.Forms.Label labelNombreRSI;
+        private System.Windows.Forms.Label labelDireccionRSI;
         private System.Windows.Forms.TextBox txtModificarDireccionSI;
         private System.Windows.Forms.TextBox txtModificarNombreSI;
         private System.Windows.Forms.TextBox txtCodigoRegistrarSI;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.Label labelRegistrarSitionInteres;
+        private System.Windows.Forms.CheckBox checkBoxHabilitarRSI;
         private System.Windows.Forms.Button btnCancelarSI;
         private System.Windows.Forms.Button btnRegistrarSI;
     }
