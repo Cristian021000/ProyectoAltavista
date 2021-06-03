@@ -80,7 +80,7 @@ namespace ProyectoAltavista
             this.btnCodVerSitioInteres.Name = "btnCodVerSitioInteres";
             this.btnCodVerSitioInteres.Size = new System.Drawing.Size(97, 32);
             this.btnCodVerSitioInteres.TabIndex = 4;
-            this.btnCodVerSitioInteres.Text = "Aceptar";
+            this.btnCodVerSitioInteres.Text = "Modificar";
             this.btnCodVerSitioInteres.UseVisualStyleBackColor = true;
             // 
             // ConsultarSitiosInteres
