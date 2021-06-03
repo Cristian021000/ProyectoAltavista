@@ -29,6 +29,7 @@ namespace ProyectoAltavista
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MModificarSector));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnAceptarModificarSector = new System.Windows.Forms.Button();
             this.lbModificarSector = new System.Windows.Forms.Label();
@@ -137,6 +138,7 @@ namespace ProyectoAltavista
             this.Controls.Add(this.lbModificarSector);
             this.Controls.Add(this.btnAceptarModificarSector);
             this.Controls.Add(this.dataGridView1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MModificarSector";
             this.Text = "Sector";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

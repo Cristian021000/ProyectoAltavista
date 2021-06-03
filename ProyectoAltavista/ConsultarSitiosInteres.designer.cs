@@ -29,6 +29,7 @@ namespace ProyectoAltavista
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConsultarSitiosInteres));
             this.DataGridVerSitioInteres = new System.Windows.Forms.DataGridView();
             this.labelVerSi = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -48,20 +49,20 @@ namespace ProyectoAltavista
             // labelVerSi
             // 
             this.labelVerSi.AutoSize = true;
-            this.labelVerSi.Font = new System.Drawing.Font("News701 BT", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelVerSi.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelVerSi.Location = new System.Drawing.Point(275, 51);
             this.labelVerSi.Name = "labelVerSi";
-            this.labelVerSi.Size = new System.Drawing.Size(327, 26);
+            this.labelVerSi.Size = new System.Drawing.Size(299, 25);
             this.labelVerSi.TabIndex = 1;
             this.labelVerSi.Text = "VISTA SITIOS DE INTERÉS";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("News701 BT", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(477, 189);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(311, 19);
+            this.label2.Size = new System.Drawing.Size(265, 20);
             this.label2.TabIndex = 2;
             this.label2.Text = "Codigo de sitio de interés a modifcar";
             // 
@@ -74,7 +75,7 @@ namespace ProyectoAltavista
             // 
             // btnCodVerSitioInteres
             // 
-            this.btnCodVerSitioInteres.Font = new System.Drawing.Font("News701 BT", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCodVerSitioInteres.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCodVerSitioInteres.Location = new System.Drawing.Point(579, 355);
             this.btnCodVerSitioInteres.Name = "btnCodVerSitioInteres";
             this.btnCodVerSitioInteres.Size = new System.Drawing.Size(97, 32);
@@ -82,7 +83,7 @@ namespace ProyectoAltavista
             this.btnCodVerSitioInteres.Text = "Aceptar";
             this.btnCodVerSitioInteres.UseVisualStyleBackColor = true;
             // 
-            // MVerSitiosInteres
+            // ConsultarSitiosInteres
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -92,7 +93,8 @@ namespace ProyectoAltavista
             this.Controls.Add(this.label2);
             this.Controls.Add(this.labelVerSi);
             this.Controls.Add(this.DataGridVerSitioInteres);
-            this.Name = "MVerSitiosInteres";
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "ConsultarSitiosInteres";
             this.Text = "MVerSitiosInteres";
             ((System.ComponentModel.ISupportInitialize)(this.DataGridVerSitioInteres)).EndInit();
             this.ResumeLayout(false);

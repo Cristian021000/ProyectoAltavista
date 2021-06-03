@@ -29,6 +29,7 @@ namespace ProyectoAltavista
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MantenedorSitiosInteres));
             this.labeSitioInteres = new System.Windows.Forms.Label();
             this.btnRegistrarSitioInteres = new System.Windows.Forms.Button();
             this.btnModificarSitioInteres = new System.Windows.Forms.Button();
@@ -41,11 +42,11 @@ namespace ProyectoAltavista
             this.labeSitioInteres.AutoSize = true;
             this.labeSitioInteres.BackColor = System.Drawing.SystemColors.Control;
             this.labeSitioInteres.Cursor = System.Windows.Forms.Cursors.SizeAll;
-            this.labeSitioInteres.Font = new System.Drawing.Font("News701 BT", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labeSitioInteres.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labeSitioInteres.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.labeSitioInteres.Location = new System.Drawing.Point(218, 45);
             this.labeSitioInteres.Name = "labeSitioInteres";
-            this.labeSitioInteres.Size = new System.Drawing.Size(357, 39);
+            this.labeSitioInteres.Size = new System.Drawing.Size(314, 37);
             this.labeSitioInteres.TabIndex = 0;
             this.labeSitioInteres.Text = "SITIO DE INTERÉS";
             // 
@@ -54,7 +55,7 @@ namespace ProyectoAltavista
             this.btnRegistrarSitioInteres.AutoSize = true;
             this.btnRegistrarSitioInteres.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnRegistrarSitioInteres.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btnRegistrarSitioInteres.Font = new System.Drawing.Font("News701 BT", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegistrarSitioInteres.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegistrarSitioInteres.Location = new System.Drawing.Point(50, 155);
             this.btnRegistrarSitioInteres.Name = "btnRegistrarSitioInteres";
             this.btnRegistrarSitioInteres.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -66,7 +67,7 @@ namespace ProyectoAltavista
             // btnModificarSitioInteres
             // 
             this.btnModificarSitioInteres.AutoSize = true;
-            this.btnModificarSitioInteres.Font = new System.Drawing.Font("News701 BT", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModificarSitioInteres.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModificarSitioInteres.Location = new System.Drawing.Point(494, 155);
             this.btnModificarSitioInteres.Name = "btnModificarSitioInteres";
             this.btnModificarSitioInteres.Size = new System.Drawing.Size(233, 58);
@@ -77,7 +78,7 @@ namespace ProyectoAltavista
             // btnRegresarInicioSI
             // 
             this.btnRegresarInicioSI.AutoSize = true;
-            this.btnRegresarInicioSI.Font = new System.Drawing.Font("News701 BT", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegresarInicioSI.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegresarInicioSI.Location = new System.Drawing.Point(677, 384);
             this.btnRegresarInicioSI.Name = "btnRegresarInicioSI";
             this.btnRegresarInicioSI.Size = new System.Drawing.Size(99, 41);
@@ -94,6 +95,7 @@ namespace ProyectoAltavista
             this.Controls.Add(this.btnModificarSitioInteres);
             this.Controls.Add(this.btnRegistrarSitioInteres);
             this.Controls.Add(this.labeSitioInteres);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MantenedorSitiosInteres";
             this.Text = "MantenedorSitiosInteres";
             this.ResumeLayout(false);

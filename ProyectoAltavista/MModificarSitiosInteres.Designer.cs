@@ -29,6 +29,7 @@ namespace ProyectoAltavista
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MModificarSitiosInteres));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtModificarNombreSI = new System.Windows.Forms.TextBox();
@@ -45,20 +46,20 @@ namespace ProyectoAltavista
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("News701 BT", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(132, 20);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(540, 26);
+            this.label1.Size = new System.Drawing.Size(496, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "MODIFICAR RESEÑAS DE SITIO DE INTERÉS";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("News701 BT", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(8, 183);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(232, 19);
+            this.label2.Size = new System.Drawing.Size(200, 20);
             this.label2.TabIndex = 1;
             this.label2.Text = " Nombre del sitio de interés";
             // 
@@ -79,27 +80,27 @@ namespace ProyectoAltavista
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("News701 BT", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(8, 287);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(244, 19);
+            this.label3.Size = new System.Drawing.Size(206, 20);
             this.label3.TabIndex = 3;
             this.label3.Text = "Dirección del sitio de interés";
             // 
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("News701 BT", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox1.Location = new System.Drawing.Point(137, 378);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(119, 23);
+            this.checkBox1.Size = new System.Drawing.Size(97, 24);
             this.checkBox1.TabIndex = 5;
             this.checkBox1.Text = "Inhabilitar";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // btnModificarSI
             // 
-            this.btnModificarSI.Font = new System.Drawing.Font("News701 BT", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModificarSI.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModificarSI.Location = new System.Drawing.Point(557, 183);
             this.btnModificarSI.Name = "btnModificarSI";
             this.btnModificarSI.Size = new System.Drawing.Size(105, 34);
@@ -109,7 +110,7 @@ namespace ProyectoAltavista
             // 
             // btnCancerlarModificarSI
             // 
-            this.btnCancerlarModificarSI.Font = new System.Drawing.Font("News701 BT", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancerlarModificarSI.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancerlarModificarSI.Location = new System.Drawing.Point(557, 246);
             this.btnCancerlarModificarSI.Name = "btnCancerlarModificarSI";
             this.btnCancerlarModificarSI.Size = new System.Drawing.Size(105, 34);
@@ -119,7 +120,7 @@ namespace ProyectoAltavista
             // 
             // btnInhabilitarSI
             // 
-            this.btnInhabilitarSI.Font = new System.Drawing.Font("News701 BT", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInhabilitarSI.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInhabilitarSI.Location = new System.Drawing.Point(551, 311);
             this.btnInhabilitarSI.Name = "btnInhabilitarSI";
             this.btnInhabilitarSI.Size = new System.Drawing.Size(115, 34);
@@ -138,10 +139,10 @@ namespace ProyectoAltavista
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("News701 BT", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(8, 82);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(67, 19);
+            this.label4.Size = new System.Drawing.Size(59, 20);
             this.label4.TabIndex = 9;
             this.label4.Text = "Código";
             // 
@@ -161,6 +162,7 @@ namespace ProyectoAltavista
             this.Controls.Add(this.txtModificarNombreSI);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MModificarSitiosInteres";
             this.Text = "MModificarSitiosInteres";
             this.ResumeLayout(false);

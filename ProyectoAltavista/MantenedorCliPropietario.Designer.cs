@@ -29,6 +29,7 @@ namespace ProyectoAltavista
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MantenedorCliPropietario));
             this.lbMenu = new System.Windows.Forms.Label();
             this.btRegresar = new System.Windows.Forms.Button();
             this.btLista = new System.Windows.Forms.Button();
@@ -84,6 +85,7 @@ namespace ProyectoAltavista
             this.Controls.Add(this.btLista);
             this.Controls.Add(this.btRegresar);
             this.Controls.Add(this.lbMenu);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MantenedorCliPropietario";
             this.Text = "MantenedorCliPropietario";
             this.ResumeLayout(false);

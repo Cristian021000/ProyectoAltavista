@@ -29,6 +29,7 @@ namespace ProyectoAltavista
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.lbNuevoSector = new System.Windows.Forms.Label();
             this.cbElejirCiudadNuevoSector = new System.Windows.Forms.ComboBox();
             this.txtNombreDelNuevoSector = new System.Windows.Forms.TextBox();
@@ -115,6 +116,7 @@ namespace ProyectoAltavista
             this.Controls.Add(this.txtNombreDelNuevoSector);
             this.Controls.Add(this.cbElejirCiudadNuevoSector);
             this.Controls.Add(this.lbNuevoSector);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Altavista";
             this.ResumeLayout(false);

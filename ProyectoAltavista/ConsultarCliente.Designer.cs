@@ -29,6 +29,7 @@ namespace ProyectoAltavista
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConsultarCliente));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.lbIngreseDni = new System.Windows.Forms.Label();
             this.txtIngreseDni = new System.Windows.Forms.TextBox();
@@ -93,6 +94,7 @@ namespace ProyectoAltavista
             this.Controls.Add(this.txtIngreseDni);
             this.Controls.Add(this.lbIngreseDni);
             this.Controls.Add(this.dataGridView1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ConsultarCliente";
             this.Text = "ConsultarCliente";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
