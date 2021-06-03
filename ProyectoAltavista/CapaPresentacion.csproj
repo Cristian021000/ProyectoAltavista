@@ -217,6 +217,12 @@
     <Compile Include="RegistroBanco.Designer.cs">
       <DependentUpon>RegistroBanco.cs</DependentUpon>
     </Compile>
+    <Compile Include="RegistroSitioInmueble.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistroSitioInmueble.Designer.cs">
+      <DependentUpon>RegistroSitioInmueble.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="ConsultarCliente.resx">
       <DependentUpon>ConsultarCliente.cs</DependentUpon>
     </EmbeddedResource>
@@ -309,6 +315,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="RegistroBanco.resx">
       <DependentUpon>RegistroBanco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistroSitioInmueble.resx">
+      <DependentUpon>RegistroSitioInmueble.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

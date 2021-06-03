@@ -34,6 +34,7 @@ namespace ProyectoAltavista
             this.btnRegistrarSitioInteres = new System.Windows.Forms.Button();
             this.btnModificarSitioInteres = new System.Windows.Forms.Button();
             this.btnRegresarInicioSI = new System.Windows.Forms.Button();
+            this.byConexionesInmueble = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // labeSitioInteres
@@ -86,11 +87,23 @@ namespace ProyectoAltavista
             this.btnRegresarInicioSI.Text = "Regresar";
             this.btnRegresarInicioSI.UseVisualStyleBackColor = true;
             // 
+            // byConexionesInmueble
+            // 
+            this.byConexionesInmueble.AutoSize = true;
+            this.byConexionesInmueble.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.byConexionesInmueble.Location = new System.Drawing.Point(268, 263);
+            this.byConexionesInmueble.Name = "byConexionesInmueble";
+            this.byConexionesInmueble.Size = new System.Drawing.Size(233, 58);
+            this.byConexionesInmueble.TabIndex = 4;
+            this.byConexionesInmueble.Text = "Conexión a inmueble-Sitio de interes";
+            this.byConexionesInmueble.UseVisualStyleBackColor = true;
+            // 
             // MantenedorSitiosInteres
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.byConexionesInmueble);
             this.Controls.Add(this.btnRegresarInicioSI);
             this.Controls.Add(this.btnModificarSitioInteres);
             this.Controls.Add(this.btnRegistrarSitioInteres);
@@ -109,5 +122,6 @@ namespace ProyectoAltavista
         private System.Windows.Forms.Button btnRegistrarSitioInteres;
         private System.Windows.Forms.Button btnModificarSitioInteres;
         private System.Windows.Forms.Button btnRegresarInicioSI;
+        private System.Windows.Forms.Button byConexionesInmueble;
     }
 }
