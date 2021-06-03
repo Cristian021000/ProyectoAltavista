@@ -34,7 +34,6 @@ namespace ProyectoAltavista
             this.lbDniClienteCita = new System.Windows.Forms.Label();
             this.txtDniClienteCita = new System.Windows.Forms.TextBox();
             this.btnSalirMostrarCita = new System.Windows.Forms.Button();
-            this.btnMostrarCita = new System.Windows.Forms.Button();
             this.btnMostrarComoRealizado = new System.Windows.Forms.Button();
             this.btnInhabilitarMostrarCita = new System.Windows.Forms.Button();
             this.btnBuscarMostrarCita = new System.Windows.Forms.Button();
@@ -86,20 +85,10 @@ namespace ProyectoAltavista
             this.btnSalirMostrarCita.Text = "Salir";
             this.btnSalirMostrarCita.UseVisualStyleBackColor = true;
             // 
-            // btnMostrarCita
-            // 
-            this.btnMostrarCita.Font = new System.Drawing.Font("Lucida Fax", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMostrarCita.Location = new System.Drawing.Point(466, 189);
-            this.btnMostrarCita.Name = "btnMostrarCita";
-            this.btnMostrarCita.Size = new System.Drawing.Size(169, 64);
-            this.btnMostrarCita.TabIndex = 5;
-            this.btnMostrarCita.Text = "Mostrar";
-            this.btnMostrarCita.UseVisualStyleBackColor = true;
-            // 
             // btnMostrarComoRealizado
             // 
             this.btnMostrarComoRealizado.Font = new System.Drawing.Font("Lucida Fax", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMostrarComoRealizado.Location = new System.Drawing.Point(466, 259);
+            this.btnMostrarComoRealizado.Location = new System.Drawing.Point(466, 229);
             this.btnMostrarComoRealizado.Name = "btnMostrarComoRealizado";
             this.btnMostrarComoRealizado.Size = new System.Drawing.Size(169, 64);
             this.btnMostrarComoRealizado.TabIndex = 6;
@@ -134,7 +123,6 @@ namespace ProyectoAltavista
             this.Controls.Add(this.btnBuscarMostrarCita);
             this.Controls.Add(this.btnInhabilitarMostrarCita);
             this.Controls.Add(this.btnMostrarComoRealizado);
-            this.Controls.Add(this.btnMostrarCita);
             this.Controls.Add(this.btnSalirMostrarCita);
             this.Controls.Add(this.txtDniClienteCita);
             this.Controls.Add(this.lbDniClienteCita);
@@ -155,7 +143,6 @@ namespace ProyectoAltavista
         private System.Windows.Forms.Label lbDniClienteCita;
         private System.Windows.Forms.TextBox txtDniClienteCita;
         private System.Windows.Forms.Button btnSalirMostrarCita;
-        private System.Windows.Forms.Button btnMostrarCita;
         private System.Windows.Forms.Button btnMostrarComoRealizado;
         private System.Windows.Forms.Button btnInhabilitarMostrarCita;
         private System.Windows.Forms.Button btnBuscarMostrarCita;
