@@ -58,6 +58,12 @@
     <Compile Include="ConsultarCliPropietario.Designer.cs">
       <DependentUpon>ConsultarCliPropietario.cs</DependentUpon>
     </Compile>
+    <Compile Include="ConsultarContratoInmueble.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarContratoInmueble.designer.cs">
+      <DependentUpon>ConsultarContratoInmueble.cs</DependentUpon>
+    </Compile>
     <Compile Include="ConsultarInmueble.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +75,12 @@
     </Compile>
     <Compile Include="ConsultarVentas.Designer.cs">
       <DependentUpon>ConsultarVentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContratoInmueble.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ContratoInmueble.designer.cs">
+      <DependentUpon>ContratoInmueble.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -247,6 +259,12 @@
     <Compile Include="RegistrarCliPropietario.Designer.cs">
       <DependentUpon>RegistrarCliPropietario.cs</DependentUpon>
     </Compile>
+    <Compile Include="RegistrarContratoInmueble.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistrarContratoInmueble.designer.cs">
+      <DependentUpon>RegistrarContratoInmueble.cs</DependentUpon>
+    </Compile>
     <Compile Include="RegistrarVentaPropios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -277,11 +295,17 @@
     <EmbeddedResource Include="ConsultarCliPropietario.resx">
       <DependentUpon>ConsultarCliPropietario.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarContratoInmueble.resx">
+      <DependentUpon>ConsultarContratoInmueble.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ConsultarInmueble.resx">
       <DependentUpon>ConsultarInmueble.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ConsultarVentas.resx">
       <DependentUpon>ConsultarVentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContratoInmueble.resx">
+      <DependentUpon>ContratoInmueble.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -378,6 +402,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="RegistrarCliPropietario.resx">
       <DependentUpon>RegistrarCliPropietario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistrarContratoInmueble.resx">
+      <DependentUpon>RegistrarContratoInmueble.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RegistrarVentaPropios.resx">
       <DependentUpon>RegistrarVentaPropios.cs</DependentUpon>
