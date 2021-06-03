@@ -76,6 +76,18 @@
     <Compile Include="MantenedorBanco.Designer.cs">
       <DependentUpon>MantenedorBanco.cs</DependentUpon>
     </Compile>
+    <Compile Include="MCita.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MCita.Designer.cs">
+      <DependentUpon>MCita.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MMostrarCita.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MMostrarCita.Designer.cs">
+      <DependentUpon>MMostrarCita.cs</DependentUpon>
+    </Compile>
     <Compile Include="MostrandoBanco.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -173,6 +185,12 @@
     <Compile Include="ModificarInhabilitarCliPropietario.Designer.cs">
       <DependentUpon>ModificarInhabilitarCliPropietario.cs</DependentUpon>
     </Compile>
+    <Compile Include="MRegistrarCita.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MRegistrarCita.Designer.cs">
+      <DependentUpon>MRegistrarCita.cs</DependentUpon>
+    </Compile>
     <Compile Include="MRegistrarSitioInteres.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -238,6 +256,12 @@
     <EmbeddedResource Include="MantenedorBanco.resx">
       <DependentUpon>MantenedorBanco.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MCita.resx">
+      <DependentUpon>MCita.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MMostrarCita.resx">
+      <DependentUpon>MMostrarCita.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MostrandoBanco.resx">
       <DependentUpon>MostrandoBanco.cs</DependentUpon>
     </EmbeddedResource>
@@ -288,6 +312,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ModificarInhabilitarCliPropietario.resx">
       <DependentUpon>ModificarInhabilitarCliPropietario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MRegistrarCita.resx">
+      <DependentUpon>MRegistrarCita.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MRegistrarSitioInteres.resx">
       <DependentUpon>MRegistrarSitioInteres.cs</DependentUpon>
