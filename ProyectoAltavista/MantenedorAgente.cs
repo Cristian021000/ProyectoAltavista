@@ -16,5 +16,15 @@ namespace ProyectoAltavista
         {
             InitializeComponent();
         }
+
+        private void bt2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MantenedorAgente_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

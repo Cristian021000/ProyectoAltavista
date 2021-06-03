@@ -30,154 +30,184 @@ namespace ProyectoAltavista
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ModificarAgente));
-            this.btCancelarAgente = new System.Windows.Forms.Button();
-            this.btModificarAgente = new System.Windows.Forms.Button();
             this.txtCelularAgente = new System.Windows.Forms.TextBox();
             this.txtEdadAgente = new System.Windows.Forms.TextBox();
             this.txtApellidoAgente = new System.Windows.Forms.TextBox();
             this.txtNombreAgente = new System.Windows.Forms.TextBox();
-            this.lbCelularAgente = new System.Windows.Forms.Label();
-            this.lbEdadAgente = new System.Windows.Forms.Label();
-            this.lbApellidoAgente = new System.Windows.Forms.Label();
-            this.lbNombreAgente = new System.Windows.Forms.Label();
-            this.lbDatClienteAgente = new System.Windows.Forms.Label();
+            this.pictureBox1Fondo = new System.Windows.Forms.PictureBox();
+            this.label1Bnaco = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.bt2Agregar = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1Fondo)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btCancelarAgente
-            // 
-            this.btCancelarAgente.Font = new System.Drawing.Font("Microsoft YaHei UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btCancelarAgente.Location = new System.Drawing.Point(582, 260);
-            this.btCancelarAgente.Name = "btCancelarAgente";
-            this.btCancelarAgente.Size = new System.Drawing.Size(158, 76);
-            this.btCancelarAgente.TabIndex = 24;
-            this.btCancelarAgente.Text = "Cancelar";
-            this.btCancelarAgente.UseVisualStyleBackColor = true;
-            // 
-            // btModificarAgente
-            // 
-            this.btModificarAgente.Font = new System.Drawing.Font("Microsoft YaHei UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btModificarAgente.Location = new System.Drawing.Point(582, 122);
-            this.btModificarAgente.Name = "btModificarAgente";
-            this.btModificarAgente.Size = new System.Drawing.Size(158, 76);
-            this.btModificarAgente.TabIndex = 23;
-            this.btModificarAgente.Text = "Modificar";
-            this.btModificarAgente.UseVisualStyleBackColor = true;
             // 
             // txtCelularAgente
             // 
-            this.txtCelularAgente.Location = new System.Drawing.Point(161, 339);
+            this.txtCelularAgente.Location = new System.Drawing.Point(215, 417);
+            this.txtCelularAgente.Margin = new System.Windows.Forms.Padding(4);
             this.txtCelularAgente.Name = "txtCelularAgente";
-            this.txtCelularAgente.Size = new System.Drawing.Size(137, 20);
+            this.txtCelularAgente.Size = new System.Drawing.Size(181, 22);
             this.txtCelularAgente.TabIndex = 21;
             this.txtCelularAgente.TextChanged += new System.EventHandler(this.txtCelular_TextChanged);
             // 
             // txtEdadAgente
             // 
-            this.txtEdadAgente.Location = new System.Drawing.Point(161, 278);
+            this.txtEdadAgente.Location = new System.Drawing.Point(204, 329);
+            this.txtEdadAgente.Margin = new System.Windows.Forms.Padding(4);
             this.txtEdadAgente.Name = "txtEdadAgente";
-            this.txtEdadAgente.Size = new System.Drawing.Size(65, 20);
+            this.txtEdadAgente.Size = new System.Drawing.Size(85, 22);
             this.txtEdadAgente.TabIndex = 20;
             // 
             // txtApellidoAgente
             // 
-            this.txtApellidoAgente.Location = new System.Drawing.Point(161, 194);
+            this.txtApellidoAgente.Location = new System.Drawing.Point(215, 239);
+            this.txtApellidoAgente.Margin = new System.Windows.Forms.Padding(4);
             this.txtApellidoAgente.Name = "txtApellidoAgente";
-            this.txtApellidoAgente.Size = new System.Drawing.Size(321, 20);
+            this.txtApellidoAgente.Size = new System.Drawing.Size(427, 22);
             this.txtApellidoAgente.TabIndex = 19;
             // 
             // txtNombreAgente
             // 
-            this.txtNombreAgente.Location = new System.Drawing.Point(161, 127);
+            this.txtNombreAgente.Location = new System.Drawing.Point(215, 156);
+            this.txtNombreAgente.Margin = new System.Windows.Forms.Padding(4);
             this.txtNombreAgente.Name = "txtNombreAgente";
-            this.txtNombreAgente.Size = new System.Drawing.Size(321, 20);
+            this.txtNombreAgente.Size = new System.Drawing.Size(427, 22);
             this.txtNombreAgente.TabIndex = 18;
             // 
-            // lbCelularAgente
+            // pictureBox1Fondo
             // 
-            this.lbCelularAgente.AutoSize = true;
-            this.lbCelularAgente.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbCelularAgente.Location = new System.Drawing.Point(62, 334);
-            this.lbCelularAgente.Name = "lbCelularAgente";
-            this.lbCelularAgente.Size = new System.Drawing.Size(86, 25);
-            this.lbCelularAgente.TabIndex = 17;
-            this.lbCelularAgente.Text = "Celular:";
-            this.lbCelularAgente.Click += new System.EventHandler(this.lbCelular_Click);
+            this.pictureBox1Fondo.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1Fondo.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1Fondo.Image")));
+            this.pictureBox1Fondo.Location = new System.Drawing.Point(-26, -9);
+            this.pictureBox1Fondo.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1Fondo.Name = "pictureBox1Fondo";
+            this.pictureBox1Fondo.Size = new System.Drawing.Size(1119, 572);
+            this.pictureBox1Fondo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1Fondo.TabIndex = 25;
+            this.pictureBox1Fondo.TabStop = false;
             // 
-            // lbEdadAgente
+            // label1Bnaco
             // 
-            this.lbEdadAgente.AutoSize = true;
-            this.lbEdadAgente.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbEdadAgente.Location = new System.Drawing.Point(62, 273);
-            this.lbEdadAgente.Name = "lbEdadAgente";
-            this.lbEdadAgente.Size = new System.Drawing.Size(68, 25);
-            this.lbEdadAgente.TabIndex = 16;
-            this.lbEdadAgente.Text = "Edad:";
+            this.label1Bnaco.AutoSize = true;
+            this.label1Bnaco.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label1Bnaco.Font = new System.Drawing.Font("Monotype Corsiva", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1Bnaco.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label1Bnaco.Location = new System.Drawing.Point(72, 27);
+            this.label1Bnaco.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1Bnaco.Name = "label1Bnaco";
+            this.label1Bnaco.Size = new System.Drawing.Size(530, 97);
+            this.label1Bnaco.TabIndex = 26;
+            this.label1Bnaco.Text = "Datos del Cliente";
             // 
-            // lbApellidoAgente
+            // label1
             // 
-            this.lbApellidoAgente.AutoSize = true;
-            this.lbApellidoAgente.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbApellidoAgente.Location = new System.Drawing.Point(60, 194);
-            this.lbApellidoAgente.Name = "lbApellidoAgente";
-            this.lbApellidoAgente.Size = new System.Drawing.Size(95, 25);
-            this.lbApellidoAgente.TabIndex = 15;
-            this.lbApellidoAgente.Text = "Apellido:";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(76, 150);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(115, 27);
+            this.label1.TabIndex = 27;
+            this.label1.Text = "Nombre:";
             // 
-            // lbNombreAgente
+            // label2
             // 
-            this.lbNombreAgente.AutoSize = true;
-            this.lbNombreAgente.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNombreAgente.Location = new System.Drawing.Point(62, 122);
-            this.lbNombreAgente.Name = "lbNombreAgente";
-            this.lbNombreAgente.Size = new System.Drawing.Size(93, 25);
-            this.lbNombreAgente.TabIndex = 14;
-            this.lbNombreAgente.Text = "Nombre:";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(74, 233);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(117, 27);
+            this.label2.TabIndex = 28;
+            this.label2.Text = "Apellido:";
             // 
-            // lbDatClienteAgente
+            // label3
             // 
-            this.lbDatClienteAgente.AutoSize = true;
-            this.lbDatClienteAgente.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbDatClienteAgente.Location = new System.Drawing.Point(61, 52);
-            this.lbDatClienteAgente.Name = "lbDatClienteAgente";
-            this.lbDatClienteAgente.Size = new System.Drawing.Size(222, 31);
-            this.lbDatClienteAgente.TabIndex = 13;
-            this.lbDatClienteAgente.Text = "Datos del Agente";
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(76, 323);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(79, 27);
+            this.label3.TabIndex = 29;
+            this.label3.Text = "Edad:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(76, 417);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(109, 27);
+            this.label4.TabIndex = 30;
+            this.label4.Text = "Celular:";
+            // 
+            // bt2Agregar
+            // 
+            this.bt2Agregar.Font = new System.Drawing.Font("Lucida Fax", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt2Agregar.Location = new System.Drawing.Point(736, 165);
+            this.bt2Agregar.Margin = new System.Windows.Forms.Padding(4);
+            this.bt2Agregar.Name = "bt2Agregar";
+            this.bt2Agregar.Size = new System.Drawing.Size(251, 67);
+            this.bt2Agregar.TabIndex = 31;
+            this.bt2Agregar.Text = "Modificar";
+            this.bt2Agregar.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Lucida Fax", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(736, 358);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(251, 67);
+            this.button1.TabIndex = 32;
+            this.button1.Text = "Cancear";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // ModificarAgente
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btCancelarAgente);
-            this.Controls.Add(this.btModificarAgente);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.bt2Agregar);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.label1Bnaco);
             this.Controls.Add(this.txtCelularAgente);
             this.Controls.Add(this.txtEdadAgente);
             this.Controls.Add(this.txtApellidoAgente);
             this.Controls.Add(this.txtNombreAgente);
-            this.Controls.Add(this.lbCelularAgente);
-            this.Controls.Add(this.lbEdadAgente);
-            this.Controls.Add(this.lbApellidoAgente);
-            this.Controls.Add(this.lbNombreAgente);
-            this.Controls.Add(this.lbDatClienteAgente);
+            this.Controls.Add(this.pictureBox1Fondo);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ModificarAgente";
             this.Text = "ModificarAgente";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1Fondo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Button btCancelarAgente;
-        private System.Windows.Forms.Button btModificarAgente;
         private System.Windows.Forms.TextBox txtCelularAgente;
         private System.Windows.Forms.TextBox txtEdadAgente;
         private System.Windows.Forms.TextBox txtApellidoAgente;
         private System.Windows.Forms.TextBox txtNombreAgente;
-        private System.Windows.Forms.Label lbCelularAgente;
-        private System.Windows.Forms.Label lbEdadAgente;
-        private System.Windows.Forms.Label lbApellidoAgente;
-        private System.Windows.Forms.Label lbNombreAgente;
-        private System.Windows.Forms.Label lbDatClienteAgente;
+        private System.Windows.Forms.PictureBox pictureBox1Fondo;
+        private System.Windows.Forms.Label label1Bnaco;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button bt2Agregar;
+        private System.Windows.Forms.Button button1;
     }
 }

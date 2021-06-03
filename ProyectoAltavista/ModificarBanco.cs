@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace ProyectoAltavista
 {
-    public partial class ModificarInhabilitarCiudad : Form
+    public partial class ModificarBanco : Form
     {
-        public ModificarInhabilitarCiudad()
+        public ModificarBanco()
         {
             InitializeComponent();
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1Bnaco_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

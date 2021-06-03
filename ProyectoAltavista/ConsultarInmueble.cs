@@ -36,5 +36,10 @@ namespace ProyectoAltavista
         {
 
         }
+
+        private void pictureBox1Fondo_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

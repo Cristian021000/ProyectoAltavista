@@ -29,72 +29,100 @@ namespace ProyectoAltavista
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConsultarSitiosInteres));
             this.DataGridVerSitioInteres = new System.Windows.Forms.DataGridView();
-            this.labelVerSi = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtCodSitioInteres = new System.Windows.Forms.TextBox();
-            this.btnCodVerSitioInteres = new System.Windows.Forms.Button();
+            this.label1Bnaco = new System.Windows.Forms.Label();
+            this.textBox1IngresoBanco = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.bt2 = new System.Windows.Forms.Button();
+            this.pictureBox1Fondo = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridVerSitioInteres)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1Fondo)).BeginInit();
             this.SuspendLayout();
             // 
             // DataGridVerSitioInteres
             // 
             this.DataGridVerSitioInteres.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DataGridVerSitioInteres.Location = new System.Drawing.Point(12, 141);
+            this.DataGridVerSitioInteres.Location = new System.Drawing.Point(25, 165);
+            this.DataGridVerSitioInteres.Margin = new System.Windows.Forms.Padding(4);
             this.DataGridVerSitioInteres.Name = "DataGridVerSitioInteres";
-            this.DataGridVerSitioInteres.Size = new System.Drawing.Size(432, 297);
+            this.DataGridVerSitioInteres.RowHeadersWidth = 51;
+            this.DataGridVerSitioInteres.Size = new System.Drawing.Size(576, 366);
             this.DataGridVerSitioInteres.TabIndex = 0;
             // 
-            // labelVerSi
+            // label1Bnaco
             // 
-            this.labelVerSi.AutoSize = true;
-            this.labelVerSi.Font = new System.Drawing.Font("News701 BT", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelVerSi.Location = new System.Drawing.Point(275, 51);
-            this.labelVerSi.Name = "labelVerSi";
-            this.labelVerSi.Size = new System.Drawing.Size(327, 26);
-            this.labelVerSi.TabIndex = 1;
-            this.labelVerSi.Text = "VISTA SITIOS DE INTERÉS";
+            this.label1Bnaco.AutoSize = true;
+            this.label1Bnaco.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label1Bnaco.Font = new System.Drawing.Font("Monotype Corsiva", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1Bnaco.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label1Bnaco.Location = new System.Drawing.Point(230, 26);
+            this.label1Bnaco.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1Bnaco.Name = "label1Bnaco";
+            this.label1Bnaco.Size = new System.Drawing.Size(643, 97);
+            this.label1Bnaco.TabIndex = 21;
+            this.label1Bnaco.Text = "Visita sitios e Interés";
             // 
-            // label2
+            // textBox1IngresoBanco
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("News701 BT", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(477, 189);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(311, 19);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Codigo de sitio de interés a modifcar";
+            this.textBox1IngresoBanco.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1IngresoBanco.Location = new System.Drawing.Point(631, 203);
+            this.textBox1IngresoBanco.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox1IngresoBanco.Multiline = true;
+            this.textBox1IngresoBanco.Name = "textBox1IngresoBanco";
+            this.textBox1IngresoBanco.Size = new System.Drawing.Size(390, 36);
+            this.textBox1IngresoBanco.TabIndex = 26;
             // 
-            // txtCodSitioInteres
+            // label1
             // 
-            this.txtCodSitioInteres.Location = new System.Drawing.Point(498, 267);
-            this.txtCodSitioInteres.Name = "txtCodSitioInteres";
-            this.txtCodSitioInteres.Size = new System.Drawing.Size(260, 20);
-            this.txtCodSitioInteres.TabIndex = 3;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(591, 134);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(463, 27);
+            this.label1.TabIndex = 27;
+            this.label1.Text = "Ingrese Codigo de Interés a Modificar";
             // 
-            // btnCodVerSitioInteres
+            // bt2
             // 
-            this.btnCodVerSitioInteres.Font = new System.Drawing.Font("News701 BT", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCodVerSitioInteres.Location = new System.Drawing.Point(579, 355);
-            this.btnCodVerSitioInteres.Name = "btnCodVerSitioInteres";
-            this.btnCodVerSitioInteres.Size = new System.Drawing.Size(97, 32);
-            this.btnCodVerSitioInteres.TabIndex = 4;
-            this.btnCodVerSitioInteres.Text = "Aceptar";
-            this.btnCodVerSitioInteres.UseVisualStyleBackColor = true;
+            this.bt2.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt2.Location = new System.Drawing.Point(709, 279);
+            this.bt2.Margin = new System.Windows.Forms.Padding(4);
+            this.bt2.Name = "bt2";
+            this.bt2.Size = new System.Drawing.Size(224, 37);
+            this.bt2.TabIndex = 41;
+            this.bt2.Text = "Aceptar";
+            this.bt2.UseVisualStyleBackColor = true;
             // 
-            // MVerSitiosInteres
+            // pictureBox1Fondo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.pictureBox1Fondo.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1Fondo.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1Fondo.Image")));
+            this.pictureBox1Fondo.Location = new System.Drawing.Point(-6, -3);
+            this.pictureBox1Fondo.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1Fondo.Name = "pictureBox1Fondo";
+            this.pictureBox1Fondo.Size = new System.Drawing.Size(1119, 572);
+            this.pictureBox1Fondo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1Fondo.TabIndex = 42;
+            this.pictureBox1Fondo.TabStop = false;
+            // 
+            // ConsultarSitiosInteres
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btnCodVerSitioInteres);
-            this.Controls.Add(this.txtCodSitioInteres);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.labelVerSi);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.bt2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.textBox1IngresoBanco);
+            this.Controls.Add(this.label1Bnaco);
             this.Controls.Add(this.DataGridVerSitioInteres);
-            this.Name = "MVerSitiosInteres";
+            this.Controls.Add(this.pictureBox1Fondo);
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Name = "ConsultarSitiosInteres";
             this.Text = "MVerSitiosInteres";
             ((System.ComponentModel.ISupportInitialize)(this.DataGridVerSitioInteres)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1Fondo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -103,9 +131,10 @@ namespace ProyectoAltavista
         #endregion
 
         private System.Windows.Forms.DataGridView DataGridVerSitioInteres;
-        private System.Windows.Forms.Label labelVerSi;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtCodSitioInteres;
-        private System.Windows.Forms.Button btnCodVerSitioInteres;
+        private System.Windows.Forms.Label label1Bnaco;
+        private System.Windows.Forms.TextBox textBox1IngresoBanco;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button bt2;
+        private System.Windows.Forms.PictureBox pictureBox1Fondo;
     }
 }

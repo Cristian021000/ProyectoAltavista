@@ -29,168 +29,202 @@ namespace ProyectoAltavista
         /// </summary>
         private void InitializeComponent()
         {
-            this.lbDatosPropietario = new System.Windows.Forms.Label();
-            this.lbNombre = new System.Windows.Forms.Label();
-            this.lbApellido = new System.Windows.Forms.Label();
-            this.lbEdad = new System.Windows.Forms.Label();
-            this.lbCelular = new System.Windows.Forms.Label();
-            this.lbDireccion = new System.Windows.Forms.Label();
-            this.txtNombre = new System.Windows.Forms.TextBox();
-            this.txtApellido = new System.Windows.Forms.TextBox();
-            this.txtEdad = new System.Windows.Forms.TextBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ModificarInhabilitarCliPropietario));
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.bt2Agregar = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label1Bnaco = new System.Windows.Forms.Label();
             this.txtCelular = new System.Windows.Forms.TextBox();
-            this.txtDireccion = new System.Windows.Forms.TextBox();
-            this.btModificar = new System.Windows.Forms.Button();
-            this.btCancelar = new System.Windows.Forms.Button();
-            this.btRegresar = new System.Windows.Forms.Button();
+            this.txtEdad = new System.Windows.Forms.TextBox();
+            this.txtApellido = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.pictureBox1Fondo = new System.Windows.Forms.PictureBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1Fondo)).BeginInit();
             this.SuspendLayout();
             // 
-            // lbDatosPropietario
+            // button2
             // 
-            this.lbDatosPropietario.AutoSize = true;
-            this.lbDatosPropietario.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbDatosPropietario.Location = new System.Drawing.Point(33, 39);
-            this.lbDatosPropietario.Name = "lbDatosPropietario";
-            this.lbDatosPropietario.Size = new System.Drawing.Size(264, 31);
-            this.lbDatosPropietario.TabIndex = 0;
-            this.lbDatosPropietario.Text = "Datos del propietario";
+            this.button2.Font = new System.Drawing.Font("Lucida Fax", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(761, 334);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(213, 60);
+            this.button2.TabIndex = 49;
+            this.button2.Text = "Regresar";
+            this.button2.UseVisualStyleBackColor = true;
             // 
-            // lbNombre
+            // button1
             // 
-            this.lbNombre.AutoSize = true;
-            this.lbNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNombre.Location = new System.Drawing.Point(56, 108);
-            this.lbNombre.Name = "lbNombre";
-            this.lbNombre.Size = new System.Drawing.Size(84, 24);
-            this.lbNombre.TabIndex = 1;
-            this.lbNombre.Text = "Nombre:";
+            this.button1.Font = new System.Drawing.Font("Lucida Fax", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(761, 223);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(213, 60);
+            this.button1.TabIndex = 48;
+            this.button1.Text = "Cancelar";
+            this.button1.UseVisualStyleBackColor = true;
             // 
-            // lbApellido
+            // bt2Agregar
             // 
-            this.lbApellido.AutoSize = true;
-            this.lbApellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbApellido.Location = new System.Drawing.Point(56, 171);
-            this.lbApellido.Name = "lbApellido";
-            this.lbApellido.Size = new System.Drawing.Size(84, 24);
-            this.lbApellido.TabIndex = 2;
-            this.lbApellido.Text = "Apellido:";
+            this.bt2Agregar.Font = new System.Drawing.Font("Lucida Fax", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt2Agregar.Location = new System.Drawing.Point(763, 113);
+            this.bt2Agregar.Margin = new System.Windows.Forms.Padding(4);
+            this.bt2Agregar.Name = "bt2Agregar";
+            this.bt2Agregar.Size = new System.Drawing.Size(213, 60);
+            this.bt2Agregar.TabIndex = 47;
+            this.bt2Agregar.Text = "Modificar";
+            this.bt2Agregar.UseVisualStyleBackColor = true;
             // 
-            // lbEdad
+            // label3
             // 
-            this.lbEdad.AutoSize = true;
-            this.lbEdad.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbEdad.Location = new System.Drawing.Point(56, 228);
-            this.lbEdad.Name = "lbEdad";
-            this.lbEdad.Size = new System.Drawing.Size(60, 24);
-            this.lbEdad.TabIndex = 3;
-            this.lbEdad.Text = "Edad:";
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(60, 282);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(79, 27);
+            this.label3.TabIndex = 46;
+            this.label3.Text = "Edad:";
             // 
-            // lbCelular
+            // label4
             // 
-            this.lbCelular.AutoSize = true;
-            this.lbCelular.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbCelular.Location = new System.Drawing.Point(57, 287);
-            this.lbCelular.Name = "lbCelular";
-            this.lbCelular.Size = new System.Drawing.Size(74, 24);
-            this.lbCelular.TabIndex = 4;
-            this.lbCelular.Text = "Celular:";
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(60, 354);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(109, 27);
+            this.label4.TabIndex = 45;
+            this.label4.Text = "Celular:";
             // 
-            // lbDireccion
+            // label2
             // 
-            this.lbDireccion.AutoSize = true;
-            this.lbDireccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbDireccion.Location = new System.Drawing.Point(58, 343);
-            this.lbDireccion.Name = "lbDireccion";
-            this.lbDireccion.Size = new System.Drawing.Size(95, 24);
-            this.lbDireccion.TabIndex = 5;
-            this.lbDireccion.Text = "Direccion:";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(60, 196);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(117, 27);
+            this.label2.TabIndex = 44;
+            this.label2.Text = "Apellido:";
             // 
-            // txtNombre
+            // label1
             // 
-            this.txtNombre.Location = new System.Drawing.Point(176, 108);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(270, 20);
-            this.txtNombre.TabIndex = 6;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(60, 132);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(115, 27);
+            this.label1.TabIndex = 43;
+            this.label1.Text = "Nombre:";
             // 
-            // txtApellido
+            // label1Bnaco
             // 
-            this.txtApellido.Location = new System.Drawing.Point(176, 171);
-            this.txtApellido.Name = "txtApellido";
-            this.txtApellido.Size = new System.Drawing.Size(270, 20);
-            this.txtApellido.TabIndex = 7;
-            // 
-            // txtEdad
-            // 
-            this.txtEdad.Location = new System.Drawing.Point(176, 228);
-            this.txtEdad.Name = "txtEdad";
-            this.txtEdad.Size = new System.Drawing.Size(100, 20);
-            this.txtEdad.TabIndex = 8;
+            this.label1Bnaco.AutoSize = true;
+            this.label1Bnaco.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label1Bnaco.Font = new System.Drawing.Font("Monotype Corsiva", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1Bnaco.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label1Bnaco.Location = new System.Drawing.Point(60, 9);
+            this.label1Bnaco.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1Bnaco.Name = "label1Bnaco";
+            this.label1Bnaco.Size = new System.Drawing.Size(648, 97);
+            this.label1Bnaco.TabIndex = 42;
+            this.label1Bnaco.Text = "Datos del Propietario";
             // 
             // txtCelular
             // 
-            this.txtCelular.Location = new System.Drawing.Point(176, 287);
+            this.txtCelular.Location = new System.Drawing.Point(201, 359);
+            this.txtCelular.Margin = new System.Windows.Forms.Padding(4);
             this.txtCelular.Name = "txtCelular";
-            this.txtCelular.Size = new System.Drawing.Size(165, 20);
-            this.txtCelular.TabIndex = 9;
+            this.txtCelular.Size = new System.Drawing.Size(256, 22);
+            this.txtCelular.TabIndex = 40;
             // 
-            // txtDireccion
+            // txtEdad
             // 
-            this.txtDireccion.Location = new System.Drawing.Point(176, 343);
-            this.txtDireccion.Name = "txtDireccion";
-            this.txtDireccion.Size = new System.Drawing.Size(315, 20);
-            this.txtDireccion.TabIndex = 10;
+            this.txtEdad.Location = new System.Drawing.Point(201, 280);
+            this.txtEdad.Margin = new System.Windows.Forms.Padding(4);
+            this.txtEdad.Name = "txtEdad";
+            this.txtEdad.Size = new System.Drawing.Size(132, 22);
+            this.txtEdad.TabIndex = 39;
             // 
-            // btModificar
+            // txtApellido
             // 
-            this.btModificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btModificar.Location = new System.Drawing.Point(599, 108);
-            this.btModificar.Name = "btModificar";
-            this.btModificar.Size = new System.Drawing.Size(148, 66);
-            this.btModificar.TabIndex = 11;
-            this.btModificar.Text = "Modificar";
-            this.btModificar.UseVisualStyleBackColor = true;
+            this.txtApellido.Location = new System.Drawing.Point(201, 201);
+            this.txtApellido.Margin = new System.Windows.Forms.Padding(4);
+            this.txtApellido.Name = "txtApellido";
+            this.txtApellido.Size = new System.Drawing.Size(427, 22);
+            this.txtApellido.TabIndex = 38;
             // 
-            // btCancelar
+            // txtNombre
             // 
-            this.btCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btCancelar.Location = new System.Drawing.Point(599, 217);
-            this.btCancelar.Name = "btCancelar";
-            this.btCancelar.Size = new System.Drawing.Size(148, 66);
-            this.btCancelar.TabIndex = 12;
-            this.btCancelar.Text = "Cancelar";
-            this.btCancelar.UseVisualStyleBackColor = true;
+            this.txtNombre.Location = new System.Drawing.Point(201, 132);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(427, 22);
+            this.txtNombre.TabIndex = 37;
             // 
-            // btRegresar
+            // pictureBox1Fondo
             // 
-            this.btRegresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btRegresar.Location = new System.Drawing.Point(599, 320);
-            this.btRegresar.Name = "btRegresar";
-            this.btRegresar.Size = new System.Drawing.Size(148, 65);
-            this.btRegresar.TabIndex = 13;
-            this.btRegresar.Text = "Regresar";
-            this.btRegresar.UseVisualStyleBackColor = true;
+            this.pictureBox1Fondo.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1Fondo.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1Fondo.Image")));
+            this.pictureBox1Fondo.Location = new System.Drawing.Point(-26, -9);
+            this.pictureBox1Fondo.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1Fondo.Name = "pictureBox1Fondo";
+            this.pictureBox1Fondo.Size = new System.Drawing.Size(1119, 572);
+            this.pictureBox1Fondo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1Fondo.TabIndex = 41;
+            this.pictureBox1Fondo.TabStop = false;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(60, 437);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(121, 27);
+            this.label5.TabIndex = 50;
+            this.label5.Text = "Direcion:";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(201, 437);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(427, 22);
+            this.textBox1.TabIndex = 51;
             // 
             // ModificarInhabilitarCliPropietario
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btRegresar);
-            this.Controls.Add(this.btCancelar);
-            this.Controls.Add(this.btModificar);
-            this.Controls.Add(this.txtDireccion);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.bt2Agregar);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.label1Bnaco);
             this.Controls.Add(this.txtCelular);
             this.Controls.Add(this.txtEdad);
             this.Controls.Add(this.txtApellido);
             this.Controls.Add(this.txtNombre);
-            this.Controls.Add(this.lbDireccion);
-            this.Controls.Add(this.lbCelular);
-            this.Controls.Add(this.lbEdad);
-            this.Controls.Add(this.lbApellido);
-            this.Controls.Add(this.lbNombre);
-            this.Controls.Add(this.lbDatosPropietario);
+            this.Controls.Add(this.pictureBox1Fondo);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "ModificarInhabilitarCliPropietario";
             this.Text = "ModificarInhabilitarCliPropietario";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1Fondo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -198,19 +232,20 @@ namespace ProyectoAltavista
 
         #endregion
 
-        private System.Windows.Forms.Label lbDatosPropietario;
-        private System.Windows.Forms.Label lbNombre;
-        private System.Windows.Forms.Label lbApellido;
-        private System.Windows.Forms.Label lbEdad;
-        private System.Windows.Forms.Label lbCelular;
-        private System.Windows.Forms.Label lbDireccion;
-        private System.Windows.Forms.TextBox txtNombre;
-        private System.Windows.Forms.TextBox txtApellido;
-        private System.Windows.Forms.TextBox txtEdad;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button bt2Agregar;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label1Bnaco;
         private System.Windows.Forms.TextBox txtCelular;
-        private System.Windows.Forms.TextBox txtDireccion;
-        private System.Windows.Forms.Button btModificar;
-        private System.Windows.Forms.Button btCancelar;
-        private System.Windows.Forms.Button btRegresar;
+        private System.Windows.Forms.TextBox txtEdad;
+        private System.Windows.Forms.TextBox txtApellido;
+        private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.PictureBox pictureBox1Fondo;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

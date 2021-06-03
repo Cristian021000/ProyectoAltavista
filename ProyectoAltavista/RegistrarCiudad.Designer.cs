@@ -30,154 +30,183 @@ namespace ProyectoAltavista
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegistrarCiudad));
-            this.lbRegistrarCiudad = new System.Windows.Forms.Label();
-            this.lbNombreCiudad = new System.Windows.Forms.Label();
-            this.lbDireccionCiudad = new System.Windows.Forms.Label();
-            this.lbCodigoPostal = new System.Windows.Forms.Label();
-            this.lbReferencia = new System.Windows.Forms.Label();
             this.txtNombreCiudad = new System.Windows.Forms.TextBox();
             this.textDireccionCiudad = new System.Windows.Forms.TextBox();
             this.textCódigoPostal = new System.Windows.Forms.TextBox();
             this.textReferenciasCiudad = new System.Windows.Forms.TextBox();
-            this.btRegistrarCiudad = new System.Windows.Forms.Button();
-            this.btCancelarCiudad = new System.Windows.Forms.Button();
+            this.pictureBox1Fondo = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label1Bnaco = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1Fondo)).BeginInit();
             this.SuspendLayout();
-            // 
-            // lbRegistrarCiudad
-            // 
-            this.lbRegistrarCiudad.AutoSize = true;
-            this.lbRegistrarCiudad.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbRegistrarCiudad.Location = new System.Drawing.Point(257, 33);
-            this.lbRegistrarCiudad.Name = "lbRegistrarCiudad";
-            this.lbRegistrarCiudad.Size = new System.Drawing.Size(277, 39);
-            this.lbRegistrarCiudad.TabIndex = 1;
-            this.lbRegistrarCiudad.Text = "Registrar Ciudad";
-            this.lbRegistrarCiudad.Click += new System.EventHandler(this.lbRegistrarCiudad_Click);
-            // 
-            // lbNombreCiudad
-            // 
-            this.lbNombreCiudad.AutoSize = true;
-            this.lbNombreCiudad.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNombreCiudad.Location = new System.Drawing.Point(48, 165);
-            this.lbNombreCiudad.Name = "lbNombreCiudad";
-            this.lbNombreCiudad.Size = new System.Drawing.Size(176, 24);
-            this.lbNombreCiudad.TabIndex = 3;
-            this.lbNombreCiudad.Text = "Nombre de Ciudad:";
-            // 
-            // lbDireccionCiudad
-            // 
-            this.lbDireccionCiudad.AutoSize = true;
-            this.lbDireccionCiudad.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbDireccionCiudad.Location = new System.Drawing.Point(48, 215);
-            this.lbDireccionCiudad.Name = "lbDireccionCiudad";
-            this.lbDireccionCiudad.Size = new System.Drawing.Size(95, 24);
-            this.lbDireccionCiudad.TabIndex = 4;
-            this.lbDireccionCiudad.Text = "Dirección:";
-            // 
-            // lbCodigoPostal
-            // 
-            this.lbCodigoPostal.AutoSize = true;
-            this.lbCodigoPostal.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbCodigoPostal.Location = new System.Drawing.Point(48, 263);
-            this.lbCodigoPostal.Name = "lbCodigoPostal";
-            this.lbCodigoPostal.Size = new System.Drawing.Size(131, 24);
-            this.lbCodigoPostal.TabIndex = 5;
-            this.lbCodigoPostal.Text = "Código Postal:";
-            // 
-            // lbReferencia
-            // 
-            this.lbReferencia.AutoSize = true;
-            this.lbReferencia.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbReferencia.Location = new System.Drawing.Point(48, 315);
-            this.lbReferencia.Name = "lbReferencia";
-            this.lbReferencia.Size = new System.Drawing.Size(115, 24);
-            this.lbReferencia.TabIndex = 6;
-            this.lbReferencia.Text = "Referencias:";
             // 
             // txtNombreCiudad
             // 
-            this.txtNombreCiudad.Location = new System.Drawing.Point(264, 170);
+            this.txtNombreCiudad.Location = new System.Drawing.Point(352, 209);
+            this.txtNombreCiudad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtNombreCiudad.Name = "txtNombreCiudad";
-            this.txtNombreCiudad.Size = new System.Drawing.Size(360, 20);
+            this.txtNombreCiudad.Size = new System.Drawing.Size(479, 22);
             this.txtNombreCiudad.TabIndex = 7;
             // 
             // textDireccionCiudad
             // 
-            this.textDireccionCiudad.Location = new System.Drawing.Point(264, 219);
+            this.textDireccionCiudad.Location = new System.Drawing.Point(352, 270);
+            this.textDireccionCiudad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textDireccionCiudad.Name = "textDireccionCiudad";
-            this.textDireccionCiudad.Size = new System.Drawing.Size(360, 20);
+            this.textDireccionCiudad.Size = new System.Drawing.Size(479, 22);
             this.textDireccionCiudad.TabIndex = 8;
             // 
             // textCódigoPostal
             // 
-            this.textCódigoPostal.Location = new System.Drawing.Point(264, 263);
+            this.textCódigoPostal.Location = new System.Drawing.Point(352, 324);
+            this.textCódigoPostal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textCódigoPostal.Name = "textCódigoPostal";
-            this.textCódigoPostal.Size = new System.Drawing.Size(360, 20);
+            this.textCódigoPostal.Size = new System.Drawing.Size(479, 22);
             this.textCódigoPostal.TabIndex = 9;
             // 
             // textReferenciasCiudad
             // 
-            this.textReferenciasCiudad.Location = new System.Drawing.Point(264, 315);
+            this.textReferenciasCiudad.Location = new System.Drawing.Point(352, 388);
+            this.textReferenciasCiudad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textReferenciasCiudad.Name = "textReferenciasCiudad";
-            this.textReferenciasCiudad.Size = new System.Drawing.Size(360, 20);
+            this.textReferenciasCiudad.Size = new System.Drawing.Size(479, 22);
             this.textReferenciasCiudad.TabIndex = 10;
             // 
-            // btRegistrarCiudad
+            // pictureBox1Fondo
             // 
-            this.btRegistrarCiudad.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btRegistrarCiudad.Location = new System.Drawing.Point(650, 116);
-            this.btRegistrarCiudad.Name = "btRegistrarCiudad";
-            this.btRegistrarCiudad.Size = new System.Drawing.Size(138, 73);
-            this.btRegistrarCiudad.TabIndex = 12;
-            this.btRegistrarCiudad.Text = "Registrar";
-            this.btRegistrarCiudad.UseVisualStyleBackColor = true;
+            this.pictureBox1Fondo.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1Fondo.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1Fondo.Image")));
+            this.pictureBox1Fondo.Location = new System.Drawing.Point(-9, -15);
+            this.pictureBox1Fondo.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1Fondo.Name = "pictureBox1Fondo";
+            this.pictureBox1Fondo.Size = new System.Drawing.Size(1119, 572);
+            this.pictureBox1Fondo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1Fondo.TabIndex = 28;
+            this.pictureBox1Fondo.TabStop = false;
             // 
-            // btCancelarCiudad
+            // button1
             // 
-            this.btCancelarCiudad.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btCancelarCiudad.Location = new System.Drawing.Point(650, 315);
-            this.btCancelarCiudad.Name = "btCancelarCiudad";
-            this.btCancelarCiudad.Size = new System.Drawing.Size(138, 73);
-            this.btCancelarCiudad.TabIndex = 13;
-            this.btCancelarCiudad.Text = "Cancelar";
-            this.btCancelarCiudad.UseVisualStyleBackColor = true;
+            this.button1.Font = new System.Drawing.Font("Lucida Fax", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(815, 458);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(213, 60);
+            this.button1.TabIndex = 36;
+            this.button1.Text = "Cancelar";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Lucida Fax", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(535, 458);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(213, 60);
+            this.button2.TabIndex = 37;
+            this.button2.Text = "Registrar";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(82, 209);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(245, 27);
+            this.label1.TabIndex = 38;
+            this.label1.Text = "Nombre de Cuidad:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(82, 270);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(133, 27);
+            this.label2.TabIndex = 39;
+            this.label2.Text = "Dirección:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(82, 324);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(182, 27);
+            this.label3.TabIndex = 40;
+            this.label3.Text = "Código Postal:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(82, 388);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(159, 27);
+            this.label4.TabIndex = 41;
+            this.label4.Text = "Referencias:";
+            // 
+            // label1Bnaco
+            // 
+            this.label1Bnaco.AutoSize = true;
+            this.label1Bnaco.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label1Bnaco.Font = new System.Drawing.Font("Monotype Corsiva", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1Bnaco.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label1Bnaco.Location = new System.Drawing.Point(270, 57);
+            this.label1Bnaco.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1Bnaco.Name = "label1Bnaco";
+            this.label1Bnaco.Size = new System.Drawing.Size(522, 97);
+            this.label1Bnaco.TabIndex = 42;
+            this.label1Bnaco.Text = "Registrar Ciudad";
             // 
             // RegistrarCiudad
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btCancelarCiudad);
-            this.Controls.Add(this.btRegistrarCiudad);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.label1Bnaco);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.textReferenciasCiudad);
             this.Controls.Add(this.textCódigoPostal);
             this.Controls.Add(this.textDireccionCiudad);
             this.Controls.Add(this.txtNombreCiudad);
-            this.Controls.Add(this.lbReferencia);
-            this.Controls.Add(this.lbCodigoPostal);
-            this.Controls.Add(this.lbDireccionCiudad);
-            this.Controls.Add(this.lbNombreCiudad);
-            this.Controls.Add(this.lbRegistrarCiudad);
+            this.Controls.Add(this.pictureBox1Fondo);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "RegistrarCiudad";
             this.Text = "RegistrarCiudad";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1Fondo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label lbRegistrarCiudad;
-        private System.Windows.Forms.Label lbNombreCiudad;
-        private System.Windows.Forms.Label lbDireccionCiudad;
-        private System.Windows.Forms.Label lbCodigoPostal;
-        private System.Windows.Forms.Label lbReferencia;
         private System.Windows.Forms.TextBox txtNombreCiudad;
         private System.Windows.Forms.TextBox textDireccionCiudad;
         private System.Windows.Forms.TextBox textCódigoPostal;
         private System.Windows.Forms.TextBox textReferenciasCiudad;
-        private System.Windows.Forms.Button btRegistrarCiudad;
-        private System.Windows.Forms.Button btCancelarCiudad;
+        private System.Windows.Forms.PictureBox pictureBox1Fondo;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label1Bnaco;
     }
 }

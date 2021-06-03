@@ -29,67 +29,87 @@ namespace ProyectoAltavista
         /// </summary>
         private void InitializeComponent()
         {
-            this.lbMenuCliente = new System.Windows.Forms.Label();
-            this.btRegistrarCliente = new System.Windows.Forms.Button();
-            this.btListaCliente = new System.Windows.Forms.Button();
-            this.btRegresar = new System.Windows.Forms.Button();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MantenedorCliente));
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.bt2 = new System.Windows.Forms.Button();
+            this.label1Bnaco = new System.Windows.Forms.Label();
+            this.pictureBox1Fondo = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1Fondo)).BeginInit();
             this.SuspendLayout();
             // 
-            // lbMenuCliente
+            // button2
             // 
-            this.lbMenuCliente.AutoSize = true;
-            this.lbMenuCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMenuCliente.Location = new System.Drawing.Point(328, 38);
-            this.lbMenuCliente.Name = "lbMenuCliente";
-            this.lbMenuCliente.Size = new System.Drawing.Size(145, 55);
-            this.lbMenuCliente.TabIndex = 0;
-            this.lbMenuCliente.Text = "Menú";
-            this.lbMenuCliente.Click += new System.EventHandler(this.label1_Click);
+            this.button2.Font = new System.Drawing.Font("Lucida Fax", 19.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(60, 215);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(338, 62);
+            this.button2.TabIndex = 53;
+            this.button2.Text = "Registrar ";
+            this.button2.UseVisualStyleBackColor = true;
             // 
-            // btRegistrarCliente
+            // button1
             // 
-            this.btRegistrarCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btRegistrarCliente.Location = new System.Drawing.Point(135, 164);
-            this.btRegistrarCliente.Name = "btRegistrarCliente";
-            this.btRegistrarCliente.Size = new System.Drawing.Size(179, 74);
-            this.btRegistrarCliente.TabIndex = 1;
-            this.btRegistrarCliente.Text = "Registrar";
-            this.btRegistrarCliente.UseVisualStyleBackColor = true;
-            this.btRegistrarCliente.Click += new System.EventHandler(this.btRegistrarCliente_Click);
+            this.button1.Font = new System.Drawing.Font("Lucida Fax", 19.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(644, 215);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(363, 62);
+            this.button1.TabIndex = 52;
+            this.button1.Text = "Lista";
+            this.button1.UseVisualStyleBackColor = true;
             // 
-            // btListaCliente
+            // bt2
             // 
-            this.btListaCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btListaCliente.Location = new System.Drawing.Point(506, 164);
-            this.btListaCliente.Name = "btListaCliente";
-            this.btListaCliente.Size = new System.Drawing.Size(173, 75);
-            this.btListaCliente.TabIndex = 4;
-            this.btListaCliente.Text = "Lista";
-            this.btListaCliente.UseVisualStyleBackColor = true;
-            this.btListaCliente.Click += new System.EventHandler(this.btListaCliente_Click);
+            this.bt2.Font = new System.Drawing.Font("Lucida Fax", 19.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt2.Location = new System.Drawing.Point(378, 397);
+            this.bt2.Margin = new System.Windows.Forms.Padding(4);
+            this.bt2.Name = "bt2";
+            this.bt2.Size = new System.Drawing.Size(231, 62);
+            this.bt2.TabIndex = 51;
+            this.bt2.Text = "Regresar";
+            this.bt2.UseVisualStyleBackColor = true;
             // 
-            // btRegresar
+            // label1Bnaco
             // 
-            this.btRegresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btRegresar.Location = new System.Drawing.Point(324, 284);
-            this.btRegresar.Name = "btRegresar";
-            this.btRegresar.Size = new System.Drawing.Size(179, 74);
-            this.btRegresar.TabIndex = 5;
-            this.btRegresar.Text = "Regresar";
-            this.btRegresar.UseVisualStyleBackColor = true;
-            this.btRegresar.Click += new System.EventHandler(this.btRegresar_Click);
+            this.label1Bnaco.AutoSize = true;
+            this.label1Bnaco.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label1Bnaco.Font = new System.Drawing.Font("Monotype Corsiva", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1Bnaco.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label1Bnaco.Location = new System.Drawing.Point(411, 52);
+            this.label1Bnaco.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1Bnaco.Name = "label1Bnaco";
+            this.label1Bnaco.Size = new System.Drawing.Size(210, 97);
+            this.label1Bnaco.TabIndex = 49;
+            this.label1Bnaco.Text = "Menu";
+            // 
+            // pictureBox1Fondo
+            // 
+            this.pictureBox1Fondo.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1Fondo.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1Fondo.Image")));
+            this.pictureBox1Fondo.Location = new System.Drawing.Point(-14, -11);
+            this.pictureBox1Fondo.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1Fondo.Name = "pictureBox1Fondo";
+            this.pictureBox1Fondo.Size = new System.Drawing.Size(1119, 572);
+            this.pictureBox1Fondo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1Fondo.TabIndex = 50;
+            this.pictureBox1Fondo.TabStop = false;
             // 
             // MantenedorCliente
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(818, 448);
-            this.Controls.Add(this.btRegresar);
-            this.Controls.Add(this.btListaCliente);
-            this.Controls.Add(this.btRegistrarCliente);
-            this.Controls.Add(this.lbMenuCliente);
+            this.ClientSize = new System.Drawing.Size(1091, 551);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.bt2);
+            this.Controls.Add(this.label1Bnaco);
+            this.Controls.Add(this.pictureBox1Fondo);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "MantenedorCliente";
             this.Text = "Mantenedor del Cliente";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1Fondo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -97,10 +117,11 @@ namespace ProyectoAltavista
 
         #endregion
 
-        private System.Windows.Forms.Label lbMenuCliente;
-        private System.Windows.Forms.Button btRegistrarCliente;
-        private System.Windows.Forms.Button btListaCliente;
-        private System.Windows.Forms.Button btRegresar;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button bt2;
+        private System.Windows.Forms.Label label1Bnaco;
+        private System.Windows.Forms.PictureBox pictureBox1Fondo;
     }
 }
 

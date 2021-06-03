@@ -30,68 +30,87 @@ namespace ProyectoAltavista
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MantenedorCiudad));
-            this.lbMenuCiudad = new System.Windows.Forms.Label();
-            this.btRegistrarCiudad = new System.Windows.Forms.Button();
-            this.btListarCiudad = new System.Windows.Forms.Button();
-            this.btRegresarCiudad = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.bt2 = new System.Windows.Forms.Button();
+            this.label1Bnaco = new System.Windows.Forms.Label();
+            this.pictureBox1Fondo = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1Fondo)).BeginInit();
             this.SuspendLayout();
             // 
-            // lbMenuCiudad
+            // button2
             // 
-            this.lbMenuCiudad.AutoSize = true;
-            this.lbMenuCiudad.Font = new System.Drawing.Font("Microsoft YaHei", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMenuCiudad.Location = new System.Drawing.Point(341, 65);
-            this.lbMenuCiudad.Name = "lbMenuCiudad";
-            this.lbMenuCiudad.Size = new System.Drawing.Size(112, 42);
-            this.lbMenuCiudad.TabIndex = 1;
-            this.lbMenuCiudad.Text = "Menú";
-            this.lbMenuCiudad.Click += new System.EventHandler(this.lbMenuCiudad_Click);
+            this.button2.Font = new System.Drawing.Font("Lucida Fax", 19.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(27, 217);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(338, 62);
+            this.button2.TabIndex = 53;
+            this.button2.Text = "Modificar Ciudad";
+            this.button2.UseVisualStyleBackColor = true;
             // 
-            // btRegistrarCiudad
+            // button1
             // 
-            this.btRegistrarCiudad.Font = new System.Drawing.Font("Microsoft YaHei", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btRegistrarCiudad.Location = new System.Drawing.Point(60, 154);
-            this.btRegistrarCiudad.Name = "btRegistrarCiudad";
-            this.btRegistrarCiudad.Size = new System.Drawing.Size(256, 63);
-            this.btRegistrarCiudad.TabIndex = 4;
-            this.btRegistrarCiudad.Text = "Registrar Ciudad";
-            this.btRegistrarCiudad.UseVisualStyleBackColor = true;
-            this.btRegistrarCiudad.Click += new System.EventHandler(this.btRegistrarCiudad_Click);
+            this.button1.Font = new System.Drawing.Font("Lucida Fax", 19.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(632, 217);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(363, 62);
+            this.button1.TabIndex = 52;
+            this.button1.Text = "Registrar Cuidad";
+            this.button1.UseVisualStyleBackColor = true;
             // 
-            // btListarCiudad
+            // bt2
             // 
-            this.btListarCiudad.Font = new System.Drawing.Font("Microsoft YaHei", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btListarCiudad.Location = new System.Drawing.Point(452, 154);
-            this.btListarCiudad.Name = "btListarCiudad";
-            this.btListarCiudad.Size = new System.Drawing.Size(297, 63);
-            this.btListarCiudad.TabIndex = 5;
-            this.btListarCiudad.Text = "Modificar Ciudad";
-            this.btListarCiudad.UseVisualStyleBackColor = true;
-            this.btListarCiudad.Click += new System.EventHandler(this.btListarCiudad_Click);
+            this.bt2.Font = new System.Drawing.Font("Lucida Fax", 19.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt2.Location = new System.Drawing.Point(366, 399);
+            this.bt2.Margin = new System.Windows.Forms.Padding(4);
+            this.bt2.Name = "bt2";
+            this.bt2.Size = new System.Drawing.Size(231, 62);
+            this.bt2.TabIndex = 51;
+            this.bt2.Text = "Regresar";
+            this.bt2.UseVisualStyleBackColor = true;
             // 
-            // btRegresarCiudad
+            // label1Bnaco
             // 
-            this.btRegresarCiudad.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btRegresarCiudad.Location = new System.Drawing.Point(317, 281);
-            this.btRegresarCiudad.Name = "btRegresarCiudad";
-            this.btRegresarCiudad.Size = new System.Drawing.Size(144, 63);
-            this.btRegresarCiudad.TabIndex = 6;
-            this.btRegresarCiudad.Text = "Regresar";
-            this.btRegresarCiudad.UseVisualStyleBackColor = true;
-            this.btRegresarCiudad.Click += new System.EventHandler(this.btRegresarCiudad_Click);
+            this.label1Bnaco.AutoSize = true;
+            this.label1Bnaco.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label1Bnaco.Font = new System.Drawing.Font("Monotype Corsiva", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1Bnaco.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label1Bnaco.Location = new System.Drawing.Point(399, 54);
+            this.label1Bnaco.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1Bnaco.Name = "label1Bnaco";
+            this.label1Bnaco.Size = new System.Drawing.Size(210, 97);
+            this.label1Bnaco.TabIndex = 49;
+            this.label1Bnaco.Text = "Menu";
+            // 
+            // pictureBox1Fondo
+            // 
+            this.pictureBox1Fondo.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1Fondo.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1Fondo.Image")));
+            this.pictureBox1Fondo.Location = new System.Drawing.Point(-26, -9);
+            this.pictureBox1Fondo.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1Fondo.Name = "pictureBox1Fondo";
+            this.pictureBox1Fondo.Size = new System.Drawing.Size(1119, 572);
+            this.pictureBox1Fondo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1Fondo.TabIndex = 50;
+            this.pictureBox1Fondo.TabStop = false;
             // 
             // MantenedorCiudad
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btRegresarCiudad);
-            this.Controls.Add(this.btListarCiudad);
-            this.Controls.Add(this.btRegistrarCiudad);
-            this.Controls.Add(this.lbMenuCiudad);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.bt2);
+            this.Controls.Add(this.label1Bnaco);
+            this.Controls.Add(this.pictureBox1Fondo);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "MantenedorCiudad";
             this.Text = "MantenedorCiudad";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1Fondo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -99,9 +118,10 @@ namespace ProyectoAltavista
 
         #endregion
 
-        private System.Windows.Forms.Label lbMenuCiudad;
-        private System.Windows.Forms.Button btRegistrarCiudad;
-        private System.Windows.Forms.Button btListarCiudad;
-        private System.Windows.Forms.Button btRegresarCiudad;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button bt2;
+        private System.Windows.Forms.Label label1Bnaco;
+        private System.Windows.Forms.PictureBox pictureBox1Fondo;
     }
 }

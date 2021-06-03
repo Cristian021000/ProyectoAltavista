@@ -29,117 +29,151 @@ namespace ProyectoAltavista
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MModificarSector));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.btnAceptarModificarSector = new System.Windows.Forms.Button();
-            this.lbModificarSector = new System.Windows.Forms.Label();
-            this.txtIngreseIDSector = new System.Windows.Forms.TextBox();
-            this.lbIngreseIdSector = new System.Windows.Forms.Label();
-            this.btnCancelarModificarSector = new System.Windows.Forms.Button();
-            this.btnGuardarNombreModificarSector = new System.Windows.Forms.Button();
-            this.txtNombreModificarSector = new System.Windows.Forms.TextBox();
-            this.lbIngreseNombreModificarSector = new System.Windows.Forms.Label();
+            this.pictureBox1Fondo = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBox1IngresoBanco = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.bt2RegistarBanco = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.label1Bnaco = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1Fondo)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(25, 28);
+            this.dataGridView1.Location = new System.Drawing.Point(33, 34);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(371, 390);
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.Size = new System.Drawing.Size(495, 480);
             this.dataGridView1.TabIndex = 0;
             // 
-            // btnAceptarModificarSector
+            // pictureBox1Fondo
             // 
-            this.btnAceptarModificarSector.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAceptarModificarSector.Location = new System.Drawing.Point(551, 396);
-            this.btnAceptarModificarSector.Name = "btnAceptarModificarSector";
-            this.btnAceptarModificarSector.Size = new System.Drawing.Size(116, 42);
-            this.btnAceptarModificarSector.TabIndex = 1;
-            this.btnAceptarModificarSector.Text = "Aceptar";
-            this.btnAceptarModificarSector.UseVisualStyleBackColor = true;
+            this.pictureBox1Fondo.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1Fondo.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1Fondo.Image")));
+            this.pictureBox1Fondo.Location = new System.Drawing.Point(-26, -9);
+            this.pictureBox1Fondo.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1Fondo.Name = "pictureBox1Fondo";
+            this.pictureBox1Fondo.Size = new System.Drawing.Size(1119, 572);
+            this.pictureBox1Fondo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1Fondo.TabIndex = 22;
+            this.pictureBox1Fondo.TabStop = false;
             // 
-            // lbModificarSector
+            // label1
             // 
-            this.lbModificarSector.AutoSize = true;
-            this.lbModificarSector.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbModificarSector.Location = new System.Drawing.Point(437, 28);
-            this.lbModificarSector.Name = "lbModificarSector";
-            this.lbModificarSector.Size = new System.Drawing.Size(351, 37);
-            this.lbModificarSector.TabIndex = 3;
-            this.lbModificarSector.Text = "MODIFICAR SECTOR";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(696, 120);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(215, 27);
+            this.label1.TabIndex = 25;
+            this.label1.Text = "Ingrese ID Sector";
             // 
-            // txtIngreseIDSector
+            // textBox1IngresoBanco
             // 
-            this.txtIngreseIDSector.Location = new System.Drawing.Point(444, 139);
-            this.txtIngreseIDSector.Name = "txtIngreseIDSector";
-            this.txtIngreseIDSector.Size = new System.Drawing.Size(287, 20);
-            this.txtIngreseIDSector.TabIndex = 5;
+            this.textBox1IngresoBanco.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1IngresoBanco.Location = new System.Drawing.Point(644, 170);
+            this.textBox1IngresoBanco.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox1IngresoBanco.Multiline = true;
+            this.textBox1IngresoBanco.Name = "textBox1IngresoBanco";
+            this.textBox1IngresoBanco.Size = new System.Drawing.Size(297, 40);
+            this.textBox1IngresoBanco.TabIndex = 26;
             // 
-            // lbIngreseIdSector
+            // label2
             // 
-            this.lbIngreseIdSector.AutoSize = true;
-            this.lbIngreseIdSector.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbIngreseIdSector.Location = new System.Drawing.Point(438, 93);
-            this.lbIngreseIdSector.Name = "lbIngreseIdSector";
-            this.lbIngreseIdSector.Size = new System.Drawing.Size(293, 31);
-            this.lbIngreseIdSector.TabIndex = 6;
-            this.lbIngreseIdSector.Text = "Ingrese la ID del sector";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(613, 239);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(328, 27);
+            this.label2.TabIndex = 27;
+            this.label2.Text = "Ingrese Nombre del Sector";
             // 
-            // btnCancelarModificarSector
+            // textBox1
             // 
-            this.btnCancelarModificarSector.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelarModificarSector.Location = new System.Drawing.Point(681, 396);
-            this.btnCancelarModificarSector.Name = "btnCancelarModificarSector";
-            this.btnCancelarModificarSector.Size = new System.Drawing.Size(116, 42);
-            this.btnCancelarModificarSector.TabIndex = 7;
-            this.btnCancelarModificarSector.Text = "Cancelar";
-            this.btnCancelarModificarSector.UseVisualStyleBackColor = true;
+            this.textBox1.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(614, 288);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(356, 40);
+            this.textBox1.TabIndex = 28;
             // 
-            // btnGuardarNombreModificarSector
+            // bt2RegistarBanco
             // 
-            this.btnGuardarNombreModificarSector.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardarNombreModificarSector.Location = new System.Drawing.Point(717, 217);
-            this.btnGuardarNombreModificarSector.Name = "btnGuardarNombreModificarSector";
-            this.btnGuardarNombreModificarSector.Size = new System.Drawing.Size(71, 23);
-            this.btnGuardarNombreModificarSector.TabIndex = 8;
-            this.btnGuardarNombreModificarSector.Text = "Guardar";
-            this.btnGuardarNombreModificarSector.UseVisualStyleBackColor = true;
+            this.bt2RegistarBanco.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt2RegistarBanco.Location = new System.Drawing.Point(701, 380);
+            this.bt2RegistarBanco.Margin = new System.Windows.Forms.Padding(4);
+            this.bt2RegistarBanco.Name = "bt2RegistarBanco";
+            this.bt2RegistarBanco.Size = new System.Drawing.Size(224, 37);
+            this.bt2RegistarBanco.TabIndex = 32;
+            this.bt2RegistarBanco.Text = "Guardar";
+            this.bt2RegistarBanco.UseVisualStyleBackColor = true;
             // 
-            // txtNombreModificarSector
+            // button1
             // 
-            this.txtNombreModificarSector.Location = new System.Drawing.Point(444, 219);
-            this.txtNombreModificarSector.Name = "txtNombreModificarSector";
-            this.txtNombreModificarSector.Size = new System.Drawing.Size(253, 20);
-            this.txtNombreModificarSector.TabIndex = 9;
+            this.button1.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(558, 468);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(224, 37);
+            this.button1.TabIndex = 33;
+            this.button1.Text = "Aceptar";
+            this.button1.UseVisualStyleBackColor = true;
             // 
-            // lbIngreseNombreModificarSector
+            // button2
             // 
-            this.lbIngreseNombreModificarSector.AutoSize = true;
-            this.lbIngreseNombreModificarSector.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbIngreseNombreModificarSector.Location = new System.Drawing.Point(438, 174);
-            this.lbIngreseNombreModificarSector.Name = "lbIngreseNombreModificarSector";
-            this.lbIngreseNombreModificarSector.Size = new System.Drawing.Size(365, 31);
-            this.lbIngreseNombreModificarSector.TabIndex = 10;
-            this.lbIngreseNombreModificarSector.Text = "Ingrese el Nombre del Sector";
+            this.button2.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(815, 468);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(224, 37);
+            this.button2.TabIndex = 34;
+            this.button2.Text = "Cancelar";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // label1Bnaco
+            // 
+            this.label1Bnaco.AutoSize = true;
+            this.label1Bnaco.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label1Bnaco.Font = new System.Drawing.Font("Monotype Corsiva", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1Bnaco.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label1Bnaco.Location = new System.Drawing.Point(538, 9);
+            this.label1Bnaco.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1Bnaco.Name = "label1Bnaco";
+            this.label1Bnaco.Size = new System.Drawing.Size(516, 97);
+            this.label1Bnaco.TabIndex = 35;
+            this.label1Bnaco.Text = "Modificar Sector";
             // 
             // MModificarSector
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.lbIngreseNombreModificarSector);
-            this.Controls.Add(this.txtNombreModificarSector);
-            this.Controls.Add(this.btnGuardarNombreModificarSector);
-            this.Controls.Add(this.btnCancelarModificarSector);
-            this.Controls.Add(this.lbIngreseIdSector);
-            this.Controls.Add(this.txtIngreseIDSector);
-            this.Controls.Add(this.lbModificarSector);
-            this.Controls.Add(this.btnAceptarModificarSector);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.label1Bnaco);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.bt2RegistarBanco);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.textBox1IngresoBanco);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.pictureBox1Fondo);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "MModificarSector";
             this.Text = "Sector";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1Fondo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -148,13 +182,14 @@ namespace ProyectoAltavista
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button btnAceptarModificarSector;
-        private System.Windows.Forms.Label lbModificarSector;
-        private System.Windows.Forms.TextBox txtIngreseIDSector;
-        private System.Windows.Forms.Label lbIngreseIdSector;
-        private System.Windows.Forms.Button btnCancelarModificarSector;
-        private System.Windows.Forms.Button btnGuardarNombreModificarSector;
-        private System.Windows.Forms.TextBox txtNombreModificarSector;
-        private System.Windows.Forms.Label lbIngreseNombreModificarSector;
+        private System.Windows.Forms.PictureBox pictureBox1Fondo;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBox1IngresoBanco;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button bt2RegistarBanco;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label1Bnaco;
     }
 }

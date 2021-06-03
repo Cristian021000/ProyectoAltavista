@@ -29,73 +29,87 @@ namespace ProyectoAltavista
         /// </summary>
         private void InitializeComponent()
         {
-            this.labeSitioInteres = new System.Windows.Forms.Label();
-            this.btnRegistrarSitioInteres = new System.Windows.Forms.Button();
-            this.btnModificarSitioInteres = new System.Windows.Forms.Button();
-            this.btnRegresarInicioSI = new System.Windows.Forms.Button();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MantenedorSitiosInteres));
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.bt2 = new System.Windows.Forms.Button();
+            this.label1Bnaco = new System.Windows.Forms.Label();
+            this.pictureBox1Fondo = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1Fondo)).BeginInit();
             this.SuspendLayout();
             // 
-            // labeSitioInteres
+            // button2
             // 
-            this.labeSitioInteres.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.labeSitioInteres.AutoSize = true;
-            this.labeSitioInteres.BackColor = System.Drawing.SystemColors.Control;
-            this.labeSitioInteres.Cursor = System.Windows.Forms.Cursors.SizeAll;
-            this.labeSitioInteres.Font = new System.Drawing.Font("News701 BT", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labeSitioInteres.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.labeSitioInteres.Location = new System.Drawing.Point(218, 45);
-            this.labeSitioInteres.Name = "labeSitioInteres";
-            this.labeSitioInteres.Size = new System.Drawing.Size(357, 39);
-            this.labeSitioInteres.TabIndex = 0;
-            this.labeSitioInteres.Text = "SITIO DE INTERÉS";
+            this.button2.Font = new System.Drawing.Font("Lucida Fax", 19.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(60, 210);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(334, 95);
+            this.button2.TabIndex = 58;
+            this.button2.Text = "Registrar Sitio de interés";
+            this.button2.UseVisualStyleBackColor = true;
             // 
-            // btnRegistrarSitioInteres
+            // button1
             // 
-            this.btnRegistrarSitioInteres.AutoSize = true;
-            this.btnRegistrarSitioInteres.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnRegistrarSitioInteres.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btnRegistrarSitioInteres.Font = new System.Drawing.Font("News701 BT", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegistrarSitioInteres.Location = new System.Drawing.Point(50, 155);
-            this.btnRegistrarSitioInteres.Name = "btnRegistrarSitioInteres";
-            this.btnRegistrarSitioInteres.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnRegistrarSitioInteres.Size = new System.Drawing.Size(233, 58);
-            this.btnRegistrarSitioInteres.TabIndex = 1;
-            this.btnRegistrarSitioInteres.Text = "REGISTRAR SITIO DE INTERÉS";
-            this.btnRegistrarSitioInteres.UseVisualStyleBackColor = true;
+            this.button1.Font = new System.Drawing.Font("Lucida Fax", 19.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(614, 210);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(363, 95);
+            this.button1.TabIndex = 57;
+            this.button1.Text = "Modificar Sitio de interés";
+            this.button1.UseVisualStyleBackColor = true;
             // 
-            // btnModificarSitioInteres
+            // bt2
             // 
-            this.btnModificarSitioInteres.AutoSize = true;
-            this.btnModificarSitioInteres.Font = new System.Drawing.Font("News701 BT", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnModificarSitioInteres.Location = new System.Drawing.Point(494, 155);
-            this.btnModificarSitioInteres.Name = "btnModificarSitioInteres";
-            this.btnModificarSitioInteres.Size = new System.Drawing.Size(233, 58);
-            this.btnModificarSitioInteres.TabIndex = 2;
-            this.btnModificarSitioInteres.Text = "MODIFICAR SITIO DE INTERÉS";
-            this.btnModificarSitioInteres.UseVisualStyleBackColor = true;
+            this.bt2.Font = new System.Drawing.Font("Lucida Fax", 19.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt2.Location = new System.Drawing.Point(348, 392);
+            this.bt2.Margin = new System.Windows.Forms.Padding(4);
+            this.bt2.Name = "bt2";
+            this.bt2.Size = new System.Drawing.Size(231, 62);
+            this.bt2.TabIndex = 56;
+            this.bt2.Text = "Regresar";
+            this.bt2.UseVisualStyleBackColor = true;
             // 
-            // btnRegresarInicioSI
+            // label1Bnaco
             // 
-            this.btnRegresarInicioSI.AutoSize = true;
-            this.btnRegresarInicioSI.Font = new System.Drawing.Font("News701 BT", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegresarInicioSI.Location = new System.Drawing.Point(677, 384);
-            this.btnRegresarInicioSI.Name = "btnRegresarInicioSI";
-            this.btnRegresarInicioSI.Size = new System.Drawing.Size(99, 41);
-            this.btnRegresarInicioSI.TabIndex = 3;
-            this.btnRegresarInicioSI.Text = "Regresar";
-            this.btnRegresarInicioSI.UseVisualStyleBackColor = true;
+            this.label1Bnaco.AutoSize = true;
+            this.label1Bnaco.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label1Bnaco.Font = new System.Drawing.Font("Monotype Corsiva", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1Bnaco.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label1Bnaco.Location = new System.Drawing.Point(280, 41);
+            this.label1Bnaco.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1Bnaco.Name = "label1Bnaco";
+            this.label1Bnaco.Size = new System.Drawing.Size(470, 97);
+            this.label1Bnaco.TabIndex = 54;
+            this.label1Bnaco.Text = "Sitio de Interés";
+            // 
+            // pictureBox1Fondo
+            // 
+            this.pictureBox1Fondo.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1Fondo.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1Fondo.Image")));
+            this.pictureBox1Fondo.Location = new System.Drawing.Point(-26, -9);
+            this.pictureBox1Fondo.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1Fondo.Name = "pictureBox1Fondo";
+            this.pictureBox1Fondo.Size = new System.Drawing.Size(1119, 572);
+            this.pictureBox1Fondo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1Fondo.TabIndex = 55;
+            this.pictureBox1Fondo.TabStop = false;
             // 
             // MantenedorSitiosInteres
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btnRegresarInicioSI);
-            this.Controls.Add(this.btnModificarSitioInteres);
-            this.Controls.Add(this.btnRegistrarSitioInteres);
-            this.Controls.Add(this.labeSitioInteres);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.bt2);
+            this.Controls.Add(this.label1Bnaco);
+            this.Controls.Add(this.pictureBox1Fondo);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "MantenedorSitiosInteres";
             this.Text = "MantenedorSitiosInteres";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1Fondo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -103,9 +117,10 @@ namespace ProyectoAltavista
 
         #endregion
 
-        private System.Windows.Forms.Label labeSitioInteres;
-        private System.Windows.Forms.Button btnRegistrarSitioInteres;
-        private System.Windows.Forms.Button btnModificarSitioInteres;
-        private System.Windows.Forms.Button btnRegresarInicioSI;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button bt2;
+        private System.Windows.Forms.Label label1Bnaco;
+        private System.Windows.Forms.PictureBox pictureBox1Fondo;
     }
 }

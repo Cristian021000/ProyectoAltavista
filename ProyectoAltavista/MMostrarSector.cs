@@ -16,5 +16,10 @@ namespace ProyectoAltavista
         {
             InitializeComponent();
         }
+
+        private void btnSalirMostrarSector_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -61,5 +61,10 @@ namespace ProyectoAltavista
         {
 
         }
+
+        private void groupBoxDvi_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
