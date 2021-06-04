@@ -130,6 +130,24 @@
     <Compile Include="MenuVentas.Designer.cs">
       <DependentUpon>MenuVentas.cs</DependentUpon>
     </Compile>
+    <Compile Include="MModificarCasa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MModificarCasa.designer.cs">
+      <DependentUpon>MModificarCasa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MModificarDepartamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MModificarDepartamento.designer.cs">
+      <DependentUpon>MModificarDepartamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MModificarTerreno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MModificarTerreno.designer.cs">
+      <DependentUpon>MModificarTerreno.cs</DependentUpon>
+    </Compile>
     <Compile Include="MMostrarCita.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -378,6 +396,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MenuVentas.resx">
       <DependentUpon>MenuVentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MModificarCasa.resx">
+      <DependentUpon>MModificarCasa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MModificarDepartamento.resx">
+      <DependentUpon>MModificarDepartamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MModificarTerreno.resx">
+      <DependentUpon>MModificarTerreno.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MMostrarCita.resx">
       <DependentUpon>MMostrarCita.cs</DependentUpon>
