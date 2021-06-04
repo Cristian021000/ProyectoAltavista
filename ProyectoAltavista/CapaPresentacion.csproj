@@ -82,6 +82,24 @@
     <Compile Include="ContratoInmueble.designer.cs">
       <DependentUpon>ContratoInmueble.cs</DependentUpon>
     </Compile>
+    <Compile Include="Inmueble.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inmueble.Designer.cs">
+      <DependentUpon>Inmueble.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InmuebleMantenedorCasa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InmuebleMantenedorCasa.Designer.cs">
+      <DependentUpon>InmuebleMantenedorCasa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InmuebleSetorRegistro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InmuebleSetorRegistro.Designer.cs">
+      <DependentUpon>InmuebleSetorRegistro.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,6 +111,12 @@
     </Compile>
     <Compile Include="MantenedorBanco.Designer.cs">
       <DependentUpon>MantenedorBanco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MantenedorDeInmueble.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MantenedorDeInmueble.Designer.cs">
+      <DependentUpon>MantenedorDeInmueble.cs</DependentUpon>
     </Compile>
     <Compile Include="MCita.cs">
       <SubType>Form</SubType>
@@ -215,6 +239,12 @@
     <Compile Include="ModificarInhabilitarCliPropietario.Designer.cs">
       <DependentUpon>ModificarInhabilitarCliPropietario.cs</DependentUpon>
     </Compile>
+    <Compile Include="InmuebleMostrarSector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InmuebleMostrarSector.Designer.cs">
+      <DependentUpon>InmuebleMostrarSector.cs</DependentUpon>
+    </Compile>
     <Compile Include="MRegistrarCita.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -232,6 +262,12 @@
     </Compile>
     <Compile Include="ConsultarSitiosInteres.designer.cs">
       <DependentUpon>ConsultarSitiosInteres.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegistarDepartamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistarDepartamento.Designer.cs">
+      <DependentUpon>RegistarDepartamento.cs</DependentUpon>
     </Compile>
     <Compile Include="RegistrarAgente.cs">
       <SubType>Form</SubType>
@@ -270,6 +306,12 @@
     </Compile>
     <Compile Include="RegistrarContratoInmueble.designer.cs">
       <DependentUpon>RegistrarContratoInmueble.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrarTerreno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistrarTerreno.Designer.cs">
+      <DependentUpon>RegistrarTerreno.cs</DependentUpon>
     </Compile>
     <Compile Include="RegistrarVentaPropios.cs">
       <SubType>Form</SubType>
@@ -313,11 +355,23 @@
     <EmbeddedResource Include="ContratoInmueble.resx">
       <DependentUpon>ContratoInmueble.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Inmueble.resx">
+      <DependentUpon>Inmueble.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InmuebleMantenedorCasa.resx">
+      <DependentUpon>InmuebleMantenedorCasa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InmuebleSetorRegistro.resx">
+      <DependentUpon>InmuebleSetorRegistro.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MantenedorBanco.resx">
       <DependentUpon>MantenedorBanco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MantenedorDeInmueble.resx">
+      <DependentUpon>MantenedorDeInmueble.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MCita.resx">
       <DependentUpon>MCita.cs</DependentUpon>
@@ -382,6 +436,9 @@
     <EmbeddedResource Include="ModificarInhabilitarCliPropietario.resx">
       <DependentUpon>ModificarInhabilitarCliPropietario.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="InmuebleMostrarSector.resx">
+      <DependentUpon>InmuebleMostrarSector.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MRegistrarCita.resx">
       <DependentUpon>MRegistrarCita.cs</DependentUpon>
     </EmbeddedResource>
@@ -400,6 +457,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="RegistarDepartamento.resx">
+      <DependentUpon>RegistarDepartamento.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="RegistrarAgente.resx">
       <DependentUpon>RegistrarAgente.cs</DependentUpon>
     </EmbeddedResource>
@@ -414,6 +474,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="RegistrarContratoInmueble.resx">
       <DependentUpon>RegistrarContratoInmueble.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistrarTerreno.resx">
+      <DependentUpon>RegistrarTerreno.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RegistrarVentaPropios.resx">
       <DependentUpon>RegistrarVentaPropios.cs</DependentUpon>
