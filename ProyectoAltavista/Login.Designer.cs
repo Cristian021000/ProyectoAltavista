@@ -29,6 +29,7 @@ namespace ProyectoAltavista
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.btnAceptarLogin = new System.Windows.Forms.Button();
             this.lbLogin = new System.Windows.Forms.Label();
             this.btnCancelarLogin = new System.Windows.Forms.Button();
@@ -36,6 +37,8 @@ namespace ProyectoAltavista
             this.txtNombreDeUsuario = new System.Windows.Forms.TextBox();
             this.lbContraseña = new System.Windows.Forms.Label();
             this.txtContraseña = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnAceptarLogin
@@ -103,6 +106,17 @@ namespace ProyectoAltavista
             this.txtContraseña.Size = new System.Drawing.Size(348, 20);
             this.txtContraseña.TabIndex = 6;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(800, 450);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -115,8 +129,10 @@ namespace ProyectoAltavista
             this.Controls.Add(this.btnCancelarLogin);
             this.Controls.Add(this.lbLogin);
             this.Controls.Add(this.btnAceptarLogin);
+            this.Controls.Add(this.pictureBox1);
             this.Name = "Login";
             this.Text = "Login";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -131,5 +147,6 @@ namespace ProyectoAltavista
         private System.Windows.Forms.TextBox txtNombreDeUsuario;
         private System.Windows.Forms.Label lbContraseña;
         private System.Windows.Forms.TextBox txtContraseña;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

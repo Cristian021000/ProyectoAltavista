@@ -29,6 +29,7 @@ namespace ProyectoAltavista
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MRegistrarCita));
             this.label1 = new System.Windows.Forms.Label();
             this.lbFechaCita = new System.Windows.Forms.Label();
             this.lbEstadoCita = new System.Windows.Forms.Label();
@@ -40,6 +41,8 @@ namespace ProyectoAltavista
             this.txtIdDelInmuebleRegistrarCita = new System.Windows.Forms.TextBox();
             this.txtEstadoCita = new System.Windows.Forms.TextBox();
             this.txtFechaCita = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -140,6 +143,17 @@ namespace ProyectoAltavista
             this.txtFechaCita.Size = new System.Drawing.Size(447, 20);
             this.txtFechaCita.TabIndex = 10;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(800, 450);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 11;
+            this.pictureBox1.TabStop = false;
+            // 
             // MRegistrarCita
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -156,8 +170,10 @@ namespace ProyectoAltavista
             this.Controls.Add(this.lbEstadoCita);
             this.Controls.Add(this.lbFechaCita);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.pictureBox1);
             this.Name = "MRegistrarCita";
             this.Text = "MRegistrarCita";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -176,5 +192,6 @@ namespace ProyectoAltavista
         private System.Windows.Forms.TextBox txtIdDelInmuebleRegistrarCita;
         private System.Windows.Forms.TextBox txtEstadoCita;
         private System.Windows.Forms.TextBox txtFechaCita;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

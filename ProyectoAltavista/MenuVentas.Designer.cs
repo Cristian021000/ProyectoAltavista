@@ -48,24 +48,27 @@ namespace ProyectoAltavista
             // 
             // btVentaPropio
             // 
-            this.btVentaPropio.Location = new System.Drawing.Point(151, 144);
+            this.btVentaPropio.Font = new System.Drawing.Font("Lucida Fax", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btVentaPropio.Location = new System.Drawing.Point(152, 131);
             this.btVentaPropio.Name = "btVentaPropio";
-            this.btVentaPropio.Size = new System.Drawing.Size(125, 70);
+            this.btVentaPropio.Size = new System.Drawing.Size(160, 93);
             this.btVentaPropio.TabIndex = 1;
             this.btVentaPropio.Text = "Venta de inmuebles propios";
             this.btVentaPropio.UseVisualStyleBackColor = true;
             // 
             // btVentaTerceros
             // 
-            this.btVentaTerceros.Location = new System.Drawing.Point(517, 144);
+            this.btVentaTerceros.Font = new System.Drawing.Font("Lucida Fax", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btVentaTerceros.Location = new System.Drawing.Point(501, 131);
             this.btVentaTerceros.Name = "btVentaTerceros";
-            this.btVentaTerceros.Size = new System.Drawing.Size(125, 70);
+            this.btVentaTerceros.Size = new System.Drawing.Size(172, 93);
             this.btVentaTerceros.TabIndex = 2;
             this.btVentaTerceros.Text = "Venta de inmuebles de terceros";
             this.btVentaTerceros.UseVisualStyleBackColor = true;
             // 
             // btSalir
             // 
+            this.btSalir.Font = new System.Drawing.Font("Lucida Fax", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btSalir.Location = new System.Drawing.Point(630, 370);
             this.btSalir.Name = "btSalir";
             this.btSalir.Size = new System.Drawing.Size(120, 39);
@@ -75,6 +78,7 @@ namespace ProyectoAltavista
             // 
             // btConsultarVenta
             // 
+            this.btConsultarVenta.Font = new System.Drawing.Font("Lucida Fax", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btConsultarVenta.Location = new System.Drawing.Point(329, 263);
             this.btConsultarVenta.Name = "btConsultarVenta";
             this.btConsultarVenta.Size = new System.Drawing.Size(145, 70);

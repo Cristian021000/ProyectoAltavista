@@ -29,10 +29,13 @@ namespace ProyectoAltavista
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ContratoInmueble));
             this.labelContratoInmueblePropietario = new System.Windows.Forms.Label();
             this.btnRegistrarContratoInmueble = new System.Windows.Forms.Button();
             this.btnListarContratoInmueble = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // labelContratoInmueblePropietario
@@ -75,6 +78,17 @@ namespace ProyectoAltavista
             this.button1.Text = "Regresar";
             this.button1.UseVisualStyleBackColor = true;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(800, 450);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
+            // 
             // ContratoInmueble
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -84,8 +98,10 @@ namespace ProyectoAltavista
             this.Controls.Add(this.btnListarContratoInmueble);
             this.Controls.Add(this.btnRegistrarContratoInmueble);
             this.Controls.Add(this.labelContratoInmueblePropietario);
+            this.Controls.Add(this.pictureBox1);
             this.Name = "ContratoInmueble";
             this.Text = "ContratoInmueble";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -97,5 +113,6 @@ namespace ProyectoAltavista
         private System.Windows.Forms.Button btnRegistrarContratoInmueble;
         private System.Windows.Forms.Button btnListarContratoInmueble;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

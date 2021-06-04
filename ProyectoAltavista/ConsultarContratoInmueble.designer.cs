@@ -29,6 +29,7 @@ namespace ProyectoAltavista
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConsultarContratoInmueble));
             this.dataGridDatosCI = new System.Windows.Forms.DataGridView();
             this.lbDatosContrato = new System.Windows.Forms.Label();
             this.labelIngresoDNIDCI = new System.Windows.Forms.Label();
@@ -36,7 +37,9 @@ namespace ProyectoAltavista
             this.btAceptar = new System.Windows.Forms.Button();
             this.btnInhabilitarDCI = new System.Windows.Forms.Button();
             this.btnSalirDCI = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridDatosCI)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridDatosCI
@@ -104,6 +107,17 @@ namespace ProyectoAltavista
             this.btnSalirDCI.Text = "Salir";
             this.btnSalirDCI.UseVisualStyleBackColor = true;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(800, 450);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
+            // 
             // ConsultarContratoInmueble
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -116,9 +130,11 @@ namespace ProyectoAltavista
             this.Controls.Add(this.labelIngresoDNIDCI);
             this.Controls.Add(this.lbDatosContrato);
             this.Controls.Add(this.dataGridDatosCI);
+            this.Controls.Add(this.pictureBox1);
             this.Name = "ConsultarContratoInmueble";
             this.Text = "ConsultarContratoInmueble";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridDatosCI)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -133,5 +149,6 @@ namespace ProyectoAltavista
         private System.Windows.Forms.Button btAceptar;
         private System.Windows.Forms.Button btnInhabilitarDCI;
         private System.Windows.Forms.Button btnSalirDCI;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
