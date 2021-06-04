@@ -29,6 +29,7 @@ namespace ProyectoAltavista
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegistrarContratoInmueble));
             this.labelRegistrarContratoInmueble = new System.Windows.Forms.Label();
             this.labelFechaContratoRCI = new System.Windows.Forms.Label();
             this.dateTimeRCI = new System.Windows.Forms.DateTimePicker();
@@ -41,6 +42,8 @@ namespace ProyectoAltavista
             this.btnCancerlaRCI = new System.Windows.Forms.Button();
             this.btnAceptarRCI = new System.Windows.Forms.Button();
             this.checkBoxHabilitarRCI = new System.Windows.Forms.CheckBox();
+            this.pictureBox1Fondo = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1Fondo)).BeginInit();
             this.SuspendLayout();
             // 
             // labelRegistrarContratoInmueble
@@ -154,6 +157,17 @@ namespace ProyectoAltavista
             this.checkBoxHabilitarRCI.Text = "Habilitar contrato inmueble";
             this.checkBoxHabilitarRCI.UseVisualStyleBackColor = true;
             // 
+            // pictureBox1Fondo
+            // 
+            this.pictureBox1Fondo.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1Fondo.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1Fondo.Image")));
+            this.pictureBox1Fondo.Location = new System.Drawing.Point(-22, -11);
+            this.pictureBox1Fondo.Name = "pictureBox1Fondo";
+            this.pictureBox1Fondo.Size = new System.Drawing.Size(839, 465);
+            this.pictureBox1Fondo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1Fondo.TabIndex = 29;
+            this.pictureBox1Fondo.TabStop = false;
+            // 
             // RegistrarContratoInmueble
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -171,8 +185,10 @@ namespace ProyectoAltavista
             this.Controls.Add(this.dateTimeRCI);
             this.Controls.Add(this.labelFechaContratoRCI);
             this.Controls.Add(this.labelRegistrarContratoInmueble);
+            this.Controls.Add(this.pictureBox1Fondo);
             this.Name = "RegistrarContratoInmueble";
             this.Text = "RegistrarContratoInmueble";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1Fondo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -192,5 +208,6 @@ namespace ProyectoAltavista
         private System.Windows.Forms.Button btnCancerlaRCI;
         private System.Windows.Forms.Button btnAceptarRCI;
         private System.Windows.Forms.CheckBox checkBoxHabilitarRCI;
+        private System.Windows.Forms.PictureBox pictureBox1Fondo;
     }
 }

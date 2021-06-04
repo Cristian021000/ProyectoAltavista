@@ -33,62 +33,57 @@ namespace ProyectoAltavista
             this.txtModificarDireccionSI = new System.Windows.Forms.TextBox();
             this.txtModificarNombreSI = new System.Windows.Forms.TextBox();
             this.txtCodigoRegistrarSI = new System.Windows.Forms.TextBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.checkBoxHabilitar = new System.Windows.Forms.CheckBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.bt2Agregar = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnAgregar = new System.Windows.Forms.Button();
+            this.btnCancelar = new System.Windows.Forms.Button();
             this.pictureBox1Fondo = new System.Windows.Forms.PictureBox();
-            this.label1Bnaco = new System.Windows.Forms.Label();
+            this.labelRegistrarReseñaSitioInteres = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1Fondo)).BeginInit();
             this.SuspendLayout();
             // 
             // txtModificarDireccionSI
             // 
-            this.txtModificarDireccionSI.Location = new System.Drawing.Point(28, 411);
-            this.txtModificarDireccionSI.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtModificarDireccionSI.Location = new System.Drawing.Point(21, 334);
             this.txtModificarDireccionSI.Name = "txtModificarDireccionSI";
-            this.txtModificarDireccionSI.Size = new System.Drawing.Size(484, 22);
+            this.txtModificarDireccionSI.Size = new System.Drawing.Size(364, 20);
             this.txtModificarDireccionSI.TabIndex = 13;
             // 
             // txtModificarNombreSI
             // 
-            this.txtModificarNombreSI.Location = new System.Drawing.Point(28, 274);
-            this.txtModificarNombreSI.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtModificarNombreSI.Location = new System.Drawing.Point(21, 223);
             this.txtModificarNombreSI.Name = "txtModificarNombreSI";
-            this.txtModificarNombreSI.Size = new System.Drawing.Size(484, 22);
+            this.txtModificarNombreSI.Size = new System.Drawing.Size(364, 20);
             this.txtModificarNombreSI.TabIndex = 14;
             // 
             // txtCodigoRegistrarSI
             // 
-            this.txtCodigoRegistrarSI.Location = new System.Drawing.Point(28, 139);
-            this.txtCodigoRegistrarSI.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCodigoRegistrarSI.Location = new System.Drawing.Point(21, 113);
             this.txtCodigoRegistrarSI.Name = "txtCodigoRegistrarSI";
             this.txtCodigoRegistrarSI.ReadOnly = true;
-            this.txtCodigoRegistrarSI.Size = new System.Drawing.Size(173, 22);
+            this.txtCodigoRegistrarSI.Size = new System.Drawing.Size(131, 20);
             this.txtCodigoRegistrarSI.TabIndex = 15;
             // 
-            // checkBox1
+            // checkBoxHabilitar
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.Location = new System.Drawing.Point(208, 478);
-            this.checkBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(104, 29);
-            this.checkBox1.TabIndex = 17;
-            this.checkBox1.Text = "Habilitar";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBoxHabilitar.AutoSize = true;
+            this.checkBoxHabilitar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxHabilitar.Location = new System.Drawing.Point(156, 388);
+            this.checkBoxHabilitar.Name = "checkBoxHabilitar";
+            this.checkBoxHabilitar.Size = new System.Drawing.Size(86, 24);
+            this.checkBoxHabilitar.TabIndex = 17;
+            this.checkBoxHabilitar.Text = "Habilitar";
+            this.checkBoxHabilitar.UseVisualStyleBackColor = true;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(23, 98);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(17, 80);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(95, 27);
+            this.label2.Size = new System.Drawing.Size(76, 22);
             this.label2.TabIndex = 30;
             this.label2.Text = "Codigo";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -97,10 +92,9 @@ namespace ProyectoAltavista
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(23, 357);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(17, 290);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(355, 27);
+            this.label3.Size = new System.Drawing.Size(276, 22);
             this.label3.TabIndex = 32;
             this.label3.Text = "Dirección del Sitio de Interés";
             // 
@@ -108,77 +102,71 @@ namespace ProyectoAltavista
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(23, 226);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(17, 184);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(337, 27);
+            this.label5.Size = new System.Drawing.Size(261, 22);
             this.label5.TabIndex = 31;
             this.label5.Text = "Nombre del Sitio de Interés";
             // 
-            // bt2Agregar
+            // btnAgregar
             // 
-            this.bt2Agregar.Font = new System.Drawing.Font("Lucida Fax", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt2Agregar.Location = new System.Drawing.Point(775, 183);
-            this.bt2Agregar.Margin = new System.Windows.Forms.Padding(4);
-            this.bt2Agregar.Name = "bt2Agregar";
-            this.bt2Agregar.Size = new System.Drawing.Size(213, 60);
-            this.bt2Agregar.TabIndex = 35;
-            this.bt2Agregar.Text = "Registrar";
-            this.bt2Agregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Font = new System.Drawing.Font("Lucida Fax", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregar.Location = new System.Drawing.Point(581, 149);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(160, 49);
+            this.btnAgregar.TabIndex = 35;
+            this.btnAgregar.Text = "Registrar";
+            this.btnAgregar.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btnCancelar
             // 
-            this.button1.Font = new System.Drawing.Font("Lucida Fax", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(775, 357);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(213, 60);
-            this.button1.TabIndex = 36;
-            this.button1.Text = "Cancelar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnCancelar.Font = new System.Drawing.Font("Lucida Fax", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelar.Location = new System.Drawing.Point(581, 290);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(160, 49);
+            this.btnCancelar.TabIndex = 36;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = true;
             // 
             // pictureBox1Fondo
             // 
             this.pictureBox1Fondo.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1Fondo.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1Fondo.Image")));
-            this.pictureBox1Fondo.Location = new System.Drawing.Point(-52, -16);
-            this.pictureBox1Fondo.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1Fondo.Location = new System.Drawing.Point(-39, -13);
             this.pictureBox1Fondo.Name = "pictureBox1Fondo";
-            this.pictureBox1Fondo.Size = new System.Drawing.Size(1119, 572);
+            this.pictureBox1Fondo.Size = new System.Drawing.Size(839, 465);
             this.pictureBox1Fondo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1Fondo.TabIndex = 28;
             this.pictureBox1Fondo.TabStop = false;
             // 
-            // label1Bnaco
+            // labelRegistrarReseñaSitioInteres
             // 
-            this.label1Bnaco.AutoSize = true;
-            this.label1Bnaco.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.label1Bnaco.Font = new System.Drawing.Font("Monotype Corsiva", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1Bnaco.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1Bnaco.Location = new System.Drawing.Point(138, 26);
-            this.label1Bnaco.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1Bnaco.Name = "label1Bnaco";
-            this.label1Bnaco.Size = new System.Drawing.Size(793, 72);
-            this.label1Bnaco.TabIndex = 37;
-            this.label1Bnaco.Text = "Registrar Reseñas de Sitio de Interés";
+            this.labelRegistrarReseñaSitioInteres.AutoSize = true;
+            this.labelRegistrarReseñaSitioInteres.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.labelRegistrarReseñaSitioInteres.Font = new System.Drawing.Font("Monotype Corsiva", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelRegistrarReseñaSitioInteres.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.labelRegistrarReseñaSitioInteres.Location = new System.Drawing.Point(104, 21);
+            this.labelRegistrarReseñaSitioInteres.Name = "labelRegistrarReseñaSitioInteres";
+            this.labelRegistrarReseñaSitioInteres.Size = new System.Drawing.Size(637, 57);
+            this.labelRegistrarReseñaSitioInteres.TabIndex = 37;
+            this.labelRegistrarReseñaSitioInteres.Text = "Registrar Reseñas de Sitio de Interés";
             // 
             // MRegistrarSitioInteres
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
-            this.Controls.Add(this.label1Bnaco);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.bt2Agregar);
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.labelRegistrarReseñaSitioInteres);
+            this.Controls.Add(this.btnCancelar);
+            this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.checkBoxHabilitar);
             this.Controls.Add(this.txtCodigoRegistrarSI);
             this.Controls.Add(this.txtModificarNombreSI);
             this.Controls.Add(this.txtModificarDireccionSI);
             this.Controls.Add(this.pictureBox1Fondo);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "MRegistrarSitioInteres";
             this.Text = "MRegistrarSitioInteres";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1Fondo)).EndInit();
@@ -191,13 +179,13 @@ namespace ProyectoAltavista
         private System.Windows.Forms.TextBox txtModificarDireccionSI;
         private System.Windows.Forms.TextBox txtModificarNombreSI;
         private System.Windows.Forms.TextBox txtCodigoRegistrarSI;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox checkBoxHabilitar;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button bt2Agregar;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnAgregar;
+        private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.PictureBox pictureBox1Fondo;
-        private System.Windows.Forms.Label label1Bnaco;
+        private System.Windows.Forms.Label labelRegistrarReseñaSitioInteres;
     }
 }

@@ -29,6 +29,7 @@ namespace ProyectoAltavista
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MMostrarCita));
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.lbDniClienteCita = new System.Windows.Forms.Label();
@@ -37,7 +38,9 @@ namespace ProyectoAltavista
             this.btnMostrarComoRealizado = new System.Windows.Forms.Button();
             this.btnInhabilitarMostrarCita = new System.Windows.Forms.Button();
             this.btnBuscarMostrarCita = new System.Windows.Forms.Button();
+            this.pictureBox1Fondo = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1Fondo)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -115,6 +118,17 @@ namespace ProyectoAltavista
             this.btnBuscarMostrarCita.Text = "Buscar";
             this.btnBuscarMostrarCita.UseVisualStyleBackColor = true;
             // 
+            // pictureBox1Fondo
+            // 
+            this.pictureBox1Fondo.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1Fondo.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1Fondo.Image")));
+            this.pictureBox1Fondo.Location = new System.Drawing.Point(-19, -19);
+            this.pictureBox1Fondo.Name = "pictureBox1Fondo";
+            this.pictureBox1Fondo.Size = new System.Drawing.Size(839, 493);
+            this.pictureBox1Fondo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1Fondo.TabIndex = 24;
+            this.pictureBox1Fondo.TabStop = false;
+            // 
             // MMostrarCita
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -128,9 +142,11 @@ namespace ProyectoAltavista
             this.Controls.Add(this.lbDniClienteCita);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.pictureBox1Fondo);
             this.Name = "MMostrarCita";
             this.Text = "MMostrarCita";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1Fondo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -146,5 +162,6 @@ namespace ProyectoAltavista
         private System.Windows.Forms.Button btnMostrarComoRealizado;
         private System.Windows.Forms.Button btnInhabilitarMostrarCita;
         private System.Windows.Forms.Button btnBuscarMostrarCita;
+        private System.Windows.Forms.PictureBox pictureBox1Fondo;
     }
 }

@@ -40,12 +40,14 @@ namespace ProyectoAltavista
             this.txtIdSitioInteress = new System.Windows.Forms.TextBox();
             this.LbInmuebles = new System.Windows.Forms.Label();
             this.BtRegistrarSiti = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewRegistrarSitioInmueble = new System.Windows.Forms.DataGridView();
             this.InmueblesVista = new System.Windows.Forms.DataGridView();
             this.SitioDeInteresVista = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.pictureBox1Fondo = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewRegistrarSitioInmueble)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.InmueblesVista)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SitioDeInteresVista)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1Fondo)).BeginInit();
             this.SuspendLayout();
             // 
             // txtIdInmuebleC
@@ -146,13 +148,13 @@ namespace ProyectoAltavista
             this.BtRegistrarSiti.Text = "Registrar";
             this.BtRegistrarSiti.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
+            // dataGridViewRegistrarSitioInmueble
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(506, 94);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(235, 268);
-            this.dataGridView1.TabIndex = 27;
+            this.dataGridViewRegistrarSitioInmueble.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewRegistrarSitioInmueble.Location = new System.Drawing.Point(506, 94);
+            this.dataGridViewRegistrarSitioInmueble.Name = "dataGridViewRegistrarSitioInmueble";
+            this.dataGridViewRegistrarSitioInmueble.Size = new System.Drawing.Size(235, 268);
+            this.dataGridViewRegistrarSitioInmueble.TabIndex = 27;
             // 
             // InmueblesVista
             // 
@@ -170,6 +172,17 @@ namespace ProyectoAltavista
             this.SitioDeInteresVista.Size = new System.Drawing.Size(450, 104);
             this.SitioDeInteresVista.TabIndex = 29;
             // 
+            // pictureBox1Fondo
+            // 
+            this.pictureBox1Fondo.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1Fondo.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1Fondo.Image")));
+            this.pictureBox1Fondo.Location = new System.Drawing.Point(-11, -3);
+            this.pictureBox1Fondo.Name = "pictureBox1Fondo";
+            this.pictureBox1Fondo.Size = new System.Drawing.Size(839, 465);
+            this.pictureBox1Fondo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1Fondo.TabIndex = 30;
+            this.pictureBox1Fondo.TabStop = false;
+            // 
             // RegistroSitioInmueble
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -177,7 +190,7 @@ namespace ProyectoAltavista
             this.ClientSize = new System.Drawing.Size(816, 459);
             this.Controls.Add(this.SitioDeInteresVista);
             this.Controls.Add(this.InmueblesVista);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dataGridViewRegistrarSitioInmueble);
             this.Controls.Add(this.BtRegistrarSiti);
             this.Controls.Add(this.LbInmuebles);
             this.Controls.Add(this.txtIdSitioInteress);
@@ -188,12 +201,14 @@ namespace ProyectoAltavista
             this.Controls.Add(this.LbSitioine);
             this.Controls.Add(this.LbSitioDeInteres);
             this.Controls.Add(this.labelModificarSitioInteres);
+            this.Controls.Add(this.pictureBox1Fondo);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "RegistroSitioInmueble";
             this.Text = "RegistroSitioInmueble";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewRegistrarSitioInmueble)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.InmueblesVista)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SitioDeInteresVista)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1Fondo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -211,8 +226,9 @@ namespace ProyectoAltavista
         private System.Windows.Forms.TextBox txtIdSitioInteress;
         private System.Windows.Forms.Label LbInmuebles;
         private System.Windows.Forms.Button BtRegistrarSiti;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridViewRegistrarSitioInmueble;
         private System.Windows.Forms.DataGridView InmueblesVista;
         private System.Windows.Forms.DataGridView SitioDeInteresVista;
+        private System.Windows.Forms.PictureBox pictureBox1Fondo;
     }
 }

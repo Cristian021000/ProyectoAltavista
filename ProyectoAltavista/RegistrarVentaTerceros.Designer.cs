@@ -29,7 +29,7 @@ namespace ProyectoAltavista
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegistrarVentaTerceros));
             this.lbFecha = new System.Windows.Forms.Label();
             this.lbPrecio = new System.Windows.Forms.Label();
             this.lbIdContrato = new System.Windows.Forms.Label();
@@ -46,18 +46,12 @@ namespace ProyectoAltavista
             this.txtIdInmueble = new System.Windows.Forms.TextBox();
             this.txtIdBanco = new System.Windows.Forms.TextBox();
             this.txtDniCliente = new System.Windows.Forms.TextBox();
-            this.btRegistrar = new System.Windows.Forms.Button();
-            this.btRegresar = new System.Windows.Forms.Button();
+            this.labelRegistrarVenta = new System.Windows.Forms.Label();
+            this.btnAceptar = new System.Windows.Forms.Button();
+            this.btnCancelar = new System.Windows.Forms.Button();
+            this.pictureBox1Fondo = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1Fondo)).BeginInit();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(360, 39);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(132, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Registro venta de terceros";
             // 
             // lbFecha
             // 
@@ -187,31 +181,55 @@ namespace ProyectoAltavista
             this.txtDniCliente.Size = new System.Drawing.Size(274, 20);
             this.txtDniCliente.TabIndex = 16;
             // 
-            // btRegistrar
+            // labelRegistrarVenta
             // 
-            this.btRegistrar.Location = new System.Drawing.Point(573, 140);
-            this.btRegistrar.Name = "btRegistrar";
-            this.btRegistrar.Size = new System.Drawing.Size(141, 77);
-            this.btRegistrar.TabIndex = 17;
-            this.btRegistrar.Text = "Registrar";
-            this.btRegistrar.UseVisualStyleBackColor = true;
+            this.labelRegistrarVenta.AutoSize = true;
+            this.labelRegistrarVenta.Font = new System.Drawing.Font("Monotype Corsiva", 35.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelRegistrarVenta.Location = new System.Drawing.Point(215, 9);
+            this.labelRegistrarVenta.Name = "labelRegistrarVenta";
+            this.labelRegistrarVenta.Size = new System.Drawing.Size(433, 56);
+            this.labelRegistrarVenta.TabIndex = 19;
+            this.labelRegistrarVenta.Text = "Registrar Venta Terceros";
             // 
-            // btRegresar
+            // btnAceptar
             // 
-            this.btRegresar.Location = new System.Drawing.Point(573, 272);
-            this.btRegresar.Name = "btRegresar";
-            this.btRegresar.Size = new System.Drawing.Size(141, 77);
-            this.btRegresar.TabIndex = 18;
-            this.btRegresar.Text = "Regresar";
-            this.btRegresar.UseVisualStyleBackColor = true;
+            this.btnAceptar.Font = new System.Drawing.Font("Lucida Fax", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAceptar.Location = new System.Drawing.Point(645, 160);
+            this.btnAceptar.Name = "btnAceptar";
+            this.btnAceptar.Size = new System.Drawing.Size(111, 32);
+            this.btnAceptar.TabIndex = 21;
+            this.btnAceptar.Text = "Aceptar";
+            this.btnAceptar.UseVisualStyleBackColor = true;
+            // 
+            // btnCancelar
+            // 
+            this.btnCancelar.Font = new System.Drawing.Font("Lucida Fax", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelar.Location = new System.Drawing.Point(645, 256);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(111, 32);
+            this.btnCancelar.TabIndex = 20;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox1Fondo
+            // 
+            this.pictureBox1Fondo.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1Fondo.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1Fondo.Image")));
+            this.pictureBox1Fondo.Location = new System.Drawing.Point(-19, -7);
+            this.pictureBox1Fondo.Name = "pictureBox1Fondo";
+            this.pictureBox1Fondo.Size = new System.Drawing.Size(839, 465);
+            this.pictureBox1Fondo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1Fondo.TabIndex = 30;
+            this.pictureBox1Fondo.TabStop = false;
             // 
             // RegistrarVentaTerceros
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btRegresar);
-            this.Controls.Add(this.btRegistrar);
+            this.Controls.Add(this.btnAceptar);
+            this.Controls.Add(this.btnCancelar);
+            this.Controls.Add(this.labelRegistrarVenta);
             this.Controls.Add(this.txtDniCliente);
             this.Controls.Add(this.txtIdBanco);
             this.Controls.Add(this.txtIdInmueble);
@@ -228,17 +246,16 @@ namespace ProyectoAltavista
             this.Controls.Add(this.lbIdContrato);
             this.Controls.Add(this.lbPrecio);
             this.Controls.Add(this.lbFecha);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.pictureBox1Fondo);
             this.Name = "RegistrarVentaTerceros";
             this.Text = "RegistrarVentaTerceros";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1Fondo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lbFecha;
         private System.Windows.Forms.Label lbPrecio;
         private System.Windows.Forms.Label lbIdContrato;
@@ -255,7 +272,9 @@ namespace ProyectoAltavista
         private System.Windows.Forms.TextBox txtIdInmueble;
         private System.Windows.Forms.TextBox txtIdBanco;
         private System.Windows.Forms.TextBox txtDniCliente;
-        private System.Windows.Forms.Button btRegistrar;
-        private System.Windows.Forms.Button btRegresar;
+        private System.Windows.Forms.Label labelRegistrarVenta;
+        private System.Windows.Forms.Button btnAceptar;
+        private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.PictureBox pictureBox1Fondo;
     }
 }

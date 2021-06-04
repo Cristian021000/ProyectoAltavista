@@ -32,9 +32,9 @@ namespace ProyectoAltavista
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MMostrarSector));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.pictureBox1Fondo = new System.Windows.Forms.PictureBox();
-            this.label1Bnaco = new System.Windows.Forms.Label();
-            this.bt2Agregar = new System.Windows.Forms.Button();
-            this.bt2RegistarBanco = new System.Windows.Forms.Button();
+            this.labelMostrarSector = new System.Windows.Forms.Label();
+            this.btnModificar = new System.Windows.Forms.Button();
+            this.btnSalir = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1Fondo)).BeginInit();
             this.SuspendLayout();
@@ -42,71 +42,65 @@ namespace ProyectoAltavista
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(37, 59);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Location = new System.Drawing.Point(28, 48);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(579, 468);
+            this.dataGridView1.Size = new System.Drawing.Size(434, 380);
             this.dataGridView1.TabIndex = 1;
             // 
             // pictureBox1Fondo
             // 
             this.pictureBox1Fondo.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1Fondo.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1Fondo.Image")));
-            this.pictureBox1Fondo.Location = new System.Drawing.Point(-13, -13);
-            this.pictureBox1Fondo.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1Fondo.Location = new System.Drawing.Point(-10, -11);
             this.pictureBox1Fondo.Name = "pictureBox1Fondo";
-            this.pictureBox1Fondo.Size = new System.Drawing.Size(1119, 572);
+            this.pictureBox1Fondo.Size = new System.Drawing.Size(839, 465);
             this.pictureBox1Fondo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1Fondo.TabIndex = 22;
             this.pictureBox1Fondo.TabStop = false;
             // 
-            // label1Bnaco
+            // labelMostrarSector
             // 
-            this.label1Bnaco.AutoSize = true;
-            this.label1Bnaco.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.label1Bnaco.Font = new System.Drawing.Font("Monotype Corsiva", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1Bnaco.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1Bnaco.Location = new System.Drawing.Point(646, 34);
-            this.label1Bnaco.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1Bnaco.Name = "label1Bnaco";
-            this.label1Bnaco.Size = new System.Drawing.Size(405, 72);
-            this.label1Bnaco.TabIndex = 23;
-            this.label1Bnaco.Text = "Mostrando Sector";
+            this.labelMostrarSector.AutoSize = true;
+            this.labelMostrarSector.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.labelMostrarSector.Font = new System.Drawing.Font("Monotype Corsiva", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelMostrarSector.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.labelMostrarSector.Location = new System.Drawing.Point(484, 28);
+            this.labelMostrarSector.Name = "labelMostrarSector";
+            this.labelMostrarSector.Size = new System.Drawing.Size(323, 57);
+            this.labelMostrarSector.TabIndex = 23;
+            this.labelMostrarSector.Text = "Mostrando Sector";
             // 
-            // bt2Agregar
+            // btnModificar
             // 
-            this.bt2Agregar.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt2Agregar.Location = new System.Drawing.Point(680, 210);
-            this.bt2Agregar.Margin = new System.Windows.Forms.Padding(4);
-            this.bt2Agregar.Name = "bt2Agregar";
-            this.bt2Agregar.Size = new System.Drawing.Size(320, 37);
-            this.bt2Agregar.TabIndex = 31;
-            this.bt2Agregar.Text = "Modificar Datos del Sector";
-            this.bt2Agregar.UseVisualStyleBackColor = true;
+            this.btnModificar.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModificar.Location = new System.Drawing.Point(510, 171);
+            this.btnModificar.Name = "btnModificar";
+            this.btnModificar.Size = new System.Drawing.Size(240, 30);
+            this.btnModificar.TabIndex = 31;
+            this.btnModificar.Text = "Modificar Datos del Sector";
+            this.btnModificar.UseVisualStyleBackColor = true;
             // 
-            // bt2RegistarBanco
+            // btnSalir
             // 
-            this.bt2RegistarBanco.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt2RegistarBanco.Location = new System.Drawing.Point(741, 367);
-            this.bt2RegistarBanco.Margin = new System.Windows.Forms.Padding(4);
-            this.bt2RegistarBanco.Name = "bt2RegistarBanco";
-            this.bt2RegistarBanco.Size = new System.Drawing.Size(224, 37);
-            this.bt2RegistarBanco.TabIndex = 32;
-            this.bt2RegistarBanco.Text = "Salir";
-            this.bt2RegistarBanco.UseVisualStyleBackColor = true;
+            this.btnSalir.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalir.Location = new System.Drawing.Point(556, 298);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(168, 30);
+            this.btnSalir.TabIndex = 32;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = true;
             // 
             // MMostrarSector
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
-            this.Controls.Add(this.bt2RegistarBanco);
-            this.Controls.Add(this.bt2Agregar);
-            this.Controls.Add(this.label1Bnaco);
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnSalir);
+            this.Controls.Add(this.btnModificar);
+            this.Controls.Add(this.labelMostrarSector);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.pictureBox1Fondo);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "MMostrarSector";
             this.Text = "Sector";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -119,8 +113,8 @@ namespace ProyectoAltavista
         #endregion
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.PictureBox pictureBox1Fondo;
-        private System.Windows.Forms.Label label1Bnaco;
-        private System.Windows.Forms.Button bt2Agregar;
-        private System.Windows.Forms.Button bt2RegistarBanco;
+        private System.Windows.Forms.Label labelMostrarSector;
+        private System.Windows.Forms.Button btnModificar;
+        private System.Windows.Forms.Button btnSalir;
     }
 }
