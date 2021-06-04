@@ -48,7 +48,7 @@ namespace ProyectoAltavista
             // btnRegistrarContratoInmueble
             // 
             this.btnRegistrarContratoInmueble.Font = new System.Drawing.Font("Lucida Fax", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegistrarContratoInmueble.Location = new System.Drawing.Point(12, 192);
+            this.btnRegistrarContratoInmueble.Location = new System.Drawing.Point(107, 157);
             this.btnRegistrarContratoInmueble.Name = "btnRegistrarContratoInmueble";
             this.btnRegistrarContratoInmueble.Size = new System.Drawing.Size(214, 61);
             this.btnRegistrarContratoInmueble.TabIndex = 2;
@@ -58,7 +58,7 @@ namespace ProyectoAltavista
             // btnListarContratoInmueble
             // 
             this.btnListarContratoInmueble.Font = new System.Drawing.Font("Lucida Fax", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnListarContratoInmueble.Location = new System.Drawing.Point(574, 192);
+            this.btnListarContratoInmueble.Location = new System.Drawing.Point(480, 157);
             this.btnListarContratoInmueble.Name = "btnListarContratoInmueble";
             this.btnListarContratoInmueble.Size = new System.Drawing.Size(214, 61);
             this.btnListarContratoInmueble.TabIndex = 3;
@@ -68,7 +68,7 @@ namespace ProyectoAltavista
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Lucida Fax", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(666, 406);
+            this.button1.Location = new System.Drawing.Point(666, 393);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(122, 32);
             this.button1.TabIndex = 4;

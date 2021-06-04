@@ -30,10 +30,10 @@ namespace ProyectoAltavista
         private void InitializeComponent()
         {
             this.dataGridDatosCI = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lbDatosContrato = new System.Windows.Forms.Label();
             this.labelIngresoDNIDCI = new System.Windows.Forms.Label();
             this.textBoxDNIDCI = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btAceptar = new System.Windows.Forms.Button();
             this.btnInhabilitarDCI = new System.Windows.Forms.Button();
             this.btnSalirDCI = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridDatosCI)).BeginInit();
@@ -47,15 +47,15 @@ namespace ProyectoAltavista
             this.dataGridDatosCI.Size = new System.Drawing.Size(486, 343);
             this.dataGridDatosCI.TabIndex = 0;
             // 
-            // label1
+            // lbDatosContrato
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Monotype Corsiva", 35.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(168, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(495, 56);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Datos de Contrato Inmueble";
+            this.lbDatosContrato.AutoSize = true;
+            this.lbDatosContrato.Font = new System.Drawing.Font("Monotype Corsiva", 35.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbDatosContrato.Location = new System.Drawing.Point(168, 9);
+            this.lbDatosContrato.Name = "lbDatosContrato";
+            this.lbDatosContrato.Size = new System.Drawing.Size(495, 56);
+            this.lbDatosContrato.TabIndex = 1;
+            this.lbDatosContrato.Text = "Datos de Contrato Inmueble";
             // 
             // labelIngresoDNIDCI
             // 
@@ -74,15 +74,15 @@ namespace ProyectoAltavista
             this.textBoxDNIDCI.Size = new System.Drawing.Size(238, 20);
             this.textBoxDNIDCI.TabIndex = 3;
             // 
-            // button1
+            // btAceptar
             // 
-            this.button1.Font = new System.Drawing.Font("Lucida Fax", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(598, 224);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(103, 31);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Aceptar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btAceptar.Font = new System.Drawing.Font("Lucida Fax", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btAceptar.Location = new System.Drawing.Point(598, 224);
+            this.btAceptar.Name = "btAceptar";
+            this.btAceptar.Size = new System.Drawing.Size(103, 31);
+            this.btAceptar.TabIndex = 4;
+            this.btAceptar.Text = "Aceptar";
+            this.btAceptar.UseVisualStyleBackColor = true;
             // 
             // btnInhabilitarDCI
             // 
@@ -111,10 +111,10 @@ namespace ProyectoAltavista
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnSalirDCI);
             this.Controls.Add(this.btnInhabilitarDCI);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btAceptar);
             this.Controls.Add(this.textBoxDNIDCI);
             this.Controls.Add(this.labelIngresoDNIDCI);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lbDatosContrato);
             this.Controls.Add(this.dataGridDatosCI);
             this.Name = "ConsultarContratoInmueble";
             this.Text = "ConsultarContratoInmueble";
@@ -127,10 +127,10 @@ namespace ProyectoAltavista
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridDatosCI;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbDatosContrato;
         private System.Windows.Forms.Label labelIngresoDNIDCI;
         private System.Windows.Forms.TextBox textBoxDNIDCI;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btAceptar;
         private System.Windows.Forms.Button btnInhabilitarDCI;
         private System.Windows.Forms.Button btnSalirDCI;
     }
