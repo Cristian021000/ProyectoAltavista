@@ -58,17 +58,59 @@
     <Compile Include="ConsultarCliPropietario.Designer.cs">
       <DependentUpon>ConsultarCliPropietario.cs</DependentUpon>
     </Compile>
+    <Compile Include="ConsultarContratoInmueble.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarContratoInmueble.designer.cs">
+      <DependentUpon>ConsultarContratoInmueble.cs</DependentUpon>
+    </Compile>
     <Compile Include="ConsultarInmueble.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ConsultarInmueble.designer.cs">
       <DependentUpon>ConsultarInmueble.cs</DependentUpon>
     </Compile>
+    <Compile Include="ConsultarVentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarVentas.Designer.cs">
+      <DependentUpon>ConsultarVentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContratoInmueble.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ContratoInmueble.designer.cs">
+      <DependentUpon>ContratoInmueble.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
     <Compile Include="MantenedorBanco.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MantenedorBanco.Designer.cs">
       <DependentUpon>MantenedorBanco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MCita.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MCita.Designer.cs">
+      <DependentUpon>MCita.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuVentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuVentas.Designer.cs">
+      <DependentUpon>MenuVentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MMostrarCita.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MMostrarCita.Designer.cs">
+      <DependentUpon>MMostrarCita.cs</DependentUpon>
     </Compile>
     <Compile Include="ModificarBanco.cs">
       <SubType>Form</SubType>
@@ -173,6 +215,12 @@
     <Compile Include="ModificarInhabilitarCliPropietario.Designer.cs">
       <DependentUpon>ModificarInhabilitarCliPropietario.cs</DependentUpon>
     </Compile>
+    <Compile Include="MRegistrarCita.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MRegistrarCita.Designer.cs">
+      <DependentUpon>MRegistrarCita.cs</DependentUpon>
+    </Compile>
     <Compile Include="MRegistrarSitioInteres.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -217,11 +265,35 @@
     <Compile Include="RegistrarCliPropietario.Designer.cs">
       <DependentUpon>RegistrarCliPropietario.cs</DependentUpon>
     </Compile>
+    <Compile Include="RegistrarContratoInmueble.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistrarContratoInmueble.designer.cs">
+      <DependentUpon>RegistrarContratoInmueble.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrarVentaPropios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistrarVentaPropios.Designer.cs">
+      <DependentUpon>RegistrarVentaPropios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrarVentaTerceros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistrarVentaTerceros.Designer.cs">
+      <DependentUpon>RegistrarVentaTerceros.cs</DependentUpon>
+    </Compile>
     <Compile Include="RegistroBanco.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="RegistroBanco.Designer.cs">
       <DependentUpon>RegistroBanco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegistroSitioInmueble.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistroSitioInmueble.Designer.cs">
+      <DependentUpon>RegistroSitioInmueble.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="ConsultarCliente.resx">
       <DependentUpon>ConsultarCliente.cs</DependentUpon>
@@ -229,11 +301,32 @@
     <EmbeddedResource Include="ConsultarCliPropietario.resx">
       <DependentUpon>ConsultarCliPropietario.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarContratoInmueble.resx">
+      <DependentUpon>ConsultarContratoInmueble.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ConsultarInmueble.resx">
       <DependentUpon>ConsultarInmueble.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarVentas.resx">
+      <DependentUpon>ConsultarVentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContratoInmueble.resx">
+      <DependentUpon>ContratoInmueble.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MantenedorBanco.resx">
       <DependentUpon>MantenedorBanco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MCita.resx">
+      <DependentUpon>MCita.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuVentas.resx">
+      <DependentUpon>MenuVentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MMostrarCita.resx">
+      <DependentUpon>MMostrarCita.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ModificarBanco.resx">
       <DependentUpon>ModificarBanco.cs</DependentUpon>
@@ -289,6 +382,9 @@
     <EmbeddedResource Include="ModificarInhabilitarCliPropietario.resx">
       <DependentUpon>ModificarInhabilitarCliPropietario.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MRegistrarCita.resx">
+      <DependentUpon>MRegistrarCita.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MRegistrarSitioInteres.resx">
       <DependentUpon>MRegistrarSitioInteres.cs</DependentUpon>
     </EmbeddedResource>
@@ -316,8 +412,20 @@
     <EmbeddedResource Include="RegistrarCliPropietario.resx">
       <DependentUpon>RegistrarCliPropietario.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="RegistrarContratoInmueble.resx">
+      <DependentUpon>RegistrarContratoInmueble.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistrarVentaPropios.resx">
+      <DependentUpon>RegistrarVentaPropios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistrarVentaTerceros.resx">
+      <DependentUpon>RegistrarVentaTerceros.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="RegistroBanco.resx">
       <DependentUpon>RegistroBanco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistroSitioInmueble.resx">
+      <DependentUpon>RegistroSitioInmueble.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
