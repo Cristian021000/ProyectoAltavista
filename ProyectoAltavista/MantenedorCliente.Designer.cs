@@ -47,6 +47,7 @@ namespace ProyectoAltavista
             this.btRegistrar.TabIndex = 53;
             this.btRegistrar.Text = "Registrar ";
             this.btRegistrar.UseVisualStyleBackColor = true;
+            this.btRegistrar.Click += new System.EventHandler(this.btRegistrar_Click);
             // 
             // btLista
             // 
@@ -67,6 +68,7 @@ namespace ProyectoAltavista
             this.btRegresar.TabIndex = 51;
             this.btRegresar.Text = "Regresar";
             this.btRegresar.UseVisualStyleBackColor = true;
+            this.btRegresar.Click += new System.EventHandler(this.btRegresar_Click_1);
             // 
             // lbMenu
             // 

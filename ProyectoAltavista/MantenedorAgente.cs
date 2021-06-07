@@ -17,14 +17,32 @@ namespace ProyectoAltavista
             InitializeComponent();
         }
 
-        private void bt2_Click(object sender, EventArgs e)
-        {
 
-        }
 
         private void MantenedorAgente_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btRegistrarAgente_Click(object sender, EventArgs e)
+        {
+            RegistrarAgente RegistrarAge = new RegistrarAgente();
+            RegistrarAge.Show();
+            this.Close();
+        }
+
+        private void btModificarAgente_Click(object sender, EventArgs e)
+        {
+            ModificarAgente ModificarAge = new ModificarAgente();
+            ModificarAge.Show();
+            this.Close();
+        }
+
+        private void btRegresar_Click(object sender, EventArgs e)
+        {
+            MenuPrincipal MenuPri = new MenuPrincipal();
+            MenuPri.Show();
+            this.Close();
         }
     }
 }

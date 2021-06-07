@@ -22,7 +22,8 @@ namespace ProyectoAltavista
 
         }
 
-        private void btRegistrarCliente_Click(object sender, EventArgs e)
+
+        private void btRegistrar_Click(object sender, EventArgs e)
         {
             RegistrarCliente registrarCliente = new RegistrarCliente();
 
@@ -30,17 +31,7 @@ namespace ProyectoAltavista
             this.Close();
         }
 
-        private void btModificarCliente_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btListaCliente_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btRegresar_Click(object sender, EventArgs e)
+        private void btRegresar_Click_1(object sender, EventArgs e)
         {
             MenuPrincipal menuPrincipal = new MenuPrincipal();
             menuPrincipal.Show();

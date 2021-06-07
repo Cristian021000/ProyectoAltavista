@@ -26,5 +26,12 @@ namespace ProyectoAltavista
         {
 
         }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            MantenedorAgente MantenedorAge = new MantenedorAgente();
+            MantenedorAge.Show();
+            this.Close();
+        }
     }
 }

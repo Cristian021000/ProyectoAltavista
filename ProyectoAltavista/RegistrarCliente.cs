@@ -37,12 +37,8 @@ namespace ProyectoAltavista
 
         }
 
-        private void btRegistrarDatCli_Click(object sender, EventArgs e)
-        {
 
-        }
-
-        private void btCancelarDatClientes_Click(object sender, EventArgs e)
+        private void btnCancelar_Click(object sender, EventArgs e)
         {
             MantenedorCliente mantenedorCliente = new MantenedorCliente();
             mantenedorCliente.Show();

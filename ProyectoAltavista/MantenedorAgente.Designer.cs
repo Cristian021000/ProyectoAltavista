@@ -70,7 +70,7 @@ namespace ProyectoAltavista
             this.btRegresar.TabIndex = 46;
             this.btRegresar.Text = "Regresar";
             this.btRegresar.UseVisualStyleBackColor = true;
-            this.btRegresar.Click += new System.EventHandler(this.bt2_Click);
+            this.btRegresar.Click += new System.EventHandler(this.btRegresar_Click);
             // 
             // btModificarAgente
             // 
@@ -81,6 +81,7 @@ namespace ProyectoAltavista
             this.btModificarAgente.TabIndex = 47;
             this.btModificarAgente.Text = "Modificar Agente";
             this.btModificarAgente.UseVisualStyleBackColor = true;
+            this.btModificarAgente.Click += new System.EventHandler(this.btModificarAgente_Click);
             // 
             // btRegistrarAgente
             // 
@@ -91,6 +92,7 @@ namespace ProyectoAltavista
             this.btRegistrarAgente.TabIndex = 48;
             this.btRegistrarAgente.Text = "Registrar Agente";
             this.btRegistrarAgente.UseVisualStyleBackColor = true;
+            this.btRegistrarAgente.Click += new System.EventHandler(this.btRegistrarAgente_Click);
             // 
             // MantenedorAgente
             // 

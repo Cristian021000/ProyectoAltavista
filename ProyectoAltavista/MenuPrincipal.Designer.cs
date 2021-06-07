@@ -32,16 +32,16 @@ namespace ProyectoAltavista
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuPrincipal));
             this.pictureBox1Fondo = new System.Windows.Forms.PictureBox();
             this.label1Bnaco = new System.Windows.Forms.Label();
-            this.bt2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
+            this.btCliente = new System.Windows.Forms.Button();
+            this.btAgente = new System.Windows.Forms.Button();
+            this.btBanco = new System.Windows.Forms.Button();
+            this.btCiudad = new System.Windows.Forms.Button();
+            this.btSitioInteres = new System.Windows.Forms.Button();
+            this.btPropietario = new System.Windows.Forms.Button();
+            this.btInmueble = new System.Windows.Forms.Button();
+            this.btVenta = new System.Windows.Forms.Button();
+            this.btCita = new System.Windows.Forms.Button();
+            this.btSector = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1Fondo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -49,10 +49,9 @@ namespace ProyectoAltavista
             // 
             this.pictureBox1Fondo.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1Fondo.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1Fondo.Image")));
-            this.pictureBox1Fondo.Location = new System.Drawing.Point(-41, -4);
-            this.pictureBox1Fondo.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1Fondo.Location = new System.Drawing.Point(-31, -3);
             this.pictureBox1Fondo.Name = "pictureBox1Fondo";
-            this.pictureBox1Fondo.Size = new System.Drawing.Size(1119, 572);
+            this.pictureBox1Fondo.Size = new System.Drawing.Size(839, 465);
             this.pictureBox1Fondo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1Fondo.TabIndex = 22;
             this.pictureBox1Fondo.TabStop = false;
@@ -63,144 +62,135 @@ namespace ProyectoAltavista
             this.label1Bnaco.BackColor = System.Drawing.Color.WhiteSmoke;
             this.label1Bnaco.Font = new System.Drawing.Font("Monotype Corsiva", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1Bnaco.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1Bnaco.Location = new System.Drawing.Point(359, 9);
-            this.label1Bnaco.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1Bnaco.Location = new System.Drawing.Point(269, 7);
             this.label1Bnaco.Name = "label1Bnaco";
-            this.label1Bnaco.Size = new System.Drawing.Size(360, 72);
+            this.label1Bnaco.Size = new System.Drawing.Size(291, 57);
             this.label1Bnaco.TabIndex = 23;
             this.label1Bnaco.Text = "Menu Principal";
             // 
-            // bt2
+            // btCliente
             // 
-            this.bt2.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt2.Location = new System.Drawing.Point(123, 120);
-            this.bt2.Margin = new System.Windows.Forms.Padding(4);
-            this.bt2.Name = "bt2";
-            this.bt2.Size = new System.Drawing.Size(224, 37);
-            this.bt2.TabIndex = 32;
-            this.bt2.Text = "Ciente";
-            this.bt2.UseVisualStyleBackColor = true;
+            this.btCliente.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btCliente.Location = new System.Drawing.Point(92, 98);
+            this.btCliente.Name = "btCliente";
+            this.btCliente.Size = new System.Drawing.Size(168, 30);
+            this.btCliente.TabIndex = 32;
+            this.btCliente.Text = "Ciente";
+            this.btCliente.UseVisualStyleBackColor = true;
+            this.btCliente.Click += new System.EventHandler(this.btCliente_Click_1);
             // 
-            // button1
+            // btAgente
             // 
-            this.button1.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(123, 205);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(224, 37);
-            this.button1.TabIndex = 33;
-            this.button1.Text = "Agente";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btAgente.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btAgente.Location = new System.Drawing.Point(92, 167);
+            this.btAgente.Name = "btAgente";
+            this.btAgente.Size = new System.Drawing.Size(168, 30);
+            this.btAgente.TabIndex = 33;
+            this.btAgente.Text = "Agente";
+            this.btAgente.UseVisualStyleBackColor = true;
+            this.btAgente.Click += new System.EventHandler(this.btAgente_Click);
             // 
-            // button2
+            // btBanco
             // 
-            this.button2.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(123, 292);
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(224, 37);
-            this.button2.TabIndex = 34;
-            this.button2.Text = "Banco";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btBanco.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btBanco.Location = new System.Drawing.Point(92, 237);
+            this.btBanco.Name = "btBanco";
+            this.btBanco.Size = new System.Drawing.Size(168, 30);
+            this.btBanco.TabIndex = 34;
+            this.btBanco.Text = "Banco";
+            this.btBanco.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btCiudad
             // 
-            this.button3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.button3.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(123, 380);
-            this.button3.Margin = new System.Windows.Forms.Padding(4);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(224, 37);
-            this.button3.TabIndex = 35;
-            this.button3.Text = "Cuidad";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btCiudad.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.btCiudad.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btCiudad.Location = new System.Drawing.Point(92, 309);
+            this.btCiudad.Name = "btCiudad";
+            this.btCiudad.Size = new System.Drawing.Size(168, 30);
+            this.btCiudad.TabIndex = 35;
+            this.btCiudad.Text = "Cuidad";
+            this.btCiudad.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btSitioInteres
             // 
-            this.button4.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(123, 467);
-            this.button4.Margin = new System.Windows.Forms.Padding(4);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(224, 37);
-            this.button4.TabIndex = 36;
-            this.button4.Text = "Sitio de Interés";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btSitioInteres.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btSitioInteres.Location = new System.Drawing.Point(92, 379);
+            this.btSitioInteres.Name = "btSitioInteres";
+            this.btSitioInteres.Size = new System.Drawing.Size(168, 30);
+            this.btSitioInteres.TabIndex = 36;
+            this.btSitioInteres.Text = "Sitio de Interés";
+            this.btSitioInteres.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // btPropietario
             // 
-            this.button5.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(718, 120);
-            this.button5.Margin = new System.Windows.Forms.Padding(4);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(224, 37);
-            this.button5.TabIndex = 37;
-            this.button5.Text = "Propietario";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btPropietario.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btPropietario.Location = new System.Drawing.Point(538, 98);
+            this.btPropietario.Name = "btPropietario";
+            this.btPropietario.Size = new System.Drawing.Size(168, 30);
+            this.btPropietario.TabIndex = 37;
+            this.btPropietario.Text = "Propietario";
+            this.btPropietario.UseVisualStyleBackColor = true;
             // 
-            // button6
+            // btInmueble
             // 
-            this.button6.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(718, 205);
-            this.button6.Margin = new System.Windows.Forms.Padding(4);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(224, 37);
-            this.button6.TabIndex = 38;
-            this.button6.Text = "Inmuebles";
-            this.button6.UseVisualStyleBackColor = true;
+            this.btInmueble.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btInmueble.Location = new System.Drawing.Point(538, 167);
+            this.btInmueble.Name = "btInmueble";
+            this.btInmueble.Size = new System.Drawing.Size(168, 30);
+            this.btInmueble.TabIndex = 38;
+            this.btInmueble.Text = "Inmuebles";
+            this.btInmueble.UseVisualStyleBackColor = true;
             // 
-            // button7
+            // btVenta
             // 
-            this.button7.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(718, 292);
-            this.button7.Margin = new System.Windows.Forms.Padding(4);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(224, 37);
-            this.button7.TabIndex = 39;
-            this.button7.Text = "Venta";
-            this.button7.UseVisualStyleBackColor = true;
+            this.btVenta.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btVenta.Location = new System.Drawing.Point(538, 237);
+            this.btVenta.Name = "btVenta";
+            this.btVenta.Size = new System.Drawing.Size(168, 30);
+            this.btVenta.TabIndex = 39;
+            this.btVenta.Text = "Venta";
+            this.btVenta.UseVisualStyleBackColor = true;
             // 
-            // button8
+            // btCita
             // 
-            this.button8.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.Location = new System.Drawing.Point(718, 389);
-            this.button8.Margin = new System.Windows.Forms.Padding(4);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(224, 37);
-            this.button8.TabIndex = 40;
-            this.button8.Text = "Cita";
-            this.button8.UseVisualStyleBackColor = true;
+            this.btCita.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btCita.Location = new System.Drawing.Point(538, 316);
+            this.btCita.Name = "btCita";
+            this.btCita.Size = new System.Drawing.Size(168, 30);
+            this.btCita.TabIndex = 40;
+            this.btCita.Text = "Cita";
+            this.btCita.UseVisualStyleBackColor = true;
             // 
-            // button9
+            // btSector
             // 
-            this.button9.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.Location = new System.Drawing.Point(718, 467);
-            this.button9.Margin = new System.Windows.Forms.Padding(4);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(224, 37);
-            this.button9.TabIndex = 41;
-            this.button9.Text = "Sector";
-            this.button9.UseVisualStyleBackColor = true;
+            this.btSector.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btSector.Location = new System.Drawing.Point(538, 379);
+            this.btSector.Name = "btSector";
+            this.btSector.Size = new System.Drawing.Size(168, 30);
+            this.btSector.TabIndex = 41;
+            this.btSector.Text = "Sector";
+            this.btSector.UseVisualStyleBackColor = true;
             // 
             // MenuPrincipal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
-            this.Controls.Add(this.button9);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.bt2);
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btSector);
+            this.Controls.Add(this.btCita);
+            this.Controls.Add(this.btVenta);
+            this.Controls.Add(this.btInmueble);
+            this.Controls.Add(this.btPropietario);
+            this.Controls.Add(this.btSitioInteres);
+            this.Controls.Add(this.btCiudad);
+            this.Controls.Add(this.btBanco);
+            this.Controls.Add(this.btAgente);
+            this.Controls.Add(this.btCliente);
             this.Controls.Add(this.label1Bnaco);
             this.Controls.Add(this.pictureBox1Fondo);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "MenuPrincipal";
             this.Text = "MenuPrincipal";
+            this.Load += new System.EventHandler(this.MenuPrincipal_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1Fondo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -210,15 +200,15 @@ namespace ProyectoAltavista
         #endregion
         private System.Windows.Forms.PictureBox pictureBox1Fondo;
         private System.Windows.Forms.Label label1Bnaco;
-        private System.Windows.Forms.Button bt2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button btCliente;
+        private System.Windows.Forms.Button btAgente;
+        private System.Windows.Forms.Button btBanco;
+        private System.Windows.Forms.Button btCiudad;
+        private System.Windows.Forms.Button btSitioInteres;
+        private System.Windows.Forms.Button btPropietario;
+        private System.Windows.Forms.Button btInmueble;
+        private System.Windows.Forms.Button btVenta;
+        private System.Windows.Forms.Button btCita;
+        private System.Windows.Forms.Button btSector;
     }
 }
