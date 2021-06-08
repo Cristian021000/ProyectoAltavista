@@ -50,6 +50,7 @@ namespace ProyectoAltavista
             this.btnAceptarLogin.TabIndex = 0;
             this.btnAceptarLogin.Text = "Aceptar";
             this.btnAceptarLogin.UseVisualStyleBackColor = true;
+            this.btnAceptarLogin.Click += new System.EventHandler(this.btnAceptarLogin_Click);
             // 
             // lbLogin
             // 
