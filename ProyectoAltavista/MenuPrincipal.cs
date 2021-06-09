@@ -37,5 +37,18 @@ namespace ProyectoAltavista
         {
             
         }
+
+        private void pictureBox1Fondo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btSalir_Click(object sender, EventArgs e)
+        {
+            Login log = new Login();
+            
+            this.Close();
+            log.Close();
+        }
     }
 }

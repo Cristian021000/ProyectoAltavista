@@ -42,6 +42,7 @@ namespace ProyectoAltavista
             this.btVenta = new System.Windows.Forms.Button();
             this.btCita = new System.Windows.Forms.Button();
             this.btSector = new System.Windows.Forms.Button();
+            this.btSalir = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1Fondo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -49,12 +50,13 @@ namespace ProyectoAltavista
             // 
             this.pictureBox1Fondo.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1Fondo.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1Fondo.Image")));
-            this.pictureBox1Fondo.Location = new System.Drawing.Point(-31, -3);
+            this.pictureBox1Fondo.Location = new System.Drawing.Point(-35, -3);
             this.pictureBox1Fondo.Name = "pictureBox1Fondo";
             this.pictureBox1Fondo.Size = new System.Drawing.Size(839, 465);
             this.pictureBox1Fondo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1Fondo.TabIndex = 22;
             this.pictureBox1Fondo.TabStop = false;
+            this.pictureBox1Fondo.Click += new System.EventHandler(this.pictureBox1Fondo_Click);
             // 
             // label1Bnaco
             // 
@@ -124,7 +126,7 @@ namespace ProyectoAltavista
             // btPropietario
             // 
             this.btPropietario.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btPropietario.Location = new System.Drawing.Point(538, 98);
+            this.btPropietario.Location = new System.Drawing.Point(458, 98);
             this.btPropietario.Name = "btPropietario";
             this.btPropietario.Size = new System.Drawing.Size(168, 30);
             this.btPropietario.TabIndex = 37;
@@ -134,7 +136,7 @@ namespace ProyectoAltavista
             // btInmueble
             // 
             this.btInmueble.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btInmueble.Location = new System.Drawing.Point(538, 167);
+            this.btInmueble.Location = new System.Drawing.Point(458, 167);
             this.btInmueble.Name = "btInmueble";
             this.btInmueble.Size = new System.Drawing.Size(168, 30);
             this.btInmueble.TabIndex = 38;
@@ -144,7 +146,7 @@ namespace ProyectoAltavista
             // btVenta
             // 
             this.btVenta.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btVenta.Location = new System.Drawing.Point(538, 237);
+            this.btVenta.Location = new System.Drawing.Point(458, 237);
             this.btVenta.Name = "btVenta";
             this.btVenta.Size = new System.Drawing.Size(168, 30);
             this.btVenta.TabIndex = 39;
@@ -154,7 +156,7 @@ namespace ProyectoAltavista
             // btCita
             // 
             this.btCita.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btCita.Location = new System.Drawing.Point(538, 316);
+            this.btCita.Location = new System.Drawing.Point(458, 309);
             this.btCita.Name = "btCita";
             this.btCita.Size = new System.Drawing.Size(168, 30);
             this.btCita.TabIndex = 40;
@@ -164,18 +166,30 @@ namespace ProyectoAltavista
             // btSector
             // 
             this.btSector.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btSector.Location = new System.Drawing.Point(538, 379);
+            this.btSector.Location = new System.Drawing.Point(458, 379);
             this.btSector.Name = "btSector";
             this.btSector.Size = new System.Drawing.Size(168, 30);
             this.btSector.TabIndex = 41;
             this.btSector.Text = "Sector";
             this.btSector.UseVisualStyleBackColor = true;
             // 
+            // btSalir
+            // 
+            this.btSalir.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btSalir.Location = new System.Drawing.Point(676, 363);
+            this.btSalir.Name = "btSalir";
+            this.btSalir.Size = new System.Drawing.Size(95, 46);
+            this.btSalir.TabIndex = 42;
+            this.btSalir.Text = "Salir";
+            this.btSalir.UseVisualStyleBackColor = true;
+            this.btSalir.Click += new System.EventHandler(this.btSalir_Click);
+            // 
             // MenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btSalir);
             this.Controls.Add(this.btSector);
             this.Controls.Add(this.btCita);
             this.Controls.Add(this.btVenta);
@@ -210,5 +224,6 @@ namespace ProyectoAltavista
         private System.Windows.Forms.Button btVenta;
         private System.Windows.Forms.Button btCita;
         private System.Windows.Forms.Button btSector;
+        private System.Windows.Forms.Button btSalir;
     }
 }

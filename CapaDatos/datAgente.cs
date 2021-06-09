@@ -21,8 +21,7 @@ namespace CapaDatos
         #endregion singleton
         public DataTable IngresoAgente(entAgente Agente)
         {
-            SqlCommand cmd = null;
-            //Boolean ingreso = false;
+            SqlCommand cmd = null;   
             DataTable dt = new DataTable();
             try
             {
@@ -41,8 +40,37 @@ namespace CapaDatos
                 throw e;
             }
             finally { cmd.Connection.Close(); }
-            //return ingreso ;
             
+        }
+        public Boolean RegistrarAgente(entAgente Agente)
+        {
+            Boolean registrar = false;
+            SqlCommand cmd = null;
+            try
+            {
+                SqlConnection cn = Conexion.Instancia.Conectar();
+                cmd = new SqlCommand("spRegistrarAgente", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@nombre", Agente.nombre);
+                cmd.Parameters.AddWithValue("@apellido", Agente.apellido);
+                cmd.Parameters.AddWithValue("@edad", Agente.edad);
+                cmd.Parameters.AddWithValue("@celular", Agente.celular);
+                cmd.Parameters.AddWithValue("@correo", Agente.correo);
+                cmd.Parameters.AddWithValue("@contraseña", Agente.contraseña);
+                cmd.Parameters.AddWithValue("@estado", Agente.estado);
+                cn.Open();
+                int i = cmd.ExecuteNonQuery();
+                if (i > 0)
+                {
+                    registrar = true;
+                }
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally { cmd.Connection.Close(); }
+            return registrar;
         }
     }
 }

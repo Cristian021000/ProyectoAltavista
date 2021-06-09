@@ -33,5 +33,15 @@ namespace ProyectoAltavista
             MantenedorAge.Show();
             this.Close();
         }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtDatosCorreoElectronica_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

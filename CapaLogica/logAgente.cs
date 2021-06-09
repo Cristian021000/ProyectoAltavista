@@ -22,5 +22,10 @@ namespace CapaLogica
         {
             return datAgente.Instancia.IngresoAgente(Agente);
         }
+
+        public void RegistrarAgente(entAgente Agente)
+        {
+            datAgente.Instancia.RegistrarAgente(Agente);
+        }
     }
 }

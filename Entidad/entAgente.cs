@@ -15,5 +15,7 @@ namespace CapaEntidad
         public int id { get; set; }
         public int edad { get; set; }
         public int celular { get; set; }
+        public Boolean estado { get; set; }
+        public int dni { get; set; }
     }
 }
