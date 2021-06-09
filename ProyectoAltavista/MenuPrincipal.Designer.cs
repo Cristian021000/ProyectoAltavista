@@ -101,6 +101,7 @@ namespace ProyectoAltavista
             this.btBanco.TabIndex = 34;
             this.btBanco.Text = "Banco";
             this.btBanco.UseVisualStyleBackColor = true;
+            this.btBanco.Click += new System.EventHandler(this.btBanco_Click);
             // 
             // btCiudad
             // 
@@ -112,6 +113,7 @@ namespace ProyectoAltavista
             this.btCiudad.TabIndex = 35;
             this.btCiudad.Text = "Cuidad";
             this.btCiudad.UseVisualStyleBackColor = true;
+            this.btCiudad.Click += new System.EventHandler(this.btCiudad_Click);
             // 
             // btSitioInteres
             // 
@@ -122,6 +124,7 @@ namespace ProyectoAltavista
             this.btSitioInteres.TabIndex = 36;
             this.btSitioInteres.Text = "Sitio de Interés";
             this.btSitioInteres.UseVisualStyleBackColor = true;
+            this.btSitioInteres.Click += new System.EventHandler(this.btSitioInteres_Click);
             // 
             // btPropietario
             // 
@@ -132,6 +135,7 @@ namespace ProyectoAltavista
             this.btPropietario.TabIndex = 37;
             this.btPropietario.Text = "Propietario";
             this.btPropietario.UseVisualStyleBackColor = true;
+            this.btPropietario.Click += new System.EventHandler(this.btPropietario_Click);
             // 
             // btInmueble
             // 
@@ -142,6 +146,7 @@ namespace ProyectoAltavista
             this.btInmueble.TabIndex = 38;
             this.btInmueble.Text = "Inmuebles";
             this.btInmueble.UseVisualStyleBackColor = true;
+            this.btInmueble.Click += new System.EventHandler(this.btInmueble_Click);
             // 
             // btVenta
             // 
@@ -152,6 +157,7 @@ namespace ProyectoAltavista
             this.btVenta.TabIndex = 39;
             this.btVenta.Text = "Venta";
             this.btVenta.UseVisualStyleBackColor = true;
+            this.btVenta.Click += new System.EventHandler(this.btVenta_Click);
             // 
             // btCita
             // 
