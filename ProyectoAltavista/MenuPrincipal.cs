@@ -23,14 +23,14 @@ namespace ProyectoAltavista
         {
             MantenedorCliente mantenedorCli = new MantenedorCliente();
             this.Hide();
-            mantenedorCli.ShowDialog();
+            mantenedorCli.Show();
         }
 
         private void btAgente_Click(object sender, EventArgs e)
         {
             MantenedorAgente mantenedorAge = new MantenedorAgente();
             this.Hide();
-            mantenedorAge.ShowDialog();
+            mantenedorAge.Show();
         }
 
         private void MenuPrincipal_Load(object sender, EventArgs e)
@@ -54,44 +54,47 @@ namespace ProyectoAltavista
         private void btBanco_Click(object sender, EventArgs e)
         {
             MantenedorBanco Ban = new MantenedorBanco();
+
+            this.Hide();
             Ban.Show();
-            this.Close();
+            
 
         }
 
         private void btCiudad_Click(object sender, EventArgs e)
         {
-            MantenedorCiudad ciu = new MantenedorCiudad();
-            ciu.Show();
-            this.Close();
+            MantenedorCiudad ciudad = new MantenedorCiudad();
+            this.Hide();
+            ciudad.Show();
+            
         }
 
         private void btSitioInteres_Click(object sender, EventArgs e)
         {
             MantenedorSitiosInteres sitio = new MantenedorSitiosInteres();
             sitio.Show();
-            this.Close();
+            this.Hide();
         }
 
         private void btPropietario_Click(object sender, EventArgs e)
         {
             MantenedorCliPropietario propietario = new MantenedorCliPropietario();
             propietario.Show();
-            this.Close();
+            this.Hide();
         }
 
         private void btInmueble_Click(object sender, EventArgs e)
         {
             MantenedorDeInmueble inmueble = new MantenedorDeInmueble();
             inmueble.Show();
-            this.Close();
+            this.Hide();
         }
 
         private void btVenta_Click(object sender, EventArgs e)
         {
             MenuVentas ventas = new MenuVentas();
             ventas.Show();
-            this.Close();
+            this.Hide();
         }
     }
 }
