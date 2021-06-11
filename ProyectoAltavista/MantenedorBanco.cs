@@ -21,5 +21,19 @@ namespace ProyectoAltavista
         {
 
         }
+
+        private void bt2RegistarBanco_Click(object sender, EventArgs e)
+        {
+            RegistroBanco registrarBanco = new RegistroBanco();
+            registrarBanco.Show();
+            this.Close();
+        }
+
+        private void bt3MostraBanco_Click(object sender, EventArgs e)
+        {
+            MostrandoBanco muestraBanco = new MostrandoBanco();
+            muestraBanco.Show();
+            this.Close();
+        }
     }
 }

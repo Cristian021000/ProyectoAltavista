@@ -30,8 +30,8 @@ namespace ProyectoAltavista
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MRegistrarSitioInteres));
-            this.txtModificarDireccionSI = new System.Windows.Forms.TextBox();
-            this.txtModificarNombreSI = new System.Windows.Forms.TextBox();
+            this.txtRegistrarDireccionSI = new System.Windows.Forms.TextBox();
+            this.txtRegistrarNombreSI = new System.Windows.Forms.TextBox();
             this.txtCodigoRegistrarSI = new System.Windows.Forms.TextBox();
             this.checkBoxHabilitar = new System.Windows.Forms.CheckBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -44,19 +44,19 @@ namespace ProyectoAltavista
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1Fondo)).BeginInit();
             this.SuspendLayout();
             // 
-            // txtModificarDireccionSI
+            // txtRegistrarDireccionSI
             // 
-            this.txtModificarDireccionSI.Location = new System.Drawing.Point(21, 334);
-            this.txtModificarDireccionSI.Name = "txtModificarDireccionSI";
-            this.txtModificarDireccionSI.Size = new System.Drawing.Size(364, 20);
-            this.txtModificarDireccionSI.TabIndex = 13;
+            this.txtRegistrarDireccionSI.Location = new System.Drawing.Point(21, 334);
+            this.txtRegistrarDireccionSI.Name = "txtRegistrarDireccionSI";
+            this.txtRegistrarDireccionSI.Size = new System.Drawing.Size(364, 20);
+            this.txtRegistrarDireccionSI.TabIndex = 13;
             // 
-            // txtModificarNombreSI
+            // txtRegistrarNombreSI
             // 
-            this.txtModificarNombreSI.Location = new System.Drawing.Point(21, 223);
-            this.txtModificarNombreSI.Name = "txtModificarNombreSI";
-            this.txtModificarNombreSI.Size = new System.Drawing.Size(364, 20);
-            this.txtModificarNombreSI.TabIndex = 14;
+            this.txtRegistrarNombreSI.Location = new System.Drawing.Point(21, 223);
+            this.txtRegistrarNombreSI.Name = "txtRegistrarNombreSI";
+            this.txtRegistrarNombreSI.Size = new System.Drawing.Size(364, 20);
+            this.txtRegistrarNombreSI.TabIndex = 14;
             // 
             // txtCodigoRegistrarSI
             // 
@@ -117,6 +117,7 @@ namespace ProyectoAltavista
             this.btnAgregar.TabIndex = 35;
             this.btnAgregar.Text = "Registrar";
             this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // btnCancelar
             // 
@@ -127,6 +128,7 @@ namespace ProyectoAltavista
             this.btnCancelar.TabIndex = 36;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // pictureBox1Fondo
             // 
@@ -164,8 +166,8 @@ namespace ProyectoAltavista
             this.Controls.Add(this.label2);
             this.Controls.Add(this.checkBoxHabilitar);
             this.Controls.Add(this.txtCodigoRegistrarSI);
-            this.Controls.Add(this.txtModificarNombreSI);
-            this.Controls.Add(this.txtModificarDireccionSI);
+            this.Controls.Add(this.txtRegistrarNombreSI);
+            this.Controls.Add(this.txtRegistrarDireccionSI);
             this.Controls.Add(this.pictureBox1Fondo);
             this.Name = "MRegistrarSitioInteres";
             this.Text = "MRegistrarSitioInteres";
@@ -176,8 +178,8 @@ namespace ProyectoAltavista
         }
 
         #endregion
-        private System.Windows.Forms.TextBox txtModificarDireccionSI;
-        private System.Windows.Forms.TextBox txtModificarNombreSI;
+        private System.Windows.Forms.TextBox txtRegistrarDireccionSI;
+        private System.Windows.Forms.TextBox txtRegistrarNombreSI;
         private System.Windows.Forms.TextBox txtCodigoRegistrarSI;
         private System.Windows.Forms.CheckBox checkBoxHabilitar;
         private System.Windows.Forms.Label label2;

@@ -43,10 +43,11 @@ namespace ProyectoAltavista
             this.btModificar.Font = new System.Drawing.Font("Lucida Fax", 19.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btModificar.Location = new System.Drawing.Point(20, 176);
             this.btModificar.Name = "btModificar";
-            this.btModificar.Size = new System.Drawing.Size(254, 50);
+            this.btModificar.Size = new System.Drawing.Size(310, 50);
             this.btModificar.TabIndex = 53;
             this.btModificar.Text = "Modificar Ciudad";
             this.btModificar.UseVisualStyleBackColor = true;
+            this.btModificar.Click += new System.EventHandler(this.btModificar_Click);
             // 
             // btRegistrarCiudad
             // 
@@ -55,8 +56,9 @@ namespace ProyectoAltavista
             this.btRegistrarCiudad.Name = "btRegistrarCiudad";
             this.btRegistrarCiudad.Size = new System.Drawing.Size(272, 50);
             this.btRegistrarCiudad.TabIndex = 52;
-            this.btRegistrarCiudad.Text = "Registrar Cuidad";
+            this.btRegistrarCiudad.Text = "Registrar Ciudad";
             this.btRegistrarCiudad.UseVisualStyleBackColor = true;
+            this.btRegistrarCiudad.Click += new System.EventHandler(this.btRegistrarCiudad_Click);
             // 
             // btRegresar
             // 
@@ -67,6 +69,7 @@ namespace ProyectoAltavista
             this.btRegresar.TabIndex = 51;
             this.btRegresar.Text = "Regresar";
             this.btRegresar.UseVisualStyleBackColor = true;
+            this.btRegresar.Click += new System.EventHandler(this.btRegresar_Click);
             // 
             // lbMenu
             // 

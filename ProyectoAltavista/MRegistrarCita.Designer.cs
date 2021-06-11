@@ -121,6 +121,7 @@ namespace ProyectoAltavista
             this.btnCancelarRegistrarCita.TabIndex = 7;
             this.btnCancelarRegistrarCita.Text = "Cancelar";
             this.btnCancelarRegistrarCita.UseVisualStyleBackColor = true;
+            this.btnCancelarRegistrarCita.Click += new System.EventHandler(this.btnCancelarRegistrarCita_Click);
             // 
             // txtIdDelInmuebleRegistrarCita
             // 

@@ -44,9 +44,8 @@ namespace ProyectoAltavista
             this.Fondo.BackColor = System.Drawing.Color.Transparent;
             this.Fondo.Image = ((System.Drawing.Image)(resources.GetObject("Fondo.Image")));
             this.Fondo.Location = new System.Drawing.Point(-2, -2);
-            this.Fondo.Margin = new System.Windows.Forms.Padding(4);
             this.Fondo.Name = "Fondo";
-            this.Fondo.Size = new System.Drawing.Size(805, 455);
+            this.Fondo.Size = new System.Drawing.Size(604, 370);
             this.Fondo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Fondo.TabIndex = 24;
             this.Fondo.TabStop = false;
@@ -57,10 +56,9 @@ namespace ProyectoAltavista
             this.RegistrarInmueble.BackColor = System.Drawing.Color.WhiteSmoke;
             this.RegistrarInmueble.Font = new System.Drawing.Font("Monotype Corsiva", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RegistrarInmueble.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.RegistrarInmueble.Location = new System.Drawing.Point(107, 21);
-            this.RegistrarInmueble.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.RegistrarInmueble.Location = new System.Drawing.Point(80, 17);
             this.RegistrarInmueble.Name = "RegistrarInmueble";
-            this.RegistrarInmueble.Size = new System.Drawing.Size(581, 97);
+            this.RegistrarInmueble.Size = new System.Drawing.Size(462, 79);
             this.RegistrarInmueble.TabIndex = 46;
             this.RegistrarInmueble.Text = "Registrar Inmueble";
             // 
@@ -68,10 +66,9 @@ namespace ProyectoAltavista
             // 
             this.IngreseTipoDeInmueble.AutoSize = true;
             this.IngreseTipoDeInmueble.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.IngreseTipoDeInmueble.Location = new System.Drawing.Point(78, 172);
-            this.IngreseTipoDeInmueble.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.IngreseTipoDeInmueble.Location = new System.Drawing.Point(58, 140);
             this.IngreseTipoDeInmueble.Name = "IngreseTipoDeInmueble";
-            this.IngreseTipoDeInmueble.Size = new System.Drawing.Size(319, 27);
+            this.IngreseTipoDeInmueble.Size = new System.Drawing.Size(248, 22);
             this.IngreseTipoDeInmueble.TabIndex = 47;
             this.IngreseTipoDeInmueble.Text = "Ingrese Tipo De Inmueble";
             // 
@@ -83,19 +80,19 @@ namespace ProyectoAltavista
             "Casa.",
             "Departamento.",
             "Terreno."});
-            this.checkedListBox1.Location = new System.Drawing.Point(124, 227);
+            this.checkedListBox1.Location = new System.Drawing.Point(93, 184);
+            this.checkedListBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(171, 73);
+            this.checkedListBox1.Size = new System.Drawing.Size(129, 42);
             this.checkedListBox1.TabIndex = 48;
             this.checkedListBox1.SelectedIndexChanged += new System.EventHandler(this.checkedListBox1_SelectedIndexChanged);
             // 
             // AceptarRegisInmueble
             // 
             this.AceptarRegisInmueble.Font = new System.Drawing.Font("Lucida Fax", 19.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AceptarRegisInmueble.Location = new System.Drawing.Point(507, 172);
-            this.AceptarRegisInmueble.Margin = new System.Windows.Forms.Padding(4);
+            this.AceptarRegisInmueble.Location = new System.Drawing.Point(380, 140);
             this.AceptarRegisInmueble.Name = "AceptarRegisInmueble";
-            this.AceptarRegisInmueble.Size = new System.Drawing.Size(231, 62);
+            this.AceptarRegisInmueble.Size = new System.Drawing.Size(173, 50);
             this.AceptarRegisInmueble.TabIndex = 53;
             this.AceptarRegisInmueble.Text = "Aceptar";
             this.AceptarRegisInmueble.UseVisualStyleBackColor = true;
@@ -103,25 +100,26 @@ namespace ProyectoAltavista
             // btRegresarInmueble
             // 
             this.btRegresarInmueble.Font = new System.Drawing.Font("Lucida Fax", 19.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btRegresarInmueble.Location = new System.Drawing.Point(507, 319);
-            this.btRegresarInmueble.Margin = new System.Windows.Forms.Padding(4);
+            this.btRegresarInmueble.Location = new System.Drawing.Point(380, 259);
             this.btRegresarInmueble.Name = "btRegresarInmueble";
-            this.btRegresarInmueble.Size = new System.Drawing.Size(231, 62);
+            this.btRegresarInmueble.Size = new System.Drawing.Size(173, 50);
             this.btRegresarInmueble.TabIndex = 54;
             this.btRegresarInmueble.Text = "Regresar";
             this.btRegresarInmueble.UseVisualStyleBackColor = true;
+            this.btRegresarInmueble.Click += new System.EventHandler(this.btRegresarInmueble_Click);
             // 
             // MantenedorDeInmueble
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.btRegresarInmueble);
             this.Controls.Add(this.AceptarRegisInmueble);
             this.Controls.Add(this.checkedListBox1);
             this.Controls.Add(this.IngreseTipoDeInmueble);
             this.Controls.Add(this.RegistrarInmueble);
             this.Controls.Add(this.Fondo);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "MantenedorDeInmueble";
             this.Text = "MantenedorDeInmueble";
             ((System.ComponentModel.ISupportInitialize)(this.Fondo)).EndInit();

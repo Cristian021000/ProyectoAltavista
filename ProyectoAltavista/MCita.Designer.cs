@@ -57,6 +57,7 @@ namespace ProyectoAltavista
             this.btnRegistrarCita.TabIndex = 1;
             this.btnRegistrarCita.Text = "Registrar Cita";
             this.btnRegistrarCita.UseVisualStyleBackColor = true;
+            this.btnRegistrarCita.Click += new System.EventHandler(this.btnRegistrarCita_Click);
             // 
             // btnMostrarCita
             // 
@@ -67,6 +68,7 @@ namespace ProyectoAltavista
             this.btnMostrarCita.TabIndex = 2;
             this.btnMostrarCita.Text = "Mostrar Cita";
             this.btnMostrarCita.UseVisualStyleBackColor = true;
+            this.btnMostrarCita.Click += new System.EventHandler(this.btnMostrarCita_Click);
             // 
             // btnRegresarCita
             // 
@@ -77,6 +79,7 @@ namespace ProyectoAltavista
             this.btnRegresarCita.TabIndex = 3;
             this.btnRegresarCita.Text = "Regresar";
             this.btnRegresarCita.UseVisualStyleBackColor = true;
+            this.btnRegresarCita.Click += new System.EventHandler(this.btnRegresarCita_Click);
             // 
             // pictureBox1
             // 

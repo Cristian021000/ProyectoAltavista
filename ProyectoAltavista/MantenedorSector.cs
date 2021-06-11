@@ -16,5 +16,26 @@ namespace ProyectoAltavista
         {
             InitializeComponent();
         }
+
+        private void lbRegistrar_Click(object sender, EventArgs e)
+        {
+            MNuevoSector registroSector = new MNuevoSector();
+            registroSector.Show();
+            this.Close();
+        }
+
+        private void btModificar_Click(object sender, EventArgs e)
+        {
+            MModificarSector modificaSector = new MModificarSector();
+            modificaSector.Show();
+            this.Close();
+        }
+
+        private void btRegresar_Click(object sender, EventArgs e)
+        {
+            MenuPrincipal menPrincipal = new MenuPrincipal();
+            menPrincipal.Show();
+            this.Close();
+        }
     }
 }

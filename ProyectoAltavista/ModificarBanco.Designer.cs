@@ -135,6 +135,7 @@ namespace ProyectoAltavista
             this.btnSalir.TabIndex = 41;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // ModificarBanco
             // 
@@ -150,7 +151,7 @@ namespace ProyectoAltavista
             this.Controls.Add(this.label3);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox1Fondo);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ModificarBanco";
             this.Text = "ModificarBanco";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1Fondo)).EndInit();

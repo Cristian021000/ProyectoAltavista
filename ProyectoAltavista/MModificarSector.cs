@@ -16,5 +16,12 @@ namespace ProyectoAltavista
         {
             InitializeComponent();
         }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            MantenedorSector mantSector = new MantenedorSector();
+            mantSector.Show();
+            this.Close();
+        }
     }
 }

@@ -209,12 +209,6 @@
     <Compile Include="MantenedorCliPropietario.Designer.cs">
       <DependentUpon>MantenedorCliPropietario.cs</DependentUpon>
     </Compile>
-    <Compile Include="MantenedorInmueble.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MantenedorInmueble.designer.cs">
-      <DependentUpon>MantenedorInmueble.cs</DependentUpon>
-    </Compile>
     <Compile Include="MantenedorSitiosInteres.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -429,9 +423,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MantenedorCliPropietario.resx">
       <DependentUpon>MantenedorCliPropietario.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MantenedorInmueble.resx">
-      <DependentUpon>MantenedorInmueble.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MantenedorSitiosInteres.resx">
       <DependentUpon>MantenedorSitiosInteres.cs</DependentUpon>

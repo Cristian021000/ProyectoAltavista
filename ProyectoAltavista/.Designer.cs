@@ -1,7 +1,7 @@
 ﻿
 namespace ProyectoAltavista
 {
-    partial class Form1
+    partial class MNuevoSector
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace ProyectoAltavista
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MNuevoSector));
             this.cbElejirCiudadNuevoSector = new System.Windows.Forms.ComboBox();
             this.txtNombreDelNuevoSector = new System.Windows.Forms.TextBox();
             this.pictureBox1Fondo = new System.Windows.Forms.PictureBox();
@@ -118,8 +118,9 @@ namespace ProyectoAltavista
             this.btnCancelar.TabIndex = 33;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
-            // Form1
+            // MNuevoSector
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -132,8 +133,8 @@ namespace ProyectoAltavista
             this.Controls.Add(this.txtNombreDelNuevoSector);
             this.Controls.Add(this.cbElejirCiudadNuevoSector);
             this.Controls.Add(this.pictureBox1Fondo);
-            this.Name = "Form1";
-            this.Text = "Altavista";
+            this.Name = "MNuevoSector";
+            this.Text = "Registro Sector";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1Fondo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

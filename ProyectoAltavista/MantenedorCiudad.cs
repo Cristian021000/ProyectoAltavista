@@ -17,24 +17,25 @@ namespace ProyectoAltavista
             InitializeComponent();
         }
 
-        private void btListarCiudad_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btRegresarCiudad_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btRegistrarCiudad_Click(object sender, EventArgs e)
         {
-
+            RegistrarCiudad registroCiudad = new RegistrarCiudad();
+            registroCiudad.Show();
+            this.Close();
         }
 
-        private void lbMenuCiudad_Click(object sender, EventArgs e)
+        private void btModificar_Click(object sender, EventArgs e)
         {
+            ModificarInhabilitarCiudad modificaCiudad = new ModificarInhabilitarCiudad();
+            modificaCiudad.Show();
+            this.Close();
+        }
 
+        private void btRegresar_Click(object sender, EventArgs e)
+        {
+            MenuPrincipal menuPrincio = new MenuPrincipal();
+            menuPrincio.Show();
+            this.Close();
         }
     }
 }

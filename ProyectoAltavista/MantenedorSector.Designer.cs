@@ -47,6 +47,7 @@ namespace ProyectoAltavista
             this.lbRegistrar.TabIndex = 53;
             this.lbRegistrar.Text = "Registrar Sector";
             this.lbRegistrar.UseVisualStyleBackColor = true;
+            this.lbRegistrar.Click += new System.EventHandler(this.lbRegistrar_Click);
             // 
             // btModificar
             // 
@@ -57,6 +58,7 @@ namespace ProyectoAltavista
             this.btModificar.TabIndex = 52;
             this.btModificar.Text = "Modificar Sector";
             this.btModificar.UseVisualStyleBackColor = true;
+            this.btModificar.Click += new System.EventHandler(this.btModificar_Click);
             // 
             // btRegresar
             // 
@@ -67,6 +69,7 @@ namespace ProyectoAltavista
             this.btRegresar.TabIndex = 51;
             this.btRegresar.Text = "Regresar";
             this.btRegresar.UseVisualStyleBackColor = true;
+            this.btRegresar.Click += new System.EventHandler(this.btRegresar_Click);
             // 
             // lbSector
             // 

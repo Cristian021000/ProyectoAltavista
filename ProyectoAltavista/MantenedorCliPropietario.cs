@@ -16,5 +16,26 @@ namespace ProyectoAltavista
         {
             InitializeComponent();
         }
+
+        private void btRegistrar_Click(object sender, EventArgs e)
+        {
+            RegistrarCliPropietario registroCliPropietario = new RegistrarCliPropietario();
+            registroCliPropietario.Show();
+            this.Close();
+        }
+
+        private void btLista_Click(object sender, EventArgs e)
+        {
+            ConsultarCliPropietario consultaCliPropietario = new ConsultarCliPropietario();
+            consultaCliPropietario.Show();
+            this.Close();
+        }
+
+        private void btRegresar_Click(object sender, EventArgs e)
+        {
+            MenuPrincipal menPrincipal = new MenuPrincipal();
+            menPrincipal.Show();
+            this.Close();
+        }
     }
 }

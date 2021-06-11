@@ -96,5 +96,17 @@ namespace ProyectoAltavista
             ventas.Show();
             this.Hide();
         }
+        private void btCita_Click(object sender, EventArgs e)
+        {
+            MCita mantCita = new MCita();
+            mantCita.Show();
+            this.Hide();
+        }
+        private void btSector_Click(object sender, EventArgs e)
+        {
+            MantenedorSector mantSector = new MantenedorSector();
+            mantSector.Show();
+            this.Hide();
+        }
     }
 }

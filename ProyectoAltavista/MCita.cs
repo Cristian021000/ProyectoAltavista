@@ -16,5 +16,26 @@ namespace ProyectoAltavista
         {
             InitializeComponent();
         }
+
+        private void btnRegistrarCita_Click(object sender, EventArgs e)
+        {
+            MRegistrarCita RegistroCita = new MRegistrarCita();
+            RegistroCita.Show();
+            this.Close();
+        }
+
+        private void btnMostrarCita_Click(object sender, EventArgs e)
+        {
+            MMostrarCita mostrarCita = new MMostrarCita();
+            mostrarCita.Show();
+            this.Close();
+        }
+
+        private void btnRegresarCita_Click(object sender, EventArgs e)
+        {
+            MenuPrincipal menPrincipal = new MenuPrincipal();
+            menPrincipal.Show();
+            this.Close();
+        }
     }
 }

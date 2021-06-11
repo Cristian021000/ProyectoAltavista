@@ -37,5 +37,12 @@ namespace ProyectoAltavista
             menuPrincipal.Show();
             this.Close();
         }
+
+        private void btLista_Click(object sender, EventArgs e)
+        {
+            ConsultarCliente consultaCliente = new ConsultarCliente();
+            consultaCliente.Show();
+            this.Close();
+        }
     }
 }

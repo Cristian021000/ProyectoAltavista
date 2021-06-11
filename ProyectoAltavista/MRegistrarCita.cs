@@ -16,5 +16,12 @@ namespace ProyectoAltavista
         {
             InitializeComponent();
         }
+
+        private void btnCancelarRegistrarCita_Click(object sender, EventArgs e)
+        {
+            MCita mantCita = new MCita();
+            mantCita.Show();
+            this.Close();
+        }
     }
 }

@@ -127,6 +127,7 @@ namespace ProyectoAltavista
             this.btnSalir.TabIndex = 33;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // DataGridMostrarBanco
             // 
@@ -151,7 +152,7 @@ namespace ProyectoAltavista
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1Bnaco);
             this.Controls.Add(this.pictureBox1Fondo);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MostrandoBanco";
             this.Text = "MostarBanco";
             this.Load += new System.EventHandler(this.Form2_Load);

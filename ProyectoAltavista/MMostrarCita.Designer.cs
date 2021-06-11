@@ -87,6 +87,7 @@ namespace ProyectoAltavista
             this.btnSalirMostrarCita.TabIndex = 4;
             this.btnSalirMostrarCita.Text = "Salir";
             this.btnSalirMostrarCita.UseVisualStyleBackColor = true;
+            this.btnSalirMostrarCita.Click += new System.EventHandler(this.btnSalirMostrarCita_Click);
             // 
             // btnMostrarComoRealizado
             // 

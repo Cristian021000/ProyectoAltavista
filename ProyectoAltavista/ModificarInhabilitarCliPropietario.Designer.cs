@@ -30,7 +30,7 @@ namespace ProyectoAltavista
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ModificarInhabilitarCliPropietario));
-            this.btnRegresar = new System.Windows.Forms.Button();
+            this.btnInhabilitar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnModifcar = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
@@ -45,18 +45,19 @@ namespace ProyectoAltavista
             this.pictureBox1Fondo = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1Fondo)).BeginInit();
             this.SuspendLayout();
             // 
-            // btnRegresar
+            // btnInhabilitar
             // 
-            this.btnRegresar.Font = new System.Drawing.Font("Lucida Fax", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegresar.Location = new System.Drawing.Point(571, 271);
-            this.btnRegresar.Name = "btnRegresar";
-            this.btnRegresar.Size = new System.Drawing.Size(160, 49);
-            this.btnRegresar.TabIndex = 49;
-            this.btnRegresar.Text = "Regresar";
-            this.btnRegresar.UseVisualStyleBackColor = true;
+            this.btnInhabilitar.Font = new System.Drawing.Font("Lucida Fax", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInhabilitar.Location = new System.Drawing.Point(571, 271);
+            this.btnInhabilitar.Name = "btnInhabilitar";
+            this.btnInhabilitar.Size = new System.Drawing.Size(160, 49);
+            this.btnInhabilitar.TabIndex = 49;
+            this.btnInhabilitar.Text = "Inhabilitar";
+            this.btnInhabilitar.UseVisualStyleBackColor = true;
             // 
             // btnCancelar
             // 
@@ -67,6 +68,7 @@ namespace ProyectoAltavista
             this.btnCancelar.TabIndex = 48;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnModifcar
             // 
@@ -186,14 +188,26 @@ namespace ProyectoAltavista
             this.textBox1.Size = new System.Drawing.Size(321, 20);
             this.textBox1.TabIndex = 51;
             // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox1.Location = new System.Drawing.Point(191, 412);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(113, 26);
+            this.checkBox1.TabIndex = 52;
+            this.checkBox1.Text = "Habilitar";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
             // ModificarInhabilitarCliPropietario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.btnRegresar);
+            this.Controls.Add(this.btnInhabilitar);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnModifcar);
             this.Controls.Add(this.label3);
@@ -216,7 +230,7 @@ namespace ProyectoAltavista
 
         #endregion
 
-        private System.Windows.Forms.Button btnRegresar;
+        private System.Windows.Forms.Button btnInhabilitar;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnModifcar;
         private System.Windows.Forms.Label label3;
@@ -231,5 +245,6 @@ namespace ProyectoAltavista
         private System.Windows.Forms.PictureBox pictureBox1Fondo;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }

@@ -58,6 +58,7 @@ namespace ProyectoAltavista
             this.btLista.TabIndex = 52;
             this.btLista.Text = "Lista";
             this.btLista.UseVisualStyleBackColor = true;
+            this.btLista.Click += new System.EventHandler(this.btLista_Click);
             // 
             // btRegresar
             // 

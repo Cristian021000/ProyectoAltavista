@@ -16,5 +16,12 @@ namespace ProyectoAltavista
         {
             InitializeComponent();
         }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            MantenedorCliPropietario mantCliPropietario = new MantenedorCliPropietario();
+            mantCliPropietario.Show();
+            this.Close();
+        }
     }
 }

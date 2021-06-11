@@ -29,11 +29,14 @@ namespace ProyectoAltavista
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuVentas));
             this.lbVenta = new System.Windows.Forms.Label();
             this.btVentaPropio = new System.Windows.Forms.Button();
             this.btVentaTerceros = new System.Windows.Forms.Button();
             this.btSalir = new System.Windows.Forms.Button();
             this.btConsultarVenta = new System.Windows.Forms.Button();
+            this.pictureBox1Fondo = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1Fondo)).BeginInit();
             this.SuspendLayout();
             // 
             // lbVenta
@@ -86,6 +89,17 @@ namespace ProyectoAltavista
             this.btConsultarVenta.Text = "Consultar";
             this.btConsultarVenta.UseVisualStyleBackColor = true;
             // 
+            // pictureBox1Fondo
+            // 
+            this.pictureBox1Fondo.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1Fondo.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1Fondo.Image")));
+            this.pictureBox1Fondo.Location = new System.Drawing.Point(-8, -13);
+            this.pictureBox1Fondo.Name = "pictureBox1Fondo";
+            this.pictureBox1Fondo.Size = new System.Drawing.Size(815, 466);
+            this.pictureBox1Fondo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1Fondo.TabIndex = 53;
+            this.pictureBox1Fondo.TabStop = false;
+            // 
             // MenuVentas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -96,8 +110,10 @@ namespace ProyectoAltavista
             this.Controls.Add(this.btVentaTerceros);
             this.Controls.Add(this.btVentaPropio);
             this.Controls.Add(this.lbVenta);
+            this.Controls.Add(this.pictureBox1Fondo);
             this.Name = "MenuVentas";
             this.Text = "MenuVentas";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1Fondo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -110,5 +126,6 @@ namespace ProyectoAltavista
         private System.Windows.Forms.Button btVentaTerceros;
         private System.Windows.Forms.Button btSalir;
         private System.Windows.Forms.Button btConsultarVenta;
+        private System.Windows.Forms.PictureBox pictureBox1Fondo;
     }
 }

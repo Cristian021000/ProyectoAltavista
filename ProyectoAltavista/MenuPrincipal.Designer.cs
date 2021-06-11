@@ -168,6 +168,7 @@ namespace ProyectoAltavista
             this.btCita.TabIndex = 40;
             this.btCita.Text = "Cita";
             this.btCita.UseVisualStyleBackColor = true;
+            this.btCita.Click += new System.EventHandler(this.btCita_Click);
             // 
             // btSector
             // 
@@ -178,6 +179,7 @@ namespace ProyectoAltavista
             this.btSector.TabIndex = 41;
             this.btSector.Text = "Sector";
             this.btSector.UseVisualStyleBackColor = true;
+            this.btSector.Click += new System.EventHandler(this.btSector_Click);
             // 
             // btSalir
             // 

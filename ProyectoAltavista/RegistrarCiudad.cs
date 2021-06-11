@@ -21,5 +21,12 @@ namespace ProyectoAltavista
         {
 
         }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            MantenedorCiudad mantCiudad = new MantenedorCiudad();
+            mantCiudad.Show();
+            this.Close();
+        }
     }
 }

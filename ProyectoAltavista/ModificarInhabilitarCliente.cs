@@ -21,5 +21,12 @@ namespace ProyectoAltavista
         {
 
         }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            MantenedorCliente menuMantenedorCliente = new MantenedorCliente();
+            menuMantenedorCliente.Show();
+            this.Close();
+        }
     }
 }

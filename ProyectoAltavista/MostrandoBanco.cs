@@ -31,5 +31,12 @@ namespace ProyectoAltavista
         {
 
         }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            MantenedorBanco mantBano = new MantenedorBanco();
+            mantBano.Show();
+            this.Close();
+        }
     }
 }

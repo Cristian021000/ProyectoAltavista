@@ -21,5 +21,13 @@ namespace ProyectoAltavista
         {
 
         }
+
+        private void btRegresarInmueble_Click(object sender, EventArgs e)
+        {
+            MenuPrincipal menPrincipal = new MenuPrincipal();
+            menPrincipal.Show();
+            this.Close();
+        }
+
     }
 }
