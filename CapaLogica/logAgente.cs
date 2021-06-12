@@ -27,5 +27,9 @@ namespace CapaLogica
         {
             datAgente.Instancia.RegistrarAgente(Agente);
         }
+        public Boolean ExisteDatosAgente(entAgente Agente)
+        {
+            return datAgente.Instancia.ExisteDatosAgente(Agente);
+        }
     }
 }

@@ -214,6 +214,7 @@ namespace ProyectoAltavista
             this.txtRegistraCorreoElectronicoAgente.Name = "txtRegistraCorreoElectronicoAgente";
             this.txtRegistraCorreoElectronicoAgente.Size = new System.Drawing.Size(296, 20);
             this.txtRegistraCorreoElectronicoAgente.TabIndex = 41;
+            this.txtRegistraCorreoElectronicoAgente.TextChanged += new System.EventHandler(this.txtRegistraCorreoElectronicoAgente_TextChanged);
             // 
             // RegistrarAgente
             // 

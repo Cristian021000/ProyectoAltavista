@@ -31,19 +31,33 @@ namespace ProyectoAltavista
             try
             {
                 entAgente age = new entAgente();
+                age.dni = int.Parse(txtDniCliente.Text.Trim());
                 age.nombre = txtNombreCliente.Text.Trim();
                 age.apellido = txtApellidoCliente.Text.Trim();
                 age.edad = int.Parse(txtEdadCliente.Text.Trim());
                 age.celular = int.Parse(txtCelularCliente.Text.Trim());
                 age.correo = txtRegistraCorreoElectronicoAgente.Text.Trim();
                 age.contraseña = txtRegistrarContraseñaAgente.Text.Trim();
-                age.dni = int.Parse(txtDniCliente.Text.Trim());
-                logAgente.Instancia.RegistrarAgente(age);
+                age.estado = true;
+                
+                if (!logAgente.Instancia.ExisteDatosAgente(age))
+                {
+                    logAgente.Instancia.RegistrarAgente(age);
+                }
+                else
+                {
+                    MessageBox.Show("El correo o el número de celular ya se encuentran en uso");
+                }
             }
             catch (Exception ex)
             {
                 MessageBox.Show("error.." + ex);
             }
+        }
+
+        private void txtRegistraCorreoElectronicoAgente_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -51,6 +51,7 @@ namespace CapaDatos
                 SqlConnection cn = Conexion.Instancia.Conectar();
                 cmd = new SqlCommand("spRegistrarAgente", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
+                
                 cmd.Parameters.AddWithValue("@nombre", Agente.nombre);
                 cmd.Parameters.AddWithValue("@apellido", Agente.apellido);
                 cmd.Parameters.AddWithValue("@edad", Agente.edad);
@@ -58,6 +59,7 @@ namespace CapaDatos
                 cmd.Parameters.AddWithValue("@correo", Agente.correo);
                 cmd.Parameters.AddWithValue("@contraseña", Agente.contraseña);
                 cmd.Parameters.AddWithValue("@estado", Agente.estado);
+                cmd.Parameters.AddWithValue("@dni", Agente.dni);
                 cn.Open();
                 int i = cmd.ExecuteNonQuery();
                 if (i > 0)
@@ -72,5 +74,43 @@ namespace CapaDatos
             finally { cmd.Connection.Close(); }
             return registrar;
         }
+        public Boolean ExisteDatosAgente(entAgente Agente)
+        {
+            Boolean existe = false;
+            SqlCommand cmd = null;
+            try
+            {
+                SqlConnection cn = Conexion.Instancia.Conectar();
+                cmd = new SqlCommand("spExisteDatosAgente", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@correo", Agente.correo);
+                cmd.Parameters.AddWithValue("@celular", Agente.celular);
+                cn.Open();
+             
+                SqlDataReader dr = cmd.ExecuteReader();
+               
+                if (dr.Read())
+                {
+                    existe = true;                
+                }
+               
+                /*
+                  
+
+                int count = Convert.ToInt32(cmd.ExecuteScalar());
+                if (count > 0)
+                {
+                    existe = true;
+                }*/
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally { cmd.Connection.Close(); }
+            
+            
+            return existe;
+        }  
     }
 }
