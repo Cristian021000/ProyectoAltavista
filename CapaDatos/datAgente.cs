@@ -158,10 +158,9 @@ namespace CapaDatos
             try
             {
                 SqlConnection cn = Conexion.Instancia.Conectar();
-                cmd = new SqlCommand("spModificarAgente");
+                cmd = new SqlCommand("spModificarAgente", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@id", Agente.id);
-                cmd.Parameters.AddWithValue("@dni", Agente.dni);
+                cmd.Parameters.AddWithValue("@id", Agente.id);         
                 cmd.Parameters.AddWithValue("@nombre", Agente.nombre);
                 cmd.Parameters.AddWithValue("@apellido", Agente.apellido);
                 cmd.Parameters.AddWithValue("@edad", Agente.edad);
@@ -181,6 +180,87 @@ namespace CapaDatos
             }
             finally { cmd.Connection.Close(); }
             return modificar;
+        }
+        public Boolean BuscaAgente(entAgente Agente)
+        {
+            Boolean encontrado = false;
+            SqlCommand cmd = null;
+            try
+            {
+                SqlConnection cn = Conexion.Instancia.Conectar();
+                cmd = new SqlCommand("spBuscarAgente", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@dni", Agente.dni);
+                cn.Open();
+                SqlDataReader dr = cmd.ExecuteReader();
+                if (dr.Read())
+                {
+                    encontrado = true;
+                }
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally { cmd.Connection.Close(); }
+            return encontrado;
+        }
+        public entAgente DatosAgente(int dni)
+        {
+            entAgente Age = new entAgente();
+            SqlCommand cmd = null;
+            try
+            {
+                SqlConnection cn = Conexion.Instancia.Conectar();
+                cmd = new SqlCommand("spDatosAgente", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@dni", dni);
+                cn.Open();
+                SqlDataReader dr = cmd.ExecuteReader();
+                if (dr.Read())
+                {
+                    Age.id = Convert.ToInt32(dr["id"]);
+                    Age.dni = Convert.ToInt32(dr["dni"]);
+                    Age.nombre = dr["nombre"].ToString();
+                    Age.apellido = dr["apellido"].ToString();
+                    Age.edad = Convert.ToInt32(dr["edad"]);
+                    Age.celular = Convert.ToInt32(dr["celular"]);
+                    Age.correo = dr["correo"].ToString();
+                    Age.contraseña = dr["contraseña"].ToString();
+                    Age.estado = Convert.ToBoolean(dr["estado"]);
+                }
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally { cmd.Connection.Close(); }
+            return Age;
+        }
+        public Boolean DeshabilitarAgente(entAgente Agente)
+        {
+            SqlCommand cmd = null;
+            Boolean deshabilitar = false;
+            try
+            {
+                SqlConnection cn = Conexion.Instancia.Conectar();
+                cmd = new SqlCommand("spDeshabilitarAgente", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@id", Agente.id);
+                cmd.Parameters.AddWithValue("@estado", Agente.estado);
+                cn.Open();
+                int i = cmd.ExecuteNonQuery();
+                if (i > 0)
+                {
+                    deshabilitar = true;
+                }
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally { cmd.Connection.Close(); }
+            return deshabilitar;
         }
     }
 }

@@ -35,5 +35,21 @@ namespace CapaLogica
         {
             return datAgente.Instancia.ListarAgentes();
         }
+        public Boolean BuscarAgente(entAgente Agente)
+        {
+            return datAgente.Instancia.BuscaAgente(Agente);
+        }
+        public entAgente DatosAgente(int dni)
+        {
+            return datAgente.Instancia.DatosAgente(dni);
+        }
+        public void ModificarAgente(entAgente Agente)
+        {
+            datAgente.Instancia.ModificarAgente(Agente);
+        }
+        public void DeshabilitarAgente(entAgente Agente)
+        {
+            datAgente.Instancia.DeshabilitarAgente(Agente);
+        }
     }
 }

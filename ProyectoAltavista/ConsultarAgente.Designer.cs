@@ -108,6 +108,7 @@ namespace ProyectoAltavista
             this.btRegresar.TabIndex = 6;
             this.btRegresar.Text = "Regresar";
             this.btRegresar.UseVisualStyleBackColor = true;
+            this.btRegresar.Click += new System.EventHandler(this.btRegresar_Click);
             // 
             // ConsultarAgente
             // 

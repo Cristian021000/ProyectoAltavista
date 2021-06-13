@@ -48,11 +48,14 @@ namespace ProyectoAltavista
                 {
                     MessageBox.Show("El correo o el número de celular ya se encuentran en uso");
                 }
+                MessageBox.Show("El agente se a registrado correctamente");
             }
             catch (Exception ex)
             {
                 MessageBox.Show("error.." + ex);
             }
+
+            
         }
 
         private void txtRegistraCorreoElectronicoAgente_TextChanged(object sender, EventArgs e)

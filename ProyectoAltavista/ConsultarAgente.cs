@@ -27,8 +27,32 @@ namespace ProyectoAltavista
 
         private void btModificar_Click(object sender, EventArgs e)
         {
-            //ModificarAgente mod = new ModificarAgente();
+            try
+            {
+                entAgente Age = new entAgente();
+                Age.dni = int.Parse(txtDni.Text.Trim());
+                if (logAgente.Instancia.BuscarAgente(Age))
+                {
+                    ModificarAgente modi = new ModificarAgente(Age.dni);
+                    modi.Show();
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("No se encontró al agente");
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
 
+        private void btRegresar_Click(object sender, EventArgs e)
+        {
+            MantenedorAgente mantenedor = new MantenedorAgente();
+            mantenedor.Show();
+            this.Close();
         }
     }
 }
