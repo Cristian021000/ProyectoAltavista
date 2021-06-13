@@ -24,5 +24,6 @@ namespace CapaDatos
             cn.ConnectionString = "Data Source=DESKTOP-IP0E6TU;  Initial Catalog=ALTAVISTA; Integrated Security=true";
             return cn;
         }
+
     }
 }
