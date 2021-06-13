@@ -47,6 +47,7 @@ namespace ProyectoAltavista
             this.label6 = new System.Windows.Forms.Label();
             this.txtContraseñaDatosCliente = new System.Windows.Forms.TextBox();
             this.chbHabilitado = new System.Windows.Forms.CheckBox();
+            this.btDeshabilitar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1Fondo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -98,9 +99,9 @@ namespace ProyectoAltavista
             this.labelDatosCliente.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.labelDatosCliente.Location = new System.Drawing.Point(54, 22);
             this.labelDatosCliente.Name = "labelDatosCliente";
-            this.labelDatosCliente.Size = new System.Drawing.Size(421, 79);
+            this.labelDatosCliente.Size = new System.Drawing.Size(424, 79);
             this.labelDatosCliente.TabIndex = 26;
-            this.labelDatosCliente.Text = "Datos del Cliente";
+            this.labelDatosCliente.Text = "Datos del Agente";
             // 
             // label1
             // 
@@ -146,7 +147,7 @@ namespace ProyectoAltavista
             // btnModificar
             // 
             this.btnModificar.Font = new System.Drawing.Font("Lucida Fax", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnModificar.Location = new System.Drawing.Point(552, 134);
+            this.btnModificar.Location = new System.Drawing.Point(552, 108);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(188, 54);
             this.btnModificar.TabIndex = 31;
@@ -156,7 +157,7 @@ namespace ProyectoAltavista
             // btnCancelar
             // 
             this.btnCancelar.Font = new System.Drawing.Font("Lucida Fax", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.Location = new System.Drawing.Point(552, 291);
+            this.btnCancelar.Location = new System.Drawing.Point(552, 340);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(188, 54);
             this.btnCancelar.TabIndex = 32;
@@ -210,11 +211,22 @@ namespace ProyectoAltavista
             this.chbHabilitado.Text = "Habilitado";
             this.chbHabilitado.UseVisualStyleBackColor = true;
             // 
+            // btDeshabilitar
+            // 
+            this.btDeshabilitar.Font = new System.Drawing.Font("Lucida Fax", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btDeshabilitar.Location = new System.Drawing.Point(552, 225);
+            this.btDeshabilitar.Name = "btDeshabilitar";
+            this.btDeshabilitar.Size = new System.Drawing.Size(188, 54);
+            this.btDeshabilitar.TabIndex = 38;
+            this.btDeshabilitar.Text = "Deshabilitar";
+            this.btDeshabilitar.UseVisualStyleBackColor = true;
+            // 
             // ModificarAgente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btDeshabilitar);
             this.Controls.Add(this.chbHabilitado);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtContraseñaDatosCliente);
@@ -259,5 +271,6 @@ namespace ProyectoAltavista
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtContraseñaDatosCliente;
         private System.Windows.Forms.CheckBox chbHabilitado;
+        private System.Windows.Forms.Button btDeshabilitar;
     }
 }

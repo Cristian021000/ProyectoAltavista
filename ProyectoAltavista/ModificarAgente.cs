@@ -13,7 +13,7 @@ namespace ProyectoAltavista
     public partial class ModificarAgente : Form
     {
         public ModificarAgente()
-        {
+        { 
             InitializeComponent();
         }
 

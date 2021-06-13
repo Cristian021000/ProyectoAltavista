@@ -79,7 +79,7 @@ namespace ProyectoAltavista
             this.btModificarAgente.Name = "btModificarAgente";
             this.btModificarAgente.Size = new System.Drawing.Size(272, 50);
             this.btModificarAgente.TabIndex = 47;
-            this.btModificarAgente.Text = "Modificar Agente";
+            this.btModificarAgente.Text = "Consultar Agente";
             this.btModificarAgente.UseVisualStyleBackColor = true;
             this.btModificarAgente.Click += new System.EventHandler(this.btModificarAgente_Click);
             // 

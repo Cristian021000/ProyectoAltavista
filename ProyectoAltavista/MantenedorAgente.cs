@@ -33,8 +33,8 @@ namespace ProyectoAltavista
 
         private void btModificarAgente_Click(object sender, EventArgs e)
         {
-            ModificarAgente ModificarAge = new ModificarAgente();
-            ModificarAge.Show();
+            ConsultarAgente consultar = new ConsultarAgente();
+            consultar.Show();
             this.Close();
         }
 

@@ -45,10 +45,7 @@ namespace ProyectoAltavista
 
         private void btSalir_Click(object sender, EventArgs e)
         {
-            Login log = new Login();
-            
-            this.Close();
-            log.Close();
+            Application.Exit();
         }
 
         private void btBanco_Click(object sender, EventArgs e)

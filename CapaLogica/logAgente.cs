@@ -31,5 +31,9 @@ namespace CapaLogica
         {
             return datAgente.Instancia.ExisteDatosAgente(Agente);
         }
+        public List<entAgente> ListarAgentes()
+        {
+            return datAgente.Instancia.ListarAgentes();
+        }
     }
 }
