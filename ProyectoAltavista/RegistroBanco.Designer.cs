@@ -39,8 +39,10 @@ namespace ProyectoAltavista
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1CodigoBanco = new System.Windows.Forms.TextBox();
+            this.dgRegistroBanco = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1Fondo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgRegistroBanco)).BeginInit();
             this.SuspendLayout();
             // 
             // bt2RegistarBanco
@@ -52,6 +54,7 @@ namespace ProyectoAltavista
             this.bt2RegistarBanco.TabIndex = 16;
             this.bt2RegistarBanco.Text = "Agregar\r\n";
             this.bt2RegistarBanco.UseVisualStyleBackColor = true;
+            this.bt2RegistarBanco.Click += new System.EventHandler(this.bt2RegistarBanco_Click);
             // 
             // textbAgregarBanco
             // 
@@ -136,11 +139,21 @@ namespace ProyectoAltavista
             this.textBox1CodigoBanco.Size = new System.Drawing.Size(197, 32);
             this.textBox1CodigoBanco.TabIndex = 27;
             // 
+            // dgRegistroBanco
+            // 
+            this.dgRegistroBanco.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgRegistroBanco.Location = new System.Drawing.Point(397, 123);
+            this.dgRegistroBanco.Name = "dgRegistroBanco";
+            this.dgRegistroBanco.Size = new System.Drawing.Size(380, 257);
+            this.dgRegistroBanco.TabIndex = 28;
+            this.dgRegistroBanco.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgRegistroBanco_CellContentDoubleClick);
+            // 
             // RegistroBanco
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(834, 461);
+            this.Controls.Add(this.dgRegistroBanco);
             this.Controls.Add(this.textBox1CodigoBanco);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -150,11 +163,13 @@ namespace ProyectoAltavista
             this.Controls.Add(this.btSalir);
             this.Controls.Add(this.label1Bnaco);
             this.Controls.Add(this.pictureBox1Fondo);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "RegistroBanco";
             this.Text = "RegistroBanco";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1Fondo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgRegistroBanco)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -171,5 +186,6 @@ namespace ProyectoAltavista
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox1CodigoBanco;
+        private System.Windows.Forms.DataGridView dgRegistroBanco;
     }
 }
