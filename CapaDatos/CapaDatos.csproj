@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="datBanco.cs" />
     <Compile Include="datSitioInteres.cs" />
     <Compile Include="datAgente.cs" />
     <Compile Include="Conexion.cs" />
