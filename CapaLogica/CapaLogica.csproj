@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="logAgente.cs" />
+    <Compile Include="logBanco.cs" />
     <Compile Include="logSitioInteres.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
