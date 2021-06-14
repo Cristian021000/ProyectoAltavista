@@ -117,7 +117,8 @@ namespace ProyectoAltavista
             this.Controls.Add(this.btSalir);
             this.Controls.Add(this.label1Bnaco);
             this.Controls.Add(this.pictureBox1Fondo);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MantenedorBanco";
             this.Text = "MantenedorBanco";
             this.Load += new System.EventHandler(this.MantenedorBanco_Load);

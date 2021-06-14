@@ -53,6 +53,7 @@ namespace ProyectoAltavista
             this.btnGuardar.TabIndex = 31;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // label3
             // 
@@ -137,6 +138,7 @@ namespace ProyectoAltavista
             this.DataGridMostrarBanco.RowHeadersWidth = 51;
             this.DataGridMostrarBanco.Size = new System.Drawing.Size(376, 222);
             this.DataGridMostrarBanco.TabIndex = 34;
+            this.DataGridMostrarBanco.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridMostrarBanco_CellContentDoubleClick);
             // 
             // MostrandoBanco
             // 
@@ -152,6 +154,7 @@ namespace ProyectoAltavista
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1Bnaco);
             this.Controls.Add(this.pictureBox1Fondo);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MostrandoBanco";
             this.Text = "MostarBanco";

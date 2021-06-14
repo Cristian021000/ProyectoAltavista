@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CapaEntidad;
+using CapaLogica;
 
 namespace ProyectoAltavista
 {
@@ -15,6 +17,11 @@ namespace ProyectoAltavista
         public MostrandoBanco()
         {
             InitializeComponent();
+            ListarBanco();
+        }
+        public void ListarBanco()
+        {
+            DataGridMostrarBanco.DataSource = logBanco.Instancia.ListarBancos();
         }
 
         private void Form2_Load(object sender, EventArgs e)
@@ -37,6 +44,34 @@ namespace ProyectoAltavista
             MantenedorBanco mantBano = new MantenedorBanco();
             mantBano.Show();
             this.Close();
+        }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                entBanco banco = new entBanco();
+                banco.idbanco = int.Parse(textBox1IngresoBanco.Text.Trim());
+                if (logBanco.Instancia.BuscarBanco(banco))
+                {
+                    ModificarBanco mod = new ModificarBanco(banco.idbanco);
+                    mod.Show();
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("No se encontró al Banco");
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        private void DataGridMostrarBanco_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
