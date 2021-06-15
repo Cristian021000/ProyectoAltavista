@@ -26,7 +26,7 @@ namespace ProyectoAltavista
         }
         public void ListarBanco()
         {
-            DataGridVerBanco.DataSource = logBanco.Instancia.ListarBancos();
+            dataGridViewVerBanco.DataSource = logBanco.Instancia.ListarBancos();
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
@@ -35,8 +35,12 @@ namespace ProyectoAltavista
             mantBanco.Show();
             this.Close();
         }
+        private void LimpiarVariables()
+        {
+            textBox1NombreBanco.Text = "";
+        }
 
-        private void DataGridVerSitioInteres_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        private void btnGuardar_Click(object sender, EventArgs e)
         {
             try
             {
@@ -53,14 +57,9 @@ namespace ProyectoAltavista
             LimpiarVariables();
             ListarBanco();
         }
-        private void LimpiarVariables()
+        private void dataGridViewVerBanco_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            textBox1NombreBanco.Text = "";
-        }
-
-        private void btnGuardar_Click(object sender, EventArgs e)
-        {
-            DataGridViewRow filaActual = DataGridVerBanco.Rows[e.RowInd];
+            DataGridViewRow filaActual = dataGridViewVerBanco.Rows[e.RowIndex];
             textBox1NombreBanco.Text = filaActual.Cells[0].Value.ToString();
             txtIdBanco.Text = filaActual.Cells[1].Value.ToString();
         }
