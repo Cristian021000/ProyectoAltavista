@@ -31,10 +31,10 @@ namespace ProyectoAltavista
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MantenedorSitiosInteres));
             this.btRegistrarSitio = new System.Windows.Forms.Button();
-            this.btModificarSitio = new System.Windows.Forms.Button();
             this.btRegresar = new System.Windows.Forms.Button();
             this.lbSitioInteres = new System.Windows.Forms.Label();
             this.pictureBox1Fondo = new System.Windows.Forms.PictureBox();
+            this.btnListarSI = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1Fondo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -48,17 +48,6 @@ namespace ProyectoAltavista
             this.btRegistrarSitio.Text = "Registrar Sitio de interés";
             this.btRegistrarSitio.UseVisualStyleBackColor = true;
             this.btRegistrarSitio.Click += new System.EventHandler(this.btRegistrarSitio_Click);
-            // 
-            // btModificarSitio
-            // 
-            this.btModificarSitio.Font = new System.Drawing.Font("Lucida Fax", 19.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btModificarSitio.Location = new System.Drawing.Point(460, 171);
-            this.btModificarSitio.Name = "btModificarSitio";
-            this.btModificarSitio.Size = new System.Drawing.Size(272, 77);
-            this.btModificarSitio.TabIndex = 57;
-            this.btModificarSitio.Text = "Modificar Sitio de interés";
-            this.btModificarSitio.UseVisualStyleBackColor = true;
-            this.btModificarSitio.Click += new System.EventHandler(this.btModificarSitio_Click);
             // 
             // btRegresar
             // 
@@ -94,13 +83,24 @@ namespace ProyectoAltavista
             this.pictureBox1Fondo.TabIndex = 55;
             this.pictureBox1Fondo.TabStop = false;
             // 
+            // btnListarSI
+            // 
+            this.btnListarSI.Font = new System.Drawing.Font("Lucida Fax", 19.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnListarSI.Location = new System.Drawing.Point(505, 171);
+            this.btnListarSI.Name = "btnListarSI";
+            this.btnListarSI.Size = new System.Drawing.Size(250, 77);
+            this.btnListarSI.TabIndex = 59;
+            this.btnListarSI.Text = "Listar Sitios de interés";
+            this.btnListarSI.UseVisualStyleBackColor = true;
+            this.btnListarSI.Click += new System.EventHandler(this.btnListarSI_Click);
+            // 
             // MantenedorSitiosInteres
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnListarSI);
             this.Controls.Add(this.btRegistrarSitio);
-            this.Controls.Add(this.btModificarSitio);
             this.Controls.Add(this.btRegresar);
             this.Controls.Add(this.lbSitioInteres);
             this.Controls.Add(this.pictureBox1Fondo);
@@ -115,9 +115,9 @@ namespace ProyectoAltavista
         #endregion
 
         private System.Windows.Forms.Button btRegistrarSitio;
-        private System.Windows.Forms.Button btModificarSitio;
         private System.Windows.Forms.Button btRegresar;
         private System.Windows.Forms.Label lbSitioInteres;
         private System.Windows.Forms.PictureBox pictureBox1Fondo;
+        private System.Windows.Forms.Button btnListarSI;
     }
 }

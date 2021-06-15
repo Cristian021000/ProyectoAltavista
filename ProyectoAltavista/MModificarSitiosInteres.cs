@@ -15,9 +15,17 @@ namespace ProyectoAltavista
 {
     public partial class MModificarSitiosInteres : Form
     {
-        public MModificarSitiosInteres()
+        public MModificarSitiosInteres(int codSitioInteres)
         {
             InitializeComponent();
+            entSitioInteres Sitio = new entSitioInteres();
+            Sitio = logSitioInteres.Instancia.DatosSitioInteres(codSitioInteres);
+            txtCodigoModificaSI.Enabled = false;
+            checkBoxHabilitar.Enabled = false;
+            txtCodigoModificaSI.Text = Sitio.codSitioInteres.ToString();
+            txtModificarNombreSI.Text = Sitio.NombreSI.ToString();
+            txtModificarDireccionSI.Text = Sitio.DireccionSI.ToString();
+            checkBoxHabilitar.Checked = Sitio.estadoSI;
         }
 
         private void btnModificarSI_Click(object sender, EventArgs e)
@@ -28,8 +36,8 @@ namespace ProyectoAltavista
                 Sitio.codSitioInteres = int.Parse(txtCodigoModificaSI.Text.Trim());
                 Sitio.NombreSI = txtModificarNombreSI.Text.Trim();
                 Sitio.DireccionSI = txtModificarDireccionSI.Text.Trim();
-                Sitio.estadoSI = checkBoxHabilitar.Checked;
                 logSitioInteres.Instancia.EditarSI(Sitio);
+                MessageBox.Show("Se editaron correctamente los datos del sitio de interes.");
             }
             catch (Exception ex)
             {
@@ -42,6 +50,29 @@ namespace ProyectoAltavista
             MantenedorSitiosInteres MantenedorSitio = new MantenedorSitiosInteres();
             MantenedorSitio.Show();
             this.Close();
+        }
+
+        private void btnDeshabilitar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                entSitioInteres Sitio = new entSitioInteres();
+                Sitio.codSitioInteres = int.Parse(txtCodigoModificaSI.Text.Trim());
+                checkBoxHabilitar.Checked = false;
+                Sitio.estadoSI = checkBoxHabilitar.Checked;
+                logSitioInteres.Instancia.DeshabilitarSitioInteres(Sitio);
+                txtCodigoModificaSI.Enabled = false;
+                txtModificarNombreSI.Enabled = false;
+                txtModificarDireccionSI.Enabled = false;
+                MessageBox.Show("El sitio de interes a sido deshabilitado correctamente.");
+                MantenedorSitiosInteres MantenedorSitio = new MantenedorSitiosInteres();
+                MantenedorSitio.Show();
+                this.Close();
+            }
+            catch (Exception exe)
+            {
+                throw exe;
+            }
         }
     }
 }

@@ -18,6 +18,7 @@ namespace ProyectoAltavista
         {
             InitializeComponent();
             txtCodigoRegistrarSI.Enabled = false;
+        
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -39,10 +40,14 @@ namespace ProyectoAltavista
                 entSitioInteres Sitio = new entSitioInteres();
                 Sitio.NombreSI = txtRegistrarNombreSI.Text.Trim();
                 Sitio.DireccionSI = txtRegistrarDireccionSI.Text.Trim();
-                Sitio.estadoSI = checkBoxHabilitar.Checked;
+                Sitio.estadoSI = true;
                 logSitioInteres.Instancia.RegistrarSI(Sitio);
+                MessageBox.Show("El sitio de interes fue registrado.");
+                MantenedorSitiosInteres sitio = new MantenedorSitiosInteres();
+                sitio.Show();
+                this.Close();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show("Error" + ex);
             }

@@ -25,17 +25,17 @@ namespace ProyectoAltavista
             this.Close();
         }
 
-        private void btModificarSitio_Click(object sender, EventArgs e)
-        {
-            MModificarSitiosInteres ModificarSI = new MModificarSitiosInteres();
-            ModificarSI.Show();
-            this.Close();
-        }
-
         private void btRegresar_Click(object sender, EventArgs e)
         {
             MenuPrincipal MenuPri = new MenuPrincipal();
             MenuPri.Show();
+            this.Close();
+        }
+
+        private void btnListarSI_Click(object sender, EventArgs e)
+        {
+            ConsultarSitiosInteres consultaSI = new ConsultarSitiosInteres();
+            consultaSI.Show();
             this.Close();
         }
     }

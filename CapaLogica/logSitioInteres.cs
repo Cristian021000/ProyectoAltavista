@@ -18,6 +18,10 @@ namespace CapaLogica
             get { return logSitioInteres._instancia; }
         }
         #endregion singleton
+        public List<entSitioInteres> ListarSitioInteres()
+        {
+            return datSitioInteres.Instancia.ListarSitioInteres();
+        }
         public void RegistrarSI(entSitioInteres Sitio)
         {
             datSitioInteres.Instancia.IngresoSitioInteres(Sitio);
@@ -26,9 +30,17 @@ namespace CapaLogica
         {
             datSitioInteres.Instancia.EditarSitioInteres(Sitio);
         }
-        public List<entSitioInteres> ListarSitioInteres()
+        public Boolean BuscarSitioInteres(entSitioInteres Sitio)
         {
-            return datSitioInteres.Instancia.ListarSitioInteres();
+            return datSitioInteres.Instancia.BuscarSitioInteres(Sitio);
+        }
+        public entSitioInteres DatosSitioInteres(int codSitioInteres)
+        {
+            return datSitioInteres.Instancia.DatosSitioInteres(codSitioInteres);
+        }
+        public void DeshabilitarSitioInteres(entSitioInteres Sitio)
+        {
+            datSitioInteres.Instancia.DeshabilitarSitioInteres(Sitio);
         }
 
     }

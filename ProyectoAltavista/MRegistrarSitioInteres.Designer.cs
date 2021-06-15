@@ -33,7 +33,6 @@ namespace ProyectoAltavista
             this.txtRegistrarDireccionSI = new System.Windows.Forms.TextBox();
             this.txtRegistrarNombreSI = new System.Windows.Forms.TextBox();
             this.txtCodigoRegistrarSI = new System.Windows.Forms.TextBox();
-            this.checkBoxHabilitar = new System.Windows.Forms.CheckBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -46,42 +45,31 @@ namespace ProyectoAltavista
             // 
             // txtRegistrarDireccionSI
             // 
-            this.txtRegistrarDireccionSI.Location = new System.Drawing.Point(21, 334);
+            this.txtRegistrarDireccionSI.Location = new System.Drawing.Point(16, 375);
             this.txtRegistrarDireccionSI.Name = "txtRegistrarDireccionSI";
             this.txtRegistrarDireccionSI.Size = new System.Drawing.Size(364, 20);
             this.txtRegistrarDireccionSI.TabIndex = 13;
             // 
             // txtRegistrarNombreSI
             // 
-            this.txtRegistrarNombreSI.Location = new System.Drawing.Point(21, 223);
+            this.txtRegistrarNombreSI.Location = new System.Drawing.Point(16, 264);
             this.txtRegistrarNombreSI.Name = "txtRegistrarNombreSI";
             this.txtRegistrarNombreSI.Size = new System.Drawing.Size(364, 20);
             this.txtRegistrarNombreSI.TabIndex = 14;
             // 
             // txtCodigoRegistrarSI
             // 
-            this.txtCodigoRegistrarSI.Location = new System.Drawing.Point(21, 113);
+            this.txtCodigoRegistrarSI.Location = new System.Drawing.Point(16, 154);
             this.txtCodigoRegistrarSI.Name = "txtCodigoRegistrarSI";
             this.txtCodigoRegistrarSI.ReadOnly = true;
             this.txtCodigoRegistrarSI.Size = new System.Drawing.Size(131, 20);
             this.txtCodigoRegistrarSI.TabIndex = 15;
             // 
-            // checkBoxHabilitar
-            // 
-            this.checkBoxHabilitar.AutoSize = true;
-            this.checkBoxHabilitar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxHabilitar.Location = new System.Drawing.Point(156, 388);
-            this.checkBoxHabilitar.Name = "checkBoxHabilitar";
-            this.checkBoxHabilitar.Size = new System.Drawing.Size(86, 24);
-            this.checkBoxHabilitar.TabIndex = 17;
-            this.checkBoxHabilitar.Text = "Habilitar";
-            this.checkBoxHabilitar.UseVisualStyleBackColor = true;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(17, 80);
+            this.label2.Location = new System.Drawing.Point(12, 121);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(76, 22);
             this.label2.TabIndex = 30;
@@ -92,7 +80,7 @@ namespace ProyectoAltavista
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(17, 290);
+            this.label3.Location = new System.Drawing.Point(12, 331);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(276, 22);
             this.label3.TabIndex = 32;
@@ -102,7 +90,7 @@ namespace ProyectoAltavista
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(17, 184);
+            this.label5.Location = new System.Drawing.Point(12, 225);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(261, 22);
             this.label5.TabIndex = 31;
@@ -164,7 +152,6 @@ namespace ProyectoAltavista
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.checkBoxHabilitar);
             this.Controls.Add(this.txtCodigoRegistrarSI);
             this.Controls.Add(this.txtRegistrarNombreSI);
             this.Controls.Add(this.txtRegistrarDireccionSI);
@@ -181,7 +168,6 @@ namespace ProyectoAltavista
         private System.Windows.Forms.TextBox txtRegistrarDireccionSI;
         private System.Windows.Forms.TextBox txtRegistrarNombreSI;
         private System.Windows.Forms.TextBox txtCodigoRegistrarSI;
-        private System.Windows.Forms.CheckBox checkBoxHabilitar;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
