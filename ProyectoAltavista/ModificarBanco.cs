@@ -14,7 +14,7 @@ namespace ProyectoAltavista
 {
     public partial class ModificarBanco : Form
     {
-        public ModificarBanco()
+        public ModificarBanco(int idbanco)
         {
             InitializeComponent();
             ListarBanco();
@@ -26,7 +26,7 @@ namespace ProyectoAltavista
         }
         public void ListarBanco()
         {
-            DataGridVerSitioInteres.DataSource = logBanco.Instancia.ListarBancos();
+            DataGridVerBanco.DataSource = logBanco.Instancia.ListarBancos();
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
@@ -60,7 +60,7 @@ namespace ProyectoAltavista
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            DataGridViewRow filaActual = DataGridVerSitioInteres.Rows[e.RowIndex];
+            DataGridViewRow filaActual = DataGridVerBanco.Rows[e.RowInd];
             textBox1NombreBanco.Text = filaActual.Cells[0].Value.ToString();
             txtIdBanco.Text = filaActual.Cells[1].Value.ToString();
         }

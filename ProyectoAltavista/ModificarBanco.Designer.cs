@@ -33,7 +33,7 @@ namespace ProyectoAltavista
             this.pictureBox1Fondo = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.DataGridVerSitioInteres = new System.Windows.Forms.DataGridView();
+            this.DataGridVerBanco = new System.Windows.Forms.DataGridView();
             this.textBox1NombreBanco = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1Bnaco = new System.Windows.Forms.Label();
@@ -43,7 +43,7 @@ namespace ProyectoAltavista
             this.txtIdBanco = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1Fondo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DataGridVerSitioInteres)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridVerBanco)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1Fondo
@@ -78,15 +78,15 @@ namespace ProyectoAltavista
             this.label3.TabIndex = 29;
             this.label3.Text = "Datos del Banco";
             // 
-            // DataGridVerSitioInteres
+            // DataGridVerBanco
             // 
-            this.DataGridVerSitioInteres.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DataGridVerSitioInteres.Location = new System.Drawing.Point(421, 148);
-            this.DataGridVerSitioInteres.Name = "DataGridVerSitioInteres";
-            this.DataGridVerSitioInteres.RowHeadersWidth = 51;
-            this.DataGridVerSitioInteres.Size = new System.Drawing.Size(376, 222);
-            this.DataGridVerSitioInteres.TabIndex = 35;
-            this.DataGridVerSitioInteres.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridVerSitioInteres_CellContentDoubleClick);
+            this.DataGridVerBanco.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DataGridVerBanco.Location = new System.Drawing.Point(421, 148);
+            this.DataGridVerBanco.Name = "DataGridVerBanco";
+            this.DataGridVerBanco.RowHeadersWidth = 51;
+            this.DataGridVerBanco.Size = new System.Drawing.Size(376, 222);
+            this.DataGridVerBanco.TabIndex = 35;
+            this.DataGridVerBanco.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridVerSitioInteres_CellContentDoubleClick);
             // 
             // textBox1NombreBanco
             // 
@@ -172,7 +172,7 @@ namespace ProyectoAltavista
             this.Controls.Add(this.label1Bnaco);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox1NombreBanco);
-            this.Controls.Add(this.DataGridVerSitioInteres);
+            this.Controls.Add(this.DataGridVerBanco);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox1Fondo);
@@ -182,7 +182,7 @@ namespace ProyectoAltavista
             this.Text = "ModificarBanco";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1Fondo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DataGridVerSitioInteres)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridVerBanco)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -193,7 +193,7 @@ namespace ProyectoAltavista
         private System.Windows.Forms.PictureBox pictureBox1Fondo;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.DataGridView DataGridVerSitioInteres;
+        private System.Windows.Forms.DataGridView DataGridVerBanco;
         private System.Windows.Forms.TextBox textBox1NombreBanco;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1Bnaco;
