@@ -102,6 +102,7 @@ namespace ProyectoAltavista
             this.btnRegistar.TabIndex = 35;
             this.btnRegistar.Text = "Registrar";
             this.btnRegistar.UseVisualStyleBackColor = true;
+            this.btnRegistar.Click += new System.EventHandler(this.btnRegistar_Click);
             // 
             // btnCancelar
             // 

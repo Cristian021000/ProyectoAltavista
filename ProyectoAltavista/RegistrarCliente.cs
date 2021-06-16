@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CapaEntidad;
+using CapaLogica;
 
 namespace ProyectoAltavista
 {
@@ -43,6 +45,38 @@ namespace ProyectoAltavista
             MantenedorCliente mantenedorCliente = new MantenedorCliente();
             mantenedorCliente.Show();
             this.Close();
+        }
+
+
+        private void btnRegistar_Click(object sender, EventArgs e)
+        {
+
+            try
+            {
+                entCliente cli = new entCliente();
+                cli.dnicliente = int.Parse(txtDniCliente.Text.Trim());
+                cli.nombrecliente = txtNombreCliente.Text.Trim();
+                cli.apelcliente = txtApellidoCliente.Text.Trim();
+                cli.edadcliente = int.Parse(txtEdadCliente.Text.Trim());
+                cli.celcliente = int.Parse(txtCelularCliente.Text.Trim());
+                cli.estadocliente = true;
+
+                if (!logCliente.Instancia.ExisteDatosCliente(cli))
+                {
+                    logCliente.Instancia.RegistrarCliente(cli);
+                }
+                else
+                {
+                    MessageBox.Show(" El cliente ya esta Registrado ");
+                }
+                MessageBox.Show("El cliente se a registrado correctamente");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("error.." + ex);
+            }
+
+
         }
     }
 }

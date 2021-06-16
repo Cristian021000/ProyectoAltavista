@@ -159,6 +159,7 @@ namespace ProyectoAltavista
             this.btnModifcar.TabIndex = 34;
             this.btnModifcar.Text = "Modificar";
             this.btnModifcar.UseVisualStyleBackColor = true;
+            this.btnModifcar.Click += new System.EventHandler(this.btnModifcar_Click_1);
             // 
             // btnCancelar
             // 
@@ -180,6 +181,7 @@ namespace ProyectoAltavista
             this.btnRegresar.TabIndex = 36;
             this.btnRegresar.Text = "Regresar";
             this.btnRegresar.UseVisualStyleBackColor = true;
+            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click_1);
             // 
             // ModificarInhabilitarCliente
             // 
