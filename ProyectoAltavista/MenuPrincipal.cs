@@ -7,14 +7,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CapaEntidad;
+using CapaLogica;
 
 namespace ProyectoAltavista
-{
+{   
     public partial class MenuPrincipal : Form
     {
+        entAgente Agente = new entAgente();
         public MenuPrincipal()
         {
+            //Agente = agente;
             InitializeComponent();
+            //MessageBox.Show("id" + Agente.id);
         }
 
 
