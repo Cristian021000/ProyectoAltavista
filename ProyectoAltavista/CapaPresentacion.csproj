@@ -52,6 +52,12 @@
     <Compile Include="ConsultarAgente.Designer.cs">
       <DependentUpon>ConsultarAgente.cs</DependentUpon>
     </Compile>
+    <Compile Include="consultarCiudad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="consultarCiudad.Designer.cs">
+      <DependentUpon>consultarCiudad.cs</DependentUpon>
+    </Compile>
     <Compile Include="ConsultarCliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -357,6 +363,9 @@
     </Compile>
     <EmbeddedResource Include="ConsultarAgente.resx">
       <DependentUpon>ConsultarAgente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="consultarCiudad.resx">
+      <DependentUpon>consultarCiudad.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ConsultarCliente.resx">
       <DependentUpon>ConsultarCliente.cs</DependentUpon>

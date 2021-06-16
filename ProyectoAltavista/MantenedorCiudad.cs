@@ -24,12 +24,6 @@ namespace ProyectoAltavista
             this.Close();
         }
 
-        private void btModificar_Click(object sender, EventArgs e)
-        {
-            ModificarInhabilitarCiudad modificaCiudad = new ModificarInhabilitarCiudad();
-            modificaCiudad.Show();
-            this.Close();
-        }
 
         private void btRegresar_Click(object sender, EventArgs e)
         {

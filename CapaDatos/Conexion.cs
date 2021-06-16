@@ -21,7 +21,7 @@ namespace CapaDatos
         public SqlConnection Conectar()
         {
             SqlConnection cn = new SqlConnection();
-            cn.ConnectionString = "Data Source=DESKTOP-IP0E6TU;  Initial Catalog=ALTAVISTA; Integrated Security=true";
+            cn.ConnectionString = "Data Source=DESKTOP-FUV2JCE\\SQLEXPRESS;  Initial Catalog=ALTAVISTA; Integrated Security=true";
             return cn;
         }
 

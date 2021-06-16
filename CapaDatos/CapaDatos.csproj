@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="datBanco.cs" />
+    <Compile Include="datCiudad.cs" />
     <Compile Include="datCliente.cs" />
     <Compile Include="datSitioInteres.cs" />
     <Compile Include="datAgente.cs" />
