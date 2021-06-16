@@ -72,6 +72,7 @@ namespace ProyectoAltavista
             this.btnCancelarLogin.TabIndex = 2;
             this.btnCancelarLogin.Text = "Cancelar";
             this.btnCancelarLogin.UseVisualStyleBackColor = true;
+            this.btnCancelarLogin.Click += new System.EventHandler(this.btnCancelarLogin_Click);
             // 
             // lbNombreUsuario
             // 

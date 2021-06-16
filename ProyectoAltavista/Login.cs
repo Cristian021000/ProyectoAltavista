@@ -68,5 +68,10 @@ namespace ProyectoAltavista
             Agente.contraseña = (string)dt.Rows[0]["contraseña"];
             return Agente;
         }
+
+        private void btnCancelarLogin_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
