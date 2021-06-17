@@ -114,6 +114,7 @@ namespace ProyectoAltavista
             this.Controls.Add(this.rbVentaPropia);
             this.Controls.Add(this.lbDatosVentas);
             this.Controls.Add(this.pictureBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ConsultarVentas";
             this.Text = "ConsultarVentas";
             ((System.ComponentModel.ISupportInitialize)(this.dgvDatosVenta)).EndInit();

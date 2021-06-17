@@ -217,6 +217,7 @@ namespace ProyectoAltavista
             this.Controls.Add(this.txtDni);
             this.Controls.Add(this.lbDni);
             this.Controls.Add(this.pictureBox1Fondo);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "RegistrarCliPropietario";
             this.Text = "RegistrarCliPropietario";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1Fondo)).EndInit();

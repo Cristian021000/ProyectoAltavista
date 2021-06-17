@@ -160,6 +160,7 @@ namespace ProyectoAltavista
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.pictureBox1Fondo);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MModificarSector";
             this.Text = "Sector";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

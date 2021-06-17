@@ -104,6 +104,7 @@ namespace ProyectoAltavista
             this.Controls.Add(this.btRegresar);
             this.Controls.Add(this.lbSitioInteres);
             this.Controls.Add(this.pictureBox1Fondo);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MantenedorSitiosInteres";
             this.Text = "MantenedorSitiosInteres";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1Fondo)).EndInit();

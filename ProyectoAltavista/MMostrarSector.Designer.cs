@@ -101,6 +101,7 @@ namespace ProyectoAltavista
             this.Controls.Add(this.labelMostrarSector);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.pictureBox1Fondo);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MMostrarSector";
             this.Text = "Sector";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

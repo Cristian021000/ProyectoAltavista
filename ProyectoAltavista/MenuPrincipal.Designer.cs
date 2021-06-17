@@ -210,6 +210,7 @@ namespace ProyectoAltavista
             this.Controls.Add(this.btCliente);
             this.Controls.Add(this.label1Bnaco);
             this.Controls.Add(this.pictureBox1Fondo);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MenuPrincipal";
             this.Text = "MenuPrincipal";
             this.Load += new System.EventHandler(this.MenuPrincipal_Load);

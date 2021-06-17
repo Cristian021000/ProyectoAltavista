@@ -53,10 +53,9 @@ namespace ProyectoAltavista
             // 
             this.pictureBox1Fondo.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1Fondo.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1Fondo.Image")));
-            this.pictureBox1Fondo.Location = new System.Drawing.Point(-5, 2);
-            this.pictureBox1Fondo.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1Fondo.Location = new System.Drawing.Point(-3, 1);
             this.pictureBox1Fondo.Name = "pictureBox1Fondo";
-            this.pictureBox1Fondo.Size = new System.Drawing.Size(1064, 614);
+            this.pictureBox1Fondo.Size = new System.Drawing.Size(709, 399);
             this.pictureBox1Fondo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1Fondo.TabIndex = 53;
             this.pictureBox1Fondo.TabStop = false;
@@ -65,72 +64,65 @@ namespace ProyectoAltavista
             // txtPrecio
             // 
             this.txtPrecio.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPrecio.Location = new System.Drawing.Point(284, 119);
-            this.txtPrecio.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtPrecio.Location = new System.Drawing.Point(189, 77);
             this.txtPrecio.Multiline = true;
             this.txtPrecio.Name = "txtPrecio";
-            this.txtPrecio.Size = new System.Drawing.Size(334, 49);
+            this.txtPrecio.Size = new System.Drawing.Size(224, 33);
             this.txtPrecio.TabIndex = 65;
             this.txtPrecio.TextChanged += new System.EventHandler(this.txtPrecio_TextChanged);
             // 
             // txtPrecioMinimo
             // 
             this.txtPrecioMinimo.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPrecioMinimo.Location = new System.Drawing.Point(380, 178);
-            this.txtPrecioMinimo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtPrecioMinimo.Location = new System.Drawing.Point(253, 116);
             this.txtPrecioMinimo.Multiline = true;
             this.txtPrecioMinimo.Name = "txtPrecioMinimo";
-            this.txtPrecioMinimo.Size = new System.Drawing.Size(334, 49);
+            this.txtPrecioMinimo.Size = new System.Drawing.Size(224, 33);
             this.txtPrecioMinimo.TabIndex = 66;
             this.txtPrecioMinimo.TextChanged += new System.EventHandler(this.txtPrecioMinimo_TextChanged);
             // 
             // txtAccesoAgua
             // 
             this.txtAccesoAgua.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAccesoAgua.Location = new System.Drawing.Point(380, 245);
-            this.txtAccesoAgua.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtAccesoAgua.Location = new System.Drawing.Point(253, 159);
             this.txtAccesoAgua.Multiline = true;
             this.txtAccesoAgua.Name = "txtAccesoAgua";
-            this.txtAccesoAgua.Size = new System.Drawing.Size(334, 49);
+            this.txtAccesoAgua.Size = new System.Drawing.Size(224, 33);
             this.txtAccesoAgua.TabIndex = 67;
             // 
             // txtAccesoLuz
             // 
             this.txtAccesoLuz.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAccesoLuz.Location = new System.Drawing.Point(380, 304);
-            this.txtAccesoLuz.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtAccesoLuz.Location = new System.Drawing.Point(253, 198);
             this.txtAccesoLuz.Multiline = true;
             this.txtAccesoLuz.Name = "txtAccesoLuz";
-            this.txtAccesoLuz.Size = new System.Drawing.Size(334, 49);
+            this.txtAccesoLuz.Size = new System.Drawing.Size(224, 33);
             this.txtAccesoLuz.TabIndex = 68;
             // 
             // txtAccesoDesague
             // 
             this.txtAccesoDesague.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAccesoDesague.Location = new System.Drawing.Point(380, 378);
-            this.txtAccesoDesague.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtAccesoDesague.Location = new System.Drawing.Point(253, 246);
             this.txtAccesoDesague.Multiline = true;
             this.txtAccesoDesague.Name = "txtAccesoDesague";
-            this.txtAccesoDesague.Size = new System.Drawing.Size(334, 49);
+            this.txtAccesoDesague.Size = new System.Drawing.Size(224, 33);
             this.txtAccesoDesague.TabIndex = 69;
             // 
             // txtAccesoAlcantarillado
             // 
             this.txtAccesoAlcantarillado.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAccesoAlcantarillado.Location = new System.Drawing.Point(463, 451);
-            this.txtAccesoAlcantarillado.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtAccesoAlcantarillado.Location = new System.Drawing.Point(309, 293);
             this.txtAccesoAlcantarillado.Multiline = true;
             this.txtAccesoAlcantarillado.Name = "txtAccesoAlcantarillado";
-            this.txtAccesoAlcantarillado.Size = new System.Drawing.Size(334, 49);
+            this.txtAccesoAlcantarillado.Size = new System.Drawing.Size(224, 33);
             this.txtAccesoAlcantarillado.TabIndex = 70;
             // 
             // btnAceptar
             // 
             this.btnAceptar.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAceptar.Location = new System.Drawing.Point(191, 534);
-            this.btnAceptar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnAceptar.Location = new System.Drawing.Point(127, 347);
             this.btnAceptar.Name = "btnAceptar";
-            this.btnAceptar.Size = new System.Drawing.Size(252, 46);
+            this.btnAceptar.Size = new System.Drawing.Size(168, 30);
             this.btnAceptar.TabIndex = 71;
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.UseVisualStyleBackColor = true;
@@ -138,10 +130,9 @@ namespace ProyectoAltavista
             // btnCancelar
             // 
             this.btnCancelar.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.Location = new System.Drawing.Point(477, 534);
-            this.btnCancelar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnCancelar.Location = new System.Drawing.Point(318, 347);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(252, 46);
+            this.btnCancelar.Size = new System.Drawing.Size(168, 30);
             this.btnCancelar.TabIndex = 72;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
@@ -152,10 +143,9 @@ namespace ProyectoAltavista
             this.labelModificarTerreno.BackColor = System.Drawing.Color.WhiteSmoke;
             this.labelModificarTerreno.Font = new System.Drawing.Font("Monotype Corsiva", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelModificarTerreno.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.labelModificarTerreno.Location = new System.Drawing.Point(176, 9);
-            this.labelModificarTerreno.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelModificarTerreno.Location = new System.Drawing.Point(117, 6);
             this.labelModificarTerreno.Name = "labelModificarTerreno";
-            this.labelModificarTerreno.Size = new System.Drawing.Size(497, 85);
+            this.labelModificarTerreno.Size = new System.Drawing.Size(330, 57);
             this.labelModificarTerreno.TabIndex = 73;
             this.labelModificarTerreno.Text = "Modificar Terreno";
             this.labelModificarTerreno.Click += new System.EventHandler(this.labelModificarTerreno_Click);
@@ -164,10 +154,9 @@ namespace ProyectoAltavista
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(64, 134);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(43, 87);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(112, 34);
+            this.label6.Size = new System.Drawing.Size(73, 22);
             this.label6.TabIndex = 74;
             this.label6.Text = "Precio:";
             this.label6.Click += new System.EventHandler(this.label6_Click);
@@ -176,10 +165,9 @@ namespace ProyectoAltavista
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(64, 213);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Location = new System.Drawing.Point(43, 138);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(228, 34);
+            this.label7.Size = new System.Drawing.Size(148, 22);
             this.label7.TabIndex = 75;
             this.label7.Text = "Precio Minimo:";
             this.label7.Click += new System.EventHandler(this.label7_Click);
@@ -188,10 +176,9 @@ namespace ProyectoAltavista
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(64, 270);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(43, 175);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(233, 34);
+            this.label1.Size = new System.Drawing.Size(153, 22);
             this.label1.TabIndex = 76;
             this.label1.Text = "Acceso A Agua:";
             // 
@@ -199,10 +186,9 @@ namespace ProyectoAltavista
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(64, 340);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(43, 221);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(211, 34);
+            this.label2.Size = new System.Drawing.Size(139, 22);
             this.label2.TabIndex = 77;
             this.label2.Text = "Acceso A Luz:";
             // 
@@ -210,10 +196,9 @@ namespace ProyectoAltavista
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(64, 393);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Location = new System.Drawing.Point(43, 255);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(280, 34);
+            this.label8.Size = new System.Drawing.Size(184, 22);
             this.label8.TabIndex = 78;
             this.label8.Text = "Acceso A Desague:";
             // 
@@ -221,18 +206,17 @@ namespace ProyectoAltavista
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(64, 466);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Location = new System.Drawing.Point(43, 303);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(362, 34);
+            this.label9.Size = new System.Drawing.Size(238, 22);
             this.label9.TabIndex = 79;
             this.label9.Text = "Acceso A Alcantarillado:";
             // 
             // MModificarTerreno
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1057, 615);
+            this.ClientSize = new System.Drawing.Size(705, 400);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label2);
@@ -249,6 +233,8 @@ namespace ProyectoAltavista
             this.Controls.Add(this.txtPrecioMinimo);
             this.Controls.Add(this.txtPrecio);
             this.Controls.Add(this.pictureBox1Fondo);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "MModificarTerreno";
             this.Text = "MModificarTerreno";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1Fondo)).EndInit();

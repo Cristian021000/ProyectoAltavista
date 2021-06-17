@@ -102,6 +102,7 @@ namespace ProyectoAltavista
             this.Controls.Add(this.btnRegistrarCita);
             this.Controls.Add(this.lbCita);
             this.Controls.Add(this.pictureBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MCita";
             this.Text = "MCita";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

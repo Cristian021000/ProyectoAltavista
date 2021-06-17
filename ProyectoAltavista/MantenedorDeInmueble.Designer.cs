@@ -118,6 +118,7 @@ namespace ProyectoAltavista
             this.Controls.Add(this.IngreseTipoDeInmueble);
             this.Controls.Add(this.RegistrarInmueble);
             this.Controls.Add(this.Fondo);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MantenedorDeInmueble";
             this.Text = "MantenedorDeInmueble";
