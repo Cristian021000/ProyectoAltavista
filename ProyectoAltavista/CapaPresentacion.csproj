@@ -67,7 +67,7 @@
     <Compile Include="ConsultarCliPropietario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ConsultarCliPropietario.Designer.cs">
+    <Compile Include="ConsultarCliPropietario.designer.cs">
       <DependentUpon>ConsultarCliPropietario.cs</DependentUpon>
     </Compile>
     <Compile Include="ConsultarContratoInmueble.cs">
@@ -172,6 +172,12 @@
     <Compile Include="ModificarBanco.Designer.cs">
       <DependentUpon>ModificarBanco.cs</DependentUpon>
     </Compile>
+    <Compile Include="ModificarInhabilitarCliPropietario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarInhabilitarCliPropietario.designer.cs">
+      <DependentUpon>ModificarInhabilitarCliPropietario.cs</DependentUpon>
+    </Compile>
     <Compile Include="MostrandoBanco.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -257,12 +263,6 @@
     <Compile Include="ModificarInhabilitarCliente.Designer.cs">
       <DependentUpon>ModificarInhabilitarCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="ModificarInhabilitarCliPropietario.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ModificarInhabilitarCliPropietario.Designer.cs">
-      <DependentUpon>ModificarInhabilitarCliPropietario.cs</DependentUpon>
-    </Compile>
     <Compile Include="InmuebleMostrarSector.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -322,7 +322,7 @@
     <Compile Include="RegistrarCliPropietario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RegistrarCliPropietario.Designer.cs">
+    <Compile Include="RegistrarCliPropietario.designer.cs">
       <DependentUpon>RegistrarCliPropietario.cs</DependentUpon>
     </Compile>
     <Compile Include="RegistrarContratoInmueble.cs">
@@ -424,6 +424,9 @@
     <EmbeddedResource Include="ModificarBanco.resx">
       <DependentUpon>ModificarBanco.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ModificarInhabilitarCliPropietario.resx">
+      <DependentUpon>ModificarInhabilitarCliPropietario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MostrandoBanco.resx">
       <DependentUpon>MostrandoBanco.cs</DependentUpon>
     </EmbeddedResource>
@@ -468,9 +471,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ModificarInhabilitarCliente.resx">
       <DependentUpon>ModificarInhabilitarCliente.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ModificarInhabilitarCliPropietario.resx">
-      <DependentUpon>ModificarInhabilitarCliPropietario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="InmuebleMostrarSector.resx">
       <DependentUpon>InmuebleMostrarSector.cs</DependentUpon>

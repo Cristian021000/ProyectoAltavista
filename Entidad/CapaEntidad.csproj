@@ -45,6 +45,7 @@
     <Compile Include="entBanco.cs" />
     <Compile Include="entCiudad.cs" />
     <Compile Include="entCliente.cs" />
+    <Compile Include="entPropietario.cs" />
     <Compile Include="entSitioInteres.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
