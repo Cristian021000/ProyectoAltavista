@@ -18,7 +18,7 @@ namespace CapaLogica
             get { return logAgente._instancia; }
         }
         #endregion singleton
-        public DataTable IngresarAgente(entAgente Agente)
+        public Boolean IngresarAgente(entAgente Agente)
         {
             return datAgente.Instancia.IngresoAgente(Agente);
         }

@@ -19,10 +19,10 @@ namespace CapaDatos
             get { return datAgente._instancia; }
         }
         #endregion singleton
-        public DataTable IngresoAgente(entAgente Agente)
+        public Boolean IngresoAgente(entAgente Agente)
         {
-            SqlCommand cmd = null;   
-            DataTable dt = new DataTable();
+            SqlCommand cmd = null;
+            Boolean existe = false;
             try
             {
                 SqlConnection cn = Conexion.Instancia.Conectar();
@@ -31,15 +31,19 @@ namespace CapaDatos
                 cmd.Parameters.AddWithValue("@correo", Agente.correo);
                 cmd.Parameters.AddWithValue("@contraseña", Agente.contraseña);
                 cn.Open();
-                SqlDataAdapter da = new SqlDataAdapter(cmd);
-                da.Fill(dt);
-                return dt;
+                SqlDataReader da = cmd.ExecuteReader();
+                if(da.Read())
+                {
+                    existe = true;
+                }
+                
             }
             catch (Exception e)
             {
                 throw e;
             }
             finally { cmd.Connection.Close(); }
+            return existe;
             
         }
         public Boolean RegistrarAgente(entAgente Agente)

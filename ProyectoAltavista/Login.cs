@@ -28,15 +28,12 @@ namespace ProyectoAltavista
         {
 
             try
-            {
-                DataTable dt = new DataTable();
+            { 
                 entAgente agente = new entAgente();
                 agente.correo = txtNombreDeUsuario.Text;
                 agente.contraseña = txtContraseña.Text;
-                dt = logAgente.Instancia.IngresarAgente(agente);
-                if (dt.Rows.Count >= 1)
-                {
-                    agente = Agente(dt);   
+                if (logAgente.Instancia.IngresarAgente(agente))
+                {  
                     this.Hide();
                     MenuPrincipal menuPrin = new MenuPrincipal();
                     menuPrin.Show();
@@ -54,21 +51,6 @@ namespace ProyectoAltavista
 
 
         }
-
-        public entAgente Agente(DataTable dt)
-        {
-            entAgente Agente = new entAgente();
-            Agente.id = (int)dt.Rows[0]["id"];
-            Agente.dni = (int)dt.Rows[0]["dni"];
-            Agente.nombre = (string)dt.Rows[0]["nombre"];
-            Agente.apellido = (string)dt.Rows[0]["apellido"];
-            Agente.edad = (int)dt.Rows[0]["edad"];
-            Agente.celular = (int)dt.Rows[0]["celular"];
-            Agente.correo = (string)dt.Rows[0]["correo"];
-            Agente.contraseña = (string)dt.Rows[0]["contraseña"];
-            return Agente;
-        }
-
         private void btnCancelarLogin_Click(object sender, EventArgs e)
         {
             Application.Exit();

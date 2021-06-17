@@ -32,7 +32,7 @@ namespace ProyectoAltavista
                 Prop.dni = int.Parse(txtIngreseDni.Text.Trim());
                 if (logPropietario.Instancia.BuscarPropietario(Prop))
                 {
-                    ModificarInhabilitarCliPropietario mod = ModificarInhabilitarCliPropietario(Prop.dni);
+                    ModificarInhabilitarCliPropietario mod = new ModificarInhabilitarCliPropietario(Prop.dni);
                     mod.Show();
                     this.Close();
                 }
