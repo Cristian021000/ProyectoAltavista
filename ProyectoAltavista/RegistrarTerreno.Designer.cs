@@ -154,7 +154,7 @@ namespace ProyectoAltavista
             "Acceso a Alcantarillados.",
             "Acceso a Desagüe."});
             this.checkedListBox1.Location = new System.Drawing.Point(211, 434);
-            this.checkedListBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkedListBox1.Margin = new System.Windows.Forms.Padding(2);
             this.checkedListBox1.Name = "checkedListBox1";
             this.checkedListBox1.Size = new System.Drawing.Size(198, 61);
             this.checkedListBox1.TabIndex = 59;
@@ -257,7 +257,8 @@ namespace ProyectoAltavista
             this.Controls.Add(this.DireccionT);
             this.Controls.Add(this.lbRegistrarTerreno);
             this.Controls.Add(this.FondoT);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "RegistrarTerreno";
             this.Text = "RegistrarTerreno";
             ((System.ComponentModel.ISupportInitialize)(this.FondoT)).EndInit();

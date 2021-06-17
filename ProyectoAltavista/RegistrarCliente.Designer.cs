@@ -196,6 +196,7 @@ namespace ProyectoAltavista
             this.Controls.Add(this.txtNombreCliente);
             this.Controls.Add(this.txtDniCliente);
             this.Controls.Add(this.pictureBox1Fondo);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "RegistrarCliente";
             this.Text = "Registrar Cliente";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1Fondo)).EndInit();

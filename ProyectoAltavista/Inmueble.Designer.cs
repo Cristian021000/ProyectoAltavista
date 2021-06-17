@@ -88,7 +88,7 @@ namespace ProyectoAltavista
             this.MostrarInmueble.Font = new System.Drawing.Font("Lucida Fax", 19.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MostrarInmueble.Location = new System.Drawing.Point(20, 237);
             this.MostrarInmueble.Name = "MostrarInmueble";
-            this.MostrarInmueble.Size = new System.Drawing.Size(254, 78);
+            this.MostrarInmueble.Size = new System.Drawing.Size(275, 78);
             this.MostrarInmueble.TabIndex = 51;
             this.MostrarInmueble.Text = "MostrarInmueble";
             this.MostrarInmueble.UseVisualStyleBackColor = true;
@@ -115,6 +115,7 @@ namespace ProyectoAltavista
             this.Controls.Add(this.btRegistrarInmueble);
             this.Controls.Add(this.lbInmueble);
             this.Controls.Add(this.Fondo);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Inmueble";
             this.Text = "Inmueble";

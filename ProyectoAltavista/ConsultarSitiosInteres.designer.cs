@@ -59,9 +59,9 @@ namespace ProyectoAltavista
             this.lbVistiaSitio.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lbVistiaSitio.Location = new System.Drawing.Point(172, 21);
             this.lbVistiaSitio.Name = "lbVistiaSitio";
-            this.lbVistiaSitio.Size = new System.Drawing.Size(508, 79);
+            this.lbVistiaSitio.Size = new System.Drawing.Size(536, 79);
             this.lbVistiaSitio.TabIndex = 21;
-            this.lbVistiaSitio.Text = "Visita sitios e Interés";
+            this.lbVistiaSitio.Text = "Visita sitios de Interés";
             // 
             // txtCodigoSitio
             // 
@@ -138,6 +138,7 @@ namespace ProyectoAltavista
             this.Controls.Add(this.lbVistiaSitio);
             this.Controls.Add(this.DataGridVerSitioInteres);
             this.Controls.Add(this.pictureBox1Fondo);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ConsultarSitiosInteres";
             this.Text = "MVerSitiosInteres";
             ((System.ComponentModel.ISupportInitialize)(this.DataGridVerSitioInteres)).EndInit();

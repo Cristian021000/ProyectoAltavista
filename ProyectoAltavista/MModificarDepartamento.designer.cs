@@ -68,7 +68,7 @@ namespace ProyectoAltavista
             this.label6.Location = new System.Drawing.Point(29, 256);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(292, 34);
+            this.label6.Size = new System.Drawing.Size(192, 22);
             this.label6.TabIndex = 84;
             this.label6.Text = "Cantidad de Baños:";
             // 
@@ -79,7 +79,7 @@ namespace ProyectoAltavista
             this.label7.Location = new System.Drawing.Point(29, 190);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(228, 34);
+            this.label7.Size = new System.Drawing.Size(148, 22);
             this.label7.TabIndex = 83;
             this.label7.Text = "Precio Minimo:";
             // 
@@ -90,7 +90,7 @@ namespace ProyectoAltavista
             this.label8.Location = new System.Drawing.Point(29, 131);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(112, 34);
+            this.label8.Size = new System.Drawing.Size(73, 22);
             this.label8.TabIndex = 82;
             this.label8.Text = "Precio:";
             // 
@@ -153,7 +153,7 @@ namespace ProyectoAltavista
             this.label1.Location = new System.Drawing.Point(29, 400);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(393, 34);
+            this.label1.Size = new System.Drawing.Size(259, 22);
             this.label1.TabIndex = 92;
             this.label1.Text = "Cantidad de Habitaciones:";
             // 
@@ -164,7 +164,7 @@ namespace ProyectoAltavista
             this.label2.Location = new System.Drawing.Point(29, 480);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(619, 34);
+            this.label2.Size = new System.Drawing.Size(406, 22);
             this.label2.TabIndex = 91;
             this.label2.Text = "Cantidad Costruida en Metros Cuadrados:";
             // 
@@ -175,7 +175,7 @@ namespace ProyectoAltavista
             this.label9.Location = new System.Drawing.Point(29, 332);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(304, 34);
+            this.label9.Size = new System.Drawing.Size(197, 22);
             this.label9.TabIndex = 90;
             this.label9.Text = "Numero de Garajes:";
             // 
@@ -218,7 +218,7 @@ namespace ProyectoAltavista
             this.labelModificarDepartamento.Location = new System.Drawing.Point(198, 9);
             this.labelModificarDepartamento.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelModificarDepartamento.Name = "labelModificarDepartamento";
-            this.labelModificarDepartamento.Size = new System.Drawing.Size(672, 85);
+            this.labelModificarDepartamento.Size = new System.Drawing.Size(447, 57);
             this.labelModificarDepartamento.TabIndex = 93;
             this.labelModificarDepartamento.Text = "Modificar Departamento";
             // 
@@ -243,6 +243,7 @@ namespace ProyectoAltavista
             this.Controls.Add(this.txtPrecioMinimo);
             this.Controls.Add(this.txtPrecio);
             this.Controls.Add(this.pictureBox1Fondo);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MModificarDepartamento";
             this.Text = "Inmueble";
             this.Load += new System.EventHandler(this.MantenedorInmueble_Load);

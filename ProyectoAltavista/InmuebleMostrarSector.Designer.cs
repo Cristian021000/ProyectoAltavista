@@ -44,10 +44,9 @@ namespace ProyectoAltavista
             // 
             this.pictureBox1FondoSector.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1FondoSector.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1FondoSector.Image")));
-            this.pictureBox1FondoSector.Location = new System.Drawing.Point(-6, -1);
-            this.pictureBox1FondoSector.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1FondoSector.Location = new System.Drawing.Point(-4, -1);
             this.pictureBox1FondoSector.Name = "pictureBox1FondoSector";
-            this.pictureBox1FondoSector.Size = new System.Drawing.Size(991, 558);
+            this.pictureBox1FondoSector.Size = new System.Drawing.Size(743, 453);
             this.pictureBox1FondoSector.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1FondoSector.TabIndex = 56;
             this.pictureBox1FondoSector.TabStop = false;
@@ -58,30 +57,27 @@ namespace ProyectoAltavista
             this.lbMostrandoSector.BackColor = System.Drawing.Color.WhiteSmoke;
             this.lbMostrandoSector.Font = new System.Drawing.Font("Monotype Corsiva", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbMostrandoSector.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lbMostrandoSector.Location = new System.Drawing.Point(95, 26);
-            this.lbMostrandoSector.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbMostrandoSector.Location = new System.Drawing.Point(71, 21);
             this.lbMostrandoSector.Name = "lbMostrandoSector";
-            this.lbMostrandoSector.Size = new System.Drawing.Size(522, 97);
+            this.lbMostrandoSector.Size = new System.Drawing.Size(416, 79);
             this.lbMostrandoSector.TabIndex = 57;
             this.lbMostrandoSector.Text = "Mostando Sector";
             // 
             // DataGridMostrarSector
             // 
             this.DataGridMostrarSector.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DataGridMostrarSector.Location = new System.Drawing.Point(22, 145);
-            this.DataGridMostrarSector.Margin = new System.Windows.Forms.Padding(4);
+            this.DataGridMostrarSector.Location = new System.Drawing.Point(16, 118);
             this.DataGridMostrarSector.Name = "DataGridMostrarSector";
             this.DataGridMostrarSector.RowHeadersWidth = 51;
-            this.DataGridMostrarSector.Size = new System.Drawing.Size(501, 338);
+            this.DataGridMostrarSector.Size = new System.Drawing.Size(376, 275);
             this.DataGridMostrarSector.TabIndex = 58;
             // 
             // btModificarSector
             // 
             this.btModificarSector.Font = new System.Drawing.Font("Lucida Fax", 19.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btModificarSector.Location = new System.Drawing.Point(582, 155);
-            this.btModificarSector.Margin = new System.Windows.Forms.Padding(4);
+            this.btModificarSector.Location = new System.Drawing.Point(436, 126);
             this.btModificarSector.Name = "btModificarSector";
-            this.btModificarSector.Size = new System.Drawing.Size(363, 95);
+            this.btModificarSector.Size = new System.Drawing.Size(272, 77);
             this.btModificarSector.TabIndex = 59;
             this.btModificarSector.Text = "Modificar Sector";
             this.btModificarSector.UseVisualStyleBackColor = true;
@@ -89,10 +85,9 @@ namespace ProyectoAltavista
             // btRegresarSector
             // 
             this.btRegresarSector.Font = new System.Drawing.Font("Lucida Fax", 19.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btRegresarSector.Location = new System.Drawing.Point(633, 283);
-            this.btRegresarSector.Margin = new System.Windows.Forms.Padding(4);
+            this.btRegresarSector.Location = new System.Drawing.Point(475, 230);
             this.btRegresarSector.Name = "btRegresarSector";
-            this.btRegresarSector.Size = new System.Drawing.Size(231, 62);
+            this.btRegresarSector.Size = new System.Drawing.Size(173, 50);
             this.btRegresarSector.TabIndex = 60;
             this.btRegresarSector.Text = "Regresar";
             this.btRegresarSector.UseVisualStyleBackColor = true;
@@ -100,25 +95,26 @@ namespace ProyectoAltavista
             // bttSalir
             // 
             this.bttSalir.Font = new System.Drawing.Font("Lucida Fax", 19.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bttSalir.Location = new System.Drawing.Point(633, 399);
-            this.bttSalir.Margin = new System.Windows.Forms.Padding(4);
+            this.bttSalir.Location = new System.Drawing.Point(475, 324);
             this.bttSalir.Name = "bttSalir";
-            this.bttSalir.Size = new System.Drawing.Size(231, 62);
+            this.bttSalir.Size = new System.Drawing.Size(173, 50);
             this.bttSalir.TabIndex = 61;
             this.bttSalir.Text = "Salir";
             this.bttSalir.UseVisualStyleBackColor = true;
             // 
             // InmuebleMostrarSector
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(982, 553);
+            this.ClientSize = new System.Drawing.Size(736, 449);
             this.Controls.Add(this.bttSalir);
             this.Controls.Add(this.btRegresarSector);
             this.Controls.Add(this.btModificarSector);
             this.Controls.Add(this.DataGridMostrarSector);
             this.Controls.Add(this.lbMostrandoSector);
             this.Controls.Add(this.pictureBox1FondoSector);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "InmuebleMostrarSector";
             this.Text = "MostrarSector";
             this.Load += new System.EventHandler(this.InmuebleMostrarSector_Load);

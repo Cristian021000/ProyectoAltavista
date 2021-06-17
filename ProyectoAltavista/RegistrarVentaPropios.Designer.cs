@@ -227,6 +227,7 @@ namespace ProyectoAltavista
             this.Controls.Add(this.lbIdCita);
             this.Controls.Add(this.lbFecha);
             this.Controls.Add(this.pictureBox1Fondo);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "RegistrarVentaPropios";
             this.Text = "RegistrarVentaPropios";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1Fondo)).EndInit();

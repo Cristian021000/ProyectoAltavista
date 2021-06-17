@@ -111,6 +111,7 @@ namespace ProyectoAltavista
             this.Controls.Add(this.btVentaPropio);
             this.Controls.Add(this.lbVenta);
             this.Controls.Add(this.pictureBox1Fondo);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MenuVentas";
             this.Text = "MenuVentas";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1Fondo)).EndInit();

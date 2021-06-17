@@ -45,10 +45,9 @@ namespace ProyectoAltavista
             // 
             this.lbConsultarAgente.AutoSize = true;
             this.lbConsultarAgente.Font = new System.Drawing.Font("Monotype Corsiva", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbConsultarAgente.Location = new System.Drawing.Point(93, 23);
-            this.lbConsultarAgente.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbConsultarAgente.Location = new System.Drawing.Point(70, 19);
             this.lbConsultarAgente.Name = "lbConsultarAgente";
-            this.lbConsultarAgente.Size = new System.Drawing.Size(536, 97);
+            this.lbConsultarAgente.Size = new System.Drawing.Size(425, 79);
             this.lbConsultarAgente.TabIndex = 0;
             this.lbConsultarAgente.Text = "Consultar Agente";
             // 
@@ -57,9 +56,8 @@ namespace ProyectoAltavista
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1067, 554);
+            this.pictureBox1.Size = new System.Drawing.Size(800, 450);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -67,40 +65,36 @@ namespace ProyectoAltavista
             // dgvConsultaAgente
             // 
             this.dgvConsultaAgente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvConsultaAgente.Location = new System.Drawing.Point(52, 143);
-            this.dgvConsultaAgente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvConsultaAgente.Location = new System.Drawing.Point(39, 116);
             this.dgvConsultaAgente.Name = "dgvConsultaAgente";
             this.dgvConsultaAgente.RowHeadersWidth = 51;
-            this.dgvConsultaAgente.Size = new System.Drawing.Size(639, 380);
+            this.dgvConsultaAgente.Size = new System.Drawing.Size(479, 309);
             this.dgvConsultaAgente.TabIndex = 2;
             // 
             // lbIngresaDni
             // 
             this.lbIngresaDni.AutoSize = true;
             this.lbIngresaDni.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbIngresaDni.Location = new System.Drawing.Point(816, 94);
-            this.lbIngresaDni.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbIngresaDni.Location = new System.Drawing.Point(612, 76);
             this.lbIngresaDni.Name = "lbIngresaDni";
-            this.lbIngresaDni.Size = new System.Drawing.Size(155, 27);
+            this.lbIngresaDni.Size = new System.Drawing.Size(124, 22);
             this.lbIngresaDni.TabIndex = 3;
             this.lbIngresaDni.Text = "Ingrese DNI";
             // 
             // txtDni
             // 
             this.txtDni.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDni.Location = new System.Drawing.Point(760, 143);
-            this.txtDni.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDni.Location = new System.Drawing.Point(570, 116);
             this.txtDni.Name = "txtDni";
-            this.txtDni.Size = new System.Drawing.Size(267, 34);
+            this.txtDni.Size = new System.Drawing.Size(201, 29);
             this.txtDni.TabIndex = 4;
             // 
             // btModificar
             // 
             this.btModificar.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btModificar.Location = new System.Drawing.Point(809, 208);
-            this.btModificar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btModificar.Location = new System.Drawing.Point(607, 169);
             this.btModificar.Name = "btModificar";
-            this.btModificar.Size = new System.Drawing.Size(160, 43);
+            this.btModificar.Size = new System.Drawing.Size(120, 35);
             this.btModificar.TabIndex = 5;
             this.btModificar.Text = "Modificar";
             this.btModificar.UseVisualStyleBackColor = true;
@@ -109,10 +103,9 @@ namespace ProyectoAltavista
             // btRegresar
             // 
             this.btRegresar.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btRegresar.Location = new System.Drawing.Point(868, 475);
-            this.btRegresar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btRegresar.Location = new System.Drawing.Point(651, 386);
             this.btRegresar.Name = "btRegresar";
-            this.btRegresar.Size = new System.Drawing.Size(160, 48);
+            this.btRegresar.Size = new System.Drawing.Size(120, 39);
             this.btRegresar.TabIndex = 6;
             this.btRegresar.Text = "Regresar";
             this.btRegresar.UseVisualStyleBackColor = true;
@@ -120,9 +113,9 @@ namespace ProyectoAltavista
             // 
             // ConsultarAgente
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btRegresar);
             this.Controls.Add(this.btModificar);
             this.Controls.Add(this.txtDni);
@@ -130,7 +123,7 @@ namespace ProyectoAltavista
             this.Controls.Add(this.dgvConsultaAgente);
             this.Controls.Add(this.lbConsultarAgente);
             this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ConsultarAgente";
             this.Text = "ConsultarAgente";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

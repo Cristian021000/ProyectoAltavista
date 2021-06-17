@@ -47,9 +47,8 @@ namespace ProyectoAltavista
             this.pictureBox1Fondo.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1Fondo.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1Fondo.Image")));
             this.pictureBox1Fondo.Location = new System.Drawing.Point(0, -2);
-            this.pictureBox1Fondo.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1Fondo.Name = "pictureBox1Fondo";
-            this.pictureBox1Fondo.Size = new System.Drawing.Size(889, 457);
+            this.pictureBox1Fondo.Size = new System.Drawing.Size(667, 371);
             this.pictureBox1Fondo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1Fondo.TabIndex = 57;
             this.pictureBox1Fondo.TabStop = false;
@@ -60,10 +59,9 @@ namespace ProyectoAltavista
             this.lbNuevoSetor.BackColor = System.Drawing.Color.WhiteSmoke;
             this.lbNuevoSetor.Font = new System.Drawing.Font("Monotype Corsiva", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbNuevoSetor.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lbNuevoSetor.Location = new System.Drawing.Point(184, 9);
-            this.lbNuevoSetor.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbNuevoSetor.Location = new System.Drawing.Point(138, 7);
             this.lbNuevoSetor.Name = "lbNuevoSetor";
-            this.lbNuevoSetor.Size = new System.Drawing.Size(420, 97);
+            this.lbNuevoSetor.Size = new System.Drawing.Size(336, 79);
             this.lbNuevoSetor.TabIndex = 58;
             this.lbNuevoSetor.Text = "Nuevo Sector";
             // 
@@ -71,10 +69,9 @@ namespace ProyectoAltavista
             // 
             this.IngreseCuidad.AutoSize = true;
             this.IngreseCuidad.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.IngreseCuidad.Location = new System.Drawing.Point(102, 129);
-            this.IngreseCuidad.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.IngreseCuidad.Location = new System.Drawing.Point(76, 105);
             this.IngreseCuidad.Name = "IngreseCuidad";
-            this.IngreseCuidad.Size = new System.Drawing.Size(160, 27);
+            this.IngreseCuidad.Size = new System.Drawing.Size(126, 22);
             this.IngreseCuidad.TabIndex = 60;
             this.IngreseCuidad.Text = "Elija Ciudad";
             // 
@@ -95,39 +92,37 @@ namespace ProyectoAltavista
             "Piura",
             "Tumbes ",
             "Ica"});
-            this.ElijaCuidad.Location = new System.Drawing.Point(119, 172);
+            this.ElijaCuidad.Location = new System.Drawing.Point(89, 140);
+            this.ElijaCuidad.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ElijaCuidad.Name = "ElijaCuidad";
-            this.ElijaCuidad.Size = new System.Drawing.Size(123, 202);
+            this.ElijaCuidad.Size = new System.Drawing.Size(93, 154);
             this.ElijaCuidad.TabIndex = 61;
             // 
             // label1NombreDelSetor
             // 
             this.label1NombreDelSetor.AutoSize = true;
             this.label1NombreDelSetor.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1NombreDelSetor.Location = new System.Drawing.Point(455, 129);
-            this.label1NombreDelSetor.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1NombreDelSetor.Location = new System.Drawing.Point(341, 105);
             this.label1NombreDelSetor.Name = "label1NombreDelSetor";
-            this.label1NombreDelSetor.Size = new System.Drawing.Size(319, 27);
+            this.label1NombreDelSetor.Size = new System.Drawing.Size(248, 22);
             this.label1NombreDelSetor.TabIndex = 62;
             this.label1NombreDelSetor.Text = "Ingrese Nombre Del Setor";
             // 
             // textBox1INombreDeSector
             // 
             this.textBox1INombreDeSector.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1INombreDeSector.Location = new System.Drawing.Point(460, 172);
-            this.textBox1INombreDeSector.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox1INombreDeSector.Location = new System.Drawing.Point(345, 140);
             this.textBox1INombreDeSector.Multiline = true;
             this.textBox1INombreDeSector.Name = "textBox1INombreDeSector";
-            this.textBox1INombreDeSector.Size = new System.Drawing.Size(304, 40);
+            this.textBox1INombreDeSector.Size = new System.Drawing.Size(229, 33);
             this.textBox1INombreDeSector.TabIndex = 63;
             // 
             // btnAgregarSector
             // 
             this.btnAgregarSector.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregarSector.Location = new System.Drawing.Point(313, 282);
-            this.btnAgregarSector.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAgregarSector.Location = new System.Drawing.Point(235, 229);
             this.btnAgregarSector.Name = "btnAgregarSector";
-            this.btnAgregarSector.Size = new System.Drawing.Size(224, 37);
+            this.btnAgregarSector.Size = new System.Drawing.Size(168, 30);
             this.btnAgregarSector.TabIndex = 64;
             this.btnAgregarSector.Text = "Agregar Sector";
             this.btnAgregarSector.UseVisualStyleBackColor = true;
@@ -135,10 +130,9 @@ namespace ProyectoAltavista
             // Regresar
             // 
             this.Regresar.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Regresar.Location = new System.Drawing.Point(616, 282);
-            this.Regresar.Margin = new System.Windows.Forms.Padding(4);
+            this.Regresar.Location = new System.Drawing.Point(462, 229);
             this.Regresar.Name = "Regresar";
-            this.Regresar.Size = new System.Drawing.Size(224, 37);
+            this.Regresar.Size = new System.Drawing.Size(168, 30);
             this.Regresar.TabIndex = 65;
             this.Regresar.Text = "Regresar";
             this.Regresar.UseVisualStyleBackColor = true;
@@ -146,19 +140,18 @@ namespace ProyectoAltavista
             // Salir
             // 
             this.Salir.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Salir.Location = new System.Drawing.Point(481, 371);
-            this.Salir.Margin = new System.Windows.Forms.Padding(4);
+            this.Salir.Location = new System.Drawing.Point(361, 301);
             this.Salir.Name = "Salir";
-            this.Salir.Size = new System.Drawing.Size(169, 37);
+            this.Salir.Size = new System.Drawing.Size(127, 30);
             this.Salir.TabIndex = 66;
             this.Salir.Text = "Salir";
             this.Salir.UseVisualStyleBackColor = true;
             // 
             // InmuebleSetorRegistro
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(882, 453);
+            this.ClientSize = new System.Drawing.Size(662, 368);
             this.Controls.Add(this.Salir);
             this.Controls.Add(this.Regresar);
             this.Controls.Add(this.btnAgregarSector);
@@ -168,6 +161,8 @@ namespace ProyectoAltavista
             this.Controls.Add(this.IngreseCuidad);
             this.Controls.Add(this.lbNuevoSetor);
             this.Controls.Add(this.pictureBox1Fondo);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "InmuebleSetorRegistro";
             this.Text = "InmuebleSetorRegistro";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1Fondo)).EndInit();

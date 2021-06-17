@@ -131,6 +131,7 @@ namespace ProyectoAltavista
             this.Controls.Add(this.lbDatosContrato);
             this.Controls.Add(this.dataGridDatosCI);
             this.Controls.Add(this.pictureBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ConsultarContratoInmueble";
             this.Text = "ConsultarContratoInmueble";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridDatosCI)).EndInit();

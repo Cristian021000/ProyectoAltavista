@@ -87,9 +87,9 @@ namespace ProyectoAltavista
             // 
             this.pictureBox1Fondo.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1Fondo.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1Fondo.Image")));
-            this.pictureBox1Fondo.Location = new System.Drawing.Point(-10, -9);
+            this.pictureBox1Fondo.Location = new System.Drawing.Point(-4, -7);
             this.pictureBox1Fondo.Name = "pictureBox1Fondo";
-            this.pictureBox1Fondo.Size = new System.Drawing.Size(839, 465);
+            this.pictureBox1Fondo.Size = new System.Drawing.Size(830, 463);
             this.pictureBox1Fondo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1Fondo.TabIndex = 50;
             this.pictureBox1Fondo.TabStop = false;
@@ -104,6 +104,7 @@ namespace ProyectoAltavista
             this.Controls.Add(this.btRegresar);
             this.Controls.Add(this.lbMenu);
             this.Controls.Add(this.pictureBox1Fondo);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MantenedorCliente";
             this.Text = "Mantenedor del Cliente";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1Fondo)).EndInit();
