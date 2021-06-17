@@ -37,11 +37,19 @@ namespace ProyectoAltavista
                 Prop.edad = int.Parse(txtEdad.Text.Trim());
                 Prop.celular = int.Parse(txtCelular.Text.Trim());
                 Prop.direccion = txtDireccion.Text.Trim();
-                logPropietario.Instancia.RegistrarPropietario(Prop);
+                Prop.estadoPropietario = true;
+                if (!logPropietario.Instancia.ExisteDatosPropietario(Prop))
+                {
+                    logPropietario.Instancia.RegistrarPropietario(Prop);
+                }
+                else
+                {
+                    MessageBox.Show("El dni o el número de celular ya se encuentran en uso");
+                }
                 MessageBox.Show("El propietario fue registrado exitosamente ");
                 MantenedorSitiosInteres sitio = new MantenedorSitiosInteres();
                 sitio.Show();
-                this.Close();
+                
             }
             catch (Exception ex)
             {
