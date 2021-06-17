@@ -14,7 +14,8 @@ namespace ProyectoAltavista
 {
     public partial class ModificarBanco : Form
     {
-        public ModificarBanco(int idbanco)
+        MostrandoBanco banc;
+        public ModificarBanco(int idbanco, MostrandoBanco ban)
         {
             InitializeComponent();
             ListarBanco();
@@ -23,6 +24,7 @@ namespace ProyectoAltavista
             txtIdBanco.Enabled = false;
             textBox1NombreBanco.Text = banco.Nombre.ToString();
             txtIdBanco.Text = banco.idbanco.ToString();
+            banc = ban;
         }
         public void ListarBanco()
         {
@@ -31,8 +33,7 @@ namespace ProyectoAltavista
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
-            MantenedorBanco mantBanco = new MantenedorBanco();
-            mantBanco.Show();
+            banc.Show();
             this.Close();
         }
         private void LimpiarVariables()

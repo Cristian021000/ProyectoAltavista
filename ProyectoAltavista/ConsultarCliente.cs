@@ -14,10 +14,13 @@ namespace ProyectoAltavista
 {
     public partial class ConsultarCliente : Form
     {
-        public ConsultarCliente()
+        MantenedorCliente cliente;
+        ModificarInhabilitarCliente modificar;
+        public ConsultarCliente(MantenedorCliente menu)
         {
             InitializeComponent();
             ListarClientes();
+            cliente = menu;
         }
 
         public void ListarClientes()
@@ -34,9 +37,12 @@ namespace ProyectoAltavista
                 Cli.dnicliente = int.Parse(txtIngreseDni.Text.Trim());
                 if (logCliente.Instancia.BuscarCliente(Cli))
                 {
-                    ModificarAgente modi = new ModificarAgente(Cli.dnicliente);               //DUDA, SOLO debe ACEPTAR y NO MODIFICAR :'v
-                    modi.Show();
-                    this.Close();
+                    if (modificar == null) 
+                    {
+                        modificar = new ModificarInhabilitarCliente(Cli.dnicliente, this);
+                    }              //DUDA, SOLO debe ACEPTAR y NO MODIFICAR :'v
+                    modificar.Show();
+                    this.Hide();
                 }
                 else
                 {
@@ -49,18 +55,16 @@ namespace ProyectoAltavista
             }
         }
 
-        private void btRegistrar_Click(object sender, EventArgs e)
-        {
-
-            MantenedorCliente mantenedor = new MantenedorCliente();
-            mantenedor.Show();
-            this.Close();
-
-        }
 
         private void dgvDatosCliente_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void btRegresar_Click(object sender, EventArgs e)
+        {
+            cliente.Show();
+            this.Hide();
         }
     }
 }

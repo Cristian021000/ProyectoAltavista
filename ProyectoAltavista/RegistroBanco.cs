@@ -14,10 +14,12 @@ namespace ProyectoAltavista
 {
     public partial class RegistroBanco : Form
     {
-        public RegistroBanco()
+        MantenedorBanco mantBanco;
+        public RegistroBanco(MantenedorBanco ban)
         {
             InitializeComponent();
             ListarBanco();
+            mantBanco = ban;
         }
         public void ListarBanco()
         {
@@ -26,7 +28,6 @@ namespace ProyectoAltavista
 
         private void btSalir_Click(object sender, EventArgs e)
         {
-            MantenedorBanco mantBanco = new MantenedorBanco();
             mantBanco.Show();
             this.Close();
         }

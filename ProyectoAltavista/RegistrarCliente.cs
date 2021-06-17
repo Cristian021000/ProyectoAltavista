@@ -14,9 +14,11 @@ namespace ProyectoAltavista
 {
     public partial class RegistrarCliente : Form
     {
-        public RegistrarCliente()
+        MantenedorCliente clie;
+        public RegistrarCliente(MantenedorCliente cl)
         {
             InitializeComponent();
+            clie = cl;
         }
 
         private void lbRegistrarCliente_Click(object sender, EventArgs e)
@@ -42,9 +44,9 @@ namespace ProyectoAltavista
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            MantenedorCliente mantenedorCliente = new MantenedorCliente();
-            mantenedorCliente.Show();
-            this.Close();
+            
+            clie.Show();
+            this.Hide();
         }
 
 

@@ -12,30 +12,42 @@ namespace ProyectoAltavista
 {
     public partial class MCita : Form
     {
-        public MCita()
+        MenuPrincipal principal;
+        MRegistrarCita RegistroCita;
+        MMostrarCita mostrarCita;
+        public MCita(MenuPrincipal menu)
         {
             InitializeComponent();
+            principal = menu;
         }
 
         private void btnRegistrarCita_Click(object sender, EventArgs e)
         {
-            MRegistrarCita RegistroCita = new MRegistrarCita();
+            if (RegistroCita == null)
+            {
+               RegistroCita = new MRegistrarCita(this);
+            }
+            
             RegistroCita.Show();
-            this.Close();
+            this.Hide();
         }
 
         private void btnMostrarCita_Click(object sender, EventArgs e)
         {
-            MMostrarCita mostrarCita = new MMostrarCita();
+            if (mostrarCita == null)
+            {
+               mostrarCita = new MMostrarCita(this);
+            }
+            
             mostrarCita.Show();
-            this.Close();
+            this.Hide();
         }
 
         private void btnRegresarCita_Click(object sender, EventArgs e)
         {
-            MenuPrincipal menPrincipal = new MenuPrincipal();
-            menPrincipal.Show();
-            this.Close();
+            
+            principal.Show();
+            this.Hide();
         }
     }
 }

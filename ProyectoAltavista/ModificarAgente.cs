@@ -14,7 +14,8 @@ namespace ProyectoAltavista
 {
     public partial class ModificarAgente : Form
     {
-        public ModificarAgente(int dni)
+        ConsultarAgente consulta;
+        public ModificarAgente(int dni, ConsultarAgente consult)
         { 
             InitializeComponent();
             entAgente Agente = new entAgente();
@@ -29,6 +30,7 @@ namespace ProyectoAltavista
             txtDatosCorreoElectronica.Text = Agente.correo.ToString();
             txtContraseñaDatosCliente.Text = Agente.contraseña.ToString();
             chbHabilitado.Checked = Agente.estado;
+            consulta = consult;
         }
 
         private void txtCelular_TextChanged(object sender, EventArgs e)
@@ -43,8 +45,7 @@ namespace ProyectoAltavista
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            ConsultarAgente consultar = new ConsultarAgente();
-            consultar.Show();
+            consulta.Show();
             this.Close();
         }
 

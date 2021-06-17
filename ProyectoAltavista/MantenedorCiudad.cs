@@ -12,24 +12,30 @@ namespace ProyectoAltavista
 {
     public partial class MantenedorCiudad : Form
     {
-        public MantenedorCiudad()
+        MenuPrincipal principal;
+        RegistrarCiudad registroCiudad;
+        public MantenedorCiudad(MenuPrincipal menu)
         {
             InitializeComponent();
+            principal = menu;
         }
 
         private void btRegistrarCiudad_Click(object sender, EventArgs e)
         {
-            RegistrarCiudad registroCiudad = new RegistrarCiudad();
+            if (registroCiudad == null)
+            {
+                registroCiudad = new RegistrarCiudad(this);
+            }
             registroCiudad.Show();
-            this.Close();
+            this.Hide();
         }
 
 
         private void btRegresar_Click(object sender, EventArgs e)
         {
-            MenuPrincipal menuPrincio = new MenuPrincipal();
-            menuPrincio.Show();
-            this.Close();
+            
+            principal.Show();
+            this.Hide();
         }
     }
 }

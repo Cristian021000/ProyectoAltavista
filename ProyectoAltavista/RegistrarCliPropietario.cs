@@ -14,16 +14,17 @@ namespace ProyectoAltavista
 {
     public partial class RegistrarCliPropietario : Form
     {
-        public RegistrarCliPropietario()
+        MantenedorCliPropietario prop;
+        public RegistrarCliPropietario(MantenedorCliPropietario pro)
         {
             InitializeComponent();
+            prop = pro;
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            MantenedorCliPropietario mantCliPropietario = new MantenedorCliPropietario();
-            mantCliPropietario.Show();
-            this.Close();
+            prop.Show();
+            this.Hide();
         }
 
         private void btnRegistrar_Click(object sender, EventArgs e)
@@ -47,8 +48,8 @@ namespace ProyectoAltavista
                     MessageBox.Show("El dni o el número de celular ya se encuentran en uso");
                 }
                 MessageBox.Show("El propietario fue registrado exitosamente ");
-                MantenedorSitiosInteres sitio = new MantenedorSitiosInteres();
-                sitio.Show();
+                prop.Show();
+                this.Hide();
                 
             }
             catch (Exception ex)

@@ -15,7 +15,8 @@ namespace ProyectoAltavista
 {
     public partial class MModificarSitiosInteres : Form
     {
-        public MModificarSitiosInteres(int codSitioInteres)
+        ConsultarSitiosInteres sitio;
+        public MModificarSitiosInteres(int codSitioInteres, ConsultarSitiosInteres sit)
         {
             InitializeComponent();
             entSitioInteres Sitio = new entSitioInteres();
@@ -26,6 +27,7 @@ namespace ProyectoAltavista
             txtModificarNombreSI.Text = Sitio.NombreSI.ToString();
             txtModificarDireccionSI.Text = Sitio.DireccionSI.ToString();
             checkBoxHabilitar.Checked = Sitio.estadoSI;
+            sitio = sit;
         }
 
         private void btnModificarSI_Click(object sender, EventArgs e)
@@ -47,8 +49,8 @@ namespace ProyectoAltavista
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            MantenedorSitiosInteres MantenedorSitio = new MantenedorSitiosInteres();
-            MantenedorSitio.Show();
+            
+            sitio.Show();
             this.Close();
         }
 
@@ -65,8 +67,7 @@ namespace ProyectoAltavista
                 txtModificarNombreSI.Enabled = false;
                 txtModificarDireccionSI.Enabled = false;
                 MessageBox.Show("El sitio de interes a sido deshabilitado correctamente.");
-                MantenedorSitiosInteres MantenedorSitio = new MantenedorSitiosInteres();
-                MantenedorSitio.Show();
+                sitio.Show();
                 this.Close();
             }
             catch (Exception exe)

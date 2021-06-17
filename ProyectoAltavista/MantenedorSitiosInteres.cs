@@ -13,30 +13,41 @@ namespace ProyectoAltavista
 {
     public partial class MantenedorSitiosInteres : Form
     {
-        public MantenedorSitiosInteres()
+        MenuPrincipal principal;
+        MRegistrarSitioInteres RegistrarSI;
+        ConsultarSitiosInteres consultaSI;
+        public MantenedorSitiosInteres(MenuPrincipal menu)
         {
             InitializeComponent();
+            principal = menu;
         }
 
         private void btRegistrarSitio_Click(object sender, EventArgs e)
         {
-            MRegistrarSitioInteres RegistrarSI = new MRegistrarSitioInteres();
+            if (RegistrarSI == null)
+            {
+                 RegistrarSI = new MRegistrarSitioInteres(this);
+            }
+            
             RegistrarSI.Show();
-            this.Close();
+            this.Hide();
         }
 
         private void btRegresar_Click(object sender, EventArgs e)
-        {
-            MenuPrincipal MenuPri = new MenuPrincipal();
-            MenuPri.Show();
-            this.Close();
+        {   
+            principal.Show();
+            this.Hide();
         }
 
         private void btnListarSI_Click(object sender, EventArgs e)
         {
-            ConsultarSitiosInteres consultaSI = new ConsultarSitiosInteres();
+            if (consultaSI == null)
+            {
+               consultaSI = new ConsultarSitiosInteres(this);
+            }
+            
             consultaSI.Show();
-            this.Close();
+            this.Hide();
         }
     }
 }

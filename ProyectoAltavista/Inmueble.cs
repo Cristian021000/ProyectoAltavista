@@ -13,6 +13,7 @@ namespace ProyectoAltavista
     public partial class Inmueble : Form
     {
         MenuPrincipal menu;
+        MantenedorDeInmueble inmueble;
         public Inmueble(MenuPrincipal me)
         {
             InitializeComponent();
@@ -21,9 +22,12 @@ namespace ProyectoAltavista
 
         private void btRegistrarInmueble_Click(object sender, EventArgs e)
         {
-            MantenedorDeInmueble mantenedor = new MantenedorDeInmueble();
+            if (inmueble == null)
+            {
+                inmueble = new MantenedorDeInmueble(this);
+            }
             this.Close();
-            mantenedor.Show();
+            inmueble.Show();
         }
 
         private void btRegresar_Click(object sender, EventArgs e)

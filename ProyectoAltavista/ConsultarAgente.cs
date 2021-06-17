@@ -14,10 +14,13 @@ namespace ProyectoAltavista
 {
     public partial class ConsultarAgente : Form
     {
-        public ConsultarAgente()
+        MantenedorAgente agente;
+        ModificarAgente modificar;
+        public ConsultarAgente(MantenedorAgente menu)
         {
             InitializeComponent();
             ListarAgente();
+            agente = menu;
         }
 
         public void ListarAgente()
@@ -33,8 +36,12 @@ namespace ProyectoAltavista
                 Age.dni = int.Parse(txtDni.Text.Trim());
                 if (logAgente.Instancia.BuscarAgente(Age))
                 {
-                    ModificarAgente modi = new ModificarAgente(Age.dni);
-                    modi.Show();
+                    if (modificar == null)
+                    {
+                        modificar = new ModificarAgente(Age.dni, this);
+                    }
+                    
+                    modificar.Show();
                     this.Close();
                 }
                 else
@@ -50,8 +57,7 @@ namespace ProyectoAltavista
 
         private void btRegresar_Click(object sender, EventArgs e)
         {
-            MantenedorAgente mantenedor = new MantenedorAgente();
-            mantenedor.Show();
+            agente.Show();
             this.Close();
         }
     }

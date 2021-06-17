@@ -14,7 +14,8 @@ namespace ProyectoAltavista
 {
     public partial class ModificarInhabilitarCiudad : Form
     {
-        public ModificarInhabilitarCiudad(int codCiudad)
+        consultarCiudad ciuda;
+        public ModificarInhabilitarCiudad(int codCiudad, consultarCiudad ciu)
         {
             InitializeComponent();
             entCiudad Ciudad = new entCiudad();
@@ -22,6 +23,7 @@ namespace ProyectoAltavista
             txtNombreCiudad.Text = Ciudad.nombCiudad.ToString();
             textCódigoPostal.Text = Ciudad.postalCiudad.ToString();
             textReferenciasCiudad.Text = Ciudad.referenciasCiudad.ToString();
+            ciuda = ciu;
 
         }
         private void label2_Click(object sender, EventArgs e)
@@ -36,8 +38,8 @@ namespace ProyectoAltavista
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            MantenedorCiudad mantCiudad = new MantenedorCiudad();
-            mantCiudad.Show();
+            
+            ciuda.Show();
             this.Close();
         }
 

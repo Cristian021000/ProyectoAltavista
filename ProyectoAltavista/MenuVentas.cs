@@ -12,9 +12,11 @@ namespace ProyectoAltavista
 {
     public partial class MenuVentas : Form
     {
-        public MenuVentas()
+        MenuPrincipal principal;
+        public MenuVentas(MenuPrincipal menu)
         {
             InitializeComponent();
+            principal = menu;
         }
     }
 }

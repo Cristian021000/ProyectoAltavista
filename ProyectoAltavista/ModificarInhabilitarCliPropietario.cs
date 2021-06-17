@@ -14,10 +14,11 @@ namespace ProyectoAltavista
 {
     public partial class ModificarInhabilitarCliPropietario : Form
     {
-        public ModificarInhabilitarCliPropietario(int dni)
+        ConsultarCliPropietario propi;
+        public ModificarInhabilitarCliPropietario(int dni, ConsultarCliPropietario pro)
         {
             InitializeComponent();
-            entPropietario propietario = new entPropietario();
+            entPropietario propietario;
             propietario = logPropietario.Instancia.DatosPropietario(dni);
             txtId.Enabled = false;
             checkHabilitar.Enabled = false;
@@ -29,13 +30,13 @@ namespace ProyectoAltavista
             txtCelular.Text = propietario.celular.ToString();
             txtDireccion.Text = propietario.direccion.ToString();
             checkHabilitar.Checked = propietario.estadoPropietario;
+            propi = pro;
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
-        {
-            MantenedorCliPropietario mantCliPropietario = new MantenedorCliPropietario();
-            mantCliPropietario.Show();
-            this.Close();
+        {          
+            propi.Show();
+            this.Hide();
         }
 
         private void btnModifcar_Click(object sender, EventArgs e)

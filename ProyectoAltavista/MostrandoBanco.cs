@@ -14,10 +14,13 @@ namespace ProyectoAltavista
 {
     public partial class MostrandoBanco : Form
     {
-        public MostrandoBanco()
+        MantenedorBanco banc;
+        ModificarBanco mod;
+        public MostrandoBanco(MantenedorBanco ban)
         {
             InitializeComponent();
             ListarBanco();
+            banc = ban;
         }
         public void ListarBanco()
         {
@@ -41,8 +44,7 @@ namespace ProyectoAltavista
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
-            MantenedorBanco mantBano = new MantenedorBanco();
-            mantBano.Show();
+            banc.Show();
             this.Close();
         }
 
@@ -54,7 +56,11 @@ namespace ProyectoAltavista
                 banco.idbanco = int.Parse(textBox1IngresoBanco.Text.Trim());
                 if (logBanco.Instancia.BuscarBanco(banco))
                 {
-                    ModificarBanco mod = new ModificarBanco(banco.idbanco);
+                    if (mod == null) 
+                    {
+                        mod = new ModificarBanco(banco.idbanco, this);
+                    }
+                    //ModificarBanco mod = new ModificarBanco(banco.idbanco);
                     mod.Show();
                     this.Close();
                 }

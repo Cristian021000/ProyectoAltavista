@@ -14,9 +14,11 @@ namespace ProyectoAltavista
 {
     public partial class RegistrarCiudad : Form
     {
-        public RegistrarCiudad()
+        MantenedorCiudad ciud;
+        public RegistrarCiudad(MantenedorCiudad ci)
         {
             InitializeComponent();
+            ciud = ci;
         }
 
         private void lbRegistrarCiudad_Click(object sender, EventArgs e)
@@ -26,9 +28,8 @@ namespace ProyectoAltavista
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            MantenedorCiudad mantCiudad = new MantenedorCiudad();
-            mantCiudad.Show();
-            this.Close();
+            ciud.Show();
+            this.Hide();
         }
 
         private void btnRegistrar_Click(object sender, EventArgs e)
@@ -41,9 +42,8 @@ namespace ProyectoAltavista
                 ciudad.postalCiudad = int.Parse(textCódigoPostal.Text.Trim());
                 logCiudad.Instancia.RegistrarCiudad(ciudad);
                 MessageBox.Show("Ciudad Registrada Correctamente");
-                MantenedorCiudad manCiudad = new MantenedorCiudad();
-                manCiudad.Show();
-                this.Close();
+                ciud.Show();
+                this.Hide();
 
             }
             catch (Exception ex)

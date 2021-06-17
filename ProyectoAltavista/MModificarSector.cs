@@ -12,15 +12,17 @@ namespace ProyectoAltavista
 {
     public partial class MModificarSector : Form
     {
-        public MModificarSector()
+        MantenedorSector sector;
+        public MModificarSector(MantenedorSector sec)
         {
             InitializeComponent();
+            sector = sec;
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            MantenedorSector mantSector = new MantenedorSector();
-            mantSector.Show();
+            
+            sector.Show();
             this.Close();
         }
     }

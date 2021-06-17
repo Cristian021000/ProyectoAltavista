@@ -82,6 +82,7 @@ namespace ProyectoAltavista
             this.btSalir.TabIndex = 8;
             this.btSalir.Text = "Salir";
             this.btSalir.UseVisualStyleBackColor = false;
+            this.btSalir.Click += new System.EventHandler(this.btSalir_Click);
             // 
             // label1Bnaco
             // 

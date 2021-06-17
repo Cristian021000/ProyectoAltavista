@@ -12,14 +12,15 @@ namespace ProyectoAltavista
 {
     public partial class MRegistrarCita : Form
     {
-        public MRegistrarCita()
+        MCita mantCita;
+        public MRegistrarCita(MCita ci)
         {
             InitializeComponent();
+            mantCita = ci;
         }
 
         private void btnCancelarRegistrarCita_Click(object sender, EventArgs e)
-        {
-            MCita mantCita = new MCita();
+        {   
             mantCita.Show();
             this.Close();
         }

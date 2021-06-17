@@ -14,6 +14,7 @@ namespace ProyectoAltavista
 {
     public partial class Login : Form
     {
+        MenuPrincipal principal;
         public Login()
         {
             InitializeComponent();
@@ -33,10 +34,14 @@ namespace ProyectoAltavista
                 agente.correo = txtNombreDeUsuario.Text;
                 agente.contraseña = txtContraseña.Text;
                 if (logAgente.Instancia.IngresarAgente(agente))
-                {  
+                {
+                    if (principal == null)
+                    {
+                        principal = new MenuPrincipal(this);
+                    }
+                    MessageBox.Show("Bienvenido");
+                    principal.Show();
                     this.Hide();
-                    MenuPrincipal menuPrin = new MenuPrincipal();
-                    menuPrin.Show();
                 }
                 else
                 {

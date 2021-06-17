@@ -14,15 +14,16 @@ namespace ProyectoAltavista
 {
     public partial class RegistrarAgente : Form
     {
-        public RegistrarAgente()
+        MantenedorAgente MantenedorAgen;
+        public RegistrarAgente(MantenedorAgente ag)
         {
             InitializeComponent();
+            MantenedorAgen = ag;
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            MantenedorAgente MantenedorAge = new MantenedorAgente();
-            MantenedorAge.Show();
+            MantenedorAgen.Show();
             this.Close();
         }
 

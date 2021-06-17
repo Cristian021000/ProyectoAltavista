@@ -14,10 +14,13 @@ namespace ProyectoAltavista
 {
     public partial class consultarCiudad : Form
     {
-        public consultarCiudad()
+        MantenedorCiudad ciuda;
+        ModificarInhabilitarCiudad modi;
+        public consultarCiudad(MantenedorCiudad ciud)
         {
             InitializeComponent();
             ListaCiudad();
+            ciuda = ciud;
 
         }
         public void ListaCiudad()
@@ -32,9 +35,13 @@ namespace ProyectoAltavista
                 entCiudad ciudad = new entCiudad();
                 if (logCiudad.Instancia.BuscaCiudad(ciudad))
                 {
-                    ModificarInhabilitarCiudad modi = new ModificarInhabilitarCiudad(ciudad.codCiudad);
+                    if (modi == null )
+                    {
+                         modi = new ModificarInhabilitarCiudad(ciudad.codCiudad, this);
+                    }
+                    
                     modi.Show();
-                    this.Close();
+                    this.Hide();
                 }
                 else
                 {

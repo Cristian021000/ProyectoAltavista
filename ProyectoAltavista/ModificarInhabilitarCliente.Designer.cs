@@ -43,7 +43,7 @@ namespace ProyectoAltavista
             this.label3 = new System.Windows.Forms.Label();
             this.btnModifcar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
-            this.btnRegresar = new System.Windows.Forms.Button();
+            this.btModificar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1Fondo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -164,7 +164,7 @@ namespace ProyectoAltavista
             // btnCancelar
             // 
             this.btnCancelar.Font = new System.Drawing.Font("Lucida Fax", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.Location = new System.Drawing.Point(571, 187);
+            this.btnCancelar.Location = new System.Drawing.Point(572, 336);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(160, 49);
             this.btnCancelar.TabIndex = 35;
@@ -172,23 +172,23 @@ namespace ProyectoAltavista
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
-            // btnRegresar
+            // btModificar
             // 
-            this.btnRegresar.Font = new System.Drawing.Font("Lucida Fax", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegresar.Location = new System.Drawing.Point(571, 277);
-            this.btnRegresar.Name = "btnRegresar";
-            this.btnRegresar.Size = new System.Drawing.Size(160, 49);
-            this.btnRegresar.TabIndex = 36;
-            this.btnRegresar.Text = "Regresar";
-            this.btnRegresar.UseVisualStyleBackColor = true;
-            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click_1);
+            this.btModificar.Font = new System.Drawing.Font("Lucida Fax", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btModificar.Location = new System.Drawing.Point(572, 219);
+            this.btModificar.Name = "btModificar";
+            this.btModificar.Size = new System.Drawing.Size(160, 47);
+            this.btModificar.TabIndex = 36;
+            this.btModificar.Text = "Modificar";
+            this.btModificar.UseVisualStyleBackColor = true;
+            this.btModificar.Click += new System.EventHandler(this.btModificar_Click);
             // 
             // ModificarInhabilitarCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btnRegresar);
+            this.Controls.Add(this.btModificar);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnModifcar);
             this.Controls.Add(this.label3);
@@ -224,6 +224,6 @@ namespace ProyectoAltavista
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnModifcar;
         private System.Windows.Forms.Button btnCancelar;
-        private System.Windows.Forms.Button btnRegresar;
+        private System.Windows.Forms.Button btModificar;
     }
 }

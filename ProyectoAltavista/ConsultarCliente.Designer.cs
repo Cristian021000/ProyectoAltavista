@@ -35,7 +35,7 @@ namespace ProyectoAltavista
             this.pictureBox1Fondo = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btAceptar = new System.Windows.Forms.Button();
-            this.btRegistrar = new System.Windows.Forms.Button();
+            this.btRegresar = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lbConsultar = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDatosCliente)).BeginInit();
@@ -93,16 +93,16 @@ namespace ProyectoAltavista
             this.btAceptar.UseVisualStyleBackColor = true;
             this.btAceptar.Click += new System.EventHandler(this.btAceptar_Click_1);
             // 
-            // btRegistrar
+            // btRegresar
             // 
-            this.btRegistrar.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btRegistrar.Location = new System.Drawing.Point(615, 388);
-            this.btRegistrar.Name = "btRegistrar";
-            this.btRegistrar.Size = new System.Drawing.Size(168, 30);
-            this.btRegistrar.TabIndex = 33;
-            this.btRegistrar.Text = "Regresar";
-            this.btRegistrar.UseVisualStyleBackColor = true;
-            this.btRegistrar.Click += new System.EventHandler(this.btRegistrar_Click);
+            this.btRegresar.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btRegresar.Location = new System.Drawing.Point(615, 388);
+            this.btRegresar.Name = "btRegresar";
+            this.btRegresar.Size = new System.Drawing.Size(168, 30);
+            this.btRegresar.TabIndex = 33;
+            this.btRegresar.Text = "Regresar";
+            this.btRegresar.UseVisualStyleBackColor = true;
+            this.btRegresar.Click += new System.EventHandler(this.btRegresar_Click);
             // 
             // pictureBox1
             // 
@@ -132,7 +132,7 @@ namespace ProyectoAltavista
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.lbConsultar);
-            this.Controls.Add(this.btRegistrar);
+            this.Controls.Add(this.btRegresar);
             this.Controls.Add(this.txtIngreseDni);
             this.Controls.Add(this.btAceptar);
             this.Controls.Add(this.pictureBox1);
@@ -156,7 +156,7 @@ namespace ProyectoAltavista
         private System.Windows.Forms.PictureBox pictureBox1Fondo;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btAceptar;
-        private System.Windows.Forms.Button btRegistrar;
+        private System.Windows.Forms.Button btRegresar;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lbConsultar;
     }

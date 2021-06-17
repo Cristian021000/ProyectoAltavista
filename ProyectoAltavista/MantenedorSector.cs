@@ -12,30 +12,41 @@ namespace ProyectoAltavista
 {
     public partial class MantenedorSector : Form
     {
-        public MantenedorSector()
+        MenuPrincipal principal;
+        MNuevoSector registroSector;
+        MModificarSector modificaSector;
+        public MantenedorSector(MenuPrincipal menu)
         {
             InitializeComponent();
+            principal = menu;
         }
 
         private void lbRegistrar_Click(object sender, EventArgs e)
         {
-            MNuevoSector registroSector = new MNuevoSector();
+            if (registroSector == null)
+            {
+               registroSector = new MNuevoSector(this);
+            }
+            
             registroSector.Show();
-            this.Close();
+            this.Hide();
         }
 
         private void btModificar_Click(object sender, EventArgs e)
         {
-            MModificarSector modificaSector = new MModificarSector();
+            if (modificaSector == null)
+            {
+               modificaSector = new MModificarSector(this);
+            }
+            
             modificaSector.Show();
-            this.Close();
+            this.Hide();
         }
 
         private void btRegresar_Click(object sender, EventArgs e)
         {
-            MenuPrincipal menPrincipal = new MenuPrincipal();
-            menPrincipal.Show();
-            this.Close();
+            principal.Show();
+            this.Hide();
         }
     }
 }

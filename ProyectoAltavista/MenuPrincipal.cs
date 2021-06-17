@@ -11,31 +11,50 @@ using CapaEntidad;
 using CapaLogica;
 
 namespace ProyectoAltavista
-{   
+{
+
     public partial class MenuPrincipal : Form
     {
+
+        Login log;
         entAgente Agente = new entAgente();
-        public MenuPrincipal()
+        MantenedorCliente cliente;
+        MantenedorAgente agente;
+        MantenedorBanco banco;
+        MantenedorCiudad ciudad;
+        MantenedorSitiosInteres sitio;
+        MantenedorCliPropietario propietario;
+        Inmueble inmueble;
+        MenuVentas venta;
+        MCita cita;
+        MantenedorSector sector;
+        public MenuPrincipal(Login login)
         {
-            //Agente = agente;
             InitializeComponent();
-            //MessageBox.Show("id" + Agente.id);
+            log = login;
+
         }
 
 
 
         private void btCliente_Click_1(object sender, EventArgs e)
         {
-            MantenedorCliente mantenedorCli = new MantenedorCliente();
+            if (cliente == null)
+            {
+                cliente = new MantenedorCliente(this);
+            }
             this.Hide();
-            mantenedorCli.Show();
+            cliente.Show();
         }
 
         private void btAgente_Click(object sender, EventArgs e)
         {
-            MantenedorAgente mantenedorAge = new MantenedorAgente();
+            if (agente == null)
+            {
+                agente = new MantenedorAgente(this);
+            }
             this.Hide();
-            mantenedorAge.Show();
+            agente.Show();
         }
 
         private void MenuPrincipal_Load(object sender, EventArgs e)
@@ -55,17 +74,22 @@ namespace ProyectoAltavista
 
         private void btBanco_Click(object sender, EventArgs e)
         {
-            MantenedorBanco Ban = new MantenedorBanco();
-
+            if (banco == null)
+            {
+                banco = new MantenedorBanco(this);
+            }
             this.Hide();
-            Ban.Show();
+            banco.Show();
             
 
         }
 
         private void btCiudad_Click(object sender, EventArgs e)
         {
-            MantenedorCiudad ciudad = new MantenedorCiudad();
+            if (ciudad == null)
+            {
+                ciudad = new MantenedorCiudad(this);
+            }
             this.Hide();
             ciudad.Show();
             
@@ -73,41 +97,59 @@ namespace ProyectoAltavista
 
         private void btSitioInteres_Click(object sender, EventArgs e)
         {
-            MantenedorSitiosInteres sitio = new MantenedorSitiosInteres();
+            if (sitio == null)
+            {
+                sitio = new MantenedorSitiosInteres(this);
+            }
             sitio.Show();
             this.Hide();
         }
 
         private void btPropietario_Click(object sender, EventArgs e)
         {
-            MantenedorCliPropietario propietario = new MantenedorCliPropietario();
+            if (propietario == null)
+            {
+                propietario = new MantenedorCliPropietario(this);
+            }
             propietario.Show();
             this.Hide();
         }
 
         private void btInmueble_Click(object sender, EventArgs e)
         {
-            Inmueble inmueble = new Inmueble(this);
+            if (inmueble == null)
+            {
+                inmueble = new Inmueble(this);
+            }
             inmueble.Show();
             this.Hide();
         }
 
         private void btVenta_Click(object sender, EventArgs e)
         {
-            MenuVentas ventas = new MenuVentas();
-            ventas.Show();
+            if (venta == null)
+            {
+                venta = new MenuVentas(this);
+            }
+            venta.Show();
             this.Hide();
         }
         private void btCita_Click(object sender, EventArgs e)
         {
-            MCita mantCita = new MCita();
-            mantCita.Show();
+            if (cita == null)
+            {
+                cita = new MCita(this);
+            }
+            cita.Show();
             this.Hide();
         }
         private void btSector_Click(object sender, EventArgs e)
         {
-            MantenedorSector mantSector = new MantenedorSector();
-            mantSector.Show();
+            if (sector == null)
+            {
+                sector = new MantenedorSector(this);
+            }
+            sector.Show();
             this.Hide();
         }
     }

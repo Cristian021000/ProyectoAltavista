@@ -12,15 +12,16 @@ namespace ProyectoAltavista
 {
     public partial class MMostrarCita : Form
     {
-        public MMostrarCita()
+        MCita cita;
+        public MMostrarCita(MCita ci)
         {
             InitializeComponent();
+            cita = ci;
         }
 
         private void btnSalirMostrarCita_Click(object sender, EventArgs e)
         {
-            MCita mantCita = new MCita();
-            mantCita.Show();
+            cita.Show();
             this.Close();
         }
     }

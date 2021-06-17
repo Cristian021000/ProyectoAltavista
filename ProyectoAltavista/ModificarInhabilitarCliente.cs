@@ -14,10 +14,11 @@ namespace ProyectoAltavista
 {
     public partial class ModificarInhabilitarCliente : Form
     {
-        public ModificarInhabilitarCliente(int dnicliente)
+        ConsultarCliente clien;
+        public ModificarInhabilitarCliente(int dnicliente, ConsultarCliente cl)
         {
             InitializeComponent();
-            entCliente Cliente = new entCliente();
+            entCliente Cliente;
             Cliente = logCliente.Instancia.DatosCliente(dnicliente);
             chbHabilitar.Enabled = false;
             txtNombre.Text = Cliente.nombrecliente.ToString();
@@ -25,6 +26,7 @@ namespace ProyectoAltavista
             txtEdad.Text = Cliente.edadcliente.ToString();
             txtCelular.Text = Cliente.celcliente.ToString();
             chbHabilitar.Checked = Cliente.estadocliente;
+            clien = cl;
 
         }
 
@@ -35,8 +37,7 @@ namespace ProyectoAltavista
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            MantenedorCliente menuMantenedorCliente = new MantenedorCliente();
-            menuMantenedorCliente.Show();
+            clien.Show();
             this.Close();
         }
 
@@ -69,11 +70,9 @@ namespace ProyectoAltavista
 
         }
 
-        private void btnRegresar_Click_1(object sender, EventArgs e)
+        private void btModificar_Click(object sender, EventArgs e)
         {
-            ConsultarCliente consultar = new ConsultarCliente();
-            consultar.Show();
-            this.Close();
+
         }
     }
 }

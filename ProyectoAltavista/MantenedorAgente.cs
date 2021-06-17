@@ -12,9 +12,13 @@ namespace ProyectoAltavista
 {
     public partial class MantenedorAgente : Form
     {
-        public MantenedorAgente()
+        MenuPrincipal principal;
+        RegistrarAgente registrarAge;
+        ConsultarAgente consultar;
+        public MantenedorAgente(MenuPrincipal menu)
         {
             InitializeComponent();
+            principal = menu;
         }
 
 
@@ -26,23 +30,28 @@ namespace ProyectoAltavista
 
         private void btRegistrarAgente_Click(object sender, EventArgs e)
         {
-            RegistrarAgente RegistrarAge = new RegistrarAgente();
-            RegistrarAge.Show();
-            this.Close();
+            if (registrarAge == null)
+            {
+                registrarAge = new RegistrarAgente(this);
+            }
+            registrarAge.Show();
+            this.Hide();
         }
 
         private void btModificarAgente_Click(object sender, EventArgs e)
         {
-            ConsultarAgente consultar = new ConsultarAgente();
+            if (consultar == null)
+            {
+                consultar = new ConsultarAgente(this);
+            }
             consultar.Show();
-            this.Close();
+            this.Hide();
         }
 
         private void btRegresar_Click(object sender, EventArgs e)
         {
-            MenuPrincipal MenuPri = new MenuPrincipal();
-            MenuPri.Show();
-            this.Close();
+            principal.Show();
+            this.Hide();
         }
     }
 }

@@ -14,10 +14,13 @@ namespace ProyectoAltavista
 {
     public partial class ConsultarCliPropietario : Form
     {
-        public ConsultarCliPropietario()
+        MantenedorCliPropietario propietario;
+        ModificarInhabilitarCliPropietario modificar;
+        public ConsultarCliPropietario(MantenedorCliPropietario prop)
         {
             InitializeComponent();
             listarPropietario();
+            propietario = prop;
         }
         public void listarPropietario()
         {
@@ -32,9 +35,12 @@ namespace ProyectoAltavista
                 Prop.dni = int.Parse(txtIngreseDni.Text.Trim());
                 if (logPropietario.Instancia.BuscarPropietario(Prop))
                 {
-                    ModificarInhabilitarCliPropietario mod = new ModificarInhabilitarCliPropietario(Prop.dni);
-                    mod.Show();
-                    this.Close();
+                    if (modificar == null)
+                    {
+                        modificar = new ModificarInhabilitarCliPropietario(Prop.dni, this);
+                    }
+                    modificar.Show();
+                    this.Hide();
                 }
                 else
                 {
@@ -49,9 +55,8 @@ namespace ProyectoAltavista
 
         private void btRegresar_Click(object sender, EventArgs e)
         {
-            MantenedorCliPropietario menPropietario = new MantenedorCliPropietario();
-            menPropietario.Show();
-            this.Close();
+            propietario.Show();
+            this.Hide();
         }
     }
     

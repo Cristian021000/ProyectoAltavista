@@ -12,9 +12,13 @@ namespace ProyectoAltavista
 {
     public partial class MantenedorCliente : Form
     {
-        public MantenedorCliente()
+        MenuPrincipal principal;
+        RegistrarCliente registrarCliente;
+        ConsultarCliente consultaCliente;
+        public MantenedorCliente(MenuPrincipal menu)
         {
             InitializeComponent();
+            principal = menu;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -25,24 +29,29 @@ namespace ProyectoAltavista
 
         private void btRegistrar_Click(object sender, EventArgs e)
         {
-            RegistrarCliente registrarCliente = new RegistrarCliente();
+            if (registrarCliente == null)
+            {
+                registrarCliente = new RegistrarCliente(this);
+            }
 
             registrarCliente.Show();
-            this.Close();
+            this.Hide();
         }
 
         private void btRegresar_Click_1(object sender, EventArgs e)
         {
-            MenuPrincipal menuPrincipal = new MenuPrincipal();
-            menuPrincipal.Show();
-            this.Close();
+            principal.Show();
+            this.Hide();
         }
 
         private void btLista_Click(object sender, EventArgs e)
         {
-            ConsultarCliente consultaCliente = new ConsultarCliente();
+            if (consultaCliente == null)
+            {
+                consultaCliente = new ConsultarCliente(this);
+            }
             consultaCliente.Show();
-            this.Close();
+            this.Hide();
         }
     }
 }

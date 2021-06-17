@@ -12,10 +12,12 @@ namespace ProyectoAltavista
 {
     public partial class MantenedorDeInmueble : Form
     {
-        public MantenedorDeInmueble()
+        Inmueble inmueble;
+        public MantenedorDeInmueble(Inmueble menuIn)
         {
             InitializeComponent();
             cboxInmuebles.SelectedIndex = 0;
+            inmueble = menuIn;
         }
 
         private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -25,8 +27,7 @@ namespace ProyectoAltavista
 
         private void btRegresarInmueble_Click(object sender, EventArgs e)
         {
-            MenuPrincipal menPrincipal = new MenuPrincipal();
-            menPrincipal.Show();
+            inmueble.Show();
             this.Close();
         }
 

@@ -14,10 +14,12 @@ namespace ProyectoAltavista
 {
     public partial class MRegistrarSitioInteres : Form
     {
-        public MRegistrarSitioInteres()
+        MantenedorSitiosInteres siti;
+        public MRegistrarSitioInteres(MantenedorSitiosInteres si)
         {
             InitializeComponent();
             txtCodigoRegistrarSI.Enabled = false;
+            siti = si;
         
         }
 
@@ -28,9 +30,8 @@ namespace ProyectoAltavista
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            MantenedorSitiosInteres sitio = new MantenedorSitiosInteres();
-            sitio.Show();
-            this.Close();
+            siti.Show();
+            this.Hide();
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)
@@ -43,9 +44,8 @@ namespace ProyectoAltavista
                 Sitio.estadoSI = true;
                 logSitioInteres.Instancia.RegistrarSI(Sitio);
                 MessageBox.Show("El sitio de interes fue registrado.");
-                MantenedorSitiosInteres sitio = new MantenedorSitiosInteres();
-                sitio.Show();
-                this.Close();
+                siti.Show();
+                this.Hide();
             }
             catch (Exception ex)
             {

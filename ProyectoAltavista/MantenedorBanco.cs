@@ -12,9 +12,13 @@ namespace ProyectoAltavista
 {
     public partial class MantenedorBanco : Form
     {
-        public MantenedorBanco()
+        MenuPrincipal principal;
+        RegistroBanco registrarBanco;
+        MostrandoBanco muestraBanco;
+        public MantenedorBanco(MenuPrincipal menu)
         {
             InitializeComponent();
+            principal = menu;
         }
 
         private void MantenedorBanco_Load(object sender, EventArgs e)
@@ -24,16 +28,28 @@ namespace ProyectoAltavista
 
         private void bt2RegistarBanco_Click(object sender, EventArgs e)
         {
-            RegistroBanco registrarBanco = new RegistroBanco();
+            if (registrarBanco == null)
+            {
+                registrarBanco = new RegistroBanco(this);
+            }
             registrarBanco.Show();
-            this.Close();
+            this.Hide();
         }
 
         private void bt3MostraBanco_Click(object sender, EventArgs e)
         {
-            MostrandoBanco muestraBanco = new MostrandoBanco();
+            if (muestraBanco == null)
+            {
+                muestraBanco = new MostrandoBanco(this);
+            }
             muestraBanco.Show();
-            this.Close();
+            this.Hide();
+        }
+
+        private void btSalir_Click(object sender, EventArgs e)
+        {
+            principal.Show();
+            this.Hide();
         }
     }
 }

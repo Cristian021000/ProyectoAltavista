@@ -14,10 +14,13 @@ namespace ProyectoAltavista
 {
     public partial class ConsultarSitiosInteres : Form
     {
-        public ConsultarSitiosInteres()
+        MantenedorSitiosInteres sitio;
+        MModificarSitiosInteres modificar;
+        public ConsultarSitiosInteres(MantenedorSitiosInteres sit)
         {
             InitializeComponent();
             listarSitioInteres();
+            sitio = sit;
         }
         public void listarSitioInteres()
         {
@@ -32,8 +35,11 @@ namespace ProyectoAltavista
                 Sitio.codSitioInteres = int.Parse(txtCodigoSitio.Text.Trim());
                 if (logSitioInteres.Instancia.BuscarSitioInteres(Sitio))
                 {
-                    MModificarSitiosInteres ModifaSI = new MModificarSitiosInteres(Sitio.codSitioInteres);
-                    ModifaSI.Show();
+                    if (modificar == null)
+                    {
+                        modificar = new MModificarSitiosInteres(Sitio.codSitioInteres, this);
+                    }
+                    modificar.Show();
                     this.Close();
                 }
                 else
@@ -49,8 +55,8 @@ namespace ProyectoAltavista
 
         private void btnRegresar_Click(object sender, EventArgs e)
         {
-            MantenedorSitiosInteres mantSI = new MantenedorSitiosInteres();
-            mantSI.Show();
+            
+            sitio.Show();
             this.Close();
         }
     }

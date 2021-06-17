@@ -12,30 +12,40 @@ namespace ProyectoAltavista
 {
     public partial class MantenedorCliPropietario : Form
     {
-        public MantenedorCliPropietario()
+        MenuPrincipal principal;
+        RegistrarCliPropietario registroCliPropietario;
+        ConsultarCliPropietario consultarCliPropietario;
+        public MantenedorCliPropietario(MenuPrincipal menu)
         {
             InitializeComponent();
+            principal = menu;
         }
 
         private void btRegistrar_Click(object sender, EventArgs e)
         {
-            RegistrarCliPropietario registroCliPropietario = new RegistrarCliPropietario();
+            if(registroCliPropietario == null){
+                registroCliPropietario = new RegistrarCliPropietario(this);
+
+            }
             registroCliPropietario.Show();
-            this.Close();
+            this.Hide();
         }
 
         private void btLista_Click(object sender, EventArgs e)
         {
-            ConsultarCliPropietario consultaCliPropietario = new ConsultarCliPropietario();
-            consultaCliPropietario.Show();
-            this.Close();
+            if (consultarCliPropietario == null)
+            {
+                consultarCliPropietario = new ConsultarCliPropietario(this);
+            }
+            
+            consultarCliPropietario.Show();
+            this.Hide();
         }
 
         private void btRegresar_Click(object sender, EventArgs e)
-        {
-            MenuPrincipal menPrincipal = new MenuPrincipal();
-            menPrincipal.Show();
-            this.Close();
+        { 
+            principal.Show();
+            this.Hide();
         }
     }
 }
