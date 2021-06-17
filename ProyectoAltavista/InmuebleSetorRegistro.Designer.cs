@@ -33,12 +33,12 @@ namespace ProyectoAltavista
             this.pictureBox1Fondo = new System.Windows.Forms.PictureBox();
             this.lbNuevoSetor = new System.Windows.Forms.Label();
             this.IngreseCuidad = new System.Windows.Forms.Label();
-            this.ElijaCuidad = new System.Windows.Forms.CheckedListBox();
             this.label1NombreDelSetor = new System.Windows.Forms.Label();
             this.textBox1INombreDeSector = new System.Windows.Forms.TextBox();
             this.btnAgregarSector = new System.Windows.Forms.Button();
             this.Regresar = new System.Windows.Forms.Button();
             this.Salir = new System.Windows.Forms.Button();
+            this.comboBoxCiudad = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1Fondo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -69,34 +69,11 @@ namespace ProyectoAltavista
             // 
             this.IngreseCuidad.AutoSize = true;
             this.IngreseCuidad.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.IngreseCuidad.Location = new System.Drawing.Point(76, 105);
+            this.IngreseCuidad.Location = new System.Drawing.Point(31, 143);
             this.IngreseCuidad.Name = "IngreseCuidad";
             this.IngreseCuidad.Size = new System.Drawing.Size(126, 22);
             this.IngreseCuidad.TabIndex = 60;
             this.IngreseCuidad.Text = "Elija Ciudad";
-            // 
-            // ElijaCuidad
-            // 
-            this.ElijaCuidad.Font = new System.Drawing.Font("Lucida Fax", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ElijaCuidad.ForeColor = System.Drawing.Color.Black;
-            this.ElijaCuidad.FormattingEnabled = true;
-            this.ElijaCuidad.Items.AddRange(new object[] {
-            "Trujillo ",
-            "Cajamarca",
-            "Arequipa",
-            "Tacna",
-            "Lima",
-            "Cusco",
-            "Iquitos",
-            "Chimbote",
-            "Piura",
-            "Tumbes ",
-            "Ica"});
-            this.ElijaCuidad.Location = new System.Drawing.Point(89, 140);
-            this.ElijaCuidad.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.ElijaCuidad.Name = "ElijaCuidad";
-            this.ElijaCuidad.Size = new System.Drawing.Size(93, 154);
-            this.ElijaCuidad.TabIndex = 61;
             // 
             // label1NombreDelSetor
             // 
@@ -147,22 +124,30 @@ namespace ProyectoAltavista
             this.Salir.Text = "Salir";
             this.Salir.UseVisualStyleBackColor = true;
             // 
+            // comboBoxCiudad
+            // 
+            this.comboBoxCiudad.FormattingEnabled = true;
+            this.comboBoxCiudad.Location = new System.Drawing.Point(35, 178);
+            this.comboBoxCiudad.Name = "comboBoxCiudad";
+            this.comboBoxCiudad.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxCiudad.TabIndex = 67;
+            // 
             // InmuebleSetorRegistro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(662, 368);
+            this.Controls.Add(this.comboBoxCiudad);
             this.Controls.Add(this.Salir);
             this.Controls.Add(this.Regresar);
             this.Controls.Add(this.btnAgregarSector);
             this.Controls.Add(this.textBox1INombreDeSector);
             this.Controls.Add(this.label1NombreDelSetor);
-            this.Controls.Add(this.ElijaCuidad);
             this.Controls.Add(this.IngreseCuidad);
             this.Controls.Add(this.lbNuevoSetor);
             this.Controls.Add(this.pictureBox1Fondo);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "InmuebleSetorRegistro";
             this.Text = "InmuebleSetorRegistro";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1Fondo)).EndInit();
@@ -176,11 +161,11 @@ namespace ProyectoAltavista
         private System.Windows.Forms.PictureBox pictureBox1Fondo;
         private System.Windows.Forms.Label lbNuevoSetor;
         private System.Windows.Forms.Label IngreseCuidad;
-        private System.Windows.Forms.CheckedListBox ElijaCuidad;
         private System.Windows.Forms.Label label1NombreDelSetor;
         private System.Windows.Forms.TextBox textBox1INombreDeSector;
         private System.Windows.Forms.Button btnAgregarSector;
         private System.Windows.Forms.Button Regresar;
         private System.Windows.Forms.Button Salir;
+        private System.Windows.Forms.ComboBox comboBoxCiudad;
     }
 }

@@ -15,11 +15,13 @@ namespace ProyectoAltavista
     public partial class ModificarAgente : Form
     {
         ConsultarAgente consulta;
-        public ModificarAgente(int dni, ConsultarAgente consult)
+        public ModificarAgente(ConsultarAgente consult)
         { 
             InitializeComponent();
-            entAgente Agente = new entAgente();
-            Agente = logAgente.Instancia.DatosAgente(dni);
+            consulta = consult;
+        }
+        public void llenarDatos(entAgente Agente)
+        {
             txtId.Enabled = false;
             chbHabilitado.Enabled = false;
             txtId.Text = Agente.id.ToString();
@@ -30,9 +32,17 @@ namespace ProyectoAltavista
             txtDatosCorreoElectronica.Text = Agente.correo.ToString();
             txtContraseñaDatosCliente.Text = Agente.contraseña.ToString();
             chbHabilitado.Checked = Agente.estado;
-            consulta = consult;
         }
-
+        public void limpiarVariableInterfazMod()
+        {
+            txtId.Clear();
+            txtNombreAgente.Clear();
+            txtApellidoAgente.Clear();
+            txtEdadAgente.Clear();
+            txtCelularAgente.Clear();
+            txtDatosCorreoElectronica.Clear();
+            txtContraseñaDatosCliente.Clear();
+        }
         private void txtCelular_TextChanged(object sender, EventArgs e)
         {
 
@@ -45,8 +55,11 @@ namespace ProyectoAltavista
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
+            consulta.ListarAgente();
+            consulta.limpiarVariableConsultar();
+            limpiarVariableInterfazMod();
             consulta.Show();
-            this.Close();
+            this.Hide();
         }
 
         private void label4_Click(object sender, EventArgs e)
@@ -73,6 +86,11 @@ namespace ProyectoAltavista
                 Age.contraseña = txtContraseñaDatosCliente.Text.Trim();
                 logAgente.Instancia.ModificarAgente(Age);
                 MessageBox.Show("Se editaron correctamente los datos del agente");
+                consulta.ListarAgente();
+                consulta.limpiarVariableConsultar();
+                limpiarVariableInterfazMod();
+                consulta.Show();
+                this.Hide();
             }
             catch (Exception ex)
             {
@@ -90,13 +108,12 @@ namespace ProyectoAltavista
                 chbHabilitado.Checked = false;
                 A.estado = chbHabilitado.Checked;
                 logAgente.Instancia.DeshabilitarAgente(A);
-                txtNombreAgente.Enabled = false;
-                txtApellidoAgente.Enabled = false;
-                txtEdadAgente.Enabled = false;
-                txtCelularAgente.Enabled = false;
-                txtDatosCorreoElectronica.Enabled = false;
-                txtContraseñaDatosCliente.Enabled = false;
                 MessageBox.Show("El agente a sido deshabilitado correctamente");
+                consulta.ListarAgente();
+                consulta.limpiarVariableConsultar();
+                limpiarVariableInterfazMod();
+                consulta.Show();
+                this.Hide();
             }
             catch (Exception exe)
             {

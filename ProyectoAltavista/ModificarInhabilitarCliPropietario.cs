@@ -15,12 +15,16 @@ namespace ProyectoAltavista
     public partial class ModificarInhabilitarCliPropietario : Form
     {
         ConsultarCliPropietario propi;
-        public ModificarInhabilitarCliPropietario(int dni, ConsultarCliPropietario pro)
+        public ModificarInhabilitarCliPropietario(ConsultarCliPropietario pro)
         {
             InitializeComponent();
-            entPropietario propietario;
-            propietario = logPropietario.Instancia.DatosPropietario(dni);
+            propi = pro;
+           
+        }
+        public void llenarDatos(entPropietario propietario)
+        {
             txtId.Enabled = false;
+            txtDNI.Enabled = false;
             checkHabilitar.Enabled = false;
             txtId.Text = propietario.id.ToString();
             txtDNI.Text = propietario.dni.ToString();
@@ -30,15 +34,26 @@ namespace ProyectoAltavista
             txtCelular.Text = propietario.celular.ToString();
             txtDireccion.Text = propietario.direccion.ToString();
             checkHabilitar.Checked = propietario.estadoPropietario;
-            propi = pro;
         }
-
+        public void limpiarVariableInterfazMod()
+        {
+            txtId.Clear();
+            txtDNI.Clear();
+            txtNombre.Clear();
+            txtApellido.Clear();
+            txtEdad.Clear();
+            txtCelular.Clear();
+            txtDireccion.Clear();
+        }
         private void btnCancelar_Click(object sender, EventArgs e)
-        {          
+        {
+            propi.listarPropietario();
+            propi.limpiarVariableConsultar();
+            limpiarVariableInterfazMod();
             propi.Show();
             this.Hide();
         }
-
+        
         private void btnModifcar_Click(object sender, EventArgs e)
         {
             try
@@ -53,6 +68,12 @@ namespace ProyectoAltavista
                 Prop.direccion = txtDireccion.Text.Trim();
                 logPropietario.Instancia.ModificarPropietario(Prop);
                 MessageBox.Show("Se editaron correctamente los datos del propietario");
+                propi.listarPropietario();
+                propi.limpiarVariableConsultar();
+                limpiarVariableInterfazMod();
+                propi.Show();
+                this.Hide();
+
             }
             catch (Exception ex)
             {
@@ -66,16 +87,16 @@ namespace ProyectoAltavista
             {
                 entPropietario prop = new entPropietario();
                 prop.id = int.Parse(txtId.Text.Trim());
+                prop.dni = int.Parse(txtDNI.Text.Trim());
                 checkHabilitar.Checked = false;
                 prop.estadoPropietario = checkHabilitar.Checked;
                 logPropietario.Instancia.HabilitarPropietario(prop);
-                txtDNI.Enabled = false;
-                txtNombre.Enabled = false;
-                txtApellido.Enabled = false;
-                txtEdad.Enabled = false;
-                txtCelular.Enabled = false;
-                txtDireccion.Enabled = false;
                 MessageBox.Show("El propietario a sido deshabilitado correctamente");
+                propi.listarPropietario();
+                propi.limpiarVariableConsultar();
+                limpiarVariableInterfazMod();
+                propi.Show();
+                this.Hide();
             }
             catch (Exception exe)
             {

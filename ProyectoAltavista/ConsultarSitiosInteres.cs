@@ -26,6 +26,10 @@ namespace ProyectoAltavista
         {
             DataGridVerSitioInteres.DataSource = logSitioInteres.Instancia.ListarSitioInteres();
         }
+        public void limpiarVariableConsultar()
+        {
+            txtCodigoSitio.Clear();
+        }
 
         private void btAceptar_Click(object sender, EventArgs e)
         {

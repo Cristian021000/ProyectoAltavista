@@ -60,7 +60,7 @@ namespace ProyectoAltavista
             this.lbConsultar.BackColor = System.Drawing.Color.WhiteSmoke;
             this.lbConsultar.Font = new System.Drawing.Font("Monotype Corsiva", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbConsultar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lbConsultar.Location = new System.Drawing.Point(87, 11);
+            this.lbConsultar.Location = new System.Drawing.Point(35, 9);
             this.lbConsultar.Name = "lbConsultar";
             this.lbConsultar.Size = new System.Drawing.Size(518, 79);
             this.lbConsultar.TabIndex = 43;

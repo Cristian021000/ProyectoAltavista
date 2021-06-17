@@ -13,6 +13,10 @@ namespace ProyectoAltavista
     public partial class MantenedorDeInmueble : Form
     {
         Inmueble inmueble;
+        RegistrarTerreno registraTerreno;
+        InmuebleMantenedorCasa registraCasa;
+        RegistarDepartamento registraDepartamento;
+
         public MantenedorDeInmueble(Inmueble menuIn)
         {
             InitializeComponent();
@@ -28,7 +32,7 @@ namespace ProyectoAltavista
         private void btRegresarInmueble_Click(object sender, EventArgs e)
         {
             inmueble.Show();
-            this.Close();
+            this.Hide();
         }
 
         private void AceptarRegisInmueble_Click(object sender, EventArgs e)
@@ -39,19 +43,28 @@ namespace ProyectoAltavista
             switch (inmueble)
             {
                 case 1:
-                    InmuebleMantenedorCasa casa = new InmuebleMantenedorCasa(this);
+                    if(registraCasa == null)
+                    {
+                        registraCasa = new InmuebleMantenedorCasa(this);
+                    }
                     this.Hide();
-                    casa.Show();
+                    registraCasa.Show();
                     break;
                 case 2:
-                    RegistarDepartamento departamento = new RegistarDepartamento(this);
+                    if (registraDepartamento == null)
+                    {
+                        registraDepartamento = new RegistarDepartamento(this);
+                    }
                     this.Hide();
-                    departamento.Show();
+                    registraDepartamento.Show();
                     break;
                 case 3:
-                    RegistrarTerreno terreno = new RegistrarTerreno(this);
+                    if (registraTerreno == null)
+                    {
+                        registraTerreno = new RegistrarTerreno(this);
+                    }
                     this.Hide();
-                    terreno.Show();
+                    registraTerreno.Show();
                     break;
 
             }

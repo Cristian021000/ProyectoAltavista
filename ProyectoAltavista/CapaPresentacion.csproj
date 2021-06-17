@@ -79,7 +79,7 @@
     <Compile Include="ConsultarInmueble.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ConsultarInmueble.designer.cs">
+    <Compile Include="ConsultarInmueble.Designer.cs">
       <DependentUpon>ConsultarInmueble.cs</DependentUpon>
     </Compile>
     <Compile Include="ConsultarVentas.cs">

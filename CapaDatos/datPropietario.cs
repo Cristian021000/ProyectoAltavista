@@ -153,7 +153,6 @@ namespace CapaDatos
         }
 
 
-
         public Boolean BuscaPropietario(entPropietario Propietario)
         {
             Boolean encontrado = false;
@@ -218,9 +217,10 @@ namespace CapaDatos
             try
             {
                 SqlConnection cn = Conexion.Instancia.Conectar();
-                cmd = new SqlCommand("spHabilitarPropietario", cn);
+                cmd = new SqlCommand("spDeshabilitarPropietario", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@id", Propietario.id);
+                cmd.Parameters.AddWithValue("@dni", Propietario.dni);
                 cmd.Parameters.AddWithValue("@estadoPropietario", Propietario.estadoPropietario);
                 cn.Open();
                 int i = cmd.ExecuteNonQuery();

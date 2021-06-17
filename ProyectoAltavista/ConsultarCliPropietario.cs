@@ -26,6 +26,10 @@ namespace ProyectoAltavista
         {
             dgvDatosPropietario.DataSource = logPropietario.Instancia.ListarPropietario();
         }
+        public void limpiarVariableConsultar()
+        {
+            txtIngreseDni.Clear();
+        }
 
         private void btAceptar_Click(object sender, EventArgs e)
         {
@@ -37,8 +41,10 @@ namespace ProyectoAltavista
                 {
                     if (modificar == null)
                     {
-                        modificar = new ModificarInhabilitarCliPropietario(Prop.dni, this);
+                        modificar = new ModificarInhabilitarCliPropietario(this);
                     }
+                    Prop = logPropietario.Instancia.DatosPropietario(Prop.dni);
+                    modificar.llenarDatos(Prop);
                     modificar.Show();
                     this.Hide();
                 }

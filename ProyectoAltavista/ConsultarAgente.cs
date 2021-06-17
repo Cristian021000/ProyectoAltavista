@@ -27,6 +27,10 @@ namespace ProyectoAltavista
         {
             dgvConsultaAgente.DataSource = logAgente.Instancia.ListarAgentes();
         }
+        public void limpiarVariableConsultar()
+        {
+            txtDni.Clear();
+        }
 
         private void btModificar_Click(object sender, EventArgs e)
         {
@@ -38,11 +42,12 @@ namespace ProyectoAltavista
                 {
                     if (modificar == null)
                     {
-                        modificar = new ModificarAgente(Age.dni, this);
+                        modificar = new ModificarAgente(this);
                     }
-                    
+                    Age = logAgente.Instancia.DatosAgente(Age.dni);
+                    modificar.llenarDatos(Age);
                     modificar.Show();
-                    this.Close();
+                    this.Hide();
                 }
                 else
                 {
@@ -58,7 +63,7 @@ namespace ProyectoAltavista
         private void btRegresar_Click(object sender, EventArgs e)
         {
             agente.Show();
-            this.Close();
+            this.Hide();
         }
     }
 }

@@ -19,17 +19,23 @@ namespace ProyectoAltavista
         public MModificarSitiosInteres(int codSitioInteres, ConsultarSitiosInteres sit)
         {
             InitializeComponent();
-            entSitioInteres Sitio = new entSitioInteres();
-            Sitio = logSitioInteres.Instancia.DatosSitioInteres(codSitioInteres);
-            txtCodigoModificaSI.Enabled = false;
-            checkBoxHabilitar.Enabled = false;
-            txtCodigoModificaSI.Text = Sitio.codSitioInteres.ToString();
-            txtModificarNombreSI.Text = Sitio.NombreSI.ToString();
-            txtModificarDireccionSI.Text = Sitio.DireccionSI.ToString();
-            checkBoxHabilitar.Checked = Sitio.estadoSI;
             sitio = sit;
         }
-
+        public void llenarDatos(entSitioInteres Sitios)
+        {
+            txtCodigoModificaSI.Enabled = false;
+            checkBoxHabilitar.Enabled = false;
+            txtCodigoModificaSI.Text = Sitios.codSitioInteres.ToString();
+            txtModificarNombreSI.Text = Sitios.NombreSI.ToString();
+            txtModificarDireccionSI.Text = Sitios.DireccionSI.ToString();
+            checkBoxHabilitar.Checked = Sitios.estadoSI;
+        }
+        public void limpiarVariableInterfazMod()
+        {
+            txtCodigoModificaSI.Clear();
+            txtModificarNombreSI.Clear();
+            txtModificarDireccionSI.Clear();
+        }
         private void btnModificarSI_Click(object sender, EventArgs e)
         {
             try
@@ -40,6 +46,11 @@ namespace ProyectoAltavista
                 Sitio.DireccionSI = txtModificarDireccionSI.Text.Trim();
                 logSitioInteres.Instancia.EditarSI(Sitio);
                 MessageBox.Show("Se editaron correctamente los datos del sitio de interes.");
+                sitio.listarSitioInteres();
+                sitio.limpiarVariableConsultar();
+                limpiarVariableInterfazMod();
+                sitio.Show();
+                this.Hide();
             }
             catch (Exception ex)
             {
@@ -49,9 +60,11 @@ namespace ProyectoAltavista
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            
+            sitio.listarSitioInteres();
+            sitio.limpiarVariableConsultar();
+            limpiarVariableInterfazMod();
             sitio.Show();
-            this.Close();
+            this.Hide();
         }
 
         private void btnDeshabilitar_Click(object sender, EventArgs e)
@@ -63,12 +76,12 @@ namespace ProyectoAltavista
                 checkBoxHabilitar.Checked = false;
                 Sitio.estadoSI = checkBoxHabilitar.Checked;
                 logSitioInteres.Instancia.DeshabilitarSitioInteres(Sitio);
-                txtCodigoModificaSI.Enabled = false;
-                txtModificarNombreSI.Enabled = false;
-                txtModificarDireccionSI.Enabled = false;
                 MessageBox.Show("El sitio de interes a sido deshabilitado correctamente.");
+                sitio.listarSitioInteres();
+                sitio.limpiarVariableConsultar();
+                limpiarVariableInterfazMod();
                 sitio.Show();
-                this.Close();
+                this.Hide();
             }
             catch (Exception exe)
             {

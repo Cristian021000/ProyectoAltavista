@@ -26,7 +26,7 @@ namespace ProyectoAltavista
             {
                 inmueble = new MantenedorDeInmueble(this);
             }
-            this.Close();
+            this.Hide();
             inmueble.Show();
         }
 

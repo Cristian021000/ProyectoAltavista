@@ -24,7 +24,7 @@ namespace ProyectoAltavista
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             MantenedorAgen.Show();
-            this.Close();
+            this.Hide();
         }
 
         private void btnRegistrar_Click(object sender, EventArgs e)
