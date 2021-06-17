@@ -24,7 +24,7 @@ namespace CapaLogica
         }
         public void RegistrarSI(entSitioInteres Sitio)
         {
-            datSitioInteres.Instancia.IngresoSitioInteres(Sitio);
+            datSitioInteres.Instancia.RegistrarSitioInteres(Sitio);
         }
         public void EditarSI(entSitioInteres Sitio)
         {

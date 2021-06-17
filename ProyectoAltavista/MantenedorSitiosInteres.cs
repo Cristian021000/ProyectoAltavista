@@ -20,7 +20,7 @@ namespace ProyectoAltavista
 
         private void btRegistrarSitio_Click(object sender, EventArgs e)
         {
-            RegistroSitioInmueble RegistrarSI = new RegistroSitioInmueble();
+            MRegistrarSitioInteres RegistrarSI = new MRegistrarSitioInteres();
             RegistrarSI.Show();
             this.Close();
         }

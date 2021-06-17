@@ -56,14 +56,14 @@ namespace CapaDatos
 
         }
         //INSERTAR
-        public Boolean IngresoSitioInteres(entSitioInteres Sitio)
+        public Boolean RegistrarSitioInteres(entSitioInteres Sitio)
         {
             Boolean registrar = false;
             SqlCommand cmd = null;
             try
             {
                 SqlConnection cn = Conexion.Instancia.Conectar();
-                cmd = new SqlCommand("spIngresarSI", cn);
+                cmd = new SqlCommand("spRegistrarSI", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@NombreSI", Sitio.NombreSI);
                 cmd.Parameters.AddWithValue("@DireccionSI", Sitio.DireccionSI);
