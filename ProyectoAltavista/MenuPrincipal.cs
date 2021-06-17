@@ -87,7 +87,7 @@ namespace ProyectoAltavista
 
         private void btInmueble_Click(object sender, EventArgs e)
         {
-            MantenedorDeInmueble inmueble = new MantenedorDeInmueble();
+            Inmueble inmueble = new Inmueble(this);
             inmueble.Show();
             this.Hide();
         }

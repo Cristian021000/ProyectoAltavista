@@ -33,9 +33,9 @@ namespace ProyectoAltavista
             this.Fondo = new System.Windows.Forms.PictureBox();
             this.RegistrarInmueble = new System.Windows.Forms.Label();
             this.IngreseTipoDeInmueble = new System.Windows.Forms.Label();
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
             this.AceptarRegisInmueble = new System.Windows.Forms.Button();
             this.btRegresarInmueble = new System.Windows.Forms.Button();
+            this.cboxInmuebles = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.Fondo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -72,21 +72,6 @@ namespace ProyectoAltavista
             this.IngreseTipoDeInmueble.TabIndex = 47;
             this.IngreseTipoDeInmueble.Text = "Ingrese Tipo De Inmueble";
             // 
-            // checkedListBox1
-            // 
-            this.checkedListBox1.Font = new System.Drawing.Font("Lucida Fax", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Items.AddRange(new object[] {
-            "Casa.",
-            "Departamento.",
-            "Terreno."});
-            this.checkedListBox1.Location = new System.Drawing.Point(93, 184);
-            this.checkedListBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(129, 42);
-            this.checkedListBox1.TabIndex = 48;
-            this.checkedListBox1.SelectedIndexChanged += new System.EventHandler(this.checkedListBox1_SelectedIndexChanged);
-            // 
             // AceptarRegisInmueble
             // 
             this.AceptarRegisInmueble.Font = new System.Drawing.Font("Lucida Fax", 19.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -96,6 +81,7 @@ namespace ProyectoAltavista
             this.AceptarRegisInmueble.TabIndex = 53;
             this.AceptarRegisInmueble.Text = "Aceptar";
             this.AceptarRegisInmueble.UseVisualStyleBackColor = true;
+            this.AceptarRegisInmueble.Click += new System.EventHandler(this.AceptarRegisInmueble_Click);
             // 
             // btRegresarInmueble
             // 
@@ -108,18 +94,31 @@ namespace ProyectoAltavista
             this.btRegresarInmueble.UseVisualStyleBackColor = true;
             this.btRegresarInmueble.Click += new System.EventHandler(this.btRegresarInmueble_Click);
             // 
+            // cboxInmuebles
+            // 
+            this.cboxInmuebles.FormattingEnabled = true;
+            this.cboxInmuebles.Items.AddRange(new object[] {
+            "Casa",
+            "Departamento",
+            "Terreno"});
+            this.cboxInmuebles.Location = new System.Drawing.Point(94, 186);
+            this.cboxInmuebles.Name = "cboxInmuebles";
+            this.cboxInmuebles.Size = new System.Drawing.Size(182, 21);
+            this.cboxInmuebles.TabIndex = 55;
+            this.cboxInmuebles.SelectedIndexChanged += new System.EventHandler(this.cboxInmuebles_SelectedIndexChanged);
+            // 
             // MantenedorDeInmueble
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(600, 366);
+            this.Controls.Add(this.cboxInmuebles);
             this.Controls.Add(this.btRegresarInmueble);
             this.Controls.Add(this.AceptarRegisInmueble);
-            this.Controls.Add(this.checkedListBox1);
             this.Controls.Add(this.IngreseTipoDeInmueble);
             this.Controls.Add(this.RegistrarInmueble);
             this.Controls.Add(this.Fondo);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MantenedorDeInmueble";
             this.Text = "MantenedorDeInmueble";
             ((System.ComponentModel.ISupportInitialize)(this.Fondo)).EndInit();
@@ -133,8 +132,8 @@ namespace ProyectoAltavista
         private System.Windows.Forms.PictureBox Fondo;
         private System.Windows.Forms.Label RegistrarInmueble;
         private System.Windows.Forms.Label IngreseTipoDeInmueble;
-        private System.Windows.Forms.CheckedListBox checkedListBox1;
         private System.Windows.Forms.Button AceptarRegisInmueble;
         private System.Windows.Forms.Button btRegresarInmueble;
+        private System.Windows.Forms.ComboBox cboxInmuebles;
     }
 }

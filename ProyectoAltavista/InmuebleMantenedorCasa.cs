@@ -12,9 +12,17 @@ namespace ProyectoAltavista
 {
     public partial class InmuebleMantenedorCasa : Form
     {
-        public InmuebleMantenedorCasa()
+        MantenedorDeInmueble inmueble;
+        public InmuebleMantenedorCasa(MantenedorDeInmueble inm)
         {
             InitializeComponent();
+            inmueble = inm;
+        }
+
+        private void Regresar_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            inmueble.Show();
         }
     }
 }

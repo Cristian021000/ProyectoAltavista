@@ -55,10 +55,9 @@ namespace ProyectoAltavista
             // 
             this.FondoT.BackColor = System.Drawing.Color.Transparent;
             this.FondoT.Image = ((System.Drawing.Image)(resources.GetObject("FondoT.Image")));
-            this.FondoT.Location = new System.Drawing.Point(-3, -108);
-            this.FondoT.Margin = new System.Windows.Forms.Padding(4);
+            this.FondoT.Location = new System.Drawing.Point(-2, -88);
             this.FondoT.Name = "FondoT";
-            this.FondoT.Size = new System.Drawing.Size(789, 969);
+            this.FondoT.Size = new System.Drawing.Size(592, 787);
             this.FondoT.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.FondoT.TabIndex = 27;
             this.FondoT.TabStop = false;
@@ -69,10 +68,9 @@ namespace ProyectoAltavista
             this.lbRegistrarTerreno.BackColor = System.Drawing.Color.WhiteSmoke;
             this.lbRegistrarTerreno.Font = new System.Drawing.Font("Monotype Corsiva", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbRegistrarTerreno.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lbRegistrarTerreno.Location = new System.Drawing.Point(151, 9);
-            this.lbRegistrarTerreno.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbRegistrarTerreno.Location = new System.Drawing.Point(113, 7);
             this.lbRegistrarTerreno.Name = "lbRegistrarTerreno";
-            this.lbRegistrarTerreno.Size = new System.Drawing.Size(531, 97);
+            this.lbRegistrarTerreno.Size = new System.Drawing.Size(423, 79);
             this.lbRegistrarTerreno.TabIndex = 51;
             this.lbRegistrarTerreno.Text = "Registrar Terreno";
             // 
@@ -80,10 +78,9 @@ namespace ProyectoAltavista
             // 
             this.DireccionT.AutoSize = true;
             this.DireccionT.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DireccionT.Location = new System.Drawing.Point(56, 146);
-            this.DireccionT.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.DireccionT.Location = new System.Drawing.Point(42, 119);
             this.DireccionT.Name = "DireccionT";
-            this.DireccionT.Size = new System.Drawing.Size(133, 27);
+            this.DireccionT.Size = new System.Drawing.Size(105, 22);
             this.DireccionT.TabIndex = 52;
             this.DireccionT.Text = "Direccion:";
             // 
@@ -91,10 +88,9 @@ namespace ProyectoAltavista
             // 
             this.PrecioT.AutoSize = true;
             this.PrecioT.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PrecioT.Location = new System.Drawing.Point(56, 209);
-            this.PrecioT.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.PrecioT.Location = new System.Drawing.Point(42, 170);
             this.PrecioT.Name = "PrecioT";
-            this.PrecioT.Size = new System.Drawing.Size(93, 27);
+            this.PrecioT.Size = new System.Drawing.Size(73, 22);
             this.PrecioT.TabIndex = 53;
             this.PrecioT.Text = "Precio:";
             // 
@@ -102,10 +98,9 @@ namespace ProyectoAltavista
             // 
             this.PrecioMinT.AutoSize = true;
             this.PrecioMinT.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PrecioMinT.Location = new System.Drawing.Point(56, 279);
-            this.PrecioMinT.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.PrecioMinT.Location = new System.Drawing.Point(42, 227);
             this.PrecioMinT.Name = "PrecioMinT";
-            this.PrecioMinT.Size = new System.Drawing.Size(191, 27);
+            this.PrecioMinT.Size = new System.Drawing.Size(148, 22);
             this.PrecioMinT.TabIndex = 54;
             this.PrecioMinT.Text = "Precio Minimo:";
             // 
@@ -113,10 +108,9 @@ namespace ProyectoAltavista
             // 
             this.NumRegisPublicosT.AutoSize = true;
             this.NumRegisPublicosT.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NumRegisPublicosT.Location = new System.Drawing.Point(56, 339);
-            this.NumRegisPublicosT.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.NumRegisPublicosT.Location = new System.Drawing.Point(42, 275);
             this.NumRegisPublicosT.Name = "NumRegisPublicosT";
-            this.NumRegisPublicosT.Size = new System.Drawing.Size(375, 27);
+            this.NumRegisPublicosT.Size = new System.Drawing.Size(293, 22);
             this.NumRegisPublicosT.TabIndex = 55;
             this.NumRegisPublicosT.Text = "Numero de Registros Publicos:";
             // 
@@ -124,10 +118,9 @@ namespace ProyectoAltavista
             // 
             this.label1IdSectorT.AutoSize = true;
             this.label1IdSectorT.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1IdSectorT.Location = new System.Drawing.Point(62, 400);
-            this.label1IdSectorT.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1IdSectorT.Location = new System.Drawing.Point(46, 325);
             this.label1IdSectorT.Name = "label1IdSectorT";
-            this.label1IdSectorT.Size = new System.Drawing.Size(127, 27);
+            this.label1IdSectorT.Size = new System.Drawing.Size(100, 22);
             this.label1IdSectorT.TabIndex = 56;
             this.label1IdSectorT.Text = "ID Sector:";
             // 
@@ -135,10 +128,9 @@ namespace ProyectoAltavista
             // 
             this.labelIDPropietarioT.AutoSize = true;
             this.labelIDPropietarioT.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelIDPropietarioT.Location = new System.Drawing.Point(62, 466);
-            this.labelIDPropietarioT.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelIDPropietarioT.Location = new System.Drawing.Point(46, 379);
             this.labelIDPropietarioT.Name = "labelIDPropietarioT";
-            this.labelIDPropietarioT.Size = new System.Drawing.Size(188, 27);
+            this.labelIDPropietarioT.Size = new System.Drawing.Size(147, 22);
             this.labelIDPropietarioT.TabIndex = 57;
             this.labelIDPropietarioT.Text = "ID Propietario:";
             // 
@@ -146,10 +138,9 @@ namespace ProyectoAltavista
             // 
             this.label1ServBasicos.AutoSize = true;
             this.label1ServBasicos.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1ServBasicos.Location = new System.Drawing.Point(56, 534);
-            this.label1ServBasicos.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1ServBasicos.Location = new System.Drawing.Point(42, 434);
             this.label1ServBasicos.Name = "label1ServBasicos";
-            this.label1ServBasicos.Size = new System.Drawing.Size(218, 27);
+            this.label1ServBasicos.Size = new System.Drawing.Size(172, 22);
             this.label1ServBasicos.TabIndex = 58;
             this.label1ServBasicos.Text = "Servicios Basicos:";
             // 
@@ -162,78 +153,72 @@ namespace ProyectoAltavista
             "Servicio de Luz.",
             "Acceso a Alcantarillados.",
             "Acceso a Desagüe."});
-            this.checkedListBox1.Location = new System.Drawing.Point(281, 534);
+            this.checkedListBox1.Location = new System.Drawing.Point(211, 434);
+            this.checkedListBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(262, 96);
+            this.checkedListBox1.Size = new System.Drawing.Size(198, 61);
             this.checkedListBox1.TabIndex = 59;
             // 
             // txtDireccionT
             // 
             this.txtDireccionT.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDireccionT.Location = new System.Drawing.Point(197, 143);
-            this.txtDireccionT.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDireccionT.Location = new System.Drawing.Point(148, 116);
             this.txtDireccionT.Multiline = true;
             this.txtDireccionT.Name = "txtDireccionT";
-            this.txtDireccionT.Size = new System.Drawing.Size(528, 40);
+            this.txtDireccionT.Size = new System.Drawing.Size(397, 33);
             this.txtDireccionT.TabIndex = 63;
             // 
             // txtPrecioT
             // 
             this.txtPrecioT.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPrecioT.Location = new System.Drawing.Point(197, 209);
-            this.txtPrecioT.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPrecioT.Location = new System.Drawing.Point(148, 170);
             this.txtPrecioT.Multiline = true;
             this.txtPrecioT.Name = "txtPrecioT";
-            this.txtPrecioT.Size = new System.Drawing.Size(528, 40);
+            this.txtPrecioT.Size = new System.Drawing.Size(397, 33);
             this.txtPrecioT.TabIndex = 64;
             // 
             // txtPrecioMinT
             // 
             this.txtPrecioMinT.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPrecioMinT.Location = new System.Drawing.Point(241, 276);
-            this.txtPrecioMinT.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPrecioMinT.Location = new System.Drawing.Point(181, 224);
             this.txtPrecioMinT.Multiline = true;
             this.txtPrecioMinT.Name = "txtPrecioMinT";
-            this.txtPrecioMinT.Size = new System.Drawing.Size(484, 40);
+            this.txtPrecioMinT.Size = new System.Drawing.Size(364, 33);
             this.txtPrecioMinT.TabIndex = 65;
             // 
             // txtRegisPubliT
             // 
             this.txtRegisPubliT.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRegisPubliT.Location = new System.Drawing.Point(439, 339);
-            this.txtRegisPubliT.Margin = new System.Windows.Forms.Padding(4);
+            this.txtRegisPubliT.Location = new System.Drawing.Point(329, 275);
             this.txtRegisPubliT.Multiline = true;
             this.txtRegisPubliT.Name = "txtRegisPubliT";
-            this.txtRegisPubliT.Size = new System.Drawing.Size(286, 40);
+            this.txtRegisPubliT.Size = new System.Drawing.Size(216, 33);
             this.txtRegisPubliT.TabIndex = 66;
             // 
             // txIDSectorT
             // 
             this.txIDSectorT.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txIDSectorT.Location = new System.Drawing.Point(197, 397);
-            this.txIDSectorT.Margin = new System.Windows.Forms.Padding(4);
+            this.txIDSectorT.Location = new System.Drawing.Point(148, 323);
             this.txIDSectorT.Multiline = true;
             this.txIDSectorT.Name = "txIDSectorT";
-            this.txIDSectorT.Size = new System.Drawing.Size(528, 40);
+            this.txIDSectorT.Size = new System.Drawing.Size(397, 33);
             this.txIDSectorT.TabIndex = 67;
             // 
             // txtIDPropietarioT
             // 
             this.txtIDPropietarioT.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIDPropietarioT.Location = new System.Drawing.Point(258, 463);
-            this.txtIDPropietarioT.Margin = new System.Windows.Forms.Padding(4);
+            this.txtIDPropietarioT.Location = new System.Drawing.Point(194, 376);
             this.txtIDPropietarioT.Multiline = true;
             this.txtIDPropietarioT.Name = "txtIDPropietarioT";
-            this.txtIDPropietarioT.Size = new System.Drawing.Size(467, 40);
+            this.txtIDPropietarioT.Size = new System.Drawing.Size(351, 33);
             this.txtIDPropietarioT.TabIndex = 68;
             // 
             // AceptarRegisTerreno
             // 
             this.AceptarRegisTerreno.Font = new System.Drawing.Font("Lucida Fax", 19.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AceptarRegisTerreno.Location = new System.Drawing.Point(88, 661);
-            this.AceptarRegisTerreno.Margin = new System.Windows.Forms.Padding(4);
+            this.AceptarRegisTerreno.Location = new System.Drawing.Point(66, 537);
             this.AceptarRegisTerreno.Name = "AceptarRegisTerreno";
-            this.AceptarRegisTerreno.Size = new System.Drawing.Size(231, 62);
+            this.AceptarRegisTerreno.Size = new System.Drawing.Size(173, 50);
             this.AceptarRegisTerreno.TabIndex = 73;
             this.AceptarRegisTerreno.Text = "Aceptar";
             this.AceptarRegisTerreno.UseVisualStyleBackColor = true;
@@ -241,19 +226,19 @@ namespace ProyectoAltavista
             // RegresarTerreno
             // 
             this.RegresarTerreno.Font = new System.Drawing.Font("Lucida Fax", 19.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RegresarTerreno.Location = new System.Drawing.Point(467, 661);
-            this.RegresarTerreno.Margin = new System.Windows.Forms.Padding(4);
+            this.RegresarTerreno.Location = new System.Drawing.Point(350, 537);
             this.RegresarTerreno.Name = "RegresarTerreno";
-            this.RegresarTerreno.Size = new System.Drawing.Size(231, 62);
+            this.RegresarTerreno.Size = new System.Drawing.Size(173, 50);
             this.RegresarTerreno.TabIndex = 74;
             this.RegresarTerreno.Text = "Regresar";
             this.RegresarTerreno.UseVisualStyleBackColor = true;
+            this.RegresarTerreno.Click += new System.EventHandler(this.RegresarTerreno_Click);
             // 
             // RegistrarTerreno
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(782, 753);
+            this.ClientSize = new System.Drawing.Size(586, 612);
             this.Controls.Add(this.RegresarTerreno);
             this.Controls.Add(this.AceptarRegisTerreno);
             this.Controls.Add(this.txtIDPropietarioT);
@@ -272,6 +257,7 @@ namespace ProyectoAltavista
             this.Controls.Add(this.DireccionT);
             this.Controls.Add(this.lbRegistrarTerreno);
             this.Controls.Add(this.FondoT);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "RegistrarTerreno";
             this.Text = "RegistrarTerreno";
             ((System.ComponentModel.ISupportInitialize)(this.FondoT)).EndInit();

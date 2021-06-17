@@ -12,9 +12,17 @@ namespace ProyectoAltavista
 {
     public partial class RegistarDepartamento : Form
     {
-        public RegistarDepartamento()
+        MantenedorDeInmueble inmueble;
+        public RegistarDepartamento(MantenedorDeInmueble inm)
         {
             InitializeComponent();
+            inmueble = inm;
+        }
+
+        private void Regresar_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            inmueble.Show();
         }
     }
 }
