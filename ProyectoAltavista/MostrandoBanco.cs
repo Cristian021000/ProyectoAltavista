@@ -26,6 +26,10 @@ namespace ProyectoAltavista
         {
             DataGridMostrarBanco.DataSource = logBanco.Instancia.ListarBancos();
         }
+        public void limpiarVariableConsultar()
+        {
+            textBox1IngresoBanco.Clear();
+        }
 
         private void Form2_Load(object sender, EventArgs e)
         {
@@ -61,6 +65,7 @@ namespace ProyectoAltavista
                         mod = new ModificarBanco(banco.idbanco, this);
                     }
                     //ModificarBanco mod = new ModificarBanco(banco.idbanco);
+                    mod.llenarDato(banco);
                     mod.Show();
                     this.Close();
                 }

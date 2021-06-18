@@ -27,7 +27,10 @@ namespace ProyectoAltavista
         {
             dgvDatosCliente.DataSource = logCliente.Instancia.ListarClientes();
         }
-
+        public void limpiarVariableConsultar()
+        {
+            txtIngreseDni.Clear();
+        }
 
         private void btAceptar_Click_1(object sender, EventArgs e)
         {
@@ -39,8 +42,10 @@ namespace ProyectoAltavista
                 {
                     if (modificar == null) 
                     {
-                        modificar = new ModificarInhabilitarCliente(Cli.dnicliente, this);
-                    }              //DUDA, SOLO debe ACEPTAR y NO MODIFICAR :'v
+                        modificar = new ModificarInhabilitarCliente(this);
+                    }
+                    Cli = logCliente.Instancia.DatosCliente(Cli.dnicliente);
+                    modifcar.llenarDatos(Cli);
                     modificar.Show();
                     this.Hide();
                 }

@@ -27,6 +27,10 @@ namespace ProyectoAltavista
         {
             dgvConsultaCiudad.DataSource = logCiudad.Instancia.ListarCiudad();
         }
+        public void limpiarVariableConsultar()
+        {
+            txtcodCiudad.Clear();
+        }
 
         private void btModificarCiudad_Click(object sender, EventArgs e)
         {
@@ -37,9 +41,10 @@ namespace ProyectoAltavista
                 {
                     if (modi == null )
                     {
-                         modi = new ModificarInhabilitarCiudad(ciudad.codCiudad, this);
+                         modi = new ModificarInhabilitarCiudad(this);
                     }
-                    
+                    ciudad = logCiudad.Instancia.DatosCiudad(ciudad.codCiudad);
+                    modi.llenarDatos(ciudad);
                     modi.Show();
                     this.Hide();
                 }

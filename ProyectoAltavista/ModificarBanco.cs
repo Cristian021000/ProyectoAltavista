@@ -18,13 +18,18 @@ namespace ProyectoAltavista
         public ModificarBanco(int idbanco, MostrandoBanco ban)
         {
             InitializeComponent();
-            ListarBanco();
-            entBanco banco = new entBanco();
-            banco = logBanco.Instancia.DatosBanco(idbanco);
+            banc = ban;
+        }
+        public void llenarDatos(entBanco banco)
+        {
             txtIdBanco.Enabled = false;
             textBox1NombreBanco.Text = banco.Nombre.ToString();
             txtIdBanco.Text = banco.idbanco.ToString();
-            banc = ban;
+        }
+        public void limpiarVariableInterfazMod()
+        {
+            txtIdBanco.Clear();
+            textBox1NombreBanco.Clear();
         }
         public void ListarBanco()
         {
@@ -33,6 +38,9 @@ namespace ProyectoAltavista
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
+            banc.ListarBanco();
+            banc.limpiarVariableConsultar();
+            limpiarVariableInterfazMod();
             banc.Show();
             this.Close();
         }
@@ -50,13 +58,16 @@ namespace ProyectoAltavista
                 banco.Nombre = textBox1NombreBanco.Text.Trim();
                 logBanco.Instancia.EditarBanco(banco);
                 MessageBox.Show("Cambio realizado con exito");
+                banc.ListarBanco();
+                banc.limpiarVariableConsultar();
+                limpiarVariableInterfazMod();
+                banc.Show();
+                this.Hide();
             }
             catch (Exception ex)
             {
                 throw ex;
             }
-            LimpiarVariables();
-            ListarBanco();
         }
         private void dataGridViewVerBanco_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {

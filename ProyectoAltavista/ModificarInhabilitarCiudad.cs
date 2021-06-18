@@ -15,16 +15,23 @@ namespace ProyectoAltavista
     public partial class ModificarInhabilitarCiudad : Form
     {
         consultarCiudad ciuda;
-        public ModificarInhabilitarCiudad(int codCiudad, consultarCiudad ciu)
+        public ModificarInhabilitarCiudad(consultarCiudad ciu)
         {
             InitializeComponent();
-            entCiudad Ciudad = new entCiudad();
-            Ciudad = logCiudad.Instancia.DatosCiudad(codCiudad);
+            ciuda = ciu;
+
+        }
+        public void llenarDatos(entCiudad Ciudad)
+        {
             txtNombreCiudad.Text = Ciudad.nombCiudad.ToString();
             textCódigoPostal.Text = Ciudad.postalCiudad.ToString();
             textReferenciasCiudad.Text = Ciudad.referenciasCiudad.ToString();
-            ciuda = ciu;
-
+        }
+        public void limpiarVariableInterfazMod()
+        {
+            txtNombreCiudad.Clear();
+            textCódigoPostal.Clear();
+            textReferenciasCiudad.Clear();
         }
         private void label2_Click(object sender, EventArgs e)
         {
@@ -38,7 +45,9 @@ namespace ProyectoAltavista
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            
+            ciuda.ListaCiudad();
+            ciuda.limpiarVariableConsultar();
+            limpiarVariableInterfazMod();
             ciuda.Show();
             this.Close();
         }
@@ -53,6 +62,11 @@ namespace ProyectoAltavista
                 ciudad.referenciasCiudad = textReferenciasCiudad.Text.Trim();           
                 logCiudad.Instancia.ModificarCiudad(ciudad);
                 MessageBox.Show("Se editaron correctamente la ciudad");
+                ciuda.ListaCiudad();
+                ciuda.limpiarVariableConsultar();
+                limpiarVariableInterfazMod();
+                ciuda.Show();
+                this.Hide();
             }
             catch (Exception ex)
             {

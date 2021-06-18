@@ -15,19 +15,26 @@ namespace ProyectoAltavista
     public partial class ModificarInhabilitarCliente : Form
     {
         ConsultarCliente clien;
-        public ModificarInhabilitarCliente(int dnicliente, ConsultarCliente cl)
+        public ModificarInhabilitarCliente(ConsultarCliente cl)
         {
             InitializeComponent();
-            entCliente Cliente;
-            Cliente = logCliente.Instancia.DatosCliente(dnicliente);
+            clien = cl;
+        }
+        public void llenarDatos(entCliente Cliente)
+        {
             chbHabilitar.Enabled = false;
             txtNombre.Text = Cliente.nombrecliente.ToString();
             txtApellido.Text = Cliente.apelcliente.ToString();
             txtEdad.Text = Cliente.edadcliente.ToString();
             txtCelular.Text = Cliente.celcliente.ToString();
             chbHabilitar.Checked = Cliente.estadocliente;
-            clien = cl;
-
+        }
+        public void limpiarVariableInterfazMod()
+        {
+            txtNombre.Clear();
+            txtApellido.Clear();
+            txtEdad.Clear();
+            txtCelular.Clear();
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -37,8 +44,11 @@ namespace ProyectoAltavista
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
+            clien.ListarClientes();
+            clien.limpiarVariableConsultar();
+            limpiarVariableInterfazMod();
             clien.Show();
-            this.Close();
+            this.Hide();
         }
 
         private void chbHabilitar_CheckedChanged(object sender, EventArgs e)
@@ -62,6 +72,11 @@ namespace ProyectoAltavista
                 Cli.celcliente = int.Parse(txtCelular.Text.Trim());
                 logCliente.Instancia.ModificarCliente(Cli);
                 MessageBox.Show("Se editaron correctamente los datos del agente");
+                clien.ListarClientes();
+                clien.limpiarVariableConsultar();
+                limpiarVariableInterfazMod();
+                clien.Show();
+                this.Hide();
             }
             catch (Exception ex)
             {
