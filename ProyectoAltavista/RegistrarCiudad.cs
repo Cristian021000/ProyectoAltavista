@@ -37,7 +37,7 @@ namespace ProyectoAltavista
             try
             {
                 entCiudad ciudad = new entCiudad();
-                ciudad.nombCiudad = txtNombreCiudad.Text.Trim();
+                ciudad.nombrCiudad = txtNombreCiudad.Text.Trim();
                 ciudad.referenciasCiudad = textReferenciasCiudad.Text.Trim();
                 ciudad.postalCiudad = int.Parse(textCódigoPostal.Text.Trim());
                 logCiudad.Instancia.RegistrarCiudad(ciudad);

@@ -8,13 +8,12 @@ namespace CapaEntidad
 {
     public class entCliente
     {
-
+        public int idCliente { get; set; }
+        public int dnicliente { get; set; }
         public string nombrecliente { get; set; }
         public string apelcliente { get; set; }
         public int edadcliente { get; set; }
         public int celcliente { get; set; }
         public Boolean estadocliente { get; set; }
-        public int dnicliente { get; set; }
-
     }
 }

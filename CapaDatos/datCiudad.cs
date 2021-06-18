@@ -30,7 +30,7 @@ namespace CapaDatos
                 SqlConnection cn = Conexion.Instancia.Conectar();
                 cmd = new SqlCommand("spRegistrarCiudad", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@nombCiudad", Ciudad.nombCiudad);
+                cmd.Parameters.AddWithValue("@nombrCiudad", Ciudad.nombrCiudad);
                 cmd.Parameters.AddWithValue("@referenciasCiudad", Ciudad.referenciasCiudad);
                 cmd.Parameters.AddWithValue("@postalCiudad", Ciudad.postalCiudad);
                 cn.Open();
@@ -61,9 +61,8 @@ namespace CapaDatos
                 while (dr.Read())
                 {
                     entCiudad ciudad = new entCiudad();
-
                     ciudad.codCiudad = Convert.ToInt32(dr["codCiudad"]);
-                    ciudad.nombCiudad = dr["nombCiudad"].ToString();
+                    ciudad.nombrCiudad = dr["nombrCiudad"].ToString();
                     ciudad.referenciasCiudad = dr["referenciasCiudad"].ToString();
                     ciudad.postalCiudad = Convert.ToInt32(dr["postalCiudad"]);
                     lista.Add(ciudad);
@@ -115,7 +114,7 @@ namespace CapaDatos
                 if (dr.Read())
                 {
                     ciudad.codCiudad = Convert.ToInt32(dr["codCiudad"]);
-                    ciudad.nombCiudad = dr["nombCiudad"].ToString();
+                    ciudad.nombrCiudad = dr["nombrCiudad"].ToString();
                     ciudad.referenciasCiudad = dr["referenciasCiudad"].ToString();
                     ciudad.postalCiudad = Convert.ToInt32(dr["postalCiudad"]);
                 }
@@ -137,7 +136,7 @@ namespace CapaDatos
                 cmd = new SqlCommand("spModificarCiudad", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@codCiudad", ciudad.codCiudad);
-                cmd.Parameters.AddWithValue("@nombCiudad", ciudad.nombCiudad);
+                cmd.Parameters.AddWithValue("@nombrCiudad", ciudad.nombrCiudad);
                 cmd.Parameters.AddWithValue("@referenciasCiudad", ciudad.referenciasCiudad);
                 cmd.Parameters.AddWithValue("@postalCiudad", ciudad.postalCiudad);
                 cn.Open();

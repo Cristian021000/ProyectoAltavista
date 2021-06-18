@@ -32,12 +32,12 @@ namespace CapaDatos
                 cmd = new SqlCommand("spRegistrarCliente", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
 
+                cmd.Parameters.AddWithValue("@dnicliente", Cliente.dnicliente);
                 cmd.Parameters.AddWithValue("@nombrecliente", Cliente.nombrecliente);
                 cmd.Parameters.AddWithValue("@apelcliente", Cliente.apelcliente);
                 cmd.Parameters.AddWithValue("@edadcliente", Cliente.edadcliente);
                 cmd.Parameters.AddWithValue("@celcliente", Cliente.celcliente);
                 cmd.Parameters.AddWithValue("@estadocliente", Cliente.estadocliente);
-                cmd.Parameters.AddWithValue("@dnicliente", Cliente.dnicliente);
                 cn.Open();
                 int i = cmd.ExecuteNonQuery();
                 if (i > 0)
@@ -62,9 +62,8 @@ namespace CapaDatos
                 SqlConnection cn = Conexion.Instancia.Conectar();
                 cmd = new SqlCommand("spExisteDatosCliente", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@nombrecliente", Cliente.nombrecliente);
-                cmd.Parameters.AddWithValue("@celcliente", Cliente.celcliente);
                 cmd.Parameters.AddWithValue("@dnicliente", Cliente.dnicliente);
+                cmd.Parameters.AddWithValue("@celcliente", Cliente.celcliente);
                 cn.Open();
 
                 SqlDataReader dr = cmd.ExecuteReader();
@@ -73,15 +72,6 @@ namespace CapaDatos
                 {
                     existe = true;
                 }
-
-                /*
-                  
-
-                int count = Convert.ToInt32(cmd.ExecuteScalar());
-                if (count > 0)
-                {
-                    existe = true;
-                }*/
             }
             catch (Exception e)
             {
@@ -110,6 +100,7 @@ namespace CapaDatos
                     Cli.estadocliente = Convert.ToBoolean(dr["estadocliente"]);
                     if (Cli.estadocliente)
                     {
+                        Cli.idCliente = Convert.ToInt32(dr["idCliente"]);
                         Cli.dnicliente = Convert.ToInt32(dr["dnicliente"]);
                         Cli.nombrecliente = dr["nombrecliente"].ToString();
                         Cli.apelcliente = dr["apelcliente"].ToString();
@@ -134,8 +125,9 @@ namespace CapaDatos
             try
             {
                 SqlConnection cn = Conexion.Instancia.Conectar();
-                cmd = new SqlCommand("spModificarAgente", cn);
+                cmd = new SqlCommand("spModificarCliente", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@idCliente", Cliente.idCliente);
                 cmd.Parameters.AddWithValue("@dnicliente", Cliente.dnicliente);
                 cmd.Parameters.AddWithValue("@nombrecliente", Cliente.nombrecliente);
                 cmd.Parameters.AddWithValue("@apelcliente", Cliente.apelcliente);
@@ -195,6 +187,7 @@ namespace CapaDatos
                 SqlDataReader dr = cmd.ExecuteReader();
                 if (dr.Read())
                 {
+                    Cli.idCliente = Convert.ToInt32(dr["idCliente"]);
                     Cli.dnicliente = Convert.ToInt32(dr["dnicliente"]);
                     Cli.nombrecliente = dr["nombrecliente"].ToString();
                     Cli.apelcliente = dr["apelcliente"].ToString();
@@ -220,7 +213,7 @@ namespace CapaDatos
                 SqlConnection cn = Conexion.Instancia.Conectar();
                 cmd = new SqlCommand("spDeshabilitarCliente", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@dnicliente", Cliente.dnicliente);
+                cmd.Parameters.AddWithValue("@idCliente", Cliente.idCliente);
                 cmd.Parameters.AddWithValue("@estadocliente", Cliente.estadocliente);
                 cn.Open();
                 int i = cmd.ExecuteNonQuery();

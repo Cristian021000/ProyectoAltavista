@@ -41,6 +41,10 @@ namespace CapaLogica
         {
             datBanco.Instancia.EditarBanco(banco);
         }
+        public void DeshabilitarBanco(entBanco banco)
+        {
+            datBanco.Instancia.DeshabilitarBanco(banco);
+        }
 
     }
 }

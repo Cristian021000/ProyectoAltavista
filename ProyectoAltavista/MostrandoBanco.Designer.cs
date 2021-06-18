@@ -138,7 +138,6 @@ namespace ProyectoAltavista
             this.DataGridMostrarBanco.RowHeadersWidth = 51;
             this.DataGridMostrarBanco.Size = new System.Drawing.Size(376, 222);
             this.DataGridMostrarBanco.TabIndex = 34;
-            this.DataGridMostrarBanco.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridMostrarBanco_CellContentDoubleClick);
             // 
             // MostrandoBanco
             // 

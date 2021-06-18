@@ -15,7 +15,7 @@ namespace ProyectoAltavista
     public partial class ModificarBanco : Form
     {
         MostrandoBanco banc;
-        public ModificarBanco(int idbanco, MostrandoBanco ban)
+        public ModificarBanco(MostrandoBanco ban)
         {
             InitializeComponent();
             banc = ban;
@@ -23,17 +23,15 @@ namespace ProyectoAltavista
         public void llenarDatos(entBanco banco)
         {
             txtIdBanco.Enabled = false;
-            textBox1NombreBanco.Text = banco.Nombre.ToString();
+            checkBoxHabilitar.Enabled = false;
             txtIdBanco.Text = banco.idbanco.ToString();
+            textBox1NombreBanco.Text = banco.Nombre.ToString();
+            checkBoxHabilitar.Checked = banco.estadoBanco;
         }
         public void limpiarVariableInterfazMod()
         {
             txtIdBanco.Clear();
             textBox1NombreBanco.Clear();
-        }
-        public void ListarBanco()
-        {
-            dataGridViewVerBanco.DataSource = logBanco.Instancia.ListarBancos();
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
@@ -42,11 +40,7 @@ namespace ProyectoAltavista
             banc.limpiarVariableConsultar();
             limpiarVariableInterfazMod();
             banc.Show();
-            this.Close();
-        }
-        private void LimpiarVariables()
-        {
-            textBox1NombreBanco.Text = "";
+            this.Hide();
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
@@ -69,11 +63,27 @@ namespace ProyectoAltavista
                 throw ex;
             }
         }
-        private void dataGridViewVerBanco_CellContentClick(object sender, DataGridViewCellEventArgs e)
+
+        private void btnDeshabilitar_Click(object sender, EventArgs e)
         {
-            DataGridViewRow filaActual = dataGridViewVerBanco.Rows[e.RowIndex];
-            textBox1NombreBanco.Text = filaActual.Cells[0].Value.ToString();
-            txtIdBanco.Text = filaActual.Cells[1].Value.ToString();
+            try
+            {
+                entBanco banco = new entBanco();
+                banco.idbanco = int.Parse(txtIdBanco.Text.Trim());
+                checkBoxHabilitar.Checked = false;
+                banco.estadoBanco = checkBoxHabilitar.Checked;
+                logBanco.Instancia.DeshabilitarBanco(banco);
+                MessageBox.Show("El banco a sido deshabilitado correctamente.");
+                banc.ListarBanco();
+                banc.limpiarVariableConsultar();
+                limpiarVariableInterfazMod();
+                banc.Show();
+                this.Hide();
+            }
+            catch (Exception exe)
+            {
+                throw exe;
+            }
         }
     }
 }

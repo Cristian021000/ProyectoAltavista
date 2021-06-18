@@ -105,7 +105,7 @@ namespace ProyectoAltavista
             // 
             // btCiudad
             // 
-            this.btCiudad.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.btCiudad.Cursor = System.Windows.Forms.Cursors.Default;
             this.btCiudad.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btCiudad.Location = new System.Drawing.Point(92, 309);
             this.btCiudad.Name = "btCiudad";

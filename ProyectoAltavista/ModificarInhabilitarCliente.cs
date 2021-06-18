@@ -22,15 +22,20 @@ namespace ProyectoAltavista
         }
         public void llenarDatos(entCliente Cliente)
         {
-            chbHabilitar.Enabled = false;
+            txtidcliente.Enabled = false;
+            txtDniCliente.Enabled = false;
+            checkBoxHablitar.Enabled = false;
+            txtidcliente.Text = Cliente.idCliente.ToString() ;
+            txtDniCliente.Text = Cliente.dnicliente.ToString();
             txtNombre.Text = Cliente.nombrecliente.ToString();
             txtApellido.Text = Cliente.apelcliente.ToString();
             txtEdad.Text = Cliente.edadcliente.ToString();
             txtCelular.Text = Cliente.celcliente.ToString();
-            chbHabilitar.Checked = Cliente.estadocliente;
+            checkBoxHablitar.Checked = Cliente.estadocliente;
         }
         public void limpiarVariableInterfazMod()
         {
+            txtDniCliente.Clear();
             txtNombre.Clear();
             txtApellido.Clear();
             txtEdad.Clear();
@@ -50,12 +55,6 @@ namespace ProyectoAltavista
             clien.Show();
             this.Hide();
         }
-
-        private void chbHabilitar_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void pictureBox1Fondo_Click(object sender, EventArgs e)
         {
 
@@ -66,12 +65,14 @@ namespace ProyectoAltavista
             try
             {
                 entCliente Cli = new entCliente();
+                Cli.idCliente = int.Parse(txtidcliente.Text.Trim());
+                Cli.dnicliente = int.Parse(txtDniCliente.Text.Trim());
                 Cli.nombrecliente = txtNombre.Text.Trim();
                 Cli.apelcliente = txtApellido.Text.Trim();
                 Cli.edadcliente = int.Parse(txtEdad.Text.Trim());
                 Cli.celcliente = int.Parse(txtCelular.Text.Trim());
                 logCliente.Instancia.ModificarCliente(Cli);
-                MessageBox.Show("Se editaron correctamente los datos del agente");
+                MessageBox.Show("Se editaron correctamente los datos del Cliente.");
                 clien.ListarClientes();
                 clien.limpiarVariableConsultar();
                 limpiarVariableInterfazMod();
@@ -85,9 +86,26 @@ namespace ProyectoAltavista
 
         }
 
-        private void btModificar_Click(object sender, EventArgs e)
+        private void btnDeshabilitar_Click(object sender, EventArgs e)
         {
-
+            try
+            {
+                entCliente Cliente = new entCliente();
+                Cliente.idCliente = int.Parse(txtidcliente.Text.Trim());
+                checkBoxHablitar.Checked = false;
+                Cliente.estadocliente = checkBoxHablitar.Checked;
+                logCliente.Instancia.DeshabilitarCliente(Cliente);
+                MessageBox.Show("El cliente a sido deshabilitado correctamente");
+                clien.ListarClientes();
+                clien.limpiarVariableConsultar();
+                limpiarVariableInterfazMod();
+                clien.Show();
+                this.Hide();
+            }
+            catch (Exception exe)
+            {
+                throw exe;
+            }
         }
     }
 }

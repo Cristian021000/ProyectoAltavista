@@ -8,8 +8,9 @@ namespace CapaEntidad
 {
     public class entBanco
     {
-        public string Nombre { get; set; }
         public int idbanco { get; set; }
+        public string Nombre { get; set; }
+        public Boolean estadoBanco { get; set; }
 
     }
 }

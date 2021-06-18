@@ -28,7 +28,7 @@ namespace CapaLogica
 
         public Boolean ExisteDatosPropietario(entPropietario Propietario)
         {
-            return datPropietario.Instancia.ExisteDatosAgente(Propietario);
+            return datPropietario.Instancia.ExisteDatosPropietario(Propietario);
         }
 
 

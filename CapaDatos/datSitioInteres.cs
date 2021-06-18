@@ -85,18 +85,18 @@ namespace CapaDatos
         }
 
         //EDITAR
-        public Boolean EditarSitioInteres(entSitioInteres Sitio)
+        public Boolean ModificarSitioInteres(entSitioInteres Sitio)
         {
             SqlCommand cmd = null;
             Boolean edita = false;
             try
             {
                 SqlConnection cn = Conexion.Instancia.Conectar();
-                cmd = new SqlCommand("spEditaSI", cn);
+                cmd = new SqlCommand("spModificaSI", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@codSitioInteres", Sitio.codSitioInteres);
                 cmd.Parameters.AddWithValue("@NombreSI", Sitio.NombreSI);
                 cmd.Parameters.AddWithValue("@DireccionSI", Sitio.DireccionSI);
-                cmd.Parameters.AddWithValue("@estadoSI", Sitio.estadoSI);
                 cn.Open();
                 int i = cmd.ExecuteNonQuery();
                 if (i > 0)

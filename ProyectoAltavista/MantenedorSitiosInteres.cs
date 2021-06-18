@@ -45,7 +45,7 @@ namespace ProyectoAltavista
             {
                consultaSI = new ConsultarSitiosInteres(this);
             }
-            
+            consultaSI.listarSitioInteres();
             consultaSI.Show();
             this.Hide();
         }

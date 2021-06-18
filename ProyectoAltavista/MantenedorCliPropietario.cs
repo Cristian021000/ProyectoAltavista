@@ -37,7 +37,7 @@ namespace ProyectoAltavista
             {
                 consultarCliPropietario = new ConsultarCliPropietario(this);
             }
-            
+            consultarCliPropietario.listarPropietario();
             consultarCliPropietario.Show();
             this.Hide();
         }

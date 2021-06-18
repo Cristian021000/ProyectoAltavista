@@ -37,6 +37,7 @@ namespace ProyectoAltavista
             try
             {
                 entCiudad ciudad = new entCiudad();
+                ciudad.codCiudad = int.Parse(txtcodCiudad.Text.Trim());
                 if (logCiudad.Instancia.BuscaCiudad(ciudad))
                 {
                     if (modi == null )
@@ -57,6 +58,12 @@ namespace ProyectoAltavista
             {
                 throw ex;
             }
+        }
+
+        private void btRegresar_Click(object sender, EventArgs e)
+        {
+            ciuda.Show();
+            this.Hide();
         }
     }
 }

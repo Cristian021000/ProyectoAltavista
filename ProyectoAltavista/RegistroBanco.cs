@@ -18,18 +18,14 @@ namespace ProyectoAltavista
         public RegistroBanco(MantenedorBanco ban)
         {
             InitializeComponent();
-            ListarBanco();
+            textBox1CodigoBanco.Enabled = false;
             mantBanco = ban;
-        }
-        public void ListarBanco()
-        {
-            dgRegistroBanco.DataSource = logBanco.Instancia.ListarBancos();
         }
 
         private void btSalir_Click(object sender, EventArgs e)
         {
             mantBanco.Show();
-            this.Close();
+            this.Hide();
         }
 
         private void bt2RegistarBanco_Click(object sender, EventArgs e)
@@ -38,21 +34,16 @@ namespace ProyectoAltavista
             {
                 entBanco ban = new entBanco();
                 ban.Nombre = textbAgregarBanco.Text.Trim();
-                ban.idbanco = int.Parse(textBox1CodigoBanco.Text.Trim());
+                ban.estadoBanco = true;
                 logBanco.Instancia.RegistrarBanco(ban);
+                MessageBox.Show("El banco se a registrado correctamente.");
+                mantBanco.Show();
+                this.Hide();
             }
             catch (Exception ex)
             {
                 MessageBox.Show("error..." + ex);
             }
-            ListarBanco();
-        }
-
-        private void dgRegistroBanco_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
-        {
-            DataGridViewRow filaActual = dgRegistroBanco.Rows[e.RowIndex]; //
-            textbAgregarBanco.Text = filaActual.Cells[0].Value.ToString();
-            textBox1CodigoBanco.Text = filaActual.Cells[1].Value.ToString();
         }
     }
 }

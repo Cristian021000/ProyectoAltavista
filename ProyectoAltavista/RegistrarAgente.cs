@@ -50,6 +50,8 @@ namespace ProyectoAltavista
                     MessageBox.Show("El correo o el número de celular ya se encuentran en uso");
                 }
                 MessageBox.Show("El agente se a registrado correctamente");
+                MantenedorAgen.Show();
+                this.Hide();
             }
             catch (Exception ex)
             {

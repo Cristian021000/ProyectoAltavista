@@ -41,10 +41,12 @@ namespace ProyectoAltavista
                 {
                     if (modificar == null)
                     {
-                        modificar = new MModificarSitiosInteres(Sitio.codSitioInteres, this);
+                        modificar = new MModificarSitiosInteres(this);
                     }
+                    Sitio = logSitioInteres.Instancia.DatosSitioInteres(Sitio.codSitioInteres);
+                    modificar.llenarDatos(Sitio);
                     modificar.Show();
-                    this.Close();
+                    this.Hide();
                 }
                 else
                 {
@@ -61,7 +63,7 @@ namespace ProyectoAltavista
         {
             
             sitio.Show();
-            this.Close();
+            this.Hide();
         }
     }
 }

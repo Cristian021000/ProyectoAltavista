@@ -44,6 +44,7 @@ namespace ProyectoAltavista
             {
                 consultar = new ConsultarAgente(this);
             }
+            consultar.ListarAgente();
             consultar.Show();
             this.Hide();
         }

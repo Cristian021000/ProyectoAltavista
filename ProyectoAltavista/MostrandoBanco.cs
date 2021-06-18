@@ -49,7 +49,7 @@ namespace ProyectoAltavista
         private void btnSalir_Click(object sender, EventArgs e)
         {
             banc.Show();
-            this.Close();
+            this.Hide();
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
@@ -62,12 +62,12 @@ namespace ProyectoAltavista
                 {
                     if (mod == null) 
                     {
-                        mod = new ModificarBanco(banco.idbanco, this);
+                        mod = new ModificarBanco(this);
                     }
-                    //ModificarBanco mod = new ModificarBanco(banco.idbanco);
-                    mod.llenarDato(banco);
+                    banco = logBanco.Instancia.DatosBanco(banco.idbanco);
+                    mod.llenarDatos(banco);
                     mod.Show();
-                    this.Close();
+                    this.Hide();
                 }
                 else
                 {
@@ -78,11 +78,6 @@ namespace ProyectoAltavista
             {
                 throw ex;
             }
-        }
-
-        private void DataGridMostrarBanco_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
-        {
-
         }
     }
 }

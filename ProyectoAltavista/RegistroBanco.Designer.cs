@@ -39,10 +39,8 @@ namespace ProyectoAltavista
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1CodigoBanco = new System.Windows.Forms.TextBox();
-            this.dgRegistroBanco = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1Fondo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgRegistroBanco)).BeginInit();
             this.SuspendLayout();
             // 
             // bt2RegistarBanco
@@ -59,7 +57,7 @@ namespace ProyectoAltavista
             // textbAgregarBanco
             // 
             this.textbAgregarBanco.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textbAgregarBanco.Location = new System.Drawing.Point(40, 174);
+            this.textbAgregarBanco.Location = new System.Drawing.Point(27, 254);
             this.textbAgregarBanco.Multiline = true;
             this.textbAgregarBanco.Name = "textbAgregarBanco";
             this.textbAgregarBanco.Size = new System.Drawing.Size(252, 32);
@@ -114,7 +112,7 @@ namespace ProyectoAltavista
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(80, 136);
+            this.label1.Location = new System.Drawing.Point(67, 216);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(174, 22);
             this.label1.TabIndex = 25;
@@ -124,7 +122,7 @@ namespace ProyectoAltavista
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(122, 217);
+            this.label2.Location = new System.Drawing.Point(112, 128);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(76, 22);
             this.label2.TabIndex = 26;
@@ -133,27 +131,17 @@ namespace ProyectoAltavista
             // textBox1CodigoBanco
             // 
             this.textBox1CodigoBanco.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1CodigoBanco.Location = new System.Drawing.Point(68, 253);
+            this.textBox1CodigoBanco.Location = new System.Drawing.Point(54, 166);
             this.textBox1CodigoBanco.Multiline = true;
             this.textBox1CodigoBanco.Name = "textBox1CodigoBanco";
             this.textBox1CodigoBanco.Size = new System.Drawing.Size(197, 32);
             this.textBox1CodigoBanco.TabIndex = 27;
-            // 
-            // dgRegistroBanco
-            // 
-            this.dgRegistroBanco.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgRegistroBanco.Location = new System.Drawing.Point(397, 123);
-            this.dgRegistroBanco.Name = "dgRegistroBanco";
-            this.dgRegistroBanco.Size = new System.Drawing.Size(380, 257);
-            this.dgRegistroBanco.TabIndex = 28;
-            this.dgRegistroBanco.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgRegistroBanco_CellContentDoubleClick);
             // 
             // RegistroBanco
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(834, 461);
-            this.Controls.Add(this.dgRegistroBanco);
             this.Controls.Add(this.textBox1CodigoBanco);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -169,7 +157,6 @@ namespace ProyectoAltavista
             this.Text = "RegistroBanco";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1Fondo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgRegistroBanco)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -186,6 +173,5 @@ namespace ProyectoAltavista
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox1CodigoBanco;
-        private System.Windows.Forms.DataGridView dgRegistroBanco;
     }
 }

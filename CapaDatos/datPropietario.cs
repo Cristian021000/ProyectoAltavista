@@ -53,7 +53,7 @@ namespace CapaDatos
         }
 
 
-        public Boolean ExisteDatosAgente(entPropietario Propietario)
+        public Boolean ExisteDatosPropietario(entPropietario Propietario)
         {
             Boolean existe = false;
             SqlCommand cmd = null;
@@ -63,7 +63,6 @@ namespace CapaDatos
                 cmd = new SqlCommand("spExisteDatosPropietario", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@dni", Propietario.dni);
-                cmd.Parameters.AddWithValue("@celular", Propietario.celular);
                 cn.Open();
 
                 SqlDataReader dr = cmd.ExecuteReader();

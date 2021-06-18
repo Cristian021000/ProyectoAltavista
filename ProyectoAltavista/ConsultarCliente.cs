@@ -45,7 +45,7 @@ namespace ProyectoAltavista
                         modificar = new ModificarInhabilitarCliente(this);
                     }
                     Cli = logCliente.Instancia.DatosCliente(Cli.dnicliente);
-                    modifcar.llenarDatos(Cli);
+                    modificar.llenarDatos(Cli);
                     modificar.Show();
                     this.Hide();
                 }

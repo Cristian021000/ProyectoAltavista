@@ -42,6 +42,7 @@ namespace ProyectoAltavista
             {
                 muestraBanco = new MostrandoBanco(this);
             }
+            muestraBanco.ListarBanco();
             muestraBanco.Show();
             this.Hide();
         }

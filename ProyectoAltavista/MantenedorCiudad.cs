@@ -14,6 +14,7 @@ namespace ProyectoAltavista
     {
         MenuPrincipal principal;
         RegistrarCiudad registroCiudad;
+        consultarCiudad consultarCiudad;
         public MantenedorCiudad(MenuPrincipal menu)
         {
             InitializeComponent();
@@ -35,6 +36,17 @@ namespace ProyectoAltavista
         {
             
             principal.Show();
+            this.Hide();
+        }
+
+        private void btListarCiudad_Click(object sender, EventArgs e)
+        {
+            if (consultarCiudad == null)
+            {
+                consultarCiudad = new consultarCiudad(this);
+            }
+            consultarCiudad.ListaCiudad();
+            consultarCiudad.Show();
             this.Hide();
         }
     }

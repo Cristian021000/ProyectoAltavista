@@ -30,7 +30,6 @@ namespace CapaDatos
                 cmd = new SqlCommand("RegistroBanco", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@nombre", banco.Nombre);
-                cmd.Parameters.AddWithValue("@idbanco", banco.idbanco);
                 cn.Open();
                 int i = cmd.ExecuteNonQuery();
                 if (i > 0)
@@ -60,9 +59,13 @@ namespace CapaDatos
                 while (dr.Read())
                 {
                     entBanco banco = new entBanco();
-                    banco.Nombre = dr["Nombre"].ToString();
-                    banco.idbanco = Convert.ToInt32(dr["idbanco"]);
-                    lista.Add(banco);
+                    banco.estadoBanco = Convert.ToBoolean(dr["estadoBanco"]);
+                    if (banco.estadoBanco) { 
+                        banco.idbanco = Convert.ToInt32(dr["idbanco"]);
+                        banco.Nombre = dr["Nombre"].ToString();
+                        lista.Add(banco);
+                    }
+
                 }
             }
             catch (Exception e)
@@ -83,8 +86,8 @@ namespace CapaDatos
                 SqlConnection cn = Conexion.Instancia.Conectar();
                 cmd = new SqlCommand("EditarBanco", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@Nombre", banco.Nombre);
                 cmd.Parameters.AddWithValue("@idbanco", banco.idbanco);
+                cmd.Parameters.AddWithValue("@Nombre", banco.Nombre);
                 cn.Open();
                 int i = cmd.ExecuteNonQuery();
                 if (i > 0)
@@ -139,8 +142,9 @@ namespace CapaDatos
                 SqlDataReader dr = cmd.ExecuteReader();
                 if (dr.Read())
                 {
-                    banco.Nombre = dr["Nombre"].ToString();
                     banco.idbanco = Convert.ToInt32(dr["idbanco"]);
+                    banco.Nombre = dr["Nombre"].ToString();
+                    banco.estadoBanco = Convert.ToBoolean(dr["estadoBanco"]);
                 }
             }
             catch (Exception e)
@@ -149,6 +153,31 @@ namespace CapaDatos
             }
             finally { cmd.Connection.Close(); }
             return banco;
+        }
+        public Boolean DeshabilitarBanco(entBanco banco)
+        {
+            SqlCommand cmd = null;
+            Boolean deshabilitar = false;
+            try
+            {
+                SqlConnection cn = Conexion.Instancia.Conectar();
+                cmd = new SqlCommand("DeshabilitarBanco", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@idbanco", banco.idbanco);
+                cmd.Parameters.AddWithValue("@estadoBanco", banco.estadoBanco);
+                cn.Open();
+                int i = cmd.ExecuteNonQuery();
+                if (i > 0)
+                {
+                    deshabilitar = true;
+                }
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally { cmd.Connection.Close(); }
+            return deshabilitar;
         }
     }
 }

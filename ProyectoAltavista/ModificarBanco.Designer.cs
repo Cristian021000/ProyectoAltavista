@@ -40,10 +40,10 @@ namespace ProyectoAltavista
             this.btnSalir = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.txtIdBanco = new System.Windows.Forms.TextBox();
-            this.dataGridViewVerBanco = new System.Windows.Forms.DataGridView();
+            this.btnDeshabilitar = new System.Windows.Forms.Button();
+            this.checkBoxHabilitar = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1Fondo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewVerBanco)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1Fondo
@@ -81,7 +81,7 @@ namespace ProyectoAltavista
             // textBox1NombreBanco
             // 
             this.textBox1NombreBanco.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1NombreBanco.Location = new System.Drawing.Point(30, 251);
+            this.textBox1NombreBanco.Location = new System.Drawing.Point(30, 200);
             this.textBox1NombreBanco.Multiline = true;
             this.textBox1NombreBanco.Name = "textBox1NombreBanco";
             this.textBox1NombreBanco.Size = new System.Drawing.Size(308, 33);
@@ -91,7 +91,7 @@ namespace ProyectoAltavista
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(26, 205);
+            this.label2.Location = new System.Drawing.Point(26, 154);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(312, 22);
             this.label2.TabIndex = 37;
@@ -112,7 +112,7 @@ namespace ProyectoAltavista
             // btnGuardar
             // 
             this.btnGuardar.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardar.Location = new System.Drawing.Point(30, 331);
+            this.btnGuardar.Location = new System.Drawing.Point(12, 301);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(168, 30);
             this.btnGuardar.TabIndex = 40;
@@ -123,7 +123,7 @@ namespace ProyectoAltavista
             // btnSalir
             // 
             this.btnSalir.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalir.Location = new System.Drawing.Point(30, 386);
+            this.btnSalir.Location = new System.Drawing.Point(12, 394);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(168, 30);
             this.btnSalir.TabIndex = 41;
@@ -135,7 +135,7 @@ namespace ProyectoAltavista
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(26, 93);
+            this.label1.Location = new System.Drawing.Point(26, 71);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(90, 22);
             this.label1.TabIndex = 42;
@@ -144,27 +144,41 @@ namespace ProyectoAltavista
             // txtIdBanco
             // 
             this.txtIdBanco.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIdBanco.Location = new System.Drawing.Point(30, 139);
+            this.txtIdBanco.Location = new System.Drawing.Point(30, 105);
             this.txtIdBanco.Multiline = true;
             this.txtIdBanco.Name = "txtIdBanco";
             this.txtIdBanco.Size = new System.Drawing.Size(86, 33);
             this.txtIdBanco.TabIndex = 43;
             // 
-            // dataGridViewVerBanco
+            // btnDeshabilitar
             // 
-            this.dataGridViewVerBanco.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewVerBanco.Location = new System.Drawing.Point(376, 134);
-            this.dataGridViewVerBanco.Name = "dataGridViewVerBanco";
-            this.dataGridViewVerBanco.Size = new System.Drawing.Size(438, 238);
-            this.dataGridViewVerBanco.TabIndex = 44;
-            this.dataGridViewVerBanco.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewVerBanco_CellContentClick);
+            this.btnDeshabilitar.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDeshabilitar.Location = new System.Drawing.Point(12, 349);
+            this.btnDeshabilitar.Name = "btnDeshabilitar";
+            this.btnDeshabilitar.Size = new System.Drawing.Size(168, 30);
+            this.btnDeshabilitar.TabIndex = 44;
+            this.btnDeshabilitar.Text = "Deshabilitar";
+            this.btnDeshabilitar.UseVisualStyleBackColor = true;
+            this.btnDeshabilitar.Click += new System.EventHandler(this.btnDeshabilitar_Click);
+            // 
+            // checkBoxHabilitar
+            // 
+            this.checkBoxHabilitar.AutoSize = true;
+            this.checkBoxHabilitar.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxHabilitar.Location = new System.Drawing.Point(112, 252);
+            this.checkBoxHabilitar.Name = "checkBoxHabilitar";
+            this.checkBoxHabilitar.Size = new System.Drawing.Size(129, 26);
+            this.checkBoxHabilitar.TabIndex = 45;
+            this.checkBoxHabilitar.Text = "Habilitado";
+            this.checkBoxHabilitar.UseVisualStyleBackColor = true;
             // 
             // ModificarBanco
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(837, 436);
-            this.Controls.Add(this.dataGridViewVerBanco);
+            this.Controls.Add(this.checkBoxHabilitar);
+            this.Controls.Add(this.btnDeshabilitar);
             this.Controls.Add(this.txtIdBanco);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnSalir);
@@ -181,7 +195,6 @@ namespace ProyectoAltavista
             this.Text = "ModificarBanco";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1Fondo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewVerBanco)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -199,6 +212,7 @@ namespace ProyectoAltavista
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtIdBanco;
-        private System.Windows.Forms.DataGridView dataGridViewVerBanco;
+        private System.Windows.Forms.Button btnDeshabilitar;
+        private System.Windows.Forms.CheckBox checkBoxHabilitar;
     }
 }
