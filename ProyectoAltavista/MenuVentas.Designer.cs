@@ -52,9 +52,9 @@ namespace ProyectoAltavista
             // btVentaPropio
             // 
             this.btVentaPropio.Font = new System.Drawing.Font("Lucida Fax", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btVentaPropio.Location = new System.Drawing.Point(152, 131);
+            this.btVentaPropio.Location = new System.Drawing.Point(28, 131);
             this.btVentaPropio.Name = "btVentaPropio";
-            this.btVentaPropio.Size = new System.Drawing.Size(160, 93);
+            this.btVentaPropio.Size = new System.Drawing.Size(232, 93);
             this.btVentaPropio.TabIndex = 1;
             this.btVentaPropio.Text = "Venta de inmuebles propios";
             this.btVentaPropio.UseVisualStyleBackColor = true;
@@ -64,7 +64,7 @@ namespace ProyectoAltavista
             this.btVentaTerceros.Font = new System.Drawing.Font("Lucida Fax", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btVentaTerceros.Location = new System.Drawing.Point(501, 131);
             this.btVentaTerceros.Name = "btVentaTerceros";
-            this.btVentaTerceros.Size = new System.Drawing.Size(172, 93);
+            this.btVentaTerceros.Size = new System.Drawing.Size(249, 93);
             this.btVentaTerceros.TabIndex = 2;
             this.btVentaTerceros.Text = "Venta de inmuebles de terceros";
             this.btVentaTerceros.UseVisualStyleBackColor = true;
@@ -82,7 +82,7 @@ namespace ProyectoAltavista
             // btConsultarVenta
             // 
             this.btConsultarVenta.Font = new System.Drawing.Font("Lucida Fax", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btConsultarVenta.Location = new System.Drawing.Point(329, 263);
+            this.btConsultarVenta.Location = new System.Drawing.Point(317, 265);
             this.btConsultarVenta.Name = "btConsultarVenta";
             this.btConsultarVenta.Size = new System.Drawing.Size(145, 70);
             this.btConsultarVenta.TabIndex = 4;
@@ -104,7 +104,7 @@ namespace ProyectoAltavista
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 459);
             this.Controls.Add(this.btConsultarVenta);
             this.Controls.Add(this.btSalir);
             this.Controls.Add(this.btVentaTerceros);

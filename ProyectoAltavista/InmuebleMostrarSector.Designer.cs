@@ -33,9 +33,10 @@ namespace ProyectoAltavista
             this.pictureBox1FondoSector = new System.Windows.Forms.PictureBox();
             this.lbMostrandoSector = new System.Windows.Forms.Label();
             this.DataGridMostrarSector = new System.Windows.Forms.DataGridView();
-            this.btModificarSector = new System.Windows.Forms.Button();
-            this.btRegresarSector = new System.Windows.Forms.Button();
-            this.bttSalir = new System.Windows.Forms.Button();
+            this.btAceptarSector = new System.Windows.Forms.Button();
+            this.btnRegresar = new System.Windows.Forms.Button();
+            this.txtCodigo = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1FondoSector)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridMostrarSector)).BeginInit();
             this.SuspendLayout();
@@ -72,49 +73,57 @@ namespace ProyectoAltavista
             this.DataGridMostrarSector.Size = new System.Drawing.Size(376, 275);
             this.DataGridMostrarSector.TabIndex = 58;
             // 
-            // btModificarSector
+            // btAceptarSector
             // 
-            this.btModificarSector.Font = new System.Drawing.Font("Lucida Fax", 19.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btModificarSector.Location = new System.Drawing.Point(436, 126);
-            this.btModificarSector.Name = "btModificarSector";
-            this.btModificarSector.Size = new System.Drawing.Size(272, 77);
-            this.btModificarSector.TabIndex = 59;
-            this.btModificarSector.Text = "Modificar Sector";
-            this.btModificarSector.UseVisualStyleBackColor = true;
+            this.btAceptarSector.Font = new System.Drawing.Font("Lucida Fax", 19.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btAceptarSector.Location = new System.Drawing.Point(475, 230);
+            this.btAceptarSector.Name = "btAceptarSector";
+            this.btAceptarSector.Size = new System.Drawing.Size(173, 50);
+            this.btAceptarSector.TabIndex = 60;
+            this.btAceptarSector.Text = "Aceptar";
+            this.btAceptarSector.UseVisualStyleBackColor = true;
             // 
-            // btRegresarSector
+            // btnRegresar
             // 
-            this.btRegresarSector.Font = new System.Drawing.Font("Lucida Fax", 19.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btRegresarSector.Location = new System.Drawing.Point(475, 230);
-            this.btRegresarSector.Name = "btRegresarSector";
-            this.btRegresarSector.Size = new System.Drawing.Size(173, 50);
-            this.btRegresarSector.TabIndex = 60;
-            this.btRegresarSector.Text = "Regresar";
-            this.btRegresarSector.UseVisualStyleBackColor = true;
+            this.btnRegresar.Font = new System.Drawing.Font("Lucida Fax", 19.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegresar.Location = new System.Drawing.Point(475, 324);
+            this.btnRegresar.Name = "btnRegresar";
+            this.btnRegresar.Size = new System.Drawing.Size(173, 50);
+            this.btnRegresar.TabIndex = 61;
+            this.btnRegresar.Text = "Regresar";
+            this.btnRegresar.UseVisualStyleBackColor = true;
             // 
-            // bttSalir
+            // txtCodigo
             // 
-            this.bttSalir.Font = new System.Drawing.Font("Lucida Fax", 19.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bttSalir.Location = new System.Drawing.Point(475, 324);
-            this.bttSalir.Name = "bttSalir";
-            this.bttSalir.Size = new System.Drawing.Size(173, 50);
-            this.bttSalir.TabIndex = 61;
-            this.bttSalir.Text = "Salir";
-            this.bttSalir.UseVisualStyleBackColor = true;
+            this.txtCodigo.Location = new System.Drawing.Point(466, 175);
+            this.txtCodigo.Name = "txtCodigo";
+            this.txtCodigo.Size = new System.Drawing.Size(195, 20);
+            this.txtCodigo.TabIndex = 62;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(425, 118);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(269, 22);
+            this.label1.TabIndex = 63;
+            this.label1.Text = "Ingrese Codigo a Modificar";
             // 
             // InmuebleMostrarSector
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(736, 449);
-            this.Controls.Add(this.bttSalir);
-            this.Controls.Add(this.btRegresarSector);
-            this.Controls.Add(this.btModificarSector);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtCodigo);
+            this.Controls.Add(this.btnRegresar);
+            this.Controls.Add(this.btAceptarSector);
             this.Controls.Add(this.DataGridMostrarSector);
             this.Controls.Add(this.lbMostrandoSector);
             this.Controls.Add(this.pictureBox1FondoSector);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "InmuebleMostrarSector";
             this.Text = "MostrarSector";
             this.Load += new System.EventHandler(this.InmuebleMostrarSector_Load);
@@ -130,8 +139,9 @@ namespace ProyectoAltavista
         private System.Windows.Forms.PictureBox pictureBox1FondoSector;
         private System.Windows.Forms.Label lbMostrandoSector;
         private System.Windows.Forms.DataGridView DataGridMostrarSector;
-        private System.Windows.Forms.Button btModificarSector;
-        private System.Windows.Forms.Button btRegresarSector;
-        private System.Windows.Forms.Button bttSalir;
+        private System.Windows.Forms.Button btAceptarSector;
+        private System.Windows.Forms.Button btnRegresar;
+        private System.Windows.Forms.TextBox txtCodigo;
+        private System.Windows.Forms.Label label1;
     }
 }
