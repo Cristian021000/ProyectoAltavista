@@ -14,7 +14,7 @@ namespace ProyectoAltavista
     {
         MenuPrincipal principal;
         InmuebleSetorRegistro registroSector;
-        MModificarSector modificaSector;
+       InmuebleMostrarSector mossector;
         public MantenedorSector(MenuPrincipal menu)
         {
             InitializeComponent();
@@ -34,12 +34,12 @@ namespace ProyectoAltavista
 
         private void btModificar_Click(object sender, EventArgs e)
         {
-            if (modificaSector == null)
+            if (mossector == null)
             {
-               modificaSector = new MModificarSector(this);
+               mossector = new InmuebleMostrarSector(this);
             }
             
-            modificaSector.Show();
+            mossector.Show();
             this.Hide();
         }
 

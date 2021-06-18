@@ -29,9 +29,21 @@ namespace ProyectoAltavista
             {
                 entSector sec = new entSector();
                 sec.Nombre = txtNombreSector.Text.Trim();
-                sec.Comentario = txtComentarioSector.Text.Trim();
-                logSector.Instancia.RegistrarSector(sec);
+                if (!logSector.Instancia.ExisteDatosSector(sec.Nombre))
+                {
+                    sec.idCiudad = Convert.ToInt32(comboBoxCiudad.SelectedValue);
+                    sec.Nombre = txtNombreSector.Text.Trim();
+                    sec.Comentario = txtComentarioSector.Text.Trim();
+                    logSector.Instancia.RegistrarSector(sec);
+                    MessageBox.Show("Se registro correctamente el sector");
+                }
+                else
+                {
+                    MessageBox.Show("Ya existe este sector");
+                }
+                
                 ListaCiudades();
+                limpiarVariableInterfazMod();
             }
             catch (Exception ex)
             {
@@ -40,7 +52,7 @@ namespace ProyectoAltavista
 
         }
 
-        private void ListaCiudades()
+        /*private void ListaCiudades()
         {
             List<entCiudad> listciudad= logCiudad.Instancia.ListarCiudad();
             foreach (entCiudad a in listciudad)
@@ -48,12 +60,28 @@ namespace ProyectoAltavista
                 comboBoxCiudad.Items.Add(a.nombrCiudad);
             }
 
+        }*/
+
+        public void ListaCiudades()
+        {
+            comboBoxCiudad.DataSource = logCiudad.Instancia.ListarCiudad();
+            comboBoxCiudad.DisplayMember = "nombrCiudad";
+            comboBoxCiudad.ValueMember = "codCiudad";
         }
+
+        public void limpiarVariableInterfazMod()
+        {
+            txtNombreSector.Clear();
+            txtComentarioSector.Clear();
+        }
+
+
 
         private void Regresar_Click(object sender, EventArgs e)
         {
             ManteSector.Show();
             this.Hide();
+            limpiarVariableInterfazMod();
         }
     }
 }

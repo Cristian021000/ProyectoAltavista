@@ -43,7 +43,7 @@ namespace CapaLogica
         {
             return datSector .Instancia.DatosSector(sector);
         }
-        public Boolean ExisteDatosSector(entSector sector)
+        public Boolean ExisteDatosSector(string sector)
         {
            return datSector.Instancia.ExisteDatosSector(sector);
         }

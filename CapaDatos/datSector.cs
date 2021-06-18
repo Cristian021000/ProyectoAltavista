@@ -61,6 +61,7 @@ namespace CapaDatos
                 SqlConnection cn = Conexion.Instancia.Conectar();
                 cmd = new SqlCommand("RegistrarSector", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@idCiudad", sector.idCiudad);
                 cmd.Parameters.AddWithValue("@Nombre", sector.Nombre);
                 cmd.Parameters.AddWithValue("@Comentario", sector.Comentario);
                 cn.Open();
@@ -78,7 +79,7 @@ namespace CapaDatos
             finally { cmd.Connection.Close(); }
             return registrar;
         }
-        public Boolean ExisteDatosSector(entSector sector)
+        public Boolean ExisteDatosSector(string sector)
         {
             Boolean existe = false;
             SqlCommand cmd = null;
@@ -87,7 +88,7 @@ namespace CapaDatos
                 SqlConnection cn = Conexion.Instancia.Conectar();
                 cmd = new SqlCommand("ExisteDatosSector", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@Nombre", sector.Nombre);
+                cmd.Parameters.AddWithValue("@Nombre", sector);
                 cn.Open();
 
                 SqlDataReader dr = cmd.ExecuteReader();

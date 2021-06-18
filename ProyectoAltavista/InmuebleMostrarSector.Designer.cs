@@ -82,6 +82,7 @@ namespace ProyectoAltavista
             this.btAceptarSector.TabIndex = 60;
             this.btAceptarSector.Text = "Aceptar";
             this.btAceptarSector.UseVisualStyleBackColor = true;
+            this.btAceptarSector.Click += new System.EventHandler(this.btAceptarSector_Click);
             // 
             // btnRegresar
             // 
@@ -92,6 +93,7 @@ namespace ProyectoAltavista
             this.btnRegresar.TabIndex = 61;
             this.btnRegresar.Text = "Regresar";
             this.btnRegresar.UseVisualStyleBackColor = true;
+            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
             // 
             // txtCodigo
             // 

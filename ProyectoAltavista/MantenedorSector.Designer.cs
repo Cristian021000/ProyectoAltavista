@@ -104,6 +104,7 @@ namespace ProyectoAltavista
             this.Controls.Add(this.btRegresar);
             this.Controls.Add(this.lbSector);
             this.Controls.Add(this.pictureBox1Fondo);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MantenedorSector";
             this.Text = "Sector";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1Fondo)).EndInit();

@@ -83,6 +83,7 @@ namespace ProyectoAltavista
             this.btnAceptar.TabIndex = 33;
             this.btnAceptar.Text = "Modificar";
             this.btnAceptar.UseVisualStyleBackColor = true;
+            this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
             // 
             // btnCancelar
             // 
@@ -123,7 +124,7 @@ namespace ProyectoAltavista
             this.txtNombreSector.Location = new System.Drawing.Point(108, 256);
             this.txtNombreSector.Multiline = true;
             this.txtNombreSector.Name = "txtNombreSector";
-            this.txtNombreSector.Size = new System.Drawing.Size(268, 19);
+            this.txtNombreSector.Size = new System.Drawing.Size(267, 33);
             this.txtNombreSector.TabIndex = 28;
             // 
             // txtComentario
@@ -132,7 +133,7 @@ namespace ProyectoAltavista
             this.txtComentario.Location = new System.Drawing.Point(108, 349);
             this.txtComentario.Multiline = true;
             this.txtComentario.Name = "txtComentario";
-            this.txtComentario.Size = new System.Drawing.Size(359, 22);
+            this.txtComentario.Size = new System.Drawing.Size(360, 53);
             this.txtComentario.TabIndex = 37;
             // 
             // label3
