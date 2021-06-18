@@ -31,7 +31,7 @@ namespace ProyectoAltavista
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MantenedorSector));
             this.lbRegistrar = new System.Windows.Forms.Button();
-            this.btModificar = new System.Windows.Forms.Button();
+            this.btConsultar = new System.Windows.Forms.Button();
             this.btRegresar = new System.Windows.Forms.Button();
             this.lbSector = new System.Windows.Forms.Label();
             this.pictureBox1Fondo = new System.Windows.Forms.PictureBox();
@@ -49,16 +49,16 @@ namespace ProyectoAltavista
             this.lbRegistrar.UseVisualStyleBackColor = true;
             this.lbRegistrar.Click += new System.EventHandler(this.lbRegistrar_Click);
             // 
-            // btModificar
+            // btConsultar
             // 
-            this.btModificar.Font = new System.Drawing.Font("Lucida Fax", 19.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btModificar.Location = new System.Drawing.Point(474, 176);
-            this.btModificar.Name = "btModificar";
-            this.btModificar.Size = new System.Drawing.Size(272, 50);
-            this.btModificar.TabIndex = 52;
-            this.btModificar.Text = "Modificar Sector";
-            this.btModificar.UseVisualStyleBackColor = true;
-            this.btModificar.Click += new System.EventHandler(this.btModificar_Click);
+            this.btConsultar.Font = new System.Drawing.Font("Lucida Fax", 19.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btConsultar.Location = new System.Drawing.Point(474, 176);
+            this.btConsultar.Name = "btConsultar";
+            this.btConsultar.Size = new System.Drawing.Size(272, 50);
+            this.btConsultar.TabIndex = 52;
+            this.btConsultar.Text = "Consultar Sector";
+            this.btConsultar.UseVisualStyleBackColor = true;
+            this.btConsultar.Click += new System.EventHandler(this.btModificar_Click);
             // 
             // btRegresar
             // 
@@ -100,7 +100,7 @@ namespace ProyectoAltavista
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.lbRegistrar);
-            this.Controls.Add(this.btModificar);
+            this.Controls.Add(this.btConsultar);
             this.Controls.Add(this.btRegresar);
             this.Controls.Add(this.lbSector);
             this.Controls.Add(this.pictureBox1Fondo);
@@ -115,7 +115,7 @@ namespace ProyectoAltavista
         #endregion
 
         private System.Windows.Forms.Button lbRegistrar;
-        private System.Windows.Forms.Button btModificar;
+        private System.Windows.Forms.Button btConsultar;
         private System.Windows.Forms.Button btRegresar;
         private System.Windows.Forms.Label lbSector;
         private System.Windows.Forms.PictureBox pictureBox1Fondo;

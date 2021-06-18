@@ -45,9 +45,11 @@
     <Compile Include="datCiudad.cs" />
     <Compile Include="datCliente.cs" />
     <Compile Include="datPropietario.cs" />
+    <Compile Include="datSector.cs" />
     <Compile Include="datSitioInteres.cs" />
     <Compile Include="datAgente.cs" />
     <Compile Include="Conexion.cs" />
+    <Compile Include="datVentas.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

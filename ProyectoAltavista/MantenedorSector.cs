@@ -13,7 +13,7 @@ namespace ProyectoAltavista
     public partial class MantenedorSector : Form
     {
         MenuPrincipal principal;
-        MNuevoSector registroSector;
+        InmuebleSetorRegistro registroSector;
         MModificarSector modificaSector;
         public MantenedorSector(MenuPrincipal menu)
         {
@@ -25,7 +25,7 @@ namespace ProyectoAltavista
         {
             if (registroSector == null)
             {
-               registroSector = new MNuevoSector(this);
+               registroSector = new InmuebleSetorRegistro(this);
             }
             
             registroSector.Show();

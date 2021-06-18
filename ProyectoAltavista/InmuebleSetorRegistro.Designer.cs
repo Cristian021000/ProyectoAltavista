@@ -37,8 +37,8 @@ namespace ProyectoAltavista
             this.btnAgregarSector = new System.Windows.Forms.Button();
             this.Regresar = new System.Windows.Forms.Button();
             this.comboBoxCiudad = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtNombreSector = new System.Windows.Forms.TextBox();
+            this.txtComentarioSector = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1Fondo)).BeginInit();
             this.SuspendLayout();
@@ -82,9 +82,9 @@ namespace ProyectoAltavista
             this.label1NombreDelSetor.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1NombreDelSetor.Location = new System.Drawing.Point(162, 99);
             this.label1NombreDelSetor.Name = "label1NombreDelSetor";
-            this.label1NombreDelSetor.Size = new System.Drawing.Size(248, 22);
+            this.label1NombreDelSetor.Size = new System.Drawing.Size(258, 22);
             this.label1NombreDelSetor.TabIndex = 62;
-            this.label1NombreDelSetor.Text = "Ingrese Nombre Del Setor";
+            this.label1NombreDelSetor.Text = "Ingrese Nombre Del Sector";
             // 
             // btnAgregarSector
             // 
@@ -95,6 +95,7 @@ namespace ProyectoAltavista
             this.btnAgregarSector.TabIndex = 64;
             this.btnAgregarSector.Text = "Agregar Sector";
             this.btnAgregarSector.UseVisualStyleBackColor = true;
+            this.btnAgregarSector.Click += new System.EventHandler(this.btnAgregarSector_Click);
             // 
             // Regresar
             // 
@@ -105,6 +106,7 @@ namespace ProyectoAltavista
             this.Regresar.TabIndex = 65;
             this.Regresar.Text = "Regresar";
             this.Regresar.UseVisualStyleBackColor = true;
+            this.Regresar.Click += new System.EventHandler(this.Regresar_Click);
             // 
             // comboBoxCiudad
             // 
@@ -114,23 +116,23 @@ namespace ProyectoAltavista
             this.comboBoxCiudad.Size = new System.Drawing.Size(121, 21);
             this.comboBoxCiudad.TabIndex = 67;
             // 
-            // textBox1
+            // txtNombreSector
             // 
-            this.textBox1.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(166, 134);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(272, 26);
-            this.textBox1.TabIndex = 63;
+            this.txtNombreSector.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombreSector.Location = new System.Drawing.Point(166, 134);
+            this.txtNombreSector.Multiline = true;
+            this.txtNombreSector.Name = "txtNombreSector";
+            this.txtNombreSector.Size = new System.Drawing.Size(272, 26);
+            this.txtNombreSector.TabIndex = 63;
             // 
-            // textBox2
+            // txtComentarioSector
             // 
-            this.textBox2.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(166, 231);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(289, 26);
-            this.textBox2.TabIndex = 69;
+            this.txtComentarioSector.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtComentarioSector.Location = new System.Drawing.Point(166, 231);
+            this.txtComentarioSector.Multiline = true;
+            this.txtComentarioSector.Name = "txtComentarioSector";
+            this.txtComentarioSector.Size = new System.Drawing.Size(289, 26);
+            this.txtComentarioSector.TabIndex = 69;
             // 
             // label2
             // 
@@ -138,21 +140,21 @@ namespace ProyectoAltavista
             this.label2.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(162, 196);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(210, 22);
+            this.label2.Size = new System.Drawing.Size(220, 22);
             this.label2.TabIndex = 68;
-            this.label2.Text = "Comentario Del Setor";
+            this.label2.Text = "Comentario Del Sector";
             // 
             // InmuebleSetorRegistro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(662, 286);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtComentarioSector);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.comboBoxCiudad);
             this.Controls.Add(this.Regresar);
             this.Controls.Add(this.btnAgregarSector);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtNombreSector);
             this.Controls.Add(this.label1NombreDelSetor);
             this.Controls.Add(this.IngreseCuidad);
             this.Controls.Add(this.lbNuevoSetor);
@@ -176,8 +178,8 @@ namespace ProyectoAltavista
         private System.Windows.Forms.Button btnAgregarSector;
         private System.Windows.Forms.Button Regresar;
         private System.Windows.Forms.ComboBox comboBoxCiudad;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtNombreSector;
+        private System.Windows.Forms.TextBox txtComentarioSector;
         private System.Windows.Forms.Label label2;
     }
 }

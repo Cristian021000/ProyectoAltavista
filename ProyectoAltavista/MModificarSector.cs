@@ -23,7 +23,7 @@ namespace ProyectoAltavista
         {
             
             sector.Show();
-            this.Close();
+            this.Hide();
         }
     }
 }

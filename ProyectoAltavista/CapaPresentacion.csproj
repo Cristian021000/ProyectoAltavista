@@ -196,13 +196,6 @@
     <Compile Include="MantenedorCiudad.Designer.cs">
       <DependentUpon>MantenedorCiudad.cs</DependentUpon>
     </Compile>
-    <Compile Include="MNuevoSector.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include=".Designer.cs">
-      <DependentUpon>MNuevoSector.cs</DependentUpon>
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="MModificarSector.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -450,9 +443,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MModificarSitiosInteres.resx">
       <DependentUpon>MModificarSitiosInteres.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MNuevoSector.resx">
-      <DependentUpon>MNuevoSector.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ModificarAgente.resx">
       <DependentUpon>ModificarAgente.cs</DependentUpon>
