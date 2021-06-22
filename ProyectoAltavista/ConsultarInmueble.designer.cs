@@ -39,8 +39,10 @@ namespace ProyectoAltavista
             this.txtCodigo = new System.Windows.Forms.TextBox();
             this.btnAceptar = new System.Windows.Forms.Button();
             this.btnSalirInmueble = new System.Windows.Forms.Button();
+            this.dtgTipoInmueble = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.Fondo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewConsulInmuble)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgTipoInmueble)).BeginInit();
             this.SuspendLayout();
             // 
             // Fondo
@@ -59,7 +61,7 @@ namespace ProyectoAltavista
             this.dataGridViewConsulInmuble.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewConsulInmuble.Location = new System.Drawing.Point(12, 96);
             this.dataGridViewConsulInmuble.Name = "dataGridViewConsulInmuble";
-            this.dataGridViewConsulInmuble.Size = new System.Drawing.Size(483, 330);
+            this.dataGridViewConsulInmuble.Size = new System.Drawing.Size(478, 153);
             this.dataGridViewConsulInmuble.TabIndex = 27;
             // 
             // lbDatosContrato
@@ -75,10 +77,15 @@ namespace ProyectoAltavista
             // comboBoxTipoInmueble
             // 
             this.comboBoxTipoInmueble.FormattingEnabled = true;
-            this.comboBoxTipoInmueble.Location = new System.Drawing.Point(592, 155);
+            this.comboBoxTipoInmueble.Items.AddRange(new object[] {
+            "Casa",
+            "Departamento",
+            "Terreno"});
+            this.comboBoxTipoInmueble.Location = new System.Drawing.Point(574, 155);
             this.comboBoxTipoInmueble.Name = "comboBoxTipoInmueble";
-            this.comboBoxTipoInmueble.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxTipoInmueble.Size = new System.Drawing.Size(139, 21);
             this.comboBoxTipoInmueble.TabIndex = 29;
+            this.comboBoxTipoInmueble.SelectedIndexChanged += new System.EventHandler(this.comboBoxTipoInmueble_SelectedIndexChanged);
             // 
             // labelIngresoDNIDCI
             // 
@@ -102,9 +109,9 @@ namespace ProyectoAltavista
             // 
             // txtCodigo
             // 
-            this.txtCodigo.Location = new System.Drawing.Point(592, 284);
+            this.txtCodigo.Location = new System.Drawing.Point(574, 284);
             this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.Size = new System.Drawing.Size(140, 20);
+            this.txtCodigo.Size = new System.Drawing.Size(164, 20);
             this.txtCodigo.TabIndex = 32;
             // 
             // btnAceptar
@@ -116,6 +123,7 @@ namespace ProyectoAltavista
             this.btnAceptar.TabIndex = 33;
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.UseVisualStyleBackColor = true;
+            this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
             // 
             // btnSalirInmueble
             // 
@@ -127,11 +135,20 @@ namespace ProyectoAltavista
             this.btnSalirInmueble.Text = "Salir";
             this.btnSalirInmueble.UseVisualStyleBackColor = true;
             // 
+            // dtgTipoInmueble
+            // 
+            this.dtgTipoInmueble.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgTipoInmueble.Location = new System.Drawing.Point(12, 276);
+            this.dtgTipoInmueble.Name = "dtgTipoInmueble";
+            this.dtgTipoInmueble.Size = new System.Drawing.Size(478, 150);
+            this.dtgTipoInmueble.TabIndex = 35;
+            // 
             // ConsultarInmueble
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.dtgTipoInmueble);
             this.Controls.Add(this.btnSalirInmueble);
             this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.txtCodigo);
@@ -145,6 +162,7 @@ namespace ProyectoAltavista
             this.Text = "ConsultarInmueble";
             ((System.ComponentModel.ISupportInitialize)(this.Fondo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewConsulInmuble)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgTipoInmueble)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -161,5 +179,6 @@ namespace ProyectoAltavista
         private System.Windows.Forms.TextBox txtCodigo;
         private System.Windows.Forms.Button btnAceptar;
         private System.Windows.Forms.Button btnSalirInmueble;
+        private System.Windows.Forms.DataGridView dtgTipoInmueble;
     }
 }

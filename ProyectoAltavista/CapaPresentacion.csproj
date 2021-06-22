@@ -79,7 +79,7 @@
     <Compile Include="ConsultarInmueble.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ConsultarInmueble.Designer.cs">
+    <Compile Include="ConsultarInmueble.designer.cs">
       <DependentUpon>ConsultarInmueble.cs</DependentUpon>
     </Compile>
     <Compile Include="ConsultarVentas.cs">
@@ -97,13 +97,13 @@
     <Compile Include="Inmueble.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Inmueble.Designer.cs">
+    <Compile Include="Inmueble.designer.cs">
       <DependentUpon>Inmueble.cs</DependentUpon>
     </Compile>
     <Compile Include="InmuebleMantenedorCasa.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="InmuebleMantenedorCasa.Designer.cs">
+    <Compile Include="InmuebleMantenedorCasa.designer.cs">
       <DependentUpon>InmuebleMantenedorCasa.cs</DependentUpon>
     </Compile>
     <Compile Include="InmuebleSetorRegistro.cs">

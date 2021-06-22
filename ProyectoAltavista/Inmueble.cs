@@ -14,6 +14,7 @@ namespace ProyectoAltavista
     {
         MenuPrincipal menu;
         MantenedorDeInmueble inmueble;
+        ConsultarInmueble consultar;
         public Inmueble(MenuPrincipal me)
         {
             InitializeComponent();
@@ -34,6 +35,16 @@ namespace ProyectoAltavista
         {
             this.Hide();
             menu.Show();
+        }
+
+        private void MostrarInmueble_Click(object sender, EventArgs e)
+        {
+            if (consultar == null)
+            {
+                consultar = new ConsultarInmueble(this);
+            }
+            this.Hide();
+            consultar.Show();
         }
     }
 }

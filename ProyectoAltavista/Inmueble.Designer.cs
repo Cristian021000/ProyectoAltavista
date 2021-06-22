@@ -81,6 +81,7 @@ namespace ProyectoAltavista
             this.MostrarInmueble.TabIndex = 51;
             this.MostrarInmueble.Text = "Consultar";
             this.MostrarInmueble.UseVisualStyleBackColor = true;
+            this.MostrarInmueble.Click += new System.EventHandler(this.MostrarInmueble_Click);
             // 
             // btRegresar
             // 

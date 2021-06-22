@@ -37,19 +37,13 @@ namespace ProyectoAltavista
             this.txtPrecio = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.txtCantidadBaños = new System.Windows.Forms.TextBox();
             this.txtCantidadHabitaciones = new System.Windows.Forms.TextBox();
             this.txtCantidadCostruida = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.txtNumeroPiscinas = new System.Windows.Forms.TextBox();
-            this.txtNumeroGaraje = new System.Windows.Forms.TextBox();
-            this.txtNumeroJardines = new System.Windows.Forms.TextBox();
             this.txtCantidadPiso = new System.Windows.Forms.TextBox();
             this.labelModificarCasa = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1Fondo)).BeginInit();
@@ -70,7 +64,7 @@ namespace ProyectoAltavista
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(38, 113);
+            this.label10.Location = new System.Drawing.Point(38, 126);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(148, 22);
             this.label10.TabIndex = 87;
@@ -89,7 +83,7 @@ namespace ProyectoAltavista
             // txtPrecioMinimo
             // 
             this.txtPrecioMinimo.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPrecioMinimo.Location = new System.Drawing.Point(254, 102);
+            this.txtPrecioMinimo.Location = new System.Drawing.Point(254, 115);
             this.txtPrecioMinimo.Multiline = true;
             this.txtPrecioMinimo.Name = "txtPrecioMinimo";
             this.txtPrecioMinimo.Size = new System.Drawing.Size(224, 33);
@@ -108,7 +102,7 @@ namespace ProyectoAltavista
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(38, 150);
+            this.label13.Location = new System.Drawing.Point(38, 170);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(183, 22);
             this.label13.TabIndex = 90;
@@ -118,57 +112,27 @@ namespace ProyectoAltavista
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(38, 192);
+            this.label12.Location = new System.Drawing.Point(38, 213);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(192, 22);
             this.label12.TabIndex = 91;
             this.label12.Text = "Cantidad de Baños:";
             // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(38, 270);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(199, 22);
-            this.label14.TabIndex = 92;
-            this.label14.Text = "Numero de Piscinas:";
-            // 
             // label15
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(38, 230);
+            this.label15.Location = new System.Drawing.Point(38, 270);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(259, 22);
             this.label15.TabIndex = 93;
             this.label15.Text = "Cantidad de Habitaciones:";
             // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(38, 308);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(197, 22);
-            this.label16.TabIndex = 94;
-            this.label16.Text = "Numero de Garajes:";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(38, 345);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(202, 22);
-            this.label17.TabIndex = 95;
-            this.label17.Text = "Numero de Jardines:";
-            // 
             // label18
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(38, 385);
+            this.label18.Location = new System.Drawing.Point(38, 331);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(406, 22);
             this.label18.TabIndex = 96;
@@ -177,7 +141,7 @@ namespace ProyectoAltavista
             // txtCantidadBaños
             // 
             this.txtCantidadBaños.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCantidadBaños.Location = new System.Drawing.Point(254, 182);
+            this.txtCantidadBaños.Location = new System.Drawing.Point(264, 202);
             this.txtCantidadBaños.Multiline = true;
             this.txtCantidadBaños.Name = "txtCantidadBaños";
             this.txtCantidadBaños.Size = new System.Drawing.Size(224, 33);
@@ -186,7 +150,7 @@ namespace ProyectoAltavista
             // txtCantidadHabitaciones
             // 
             this.txtCantidadHabitaciones.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCantidadHabitaciones.Location = new System.Drawing.Point(305, 220);
+            this.txtCantidadHabitaciones.Location = new System.Drawing.Point(312, 259);
             this.txtCantidadHabitaciones.Multiline = true;
             this.txtCantidadHabitaciones.Name = "txtCantidadHabitaciones";
             this.txtCantidadHabitaciones.Size = new System.Drawing.Size(224, 33);
@@ -195,7 +159,7 @@ namespace ProyectoAltavista
             // txtCantidadCostruida
             // 
             this.txtCantidadCostruida.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCantidadCostruida.Location = new System.Drawing.Point(461, 375);
+            this.txtCantidadCostruida.Location = new System.Drawing.Point(470, 320);
             this.txtCantidadCostruida.Multiline = true;
             this.txtCantidadCostruida.Name = "txtCantidadCostruida";
             this.txtCantidadCostruida.Size = new System.Drawing.Size(224, 33);
@@ -204,7 +168,7 @@ namespace ProyectoAltavista
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(349, 419);
+            this.button1.Location = new System.Drawing.Point(349, 391);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(168, 30);
             this.button1.TabIndex = 101;
@@ -214,44 +178,17 @@ namespace ProyectoAltavista
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(125, 419);
+            this.button2.Location = new System.Drawing.Point(129, 391);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(168, 30);
             this.button2.TabIndex = 100;
             this.button2.Text = "Aceptar";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // txtNumeroPiscinas
-            // 
-            this.txtNumeroPiscinas.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNumeroPiscinas.Location = new System.Drawing.Point(254, 260);
-            this.txtNumeroPiscinas.Multiline = true;
-            this.txtNumeroPiscinas.Name = "txtNumeroPiscinas";
-            this.txtNumeroPiscinas.Size = new System.Drawing.Size(224, 33);
-            this.txtNumeroPiscinas.TabIndex = 102;
-            // 
-            // txtNumeroGaraje
-            // 
-            this.txtNumeroGaraje.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNumeroGaraje.Location = new System.Drawing.Point(254, 298);
-            this.txtNumeroGaraje.Multiline = true;
-            this.txtNumeroGaraje.Name = "txtNumeroGaraje";
-            this.txtNumeroGaraje.Size = new System.Drawing.Size(224, 33);
-            this.txtNumeroGaraje.TabIndex = 103;
-            // 
-            // txtNumeroJardines
-            // 
-            this.txtNumeroJardines.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNumeroJardines.Location = new System.Drawing.Point(254, 335);
-            this.txtNumeroJardines.Multiline = true;
-            this.txtNumeroJardines.Name = "txtNumeroJardines";
-            this.txtNumeroJardines.Size = new System.Drawing.Size(224, 33);
-            this.txtNumeroJardines.TabIndex = 104;
-            // 
             // txtCantidadPiso
             // 
             this.txtCantidadPiso.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCantidadPiso.Location = new System.Drawing.Point(254, 140);
+            this.txtCantidadPiso.Location = new System.Drawing.Point(264, 159);
             this.txtCantidadPiso.Multiline = true;
             this.txtCantidadPiso.Name = "txtCantidadPiso";
             this.txtCantidadPiso.Size = new System.Drawing.Size(224, 33);
@@ -276,19 +213,13 @@ namespace ProyectoAltavista
             this.ClientSize = new System.Drawing.Size(692, 458);
             this.Controls.Add(this.labelModificarCasa);
             this.Controls.Add(this.txtCantidadPiso);
-            this.Controls.Add(this.txtNumeroJardines);
-            this.Controls.Add(this.txtNumeroGaraje);
-            this.Controls.Add(this.txtNumeroPiscinas);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.txtCantidadCostruida);
             this.Controls.Add(this.txtCantidadHabitaciones);
             this.Controls.Add(this.txtCantidadBaños);
             this.Controls.Add(this.label18);
-            this.Controls.Add(this.label17);
-            this.Controls.Add(this.label16);
             this.Controls.Add(this.label15);
-            this.Controls.Add(this.label14);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label10);
@@ -297,7 +228,7 @@ namespace ProyectoAltavista
             this.Controls.Add(this.txtPrecio);
             this.Controls.Add(this.pictureBox1Fondo);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MModificarCasa";
             this.Text = "ModificarCasa";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1Fondo)).EndInit();
@@ -315,19 +246,13 @@ namespace ProyectoAltavista
         private System.Windows.Forms.TextBox txtPrecio;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.TextBox txtCantidadBaños;
         private System.Windows.Forms.TextBox txtCantidadHabitaciones;
         private System.Windows.Forms.TextBox txtCantidadCostruida;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox txtNumeroPiscinas;
-        private System.Windows.Forms.TextBox txtNumeroGaraje;
-        private System.Windows.Forms.TextBox txtNumeroJardines;
         private System.Windows.Forms.TextBox txtCantidadPiso;
         private System.Windows.Forms.Label labelModificarCasa;
     }

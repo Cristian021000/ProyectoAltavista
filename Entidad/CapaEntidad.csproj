@@ -43,8 +43,10 @@
   <ItemGroup>
     <Compile Include="entAgente.cs" />
     <Compile Include="entBanco.cs" />
+    <Compile Include="entCasa.cs" />
     <Compile Include="entCiudad.cs" />
     <Compile Include="entCliente.cs" />
+    <Compile Include="entInmueble.cs" />
     <Compile Include="entPropietario.cs" />
     <Compile Include="entSector.cs" />
     <Compile Include="entSitioInteres.cs" />
