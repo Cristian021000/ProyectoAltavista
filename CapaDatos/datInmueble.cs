@@ -29,7 +29,7 @@ namespace CapaDatos
                 SqlConnection cn = Conexion.Instancia.Conectar();
                 cmd = new SqlCommand("sp_RegistrarInmueble", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@idSector", inm.idSector);
+                cmd.Parameters.AddWithValue("@SectorID", inm.SectorID);
                 cmd.Parameters.AddWithValue("@idPropietario", inm.idPropietario);
                 cmd.Parameters.AddWithValue("@direccion", inm.direccion);
                 cmd.Parameters.AddWithValue("@precio", inm.precio);
@@ -59,7 +59,7 @@ namespace CapaDatos
                 SqlConnection cn = Conexion.Instancia.Conectar();
                 cmd = new SqlCommand("sp_EditarInmueble", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@IdInmueble", inm.idInmueble);
+                cmd.Parameters.AddWithValue("@InmuebleID", inm.InmuebleID);
                 cmd.Parameters.AddWithValue("@Precio", inm.precio);
                 cmd.Parameters.AddWithValue("@PrecioMinimo", inm.precio);
                 cn.Open();
@@ -86,7 +86,7 @@ namespace CapaDatos
                 SqlConnection cn = Conexion.Instancia.Conectar();
                 cmd = new SqlCommand("sp_VenderInmueble", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@IdInmueble", idInm);
+                cmd.Parameters.AddWithValue("@InmuebleID", idInm);
                 cn.Open();
                 int i = cmd.ExecuteNonQuery();
                 if (i > 0)
@@ -111,7 +111,7 @@ namespace CapaDatos
                 SqlConnection cn = Conexion.Instancia.Conectar();
                 cmd = new SqlCommand("sp_InhabilitarInmueble", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@IdInmueble", idInm);
+                cmd.Parameters.AddWithValue("@InmuebleID", idInm);
                 cn.Open();
                 int i = cmd.ExecuteNonQuery();
                 if (i > 0)
@@ -141,8 +141,8 @@ namespace CapaDatos
                 while (dr.Read())
                 {
                     entInmueble inmueble = new entInmueble();
-                    inmueble.idInmueble = Convert.ToInt32(dr["idInmueble"]);
-                    inmueble.idSector = Convert.ToInt32(dr["idSector"]);
+                    inmueble.InmuebleID = Convert.ToInt32(dr["InmuebleID"]);
+                    inmueble.SectorID = Convert.ToInt32(dr["SectorID"]);
                     inmueble.idPropietario = Convert.ToInt32(dr["idPropietario"]);
                     inmueble.direccion = dr["direccion"].ToString();
                     inmueble.precio = Convert.ToInt32(dr["precio"]);
@@ -170,7 +170,7 @@ namespace CapaDatos
                 SqlConnection cn = Conexion.Instancia.Conectar();
                 cmd = new SqlCommand("spBuscarInmuebleCasa", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@idInmueble", inmueble.idInmueble);
+                cmd.Parameters.AddWithValue("@InmuebleID", inmueble.InmuebleID);
                 cn.Open();
                 SqlDataReader dr = cmd.ExecuteReader();
                 if (dr.Read())
@@ -200,9 +200,9 @@ namespace CapaDatos
                 SqlDataReader dr = cmd.ExecuteReader();
                 if (dr.Read())
                 {
-                    inmueble.idInmueble = Convert.ToInt32(dr["idInmueble"]);
+                    inmueble.InmuebleID = Convert.ToInt32(dr["InmuebleID"]);
                     inmueble.idPropietario = Convert.ToInt32(dr["idPropietario"]);
-                    inmueble.idSector = Convert.ToInt32(dr["idSector"]);
+                    inmueble.SectorID = Convert.ToInt32(dr["SectorID"]);
                     inmueble.direccion = dr["direccion"].ToString();
                     inmueble.precio = Convert.ToInt32(dr["precio"]);
                     inmueble.precioMinimo = Convert.ToInt32(dr["precioMinimo"]);
@@ -220,7 +220,7 @@ namespace CapaDatos
             return inmueble;
         }
 
-        public entInmueble DatosInmueble(int idInmueble)
+        public entInmueble DatosInmueble(int InmuebleID)
         {
             entInmueble inmueble = new entInmueble();
             SqlCommand cmd = null;
@@ -229,14 +229,14 @@ namespace CapaDatos
                 SqlConnection cn = Conexion.Instancia.Conectar();
                 cmd = new SqlCommand("spExisteNRegistroPublico", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@nDatosInmueble", idInmueble);
+                cmd.Parameters.AddWithValue("@nDatosInmueble", InmuebleID);
                 cn.Open();
                 SqlDataReader dr = cmd.ExecuteReader();
                 if (dr.Read())
                 {
-                    inmueble.idInmueble = Convert.ToInt32(dr["idInmueble"]);
+                    inmueble.InmuebleID = Convert.ToInt32(dr["InmuebleID"]);
                     inmueble.idPropietario = Convert.ToInt32(dr["idPropietario"]);
-                    inmueble.idSector = Convert.ToInt32(dr["idSector"]);
+                    inmueble.SectorID = Convert.ToInt32(dr["SectorID"]);
                     inmueble.direccion = dr["direccion"].ToString();
                     inmueble.precio = Convert.ToInt32(dr["precio"]);
                     inmueble.precioMinimo = Convert.ToInt32(dr["precioMinimo"]);

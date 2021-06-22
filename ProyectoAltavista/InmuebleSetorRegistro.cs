@@ -28,14 +28,16 @@ namespace ProyectoAltavista
             try
             {
                 entSector sec = new entSector();
-                sec.Nombre = txtNombreSector.Text.Trim();
-                if (!logSector.Instancia.ExisteDatosSector(sec.Nombre))
+                sec.Nombresector = txtNombreSector.Text.Trim();
+                if (!logSector.Instancia.ExisteDatosSector(sec.Nombresector))
                 {
-                    sec.idCiudad = Convert.ToInt32(comboBoxCiudad.SelectedValue);
-                    sec.Nombre = txtNombreSector.Text.Trim();
+                    sec.CiudadID = Convert.ToInt32(comboBoxCiudad.SelectedValue);
+                    sec.Nombresector = txtNombreSector.Text.Trim();
                     sec.Comentario = txtComentarioSector.Text.Trim();
                     logSector.Instancia.RegistrarSector(sec);
                     MessageBox.Show("Se registro correctamente el sector");
+                    ManteSector.Show();
+                    this.Hide();
                 }
                 else
                 {
@@ -66,7 +68,7 @@ namespace ProyectoAltavista
         {
             comboBoxCiudad.DataSource = logCiudad.Instancia.ListarCiudad();
             comboBoxCiudad.DisplayMember = "nombrCiudad";
-            comboBoxCiudad.ValueMember = "codCiudad";
+            comboBoxCiudad.ValueMember = "CiudadID";
         }
 
         public void limpiarVariableInterfazMod()

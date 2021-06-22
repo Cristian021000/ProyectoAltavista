@@ -33,7 +33,7 @@ namespace ProyectoAltavista
             {
                 entInmueble inmueble = new entInmueble();
                 entCasa casa = new entCasa();
-                inmueble.idSector = int.Parse(textBox1IDSetor.Text.Trim());
+                inmueble.SectorID = int.Parse(textBox1IDSetor.Text.Trim());
                 inmueble.idPropietario = int.Parse(textBox1IDPropietario.Text.Trim());
                 inmueble.direccion = textBox1Direccion.Text.Trim();
                 inmueble.precio = int.Parse(textBox1Precio.Text.Trim());
@@ -48,8 +48,8 @@ namespace ProyectoAltavista
                 casa.jardin = chbJardin.Checked;
                 casa.fechaConstruccion = dtpFecha.Value;
                 logInmueble.Instancia.RegistrarInmueble(inmueble);
-                casa.idInmueble1 = logInmueble.Instancia.BuscarNRegistroPublico(inmueble.nRegistroPublico).idInmueble;
-                MessageBox.Show("id: " + casa.idInmueble1);
+                casa.InmuebleID1 = logInmueble.Instancia.BuscarNRegistroPublico(inmueble.nRegistroPublico).InmuebleID;
+                MessageBox.Show("id: " + casa.InmuebleID1);
                 logCasa.Instancia.RegistrarInmuebleCasa(casa);
             }
             catch (Exception ex)

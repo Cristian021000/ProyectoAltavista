@@ -22,8 +22,8 @@ namespace ProyectoAltavista
         public void llenarDatos(entSector sec)
         {
             txtIngresoIDSector.Enabled = false;
-            txtIngresoIDSector.Text = sec.idSector.ToString();
-            txtNombreSector.Text = sec.Nombre.ToString();
+            txtIngresoIDSector.Text = sec.SectorID.ToString();
+            txtNombreSector.Text = sec.Nombresector.ToString();
             txtComentario.Text = sec.Comentario.ToString();
         }
         public void limpiarVariableInterfazMod()
@@ -44,10 +44,10 @@ namespace ProyectoAltavista
             try
             {
                 entSector sector = new entSector();
-                sector.Nombre = txtNombreSector.Text.Trim();
-                if (!logSector.Instancia.ExisteDatosSector(sector.Nombre))
+                sector.Nombresector = txtNombreSector.Text.Trim();
+                if (!logSector.Instancia.ExisteDatosSector(sector.Nombresector))
                 {
-                    sector.idSector = int.Parse(txtIngresoIDSector.Text.Trim());
+                    sector.SectorID = int.Parse(txtIngresoIDSector.Text.Trim());
                     sector.Comentario = txtComentario.Text.Trim();
                     logSector.Instancia.ModificarSector(sector);
                     MessageBox.Show("Se editaron correctamente los datos del sector.");

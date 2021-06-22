@@ -36,14 +36,14 @@ namespace ProyectoAltavista
             try
             {
                 entPropietario Prop = new entPropietario();
-                Prop.dni = int.Parse(txtIngreseDni.Text.Trim());
+                Prop.Dnipropietario = int.Parse(txtIngreseDni.Text.Trim());
                 if (logPropietario.Instancia.BuscarPropietario(Prop))
                 {
                     if (modificar == null)
                     {
                         modificar = new ModificarInhabilitarCliPropietario(this);
                     }
-                    Prop = logPropietario.Instancia.DatosPropietario(Prop.dni);
+                    Prop = logPropietario.Instancia.DatosPropietario(Prop.Dnipropietario);
                     modificar.llenarDatos(Prop);
                     modificar.Show();
                     this.Hide();

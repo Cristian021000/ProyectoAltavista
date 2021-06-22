@@ -8,7 +8,7 @@ namespace CapaEntidad
 {
     public class entSitioInteres
     {
-        public int codSitioInteres { get; set; }
+        public int SitiodeinteresID { get; set; }
         public string NombreSI { get; set; }
         public string DireccionSI { get; set; }
         public Boolean estadoSI { get; set; }

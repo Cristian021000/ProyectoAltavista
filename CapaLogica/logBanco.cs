@@ -33,9 +33,9 @@ namespace CapaLogica
         {
             return datBanco.Instancia.BuscarBanco(banco);
         }
-        public entBanco DatosBanco(int idbanco)
+        public entBanco DatosBanco(int BancoID)
         {
-            return datBanco.Instancia.DatosBanco(idbanco);
+            return datBanco.Instancia.DatosBanco(BancoID);
         }
         public void EditarBanco(entBanco banco)
         {

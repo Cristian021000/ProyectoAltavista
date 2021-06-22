@@ -8,7 +8,7 @@ namespace CapaEntidad
 {
     public class entCasa
     {
-        public int idInmueble1 { get; set; }
+        public int InmuebleID1 { get; set; }
         public int cantPisos { get; set; }
         public int cantBaños { get; set; }
         public int cantHabitaciones { get; set; }

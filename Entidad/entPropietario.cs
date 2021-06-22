@@ -8,8 +8,8 @@ namespace CapaEntidad
 {
     public class entPropietario
     {
-        public int id { get; set; }
-        public int dni { get; set; }
+        public int PropietarioID { get; set; }
+        public int Dnipropietario { get; set; }
         public string nombre { get; set; }
         public string apellido { get; set; }
         public int edad { get; set; }

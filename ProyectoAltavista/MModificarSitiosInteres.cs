@@ -25,7 +25,7 @@ namespace ProyectoAltavista
         {
             txtCodigoModificaSI.Enabled = false;
             checkBoxHabilitar.Enabled = false;
-            txtCodigoModificaSI.Text = sit.codSitioInteres.ToString();
+            txtCodigoModificaSI.Text = sit.SitiodeinteresID.ToString();
             txtModificarNombreSI.Text = sit.NombreSI.ToString();
             txtModificarDireccionSI.Text = sit.DireccionSI.ToString();
             checkBoxHabilitar.Checked = sit.estadoSI;
@@ -41,7 +41,7 @@ namespace ProyectoAltavista
             try
             {
                 entSitioInteres Sitio = new entSitioInteres();
-                Sitio.codSitioInteres = int.Parse(txtCodigoModificaSI.Text.Trim());
+                Sitio.SitiodeinteresID = int.Parse(txtCodigoModificaSI.Text.Trim());
                 Sitio.NombreSI = txtModificarNombreSI.Text.Trim();
                 Sitio.DireccionSI = txtModificarDireccionSI.Text.Trim();
                 logSitioInteres.Instancia.ModificarSI(Sitio);
@@ -72,7 +72,7 @@ namespace ProyectoAltavista
             try
             {
                 entSitioInteres Sitio = new entSitioInteres();
-                Sitio.codSitioInteres = int.Parse(txtCodigoModificaSI.Text.Trim());
+                Sitio.SitiodeinteresID = int.Parse(txtCodigoModificaSI.Text.Trim());
                 checkBoxHabilitar.Checked = false;
                 Sitio.estadoSI = checkBoxHabilitar.Checked;
                 logSitioInteres.Instancia.DeshabilitarSitioInteres(Sitio);

@@ -26,8 +26,8 @@ namespace ProyectoAltavista
             txtId.Enabled = false;
             txtDNI.Enabled = false;
             checkHabilitar.Enabled = false;
-            txtId.Text = propietario.id.ToString();
-            txtDNI.Text = propietario.dni.ToString();
+            txtId.Text = propietario.PropietarioID.ToString();
+            txtDNI.Text = propietario.Dnipropietario.ToString();
             txtNombre.Text = propietario.nombre.ToString();
             txtApellido.Text = propietario.apellido.ToString();
             txtEdad.Text = propietario.edad.ToString();
@@ -59,8 +59,8 @@ namespace ProyectoAltavista
             try
             {
                 entPropietario Prop = new entPropietario();
-                Prop.id = int.Parse(txtId.Text.Trim());
-                Prop.dni = int.Parse(txtDNI.Text.Trim());
+                Prop.PropietarioID = int.Parse(txtId.Text.Trim());
+                Prop.Dnipropietario = int.Parse(txtDNI.Text.Trim());
                 Prop.nombre = txtNombre.Text.Trim();
                 Prop.apellido = txtApellido.Text.Trim();
                 Prop.edad = int.Parse(txtEdad.Text.Trim());
@@ -86,8 +86,8 @@ namespace ProyectoAltavista
             try
             {
                 entPropietario prop = new entPropietario();
-                prop.id = int.Parse(txtId.Text.Trim());
-                prop.dni = int.Parse(txtDNI.Text.Trim());
+                prop.PropietarioID = int.Parse(txtId.Text.Trim());
+                prop.Dnipropietario = int.Parse(txtDNI.Text.Trim());
                 checkHabilitar.Checked = false;
                 prop.estadoPropietario = checkHabilitar.Checked;
                 logPropietario.Instancia.HabilitarPropietario(prop);

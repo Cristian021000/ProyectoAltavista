@@ -37,7 +37,7 @@ namespace CapaDatos
                     Sitio.estadoSI = Convert.ToBoolean(dr["EstadoSI"]);
                     if (Sitio.estadoSI)
                     {
-                        Sitio.codSitioInteres = Convert.ToInt32(dr["codSitioInteres"]);
+                        Sitio.SitiodeinteresID = Convert.ToInt32(dr["SitiodeinteresID"]);
                         Sitio.NombreSI = dr["NombreSI"].ToString();
                         Sitio.DireccionSI = dr["DireccionSI"].ToString();
                         lista.Add(Sitio);
@@ -94,7 +94,7 @@ namespace CapaDatos
                 SqlConnection cn = Conexion.Instancia.Conectar();
                 cmd = new SqlCommand("spModificaSI", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@codSitioInteres", Sitio.codSitioInteres);
+                cmd.Parameters.AddWithValue("@SitiodeinteresID", Sitio.SitiodeinteresID);
                 cmd.Parameters.AddWithValue("@NombreSI", Sitio.NombreSI);
                 cmd.Parameters.AddWithValue("@DireccionSI", Sitio.DireccionSI);
                 cn.Open();
@@ -120,7 +120,7 @@ namespace CapaDatos
                 SqlConnection cn = Conexion.Instancia.Conectar();
                 cmd = new SqlCommand("SpBuscarSI", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@codSitioInteres", Sitio.codSitioInteres);
+                cmd.Parameters.AddWithValue("@SitiodeinteresID", Sitio.SitiodeinteresID);
                 cn.Open();
                 SqlDataReader dr = cmd.ExecuteReader();
                 if (dr.Read())
@@ -135,7 +135,7 @@ namespace CapaDatos
             finally { cmd.Connection.Close(); }
             return encontrar;
         }
-        public entSitioInteres DatosSitioInteres(int codSitioInteres)
+        public entSitioInteres DatosSitioInteres(int SitiodeinteresID)
         {
             entSitioInteres Sitio = new entSitioInteres();
             SqlCommand cmd = null;
@@ -144,12 +144,12 @@ namespace CapaDatos
                 SqlConnection cn = Conexion.Instancia.Conectar();
                 cmd = new SqlCommand("spDatosSI", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@codSitioInteres", codSitioInteres);
+                cmd.Parameters.AddWithValue("@SitiodeinteresID", SitiodeinteresID);
                 cn.Open();
                 SqlDataReader dr = cmd.ExecuteReader();
                 if (dr.Read())
                 {
-                    Sitio.codSitioInteres = Convert.ToInt32(dr["codSitioInteres"]);
+                    Sitio.SitiodeinteresID = Convert.ToInt32(dr["SitiodeinteresID"]);
                     Sitio.NombreSI = dr["NombreSI"].ToString();
                     Sitio.DireccionSI = dr["DireccionSI"].ToString();
                     Sitio.estadoSI = Convert.ToBoolean(dr["estadoSI"]);
@@ -171,7 +171,7 @@ namespace CapaDatos
                 SqlConnection cn = Conexion.Instancia.Conectar();
                 cmd = new SqlCommand("spDeshabilitarSI", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@codSitioInteres", Sitio.codSitioInteres);
+                cmd.Parameters.AddWithValue("@SitiodeinteresID", Sitio.SitiodeinteresID);
                 cmd.Parameters.AddWithValue("@estadoSI", Sitio.estadoSI);
                 cn.Open();
                 int i = cmd.ExecuteNonQuery();

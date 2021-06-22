@@ -24,7 +24,7 @@ namespace ProyectoAltavista
         public void llenarDatos(entCiudad Ciudad)
         {
             txtCodCiudad.Enabled = false;
-            txtCodCiudad.Text = Ciudad.codCiudad.ToString();
+            txtCodCiudad.Text = Ciudad.CiudadID.ToString();
             txtNombreCiudad.Text = Ciudad.nombrCiudad.ToString();
             textCódigoPostal.Text = Ciudad.postalCiudad.ToString();
             textReferenciasCiudad.Text = Ciudad.referenciasCiudad.ToString();
@@ -59,7 +59,7 @@ namespace ProyectoAltavista
             try
             {
                 entCiudad ciudad = new entCiudad();
-                ciudad.codCiudad = int.Parse(txtCodCiudad.Text.Trim());
+                ciudad.CiudadID = int.Parse(txtCodCiudad.Text.Trim());
                 ciudad.nombrCiudad = txtNombreCiudad.Text.Trim();
                 ciudad.postalCiudad = int.Parse(textCódigoPostal.Text.Trim());
                 ciudad.referenciasCiudad = textReferenciasCiudad.Text.Trim();           

@@ -72,6 +72,8 @@ namespace ProyectoAltavista
                     MessageBox.Show(" El cliente ya esta Registrado ");
                 }
                 MessageBox.Show("El cliente se a registrado correctamente");
+                clie.Show();
+                this.Hide();
             }
             catch (Exception ex)
             {

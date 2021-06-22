@@ -39,9 +39,9 @@ namespace CapaLogica
         {
            return datSector.Instancia.BuscaSector(sector);
         }
-        public entSector DatosSector(int sector)
+        public entSector DatosSector(int SectorID)
         {
-            return datSector .Instancia.DatosSector(sector);
+            return datSector .Instancia.DatosSector(SectorID);
         }
         public Boolean ExisteDatosSector(string sector)
         {

@@ -28,7 +28,7 @@ namespace CapaDatos
                 SqlConnection cn = Conexion.Instancia.Conectar();
                 cmd = new SqlCommand("spRegistrarInmuebleCasa", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@idInmueble1", casa.idInmueble1);
+                cmd.Parameters.AddWithValue("@InmuebleID1", casa.InmuebleID1);
                 cmd.Parameters.AddWithValue("@cantPisos", casa.cantPisos);
                 cmd.Parameters.AddWithValue("@cantBao", casa.cantBaños);
                 cmd.Parameters.AddWithValue("@cantHabitaciones", casa.cantHabitaciones);
@@ -65,7 +65,7 @@ namespace CapaDatos
                 while (dr.Read())
                 {
                     entCasa casa = new entCasa();
-                    casa.idInmueble1 = Convert.ToInt32(dr["idInmueble1"]);
+                    casa.InmuebleID1 = Convert.ToInt32(dr["InmuebleID1"]);
                     casa.cantPisos = Convert.ToInt32(dr["cantPisos"]);
                     casa.cantBaños = Convert.ToInt32(dr["cantBao"]);
                     casa.cantHabitaciones = Convert.ToInt32(dr["cantHabitaciones"]);
@@ -94,12 +94,12 @@ namespace CapaDatos
                 SqlConnection cn = Conexion.Instancia.Conectar();
                 cmd = new SqlCommand("spDatosCasa", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@idInmueble1", idCasa);
+                cmd.Parameters.AddWithValue("@InmuebleID1", idCasa);
                 cn.Open();
                 SqlDataReader dr = cmd.ExecuteReader();
                 if (dr.Read())
                 {
-                    casa.idInmueble1 = Convert.ToInt32(dr["idInmueble1"]);
+                    casa.InmuebleID1 = Convert.ToInt32(dr["InmuebleID1"]);
                     casa.cantPisos = Convert.ToInt32(dr["cantPisos"]);
                     casa.cantBaños = Convert.ToInt32(dr["cantBao"]);
                     casa.cantHabitaciones = Convert.ToInt32(dr["cantHabitaciones"]);

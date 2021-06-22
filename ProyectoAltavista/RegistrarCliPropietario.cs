@@ -32,7 +32,7 @@ namespace ProyectoAltavista
             try
             {
                 entPropietario Prop = new entPropietario();
-                Prop.dni = int.Parse(txtDni.Text.Trim());
+                Prop.Dnipropietario = int.Parse(txtDni.Text.Trim());
                 Prop.nombre = txtNombre.Text.Trim();
                 Prop.apellido = txtApellido.Text.Trim();
                 Prop.edad = int.Parse(txtEdad.Text.Trim());

@@ -32,9 +32,9 @@ namespace CapaLogica
         {
             return datCiudad.Instancia.BuscaCiudad(ciudad);
         }
-        public entCiudad DatosCiudad(int codCiudad)
+        public entCiudad DatosCiudad(int CiudadID)
         {
-            return datCiudad.Instancia.DatosCiudad(codCiudad);
+            return datCiudad.Instancia.DatosCiudad(CiudadID);
         }
         public void ModificarCiudad(entCiudad ciudad)
         {

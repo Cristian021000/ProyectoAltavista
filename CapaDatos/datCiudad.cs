@@ -61,7 +61,7 @@ namespace CapaDatos
                 while (dr.Read())
                 {
                     entCiudad ciudad = new entCiudad();
-                    ciudad.codCiudad = Convert.ToInt32(dr["codCiudad"]);
+                    ciudad.CiudadID = Convert.ToInt32(dr["CiudadID"]);
                     ciudad.nombrCiudad = dr["nombrCiudad"].ToString();
                     ciudad.referenciasCiudad = dr["referenciasCiudad"].ToString();
                     ciudad.postalCiudad = Convert.ToInt32(dr["postalCiudad"]);
@@ -84,7 +84,7 @@ namespace CapaDatos
                 SqlConnection cn = Conexion.Instancia.Conectar();
                 cmd = new SqlCommand("spBuscarCiudad", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@codCiudad", ciudad.codCiudad);
+                cmd.Parameters.AddWithValue("@CiudadID", ciudad.CiudadID);
                 cn.Open();
                 SqlDataReader dr = cmd.ExecuteReader();
                 if (dr.Read())
@@ -99,7 +99,7 @@ namespace CapaDatos
             finally { cmd.Connection.Close(); }
             return encontrado;
         }
-        public entCiudad DatosCiudad(int codCiudad)
+        public entCiudad DatosCiudad(int CiudadID)
         {
             entCiudad ciudad = new entCiudad();
             SqlCommand cmd = null;
@@ -108,12 +108,12 @@ namespace CapaDatos
                 SqlConnection cn = Conexion.Instancia.Conectar();
                 cmd = new SqlCommand("spDatosCiudad", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@codCiudad", codCiudad);
+                cmd.Parameters.AddWithValue("@CiudadID", CiudadID);
                 cn.Open();
                 SqlDataReader dr = cmd.ExecuteReader();
                 if (dr.Read())
                 {
-                    ciudad.codCiudad = Convert.ToInt32(dr["codCiudad"]);
+                    ciudad.CiudadID = Convert.ToInt32(dr["CiudadID"]);
                     ciudad.nombrCiudad = dr["nombrCiudad"].ToString();
                     ciudad.referenciasCiudad = dr["referenciasCiudad"].ToString();
                     ciudad.postalCiudad = Convert.ToInt32(dr["postalCiudad"]);
@@ -135,7 +135,7 @@ namespace CapaDatos
                 SqlConnection cn = Conexion.Instancia.Conectar();
                 cmd = new SqlCommand("spModificarCiudad", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@codCiudad", ciudad.codCiudad);
+                cmd.Parameters.AddWithValue("@CiudadID", ciudad.CiudadID);
                 cmd.Parameters.AddWithValue("@nombrCiudad", ciudad.nombrCiudad);
                 cmd.Parameters.AddWithValue("@referenciasCiudad", ciudad.referenciasCiudad);
                 cmd.Parameters.AddWithValue("@postalCiudad", ciudad.postalCiudad);

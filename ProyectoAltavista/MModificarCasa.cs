@@ -24,7 +24,7 @@ namespace ProyectoAltavista
 
         public void datosCasa(entInmueble inmueble, entCasa casa)
         {
-            idAux = inmueble.idInmueble;
+            idAux = inmueble.InmuebleID;
             txtPrecio.Text = inmueble.precio.ToString();
             txtPrecioMinimo.Text = inmueble.precioMinimo.ToString();
             txtCantidadPiso.Text = casa.cantPisos.ToString();

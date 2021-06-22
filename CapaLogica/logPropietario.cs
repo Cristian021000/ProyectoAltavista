@@ -44,9 +44,9 @@ namespace CapaLogica
         }
 
 
-        public entPropietario DatosPropietario(int dni)
+        public entPropietario DatosPropietario(int Dnipropietario)
         {
-            return datPropietario.Instancia.DatosPropietario(dni);
+            return datPropietario.Instancia.DatosPropietario(Dnipropietario);
         }
 
 

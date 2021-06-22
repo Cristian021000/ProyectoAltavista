@@ -8,7 +8,7 @@ namespace CapaEntidad
 {
     public class entCiudad
     {
-        public int codCiudad { get; set; }
+        public int CiudadID { get; set; }
         public string nombrCiudad { get; set; }
         public string referenciasCiudad { get; set; }
         public int postalCiudad { get; set; }

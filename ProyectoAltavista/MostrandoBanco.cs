@@ -57,14 +57,14 @@ namespace ProyectoAltavista
             try
             {
                 entBanco banco = new entBanco();
-                banco.idbanco = int.Parse(textBox1IngresoBanco.Text.Trim());
+                banco.BancoID = int.Parse(textBox1IngresoBanco.Text.Trim());
                 if (logBanco.Instancia.BuscarBanco(banco))
                 {
                     if (mod == null) 
                     {
                         mod = new ModificarBanco(this);
                     }
-                    banco = logBanco.Instancia.DatosBanco(banco.idbanco);
+                    banco = logBanco.Instancia.DatosBanco(banco.BancoID);
                     mod.llenarDatos(banco);
                     mod.Show();
                     this.Hide();

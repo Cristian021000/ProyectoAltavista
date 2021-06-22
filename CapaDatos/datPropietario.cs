@@ -30,7 +30,7 @@ namespace CapaDatos
                 cmd = new SqlCommand("spRegistrarPropietario", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
 
-                cmd.Parameters.AddWithValue("@dni", Propietario.dni);
+                cmd.Parameters.AddWithValue("@Dnipropietario", Propietario.Dnipropietario);
                 cmd.Parameters.AddWithValue("@nombre", Propietario.nombre);
                 cmd.Parameters.AddWithValue("@apellido", Propietario.apellido);
                 cmd.Parameters.AddWithValue("@edad", Propietario.edad);
@@ -62,7 +62,7 @@ namespace CapaDatos
                 SqlConnection cn = Conexion.Instancia.Conectar();
                 cmd = new SqlCommand("spExisteDatosPropietario", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@dni", Propietario.dni);
+                cmd.Parameters.AddWithValue("@Dnipropietario", Propietario.Dnipropietario);
                 cn.Open();
 
                 SqlDataReader dr = cmd.ExecuteReader();
@@ -98,8 +98,8 @@ namespace CapaDatos
                     prop.estadoPropietario = Convert.ToBoolean(dr["estadoPropietario"]);
                     if (prop.estadoPropietario)
                     {
-                        prop.id = Convert.ToInt32(dr["id"]);
-                        prop.dni = Convert.ToInt32(dr["dni"]);
+                        prop.PropietarioID = Convert.ToInt32(dr["PropietarioID"]);
+                        prop.Dnipropietario = Convert.ToInt32(dr["Dnipropietario"]);
                         prop.nombre = dr["nombre"].ToString();
                         prop.apellido = dr["apellido"].ToString();
                         prop.edad = Convert.ToInt32(dr["edad"]);
@@ -129,8 +129,8 @@ namespace CapaDatos
                 SqlConnection cn = Conexion.Instancia.Conectar();
                 cmd = new SqlCommand("spModificarPropietario", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@id", Propietario.id);
-                cmd.Parameters.AddWithValue("@dni", Propietario.dni);
+                cmd.Parameters.AddWithValue("@PropietarioID", Propietario.PropietarioID);
+                cmd.Parameters.AddWithValue("@Dnipropietario", Propietario.Dnipropietario);
                 cmd.Parameters.AddWithValue("@nombre", Propietario.nombre);
                 cmd.Parameters.AddWithValue("@apellido", Propietario.apellido);
                 cmd.Parameters.AddWithValue("@edad", Propietario.edad);
@@ -161,7 +161,7 @@ namespace CapaDatos
                 SqlConnection cn = Conexion.Instancia.Conectar();
                 cmd = new SqlCommand("spBuscarPropietario", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@dni", Propietario.dni);
+                cmd.Parameters.AddWithValue("@Dnipropietario", Propietario.Dnipropietario);
                 cn.Open();
                 SqlDataReader dr = cmd.ExecuteReader();
                 if (dr.Read())
@@ -178,7 +178,7 @@ namespace CapaDatos
         }
 
 
-        public entPropietario DatosPropietario(int dni)
+        public entPropietario DatosPropietario(int Dnipropietario)
         {
             entPropietario prop = new entPropietario();
             SqlCommand cmd = null;
@@ -187,13 +187,13 @@ namespace CapaDatos
                 SqlConnection cn = Conexion.Instancia.Conectar();
                 cmd = new SqlCommand("spDatosPropietario", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@dni", dni);
+                cmd.Parameters.AddWithValue("@Dnipropietario", Dnipropietario);
                 cn.Open();
                 SqlDataReader dr = cmd.ExecuteReader();
                 if (dr.Read())
                 {
-                    prop.id = Convert.ToInt32(dr["id"]);
-                    prop.dni = Convert.ToInt32(dr["dni"]);
+                    prop.PropietarioID = Convert.ToInt32(dr["PropietarioID"]);
+                    prop.Dnipropietario = Convert.ToInt32(dr["Dnipropietario"]);
                     prop.nombre = dr["nombre"].ToString();
                     prop.apellido = dr["apellido"].ToString();
                     prop.edad = Convert.ToInt32(dr["edad"]);
@@ -218,8 +218,8 @@ namespace CapaDatos
                 SqlConnection cn = Conexion.Instancia.Conectar();
                 cmd = new SqlCommand("spDeshabilitarPropietario", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@id", Propietario.id);
-                cmd.Parameters.AddWithValue("@dni", Propietario.dni);
+                cmd.Parameters.AddWithValue("@PropietarioID", Propietario.PropietarioID);
+                cmd.Parameters.AddWithValue("@Dnipropietario", Propietario.Dnipropietario);
                 cmd.Parameters.AddWithValue("@estadoPropietario", Propietario.estadoPropietario);
                 cn.Open();
                 int i = cmd.ExecuteNonQuery();

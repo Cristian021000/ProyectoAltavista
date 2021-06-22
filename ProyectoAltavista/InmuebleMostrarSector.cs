@@ -19,7 +19,7 @@ namespace ProyectoAltavista
         public InmuebleMostrarSector(MantenedorSector mantensector)
         {
             InitializeComponent();
-           mansector = mantensector;
+            mansector = mantensector;
             ListarSectores();
         }
 
@@ -37,7 +37,7 @@ namespace ProyectoAltavista
             try
             {
                 entSector sec = new entSector();
-                sec.idSector = int.Parse(txtCodigo.Text.Trim());
+                sec.SectorID = int.Parse(txtCodigo.Text.Trim());
                 if (logSector.Instancia.BuscaSector(sec))
                 {
                     if (modifisector==null)
@@ -45,7 +45,7 @@ namespace ProyectoAltavista
                         modifisector = new MModificarSector(this);
 
                     }
-                    sec = logSector.Instancia.DatosSector(sec.idSector);
+                    sec = logSector.Instancia.DatosSector(sec.SectorID);
                     modifisector.llenarDatos(sec);
                     modifisector.Show();
                     this.Hide();

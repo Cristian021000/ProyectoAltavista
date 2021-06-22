@@ -24,7 +24,7 @@ namespace ProyectoAltavista
         {
             txtIdBanco.Enabled = false;
             checkBoxHabilitar.Enabled = false;
-            txtIdBanco.Text = banco.idbanco.ToString();
+            txtIdBanco.Text = banco.BancoID.ToString();
             textBox1NombreBanco.Text = banco.Nombre.ToString();
             checkBoxHabilitar.Checked = banco.estadoBanco;
         }
@@ -48,7 +48,7 @@ namespace ProyectoAltavista
             try
             {
                 entBanco banco = new entBanco();
-                banco.idbanco = int.Parse(txtIdBanco.Text.Trim());
+                banco.BancoID = int.Parse(txtIdBanco.Text.Trim());
                 banco.Nombre = textBox1NombreBanco.Text.Trim();
                 logBanco.Instancia.EditarBanco(banco);
                 MessageBox.Show("Cambio realizado con exito");
@@ -69,7 +69,7 @@ namespace ProyectoAltavista
             try
             {
                 entBanco banco = new entBanco();
-                banco.idbanco = int.Parse(txtIdBanco.Text.Trim());
+                banco.BancoID = int.Parse(txtIdBanco.Text.Trim());
                 checkBoxHabilitar.Checked = false;
                 banco.estadoBanco = checkBoxHabilitar.Checked;
                 logBanco.Instancia.DeshabilitarBanco(banco);

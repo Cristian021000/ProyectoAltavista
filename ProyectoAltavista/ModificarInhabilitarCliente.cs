@@ -25,7 +25,7 @@ namespace ProyectoAltavista
             txtidcliente.Enabled = false;
             txtDniCliente.Enabled = false;
             checkBoxHablitar.Enabled = false;
-            txtidcliente.Text = Cliente.idCliente.ToString() ;
+            txtidcliente.Text = Cliente.ClienteID.ToString() ;
             txtDniCliente.Text = Cliente.dnicliente.ToString();
             txtNombre.Text = Cliente.nombrecliente.ToString();
             txtApellido.Text = Cliente.apelcliente.ToString();
@@ -65,7 +65,7 @@ namespace ProyectoAltavista
             try
             {
                 entCliente Cli = new entCliente();
-                Cli.idCliente = int.Parse(txtidcliente.Text.Trim());
+                Cli.ClienteID = int.Parse(txtidcliente.Text.Trim());
                 Cli.dnicliente = int.Parse(txtDniCliente.Text.Trim());
                 Cli.nombrecliente = txtNombre.Text.Trim();
                 Cli.apelcliente = txtApellido.Text.Trim();
@@ -91,7 +91,7 @@ namespace ProyectoAltavista
             try
             {
                 entCliente Cliente = new entCliente();
-                Cliente.idCliente = int.Parse(txtidcliente.Text.Trim());
+                Cliente.ClienteID = int.Parse(txtidcliente.Text.Trim());
                 checkBoxHablitar.Checked = false;
                 Cliente.estadocliente = checkBoxHablitar.Checked;
                 logCliente.Instancia.DeshabilitarCliente(Cliente);

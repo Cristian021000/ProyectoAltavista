@@ -100,7 +100,7 @@ namespace CapaDatos
                     Cli.estadocliente = Convert.ToBoolean(dr["estadocliente"]);
                     if (Cli.estadocliente)
                     {
-                        Cli.idCliente = Convert.ToInt32(dr["idCliente"]);
+                        Cli.ClienteID = Convert.ToInt32(dr["ClienteID"]);
                         Cli.dnicliente = Convert.ToInt32(dr["dnicliente"]);
                         Cli.nombrecliente = dr["nombrecliente"].ToString();
                         Cli.apelcliente = dr["apelcliente"].ToString();
@@ -127,7 +127,7 @@ namespace CapaDatos
                 SqlConnection cn = Conexion.Instancia.Conectar();
                 cmd = new SqlCommand("spModificarCliente", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@idCliente", Cliente.idCliente);
+                cmd.Parameters.AddWithValue("@ClienteID", Cliente.ClienteID);
                 cmd.Parameters.AddWithValue("@dnicliente", Cliente.dnicliente);
                 cmd.Parameters.AddWithValue("@nombrecliente", Cliente.nombrecliente);
                 cmd.Parameters.AddWithValue("@apelcliente", Cliente.apelcliente);
@@ -187,7 +187,7 @@ namespace CapaDatos
                 SqlDataReader dr = cmd.ExecuteReader();
                 if (dr.Read())
                 {
-                    Cli.idCliente = Convert.ToInt32(dr["idCliente"]);
+                    Cli.ClienteID = Convert.ToInt32(dr["ClienteID"]);
                     Cli.dnicliente = Convert.ToInt32(dr["dnicliente"]);
                     Cli.nombrecliente = dr["nombrecliente"].ToString();
                     Cli.apelcliente = dr["apelcliente"].ToString();
@@ -213,7 +213,7 @@ namespace CapaDatos
                 SqlConnection cn = Conexion.Instancia.Conectar();
                 cmd = new SqlCommand("spDeshabilitarCliente", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@idCliente", Cliente.idCliente);
+                cmd.Parameters.AddWithValue("@ClienteID", Cliente.ClienteID);
                 cmd.Parameters.AddWithValue("@estadocliente", Cliente.estadocliente);
                 cn.Open();
                 int i = cmd.ExecuteNonQuery();

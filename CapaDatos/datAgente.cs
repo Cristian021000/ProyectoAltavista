@@ -135,7 +135,7 @@ namespace CapaDatos
                     Age.estado = Convert.ToBoolean(dr["estado"]);
                     if (Age.estado)
                     {
-                        Age.id = Convert.ToInt32(dr["id"]);
+                        Age.AgenteID = Convert.ToInt32(dr["AgenteID"]);
                         Age.dni = Convert.ToInt32(dr["dni"]);
                         Age.nombre = dr["nombre"].ToString();
                         Age.apellido = dr["apellido"].ToString();
@@ -164,7 +164,7 @@ namespace CapaDatos
                 SqlConnection cn = Conexion.Instancia.Conectar();
                 cmd = new SqlCommand("spModificarAgente", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@id", Agente.id);         
+                cmd.Parameters.AddWithValue("@AgenteID", Agente.AgenteID);         
                 cmd.Parameters.AddWithValue("@nombre", Agente.nombre);
                 cmd.Parameters.AddWithValue("@apellido", Agente.apellido);
                 cmd.Parameters.AddWithValue("@edad", Agente.edad);
@@ -223,7 +223,7 @@ namespace CapaDatos
                 SqlDataReader dr = cmd.ExecuteReader();
                 if (dr.Read())
                 {
-                    Age.id = Convert.ToInt32(dr["id"]);
+                    Age.AgenteID = Convert.ToInt32(dr["AgenteID"]);
                     Age.dni = Convert.ToInt32(dr["dni"]);
                     Age.nombre = dr["nombre"].ToString();
                     Age.apellido = dr["apellido"].ToString();
@@ -250,7 +250,7 @@ namespace CapaDatos
                 SqlConnection cn = Conexion.Instancia.Conectar();
                 cmd = new SqlCommand("spDeshabilitarAgente", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@id", Agente.id);
+                cmd.Parameters.AddWithValue("@AgenteID", Agente.AgenteID);
                 cmd.Parameters.AddWithValue("@estado", Agente.estado);
                 cn.Open();
                 int i = cmd.ExecuteNonQuery();

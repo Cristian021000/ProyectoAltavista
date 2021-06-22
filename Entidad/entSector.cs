@@ -8,9 +8,9 @@ namespace CapaEntidad
 {
     public class entSector
     {
-        public int idSector { get; set; }
-        public int idCiudad { get; set; }
-        public string Nombre { get; set; }
+        public int SectorID { get; set; }
+        public int CiudadID { get; set; }
+        public string Nombresector { get; set; }
         public string Comentario { get; set; }
     }
 }

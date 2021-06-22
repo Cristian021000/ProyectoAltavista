@@ -37,14 +37,14 @@ namespace ProyectoAltavista
             try
             {
                 entCiudad ciudad = new entCiudad();
-                ciudad.codCiudad = int.Parse(txtcodCiudad.Text.Trim());
+                ciudad.CiudadID = int.Parse(txtcodCiudad.Text.Trim());
                 if (logCiudad.Instancia.BuscaCiudad(ciudad))
                 {
                     if (modi == null )
                     {
                          modi = new ModificarInhabilitarCiudad(this);
                     }
-                    ciudad = logCiudad.Instancia.DatosCiudad(ciudad.codCiudad);
+                    ciudad = logCiudad.Instancia.DatosCiudad(ciudad.CiudadID);
                     modi.llenarDatos(ciudad);
                     modi.Show();
                     this.Hide();

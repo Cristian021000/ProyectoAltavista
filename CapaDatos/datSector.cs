@@ -34,9 +34,9 @@ namespace CapaDatos
                 while (dr.Read())
                 {
                     entSector Sec = new entSector();
-                    Sec.idSector = Convert.ToInt32(dr["idSector"]);
-                    Sec.idCiudad = Convert.ToInt32(dr["idCiudad"]);
-                    Sec.Nombre = dr["Nombre"].ToString();
+                    Sec.SectorID = Convert.ToInt32(dr["SectorID"]);
+                    Sec.CiudadID = Convert.ToInt32(dr["CiudadID"]);
+                    Sec.Nombresector = dr["Nombresector"].ToString();
                     Sec.Comentario = dr["Comentario"].ToString();
 
                     lista.Add(Sec);
@@ -61,8 +61,8 @@ namespace CapaDatos
                 SqlConnection cn = Conexion.Instancia.Conectar();
                 cmd = new SqlCommand("RegistrarSector", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@idCiudad", sector.idCiudad);
-                cmd.Parameters.AddWithValue("@Nombre", sector.Nombre);
+                cmd.Parameters.AddWithValue("@CiudadID", sector.CiudadID);
+                cmd.Parameters.AddWithValue("@Nombresector", sector.Nombresector);
                 cmd.Parameters.AddWithValue("@Comentario", sector.Comentario);
                 cn.Open();
                 int i = cmd.ExecuteNonQuery();
@@ -88,7 +88,7 @@ namespace CapaDatos
                 SqlConnection cn = Conexion.Instancia.Conectar();
                 cmd = new SqlCommand("ExisteDatosSector", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@Nombre", sector);
+                cmd.Parameters.AddWithValue("@Nombresector", sector);
                 cn.Open();
 
                 SqlDataReader dr = cmd.ExecuteReader();
@@ -118,8 +118,8 @@ namespace CapaDatos
                 SqlConnection cn = Conexion.Instancia.Conectar();
                 cmd = new SqlCommand("ModificarSector", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@idSector", sector.idSector);
-                cmd.Parameters.AddWithValue("@Nombre", sector.Nombre);
+                cmd.Parameters.AddWithValue("@SectorID", sector.SectorID);
+                cmd.Parameters.AddWithValue("@Nombresector", sector.Nombresector);
                 cmd.Parameters.AddWithValue("@Comentario", sector.Comentario);
                 cn.Open();
                 int i = cmd.ExecuteNonQuery();
@@ -145,7 +145,7 @@ namespace CapaDatos
                 SqlConnection cn = Conexion.Instancia.Conectar();
                 cmd = new SqlCommand("BuscarSector", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@idSector", sector.idSector);
+                cmd.Parameters.AddWithValue("@SectorID", sector.SectorID);
                 cn.Open();
                 SqlDataReader dr = cmd.ExecuteReader();
                 if (dr.Read())
@@ -161,7 +161,7 @@ namespace CapaDatos
             return encontrado;
         }
 
-        public entSector DatosSector(int idSector)
+        public entSector DatosSector(int SectorID)
         {
             entSector sec = new entSector();
             SqlCommand cmd = null;
@@ -170,14 +170,14 @@ namespace CapaDatos
                 SqlConnection cn = Conexion.Instancia.Conectar();
                 cmd = new SqlCommand("DatosSector", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@idSector", idSector);
+                cmd.Parameters.AddWithValue("@SectorID", SectorID);
                 cn.Open();
                 SqlDataReader dr = cmd.ExecuteReader();
                 if (dr.Read())
                 {
-                    sec.idSector = Convert.ToInt32(dr["idSector"]);
-                    sec.idCiudad = Convert.ToInt32(dr["idCiudad"]);
-                    sec.Nombre = dr["nombre"].ToString();
+                    sec.SectorID = Convert.ToInt32(dr["SectorID"]);
+                    sec.CiudadID = Convert.ToInt32(dr["CiudadID"]);
+                    sec.Nombresector = dr["Nombresector"].ToString();
                     sec.Comentario = dr["Comentario"].ToString();
                 }
             }

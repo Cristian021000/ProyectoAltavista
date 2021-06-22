@@ -32,9 +32,9 @@ namespace CapaLogica
         {
             return datInmueble.Instancia.BuscarInmuebleCasa(inmueble);
         }
-        public void DeshabilitarInmueble(int idInmueble)
+        public void DeshabilitarInmueble(int InmuebleID)
         {
-            datInmueble.Instancia.InhabilitarInmueble(idInmueble);
+            datInmueble.Instancia.InhabilitarInmueble(InmuebleID);
         }
         public List<entInmueble> ListarInmuebleCasa()
         {
@@ -46,13 +46,13 @@ namespace CapaLogica
             return datInmueble.Instancia.BuscarNRegistroPublico(nRegistro);
         }
 
-        public void VenderInmueble(int idInmueble)
+        public void VenderInmueble(int InmuebleID)
         {
-            datInmueble.Instancia.VenderInmueble(idInmueble);
+            datInmueble.Instancia.VenderInmueble(InmuebleID);
         }
-        public entInmueble DatosInmueble(int idInmueble)
+        public entInmueble DatosInmueble(int InmuebleID)
         {
-            return datInmueble.Instancia.DatosInmueble(idInmueble);
+            return datInmueble.Instancia.DatosInmueble(InmuebleID);
         }
     }
 }

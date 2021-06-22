@@ -12,7 +12,7 @@ namespace CapaEntidad
         public string contraseña { get; set; }
         public string nombre { get; set; }
         public string apellido { get; set; }
-        public int id { get; set; }
+        public int AgenteID { get; set; }
         public int edad { get; set; }
         public int celular { get; set; }
         public Boolean estado { get; set; }

@@ -36,14 +36,14 @@ namespace ProyectoAltavista
             try
             {
                 entSitioInteres Sitio = new entSitioInteres();
-                Sitio.codSitioInteres = int.Parse(txtCodigoSitio.Text.Trim());
+                Sitio.SitiodeinteresID = int.Parse(txtCodigoSitio.Text.Trim());
                 if (logSitioInteres.Instancia.BuscarSitioInteres(Sitio))
                 {
                     if (modificar == null)
                     {
                         modificar = new MModificarSitiosInteres(this);
                     }
-                    Sitio = logSitioInteres.Instancia.DatosSitioInteres(Sitio.codSitioInteres);
+                    Sitio = logSitioInteres.Instancia.DatosSitioInteres(Sitio.SitiodeinteresID);
                     modificar.llenarDatos(Sitio);
                     modificar.Show();
                     this.Hide();

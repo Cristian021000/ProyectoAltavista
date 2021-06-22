@@ -24,7 +24,7 @@ namespace ProyectoAltavista
         {
             txtId.Enabled = false;
             chbHabilitado.Enabled = false;
-            txtId.Text = Agente.id.ToString();
+            txtId.Text = Agente.AgenteID.ToString();
             txtNombreAgente.Text = Agente.nombre.ToString();
             txtApellidoAgente.Text = Agente.apellido.ToString();
             txtEdadAgente.Text = Agente.edad.ToString();
@@ -77,7 +77,7 @@ namespace ProyectoAltavista
             try
             {
                 entAgente Age = new entAgente();
-                Age.id = int.Parse(txtId.Text.Trim());
+                Age.AgenteID = int.Parse(txtId.Text.Trim());
                 Age.nombre = txtNombreAgente.Text.Trim();
                 Age.apellido = txtApellidoAgente.Text.Trim();
                 Age.edad = int.Parse(txtEdadAgente.Text.Trim());
@@ -104,7 +104,7 @@ namespace ProyectoAltavista
             try
             {
                 entAgente A = new entAgente();
-                A.id = int.Parse(txtId.Text.Trim());
+                A.AgenteID = int.Parse(txtId.Text.Trim());
                 chbHabilitado.Checked = false;
                 A.estado = chbHabilitado.Checked;
                 logAgente.Instancia.DeshabilitarAgente(A);

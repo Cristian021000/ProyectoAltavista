@@ -34,9 +34,9 @@ namespace CapaLogica
         {
             return datSitioInteres.Instancia.BuscarSitioInteres(Sitio);
         }
-        public entSitioInteres DatosSitioInteres(int codSitioInteres)
+        public entSitioInteres DatosSitioInteres(int SitiodeinteresID)
         {
-            return datSitioInteres.Instancia.DatosSitioInteres(codSitioInteres);
+            return datSitioInteres.Instancia.DatosSitioInteres(SitiodeinteresID);
         }
         public void DeshabilitarSitioInteres(entSitioInteres Sitio)
         {
