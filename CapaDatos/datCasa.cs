@@ -116,6 +116,53 @@ namespace CapaDatos
             finally { cmd.Connection.Close(); }
             return casa;
         }
+        public void ModifcarCasa(entCasa casa)
+        {
+            SqlCommand cmd = null;
+            try
+            {
+                SqlConnection cn = Conexion.Instancia.Conectar();
+                cmd = new SqlCommand("sp_ModificarCasa", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@InmuebleID1", casa.InmuebleID1);
+                cmd.Parameters.AddWithValue("@CantPisos", casa.cantPisos);
+                cmd.Parameters.AddWithValue("@cantBao", casa.cantBaños);
+                cmd.Parameters.AddWithValue("@Canthabitaciones", casa.cantHabitaciones);
+                cmd.Parameters.AddWithValue("@areaM2", casa.areaM2);
+                cn.Open();
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally { cmd.Connection.Close(); }
+
+        }
+        public Boolean BuscarCasa(entCasa casa)
+        {
+            Boolean encontrado = false;
+            SqlCommand cmd = null;
+            try
+            {
+                SqlConnection cn = Conexion.Instancia.Conectar();
+                cmd = new SqlCommand("spBuscarcasa", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@InmuebleID1", casa.InmuebleID1);
+                cn.Open();
+                SqlDataReader dr = cmd.ExecuteReader();
+                if (dr.Read())
+                {
+                    encontrado = true;
+                }
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally { cmd.Connection.Close(); }
+            return encontrado;
+        }
 
     }
 }

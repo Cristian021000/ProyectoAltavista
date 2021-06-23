@@ -51,7 +51,6 @@ namespace ProyectoAltavista
             this.dgvDatosCliente.RowHeadersWidth = 51;
             this.dgvDatosCliente.Size = new System.Drawing.Size(454, 346);
             this.dgvDatosCliente.TabIndex = 0;
-            this.dgvDatosCliente.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDatosCliente_CellContentClick_1);
             // 
             // txtIngreseDni
             // 

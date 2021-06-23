@@ -109,5 +109,29 @@ namespace CapaDatos
             finally { cmd.Connection.Close(); }
             return terreno;
         }
+        public void ModifcarTerreno(entTerreno terreno)
+        {
+            SqlCommand cmd = null;
+            try
+            {
+                SqlConnection cn = Conexion.Instancia.Conectar();
+                cmd = new SqlCommand("sp_ModificarTerreno", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@InmuebleID3", terreno.InmuebleID3);
+                cmd.Parameters.AddWithValue("@Aream2", terreno.Aream2);
+                cmd.Parameters.AddWithValue("@Agua", terreno.agua);
+                cmd.Parameters.AddWithValue("@Alcantarillado", terreno.Alcantarillado);
+                cmd.Parameters.AddWithValue("@Desague", terreno.Desague);
+                cmd.Parameters.AddWithValue("@Luz", terreno.Luz);
+                cn.Open();
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally { cmd.Connection.Close(); }
+
+        }
     }
 }

@@ -34,5 +34,9 @@ namespace CapaLogica
         {
             return datTerreno.Instancia.DatosTerreno(idTerreno);
         }
+        public void ModifcarTerreno(entTerreno terreno)
+        {
+            datTerreno.Instancia.ModifcarTerreno(terreno);
+        }
     }
 }

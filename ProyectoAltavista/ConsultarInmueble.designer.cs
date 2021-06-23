@@ -134,6 +134,7 @@ namespace ProyectoAltavista
             this.btnSalirInmueble.TabIndex = 34;
             this.btnSalirInmueble.Text = "Salir";
             this.btnSalirInmueble.UseVisualStyleBackColor = true;
+            this.btnSalirInmueble.Click += new System.EventHandler(this.btnSalirInmueble_Click);
             // 
             // dtgTipoInmueble
             // 

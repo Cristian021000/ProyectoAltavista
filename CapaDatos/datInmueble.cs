@@ -57,11 +57,11 @@ namespace CapaDatos
             try
             {
                 SqlConnection cn = Conexion.Instancia.Conectar();
-                cmd = new SqlCommand("sp_EditarInmueble", cn);
+                cmd = new SqlCommand("sp_ModificarInmueble", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@InmuebleID", inm.InmuebleID);
-                cmd.Parameters.AddWithValue("@Precio", inm.precio);
-                cmd.Parameters.AddWithValue("@PrecioMinimo", inm.precio);
+                cmd.Parameters.AddWithValue("@precio", inm.precio);
+                cmd.Parameters.AddWithValue("@precioMinimo", inm.precioMinimo);
                 cn.Open();
                 int i = cmd.ExecuteNonQuery();
                 if (i > 0)
@@ -87,6 +87,7 @@ namespace CapaDatos
                 cmd = new SqlCommand("sp_VenderInmueble", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@InmuebleID", idInm);
+
                 cn.Open();
                 int i = cmd.ExecuteNonQuery();
                 if (i > 0)
@@ -102,7 +103,7 @@ namespace CapaDatos
             return vendido;
 
         }
-        public Boolean InhabilitarInmueble(int idInm)
+        public Boolean InhabilitarInmueble(entInmueble idInm)
         {
             SqlCommand cmd = null;
             Boolean inhabilitado = false;
@@ -111,7 +112,8 @@ namespace CapaDatos
                 SqlConnection cn = Conexion.Instancia.Conectar();
                 cmd = new SqlCommand("sp_InhabilitarInmueble", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@InmuebleID", idInm);
+                cmd.Parameters.AddWithValue("@InmuebleID", idInm.InmuebleID);
+                cmd.Parameters.AddWithValue("@Habilitado", idInm.habilitado);
                 cn.Open();
                 int i = cmd.ExecuteNonQuery();
                 if (i > 0)

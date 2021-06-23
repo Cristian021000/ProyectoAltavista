@@ -33,6 +33,11 @@ namespace CapaLogica
         {
             return datDepartamento.Instancia.DatosDepartamento(idDepartamento);
         }
+
+        public void ModifcarDepatarmento(entDepartamento departamento)
+        {
+            datDepartamento.Instancia.ModifcarDepartamento(departamento);
+        }
     }
 
 }

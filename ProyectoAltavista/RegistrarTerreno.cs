@@ -49,6 +49,8 @@ namespace ProyectoAltavista
                 terreno.InmuebleID3 = logInmueble.Instancia.BuscarNRegistroPublico(inmueble.nRegistroPublico).InmuebleID;
                 logTerreno.Instancia.RegistrarInmuebleTerreno(terreno);
                 MessageBox.Show("Se registró correctamente el terreno");
+                inmuebles.Show();
+                this.Hide();
             }
             catch (Exception ex)
             {

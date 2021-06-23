@@ -32,9 +32,9 @@ namespace CapaLogica
         {
             return datInmueble.Instancia.BuscarInmuebleCasa(inmueble);
         }
-        public void DeshabilitarInmueble(int InmuebleID)
+        public void DeshabilitarInmueble(entInmueble idInm)
         {
-            datInmueble.Instancia.InhabilitarInmueble(InmuebleID);
+            datInmueble.Instancia.InhabilitarInmueble(idInm);
         }
         public List<entInmueble> ListarInmuebleCasa()
         {

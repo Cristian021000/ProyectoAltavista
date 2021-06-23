@@ -60,12 +60,6 @@ namespace ProyectoAltavista
             }
         }
 
-
-        private void dgvDatosCliente_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
         private void btRegresar_Click(object sender, EventArgs e)
         {
             cliente.Show();

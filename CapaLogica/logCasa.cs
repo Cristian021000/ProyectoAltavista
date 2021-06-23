@@ -33,5 +33,15 @@ namespace CapaLogica
         {
             return datCasa.Instancia.DatosCasa(idCasa);
         }
+
+        public void ModifcarCasa(entCasa casa)
+        {
+            datCasa.Instancia.ModifcarCasa(casa);
+        }
+
+        public Boolean BuscarCasa(entCasa casa)
+        {
+            return datCasa.Instancia.BuscarCasa(casa);
+        }
     }
 }

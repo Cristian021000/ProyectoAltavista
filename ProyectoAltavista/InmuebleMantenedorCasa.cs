@@ -14,17 +14,17 @@ namespace ProyectoAltavista
 {
     public partial class InmuebleMantenedorCasa : Form
     {
-        MantenedorDeInmueble inmueble;
+        MantenedorDeInmueble Mantinmueble;
         public InmuebleMantenedorCasa(MantenedorDeInmueble inm)
         {
             InitializeComponent();
-            inmueble = inm;
+            Mantinmueble = inm;
         }
 
         private void Regresar_Click(object sender, EventArgs e)
         {
             this.Hide();
-            inmueble.Show();
+            Mantinmueble.Show();
         }
 
         private void AceptarRegisCasa_Click(object sender, EventArgs e)
@@ -50,8 +50,10 @@ namespace ProyectoAltavista
                 casa.fechaConstruccion = dtpFecha.Value;
                 logInmueble.Instancia.RegistrarInmueble(inmueble);
                 casa.InmuebleID1 = logInmueble.Instancia.BuscarNRegistroPublico(inmueble.nRegistroPublico).InmuebleID;
-                MessageBox.Show("id: " + casa.InmuebleID1);
+                MessageBox.Show("Se registró correctamente el inmueble casa");
                 logCasa.Instancia.RegistrarInmuebleCasa(casa);
+                this.Hide();
+                Mantinmueble.Show();
             }
             catch (Exception ex)
             {

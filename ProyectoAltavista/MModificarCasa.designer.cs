@@ -42,10 +42,12 @@ namespace ProyectoAltavista
             this.txtCantidadBaños = new System.Windows.Forms.TextBox();
             this.txtCantidadHabitaciones = new System.Windows.Forms.TextBox();
             this.txtCantidadCostruida = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnCancelar = new System.Windows.Forms.Button();
+            this.btnAceptar = new System.Windows.Forms.Button();
             this.txtCantidadPiso = new System.Windows.Forms.TextBox();
             this.labelModificarCasa = new System.Windows.Forms.Label();
+            this.checkboxHabilitar = new System.Windows.Forms.CheckBox();
+            this.btnDeshabilitar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1Fondo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -165,26 +167,27 @@ namespace ProyectoAltavista
             this.txtCantidadCostruida.Size = new System.Drawing.Size(224, 33);
             this.txtCantidadCostruida.TabIndex = 99;
             // 
-            // button1
+            // btnCancelar
             // 
-            this.button1.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(349, 391);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(168, 30);
-            this.button1.TabIndex = 101;
-            this.button1.Text = "Cancelar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnCancelar.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelar.Location = new System.Drawing.Point(264, 416);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(168, 30);
+            this.btnCancelar.TabIndex = 101;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
-            // button2
+            // btnAceptar
             // 
-            this.button2.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(129, 391);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(168, 30);
-            this.button2.TabIndex = 100;
-            this.button2.Text = "Aceptar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnAceptar.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAceptar.Location = new System.Drawing.Point(44, 416);
+            this.btnAceptar.Name = "btnAceptar";
+            this.btnAceptar.Size = new System.Drawing.Size(168, 30);
+            this.btnAceptar.TabIndex = 100;
+            this.btnAceptar.Text = "Aceptar";
+            this.btnAceptar.UseVisualStyleBackColor = true;
+            this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
             // 
             // txtCantidadPiso
             // 
@@ -207,15 +210,39 @@ namespace ProyectoAltavista
             this.labelModificarCasa.TabIndex = 106;
             this.labelModificarCasa.Text = "Modificar Casa";
             // 
+            // checkboxHabilitar
+            // 
+            this.checkboxHabilitar.AutoSize = true;
+            this.checkboxHabilitar.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkboxHabilitar.Location = new System.Drawing.Point(215, 370);
+            this.checkboxHabilitar.Name = "checkboxHabilitar";
+            this.checkboxHabilitar.Size = new System.Drawing.Size(129, 26);
+            this.checkboxHabilitar.TabIndex = 107;
+            this.checkboxHabilitar.Text = "Habilitado";
+            this.checkboxHabilitar.UseVisualStyleBackColor = true;
+            // 
+            // btnDeshabilitar
+            // 
+            this.btnDeshabilitar.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDeshabilitar.Location = new System.Drawing.Point(486, 416);
+            this.btnDeshabilitar.Name = "btnDeshabilitar";
+            this.btnDeshabilitar.Size = new System.Drawing.Size(168, 30);
+            this.btnDeshabilitar.TabIndex = 108;
+            this.btnDeshabilitar.Text = "Deshabilitar";
+            this.btnDeshabilitar.UseVisualStyleBackColor = true;
+            this.btnDeshabilitar.Click += new System.EventHandler(this.btnDeshabilitar_Click);
+            // 
             // MModificarCasa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(692, 458);
+            this.Controls.Add(this.btnDeshabilitar);
+            this.Controls.Add(this.checkboxHabilitar);
             this.Controls.Add(this.labelModificarCasa);
             this.Controls.Add(this.txtCantidadPiso);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnCancelar);
+            this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.txtCantidadCostruida);
             this.Controls.Add(this.txtCantidadHabitaciones);
             this.Controls.Add(this.txtCantidadBaños);
@@ -252,9 +279,11 @@ namespace ProyectoAltavista
         private System.Windows.Forms.TextBox txtCantidadBaños;
         private System.Windows.Forms.TextBox txtCantidadHabitaciones;
         private System.Windows.Forms.TextBox txtCantidadCostruida;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.Button btnAceptar;
         private System.Windows.Forms.TextBox txtCantidadPiso;
         private System.Windows.Forms.Label labelModificarCasa;
+        private System.Windows.Forms.CheckBox checkboxHabilitar;
+        private System.Windows.Forms.Button btnDeshabilitar;
     }
 }

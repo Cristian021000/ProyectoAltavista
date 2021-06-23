@@ -50,6 +50,7 @@ namespace ProyectoAltavista
             {
                 consultaCliente = new ConsultarCliente(this);
             }
+            consultaCliente.ListarClientes();
             consultaCliente.Show();
             this.Hide();
         }

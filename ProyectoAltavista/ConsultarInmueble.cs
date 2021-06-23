@@ -26,6 +26,13 @@ namespace ProyectoAltavista
             inm = inmu;
             //comboBoxTipoInmueble.SelectedIndex = 0;
         }
+        public void limpiarVariableConsultar()
+        {
+            txtCodigo.Clear();
+            dataGridViewConsulInmuble.Columns.Clear();
+            dtgTipoInmueble.Columns.Clear();
+            comboBoxTipoInmueble.Text= "";
+        }
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
@@ -42,7 +49,7 @@ namespace ProyectoAltavista
                 case 1:
                     if (casa == null)
                     {
-                        casa = new MModificarCasa(this); 
+                        casa = new MModificarCasa(this);
                     }
                     inmueble = logInmueble.Instancia.DatosInmueble(aux);
                     cas = logCasa.Instancia.DatosCasa(aux);
@@ -93,6 +100,12 @@ namespace ProyectoAltavista
                     dtgTipoInmueble.DataSource = logTerreno.Instancia.ListarInmuebleTerreno();
                     break;
             }
+        }
+
+        private void btnSalirInmueble_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            inm.Show();
         }
     }
 }

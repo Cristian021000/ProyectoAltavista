@@ -112,5 +112,28 @@ namespace CapaDatos
 
             return departamento;
         }
+        public void ModifcarDepartamento(entDepartamento departamento)
+        {
+            SqlCommand cmd = null;
+            try
+            {
+                SqlConnection cn = Conexion.Instancia.Conectar();
+                cmd = new SqlCommand("sp_ModificarDepartamento", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@InmuebleID2", departamento.InmuebleID2);
+                cmd.Parameters.AddWithValue("@Cantbao", departamento.CantBao);
+                cmd.Parameters.AddWithValue("@Canthabitaciones", departamento.CantHabitacinoes);
+                cmd.Parameters.AddWithValue("@Ubipisos", departamento.Ubipisos);
+                cmd.Parameters.AddWithValue("@Aream2", departamento.Aream2);
+                cn.Open();
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally { cmd.Connection.Close(); }
+
+        }
     }
 }
