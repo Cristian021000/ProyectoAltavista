@@ -46,6 +46,11 @@ namespace CapaLogica
             return datInmueble.Instancia.ListarInmuebleDepartamento();
         }
 
+        public List<entInmueble> ListarInmuebleTerreno()
+        {
+            return datInmueble.Instancia.ListarInmuebleTerreno();
+        }
+
         public entInmueble BuscarNRegistroPublico(int nRegistro)
         {
             return datInmueble.Instancia.BuscarNRegistroPublico(nRegistro);

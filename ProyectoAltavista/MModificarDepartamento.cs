@@ -7,18 +7,31 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CapaEntidad;
+using CapaLogica;
 
 namespace ProyectoAltavista
 {
     public partial class MModificarDepartamento : Form
     {
-        ConsultarInmueble inmueble;
-        public MModificarDepartamento(ConsultarInmueble inm)
+        ConsultarInmueble consultar;
+        int idAux;
+        public MModificarDepartamento(ConsultarInmueble consu)
         {
             InitializeComponent();
-            inmueble = inm;
+            consultar = consu;
         }
 
+
+        public void DatosDepartamento(entInmueble inmu, entDepartamento depar)
+        {
+            idAux = inmu.InmuebleID;
+            txtPrecio.Text = inmu.precio.ToString();
+            txtPrecioMinimo.Text = inmu.precioMinimo.ToString();
+            txtCantidadBaños.Text = depar.CantBao.ToString();
+            txtCantidadHabitaciones.Text = depar.CantHabitacinoes.ToString();
+            txtCantidadCostruida.Text = depar.Aream2.ToString();
+        }
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -67,6 +80,17 @@ namespace ProyectoAltavista
         private void groupBoxDvi_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            consultar.Show();
         }
     }
 }

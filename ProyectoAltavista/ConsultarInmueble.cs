@@ -32,6 +32,7 @@ namespace ProyectoAltavista
             
             entInmueble inmueble = new entInmueble();
             entCasa cas = new entCasa();
+            entTerreno terre = new entTerreno();
             entDepartamento depart = new entDepartamento();
             
             aux = int.Parse(txtCodigo.Text.Trim());
@@ -56,15 +57,22 @@ namespace ProyectoAltavista
                     }
                     inmueble = logInmueble.Instancia.DatosInmueble(aux);
                     depart = logDepartamento.Instancia.DatosDepartamento(aux);
+                    departamento.DatosDepartamento(inmueble, depart);
                     this.Hide();
                     departamento.Show();
                     break;
-                case 3: break;
+                case 3:
+                    if (terreno == null)
+                    {
+                        terreno = new MModificarTerreno(this);                    
+                    }
+                    inmueble = logInmueble.Instancia.DatosInmueble(aux);
+                    terre = logTerreno.Instancia.DatosTerreno(aux);
+                    terreno.DatosTerreno(inmueble, terre);
+                    this.Hide();
+                    terreno.Show();
+                    break;
             }
-        }
-        public void ListarInmueble()
-        {
-            
         }
 
         private void comboBoxTipoInmueble_SelectedIndexChanged(object sender, EventArgs e)
@@ -79,9 +87,11 @@ namespace ProyectoAltavista
                 case 2:
                     dataGridViewConsulInmuble.DataSource = logInmueble.Instancia.ListarInmuebleDepartamento();
                     dtgTipoInmueble.DataSource = logDepartamento.Instancia.ListarInmuebleDepartamento();
-
                     break;
-                case 3: break;
+                case 3:
+                    dataGridViewConsulInmuble.DataSource = logInmueble.Instancia.ListarInmuebleTerreno();
+                    dtgTipoInmueble.DataSource = logTerreno.Instancia.ListarInmuebleTerreno();
+                    break;
             }
         }
     }

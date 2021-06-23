@@ -195,6 +195,39 @@ namespace CapaDatos
             return lista;
         }
 
+        public List<entInmueble> ListarInmuebleTerreno()
+        {
+            SqlCommand cmd = null;
+            List<entInmueble> lista = new List<entInmueble>();
+            try
+            {
+                SqlConnection cn = Conexion.Instancia.Conectar();
+                cmd = new SqlCommand("spListarinmuebleTerreno", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cn.Open();
+                SqlDataReader dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    entInmueble inmueble = new entInmueble();
+                    inmueble.InmuebleID = Convert.ToInt32(dr["InmuebleID"]);
+                    inmueble.SectorID = Convert.ToInt32(dr["SectorID"]);
+                    inmueble.idPropietario = Convert.ToInt32(dr["PropietarioID"]);
+                    inmueble.direccion = dr["Direccion"].ToString();
+                    inmueble.precio = (float)Convert.ToDouble((dr["Precio"]));
+                    inmueble.precioMinimo = (float)Convert.ToDouble((dr["Preciominimo"]));
+                    inmueble.nRegistroPublico = Convert.ToInt32(dr["Nregistrospublicos"]);
+                    inmueble.vendido = Convert.ToBoolean(dr["Vendido"]);
+                    inmueble.habilitado = Convert.ToBoolean(dr["Habilitado"]);
+                    lista.Add(inmueble);
+                }
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally { cmd.Connection.Close(); }
+            return lista;
+        }
         public Boolean BuscarInmuebleCasa(entInmueble inmueble)
         {
             SqlCommand cmd = null;
@@ -261,9 +294,9 @@ namespace CapaDatos
             try
             {
                 SqlConnection cn = Conexion.Instancia.Conectar();
-                cmd = new SqlCommand("spBuscarInmuebleNRegistro", cn);
+                cmd = new SqlCommand("spDatosInmueble", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@nRegistrosPublicos", InmuebleID);
+                cmd.Parameters.AddWithValue("@InmuebleID", InmuebleID);
                 cn.Open();
                 SqlDataReader dr = cmd.ExecuteReader();
                 if (dr.Read())
