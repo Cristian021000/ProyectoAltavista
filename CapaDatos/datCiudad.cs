@@ -62,7 +62,7 @@ namespace CapaDatos
                 {
                     entCiudad ciudad = new entCiudad();
                     ciudad.CiudadID = Convert.ToInt32(dr["CiudadID"]);
-                    ciudad.nombrCiudad = dr["nombrCiudad"].ToString();
+                    ciudad.nombrCiudad = dr["Nombrciudad"].ToString();
                     ciudad.referenciasCiudad = dr["referenciasCiudad"].ToString();
                     ciudad.postalCiudad = Convert.ToInt32(dr["postalCiudad"]);
                     lista.Add(ciudad);

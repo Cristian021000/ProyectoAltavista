@@ -28,7 +28,7 @@ namespace CapaDatos
                 SqlConnection cn = Conexion.Instancia.Conectar();
                 cmd = new SqlCommand("spRegistrarInmuebleCasa", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@InmuebleID1", casa.InmuebleID1);
+                cmd.Parameters.AddWithValue("@idInmueble1", casa.InmuebleID1);
                 cmd.Parameters.AddWithValue("@cantPisos", casa.cantPisos);
                 cmd.Parameters.AddWithValue("@cantBao", casa.cantBaños);
                 cmd.Parameters.AddWithValue("@cantHabitaciones", casa.cantHabitaciones);
@@ -66,13 +66,13 @@ namespace CapaDatos
                 {
                     entCasa casa = new entCasa();
                     casa.InmuebleID1 = Convert.ToInt32(dr["InmuebleID1"]);
-                    casa.cantPisos = Convert.ToInt32(dr["cantPisos"]);
-                    casa.cantBaños = Convert.ToInt32(dr["cantBao"]);
-                    casa.cantHabitaciones = Convert.ToInt32(dr["cantHabitaciones"]);
-                    casa.piscina = Convert.ToBoolean(dr["piscina"]);
-                    casa.jardin = Convert.ToBoolean(dr["jardine"]);
-                    casa.areaM2 = (float)Convert.ToDouble(dr["areaM2"]);
-                    casa.fechaConstruccion = Convert.ToDateTime(dr["fechaConstruccion"]);
+                    casa.cantPisos = Convert.ToInt32(dr["Cantpisos"]);
+                    casa.cantBaños = Convert.ToInt32(dr["Cantbao"]);
+                    casa.cantHabitaciones = Convert.ToInt32(dr["Canthabitaciones"]);
+                    casa.piscina = Convert.ToBoolean(dr["Piscina"]);
+                    casa.jardin = Convert.ToBoolean(dr["Jardine"]);
+                    casa.areaM2 = (float)Convert.ToDouble(dr["Aream2"]);
+                    casa.fechaConstruccion = Convert.ToDateTime(dr["Fechaconstruccion"]);
                     
                     lista.Add(casa);
                 }
@@ -100,13 +100,13 @@ namespace CapaDatos
                 if (dr.Read())
                 {
                     casa.InmuebleID1 = Convert.ToInt32(dr["InmuebleID1"]);
-                    casa.cantPisos = Convert.ToInt32(dr["cantPisos"]);
-                    casa.cantBaños = Convert.ToInt32(dr["cantBao"]);
-                    casa.cantHabitaciones = Convert.ToInt32(dr["cantHabitaciones"]);
-                    casa.piscina = Convert.ToBoolean(dr["piscina"]);
-                    casa.jardin = Convert.ToBoolean(dr["jardin"]);
-                    casa.areaM2 = (float)Convert.ToDouble(dr["areM2"]);
-                    casa.fechaConstruccion = Convert.ToDateTime(dr["fechaConstruccion"]);
+                    casa.cantPisos = Convert.ToInt32(dr["Cantpisos"]);
+                    casa.cantBaños = Convert.ToInt32(dr["Cantbao"]);
+                    casa.cantHabitaciones = Convert.ToInt32(dr["Canthabitaciones"]);
+                    casa.piscina = Convert.ToBoolean(dr["Piscina"]);
+                    casa.jardin = Convert.ToBoolean(dr["Jardine"]);
+                    casa.areaM2 = (float)Convert.ToDouble(dr["Aream2"]);
+                    casa.fechaConstruccion = Convert.ToDateTime(dr["Fechaconstruccion"]);
                 }
             }
             catch (Exception e)

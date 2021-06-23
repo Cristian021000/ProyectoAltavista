@@ -31,8 +31,11 @@ namespace ProyectoAltavista
         {
             
             entInmueble inmueble = new entInmueble();
-            aux = int.Parse(txtCodigo.Text.Trim());
             entCasa cas = new entCasa();
+            entDepartamento depart = new entDepartamento();
+            
+            aux = int.Parse(txtCodigo.Text.Trim());
+            
             switch (tipo)
             {
                 case 1:
@@ -46,7 +49,16 @@ namespace ProyectoAltavista
                     this.Hide();
                     casa.Show();
                     break;
-                case 2: break;
+                case 2:
+                    if (departamento == null)
+                    {
+                        departamento = new MModificarDepartamento(this);
+                    }
+                    inmueble = logInmueble.Instancia.DatosInmueble(aux);
+                    depart = logDepartamento.Instancia.DatosDepartamento(aux);
+                    this.Hide();
+                    departamento.Show();
+                    break;
                 case 3: break;
             }
         }
@@ -64,7 +76,11 @@ namespace ProyectoAltavista
                     dataGridViewConsulInmuble.DataSource = logInmueble.Instancia.ListarInmuebleCasa();
                     dtgTipoInmueble.DataSource = logCasa.Instancia.ListarInmuebleCasa();
                     break;
-                case 2: break;
+                case 2:
+                    dataGridViewConsulInmuble.DataSource = logInmueble.Instancia.ListarInmuebleDepartamento();
+                    dtgTipoInmueble.DataSource = logDepartamento.Instancia.ListarInmuebleDepartamento();
+
+                    break;
                 case 3: break;
             }
         }

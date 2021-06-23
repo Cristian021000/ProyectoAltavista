@@ -46,6 +46,7 @@
     <Compile Include="logCasa.cs" />
     <Compile Include="logCiudad.cs" />
     <Compile Include="logCliente.cs" />
+    <Compile Include="logDepartamento.cs" />
     <Compile Include="logInmueble.cs" />
     <Compile Include="logPropietario.cs" />
     <Compile Include="logSector.cs" />

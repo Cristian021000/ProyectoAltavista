@@ -12,9 +12,11 @@ namespace ProyectoAltavista
 {
     public partial class MModificarDepartamento : Form
     {
-        public MModificarDepartamento()
+        ConsultarInmueble inmueble;
+        public MModificarDepartamento(ConsultarInmueble inm)
         {
             InitializeComponent();
+            inmueble = inm;
         }
 
         private void label1_Click(object sender, EventArgs e)

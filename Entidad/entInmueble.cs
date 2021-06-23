@@ -12,8 +12,9 @@ namespace CapaEntidad
         public int SectorID { get; set; }
         public int idPropietario { get; set; }
         public string direccion { get; set; }
-        public int precio { get; set; }
-        public int precioMinimo { get; set; }
+        public float precio { get; set; }
+        public float precioMinimo { get; set; }
+
         public int nRegistroPublico { get; set; }
         public Boolean vendido { get; set; }
         public Boolean habilitado { get; set; }

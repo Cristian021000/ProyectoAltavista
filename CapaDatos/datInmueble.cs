@@ -29,7 +29,7 @@ namespace CapaDatos
                 SqlConnection cn = Conexion.Instancia.Conectar();
                 cmd = new SqlCommand("sp_RegistrarInmueble", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@SectorID", inm.SectorID);
+                cmd.Parameters.AddWithValue("@idSector", inm.SectorID);
                 cmd.Parameters.AddWithValue("@idPropietario", inm.idPropietario);
                 cmd.Parameters.AddWithValue("@direccion", inm.direccion);
                 cmd.Parameters.AddWithValue("@precio", inm.precio);
@@ -143,13 +143,47 @@ namespace CapaDatos
                     entInmueble inmueble = new entInmueble();
                     inmueble.InmuebleID = Convert.ToInt32(dr["InmuebleID"]);
                     inmueble.SectorID = Convert.ToInt32(dr["SectorID"]);
-                    inmueble.idPropietario = Convert.ToInt32(dr["idPropietario"]);
-                    inmueble.direccion = dr["direccion"].ToString();
-                    inmueble.precio = Convert.ToInt32(dr["precio"]);
-                    inmueble.precioMinimo = Convert.ToInt32(dr["precioMinimo"]);
-                    inmueble.nRegistroPublico = Convert.ToInt32(dr["nRegistrosPublicos"]);
-                    inmueble.vendido = Convert.ToBoolean(dr["vendido"]);
-                    inmueble.habilitado = Convert.ToBoolean(dr["habilitado"]);
+                    inmueble.idPropietario = Convert.ToInt32(dr["PropietarioID"]);
+                    inmueble.direccion = dr["Direccion"].ToString();
+                    inmueble.precio = (float)Convert.ToDouble((dr["Precio"]));
+                    inmueble.precioMinimo = (float)Convert.ToDouble((dr["Preciominimo"]));
+                    inmueble.nRegistroPublico = Convert.ToInt32(dr["Nregistrospublicos"]);
+                    inmueble.vendido = Convert.ToBoolean(dr["Vendido"]);
+                    inmueble.habilitado = Convert.ToBoolean(dr["Habilitado"]);
+                    lista.Add(inmueble);
+                }
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally { cmd.Connection.Close(); }
+            return lista;
+        }
+
+        public List<entInmueble> ListarInmuebleDepartamento()
+        {
+            SqlCommand cmd = null;
+            List<entInmueble> lista = new List<entInmueble>();
+            try
+            {
+                SqlConnection cn = Conexion.Instancia.Conectar();
+                cmd = new SqlCommand("spListarinmuebleDepartamento", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cn.Open();
+                SqlDataReader dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    entInmueble inmueble = new entInmueble();
+                    inmueble.InmuebleID = Convert.ToInt32(dr["InmuebleID"]);
+                    inmueble.SectorID = Convert.ToInt32(dr["SectorID"]);
+                    inmueble.idPropietario = Convert.ToInt32(dr["PropietarioID"]);
+                    inmueble.direccion = dr["Direccion"].ToString();
+                    inmueble.precio = (float)Convert.ToDouble((dr["Precio"]));
+                    inmueble.precioMinimo = (float)Convert.ToDouble((dr["Preciominimo"]));
+                    inmueble.nRegistroPublico = Convert.ToInt32(dr["Nregistrospublicos"]);
+                    inmueble.vendido = Convert.ToBoolean(dr["Vendido"]);
+                    inmueble.habilitado = Convert.ToBoolean(dr["Habilitado"]);
                     lista.Add(inmueble);
                 }
             }
@@ -201,13 +235,13 @@ namespace CapaDatos
                 if (dr.Read())
                 {
                     inmueble.InmuebleID = Convert.ToInt32(dr["InmuebleID"]);
-                    inmueble.idPropietario = Convert.ToInt32(dr["idPropietario"]);
+                    inmueble.idPropietario = Convert.ToInt32(dr["PropietarioID"]);
                     inmueble.SectorID = Convert.ToInt32(dr["SectorID"]);
-                    inmueble.direccion = dr["direccion"].ToString();
-                    inmueble.precio = Convert.ToInt32(dr["precio"]);
-                    inmueble.precioMinimo = Convert.ToInt32(dr["precioMinimo"]);
-                    inmueble.nRegistroPublico = Convert.ToInt32(dr["nRegistrosPublicos"]);
-                    inmueble.vendido = Convert.ToBoolean(dr["vendido"]);
+                    inmueble.direccion = dr["Direccion"].ToString();
+                    inmueble.precio = (float)Convert.ToDouble((dr["Precio"]));
+                    inmueble.precioMinimo = (float)Convert.ToDouble((dr["Preciominimo"]));
+                    inmueble.nRegistroPublico = Convert.ToInt32(dr["Nregistrospublicos"]);
+                    inmueble.vendido = Convert.ToBoolean(dr["Vendido"]);
                     inmueble.habilitado = Convert.ToBoolean(dr["Habilitado"]);
 
                 }
@@ -227,21 +261,21 @@ namespace CapaDatos
             try
             {
                 SqlConnection cn = Conexion.Instancia.Conectar();
-                cmd = new SqlCommand("spExisteNRegistroPublico", cn);
+                cmd = new SqlCommand("spBuscarInmuebleNRegistro", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@nDatosInmueble", InmuebleID);
+                cmd.Parameters.AddWithValue("@nRegistrosPublicos", InmuebleID);
                 cn.Open();
                 SqlDataReader dr = cmd.ExecuteReader();
                 if (dr.Read())
                 {
                     inmueble.InmuebleID = Convert.ToInt32(dr["InmuebleID"]);
-                    inmueble.idPropietario = Convert.ToInt32(dr["idPropietario"]);
+                    inmueble.idPropietario = Convert.ToInt32(dr["PropietarioID"]);
                     inmueble.SectorID = Convert.ToInt32(dr["SectorID"]);
-                    inmueble.direccion = dr["direccion"].ToString();
-                    inmueble.precio = Convert.ToInt32(dr["precio"]);
-                    inmueble.precioMinimo = Convert.ToInt32(dr["precioMinimo"]);
-                    inmueble.nRegistroPublico = Convert.ToInt32(dr["nRegistrosPublicos"]);
-                    inmueble.vendido = Convert.ToBoolean(dr["vendido"]);
+                    inmueble.direccion = dr["Direccion"].ToString();
+                    inmueble.precio = (float)Convert.ToDouble((dr["Precio"]));
+                    inmueble.precioMinimo = (float)Convert.ToDouble((dr["Preciominimo"]));
+                    inmueble.nRegistroPublico = Convert.ToInt32(dr["Nregistrospublicos"]);
+                    inmueble.vendido = Convert.ToBoolean(dr["Vendido"]);
                     inmueble.habilitado = Convert.ToBoolean(dr["Habilitado"]);
 
                 }

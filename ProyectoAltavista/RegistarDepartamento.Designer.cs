@@ -54,6 +54,8 @@ namespace ProyectoAltavista
             this.textBox1NumRegistPublicosD = new System.Windows.Forms.TextBox();
             this.AceptarRegisDepartamento = new System.Windows.Forms.Button();
             this.Regresar = new System.Windows.Forms.Button();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.Fondo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -84,7 +86,7 @@ namespace ProyectoAltavista
             // 
             this.DireccionD.AutoSize = true;
             this.DireccionD.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DireccionD.Location = new System.Drawing.Point(28, 124);
+            this.DireccionD.Location = new System.Drawing.Point(28, 106);
             this.DireccionD.Name = "DireccionD";
             this.DireccionD.Size = new System.Drawing.Size(105, 22);
             this.DireccionD.TabIndex = 51;
@@ -94,7 +96,7 @@ namespace ProyectoAltavista
             // 
             this.PrecioD.AutoSize = true;
             this.PrecioD.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PrecioD.Location = new System.Drawing.Point(28, 176);
+            this.PrecioD.Location = new System.Drawing.Point(30, 147);
             this.PrecioD.Name = "PrecioD";
             this.PrecioD.Size = new System.Drawing.Size(73, 22);
             this.PrecioD.TabIndex = 52;
@@ -104,7 +106,7 @@ namespace ProyectoAltavista
             // 
             this.PrecioMinD.AutoSize = true;
             this.PrecioMinD.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PrecioMinD.Location = new System.Drawing.Point(28, 232);
+            this.PrecioMinD.Location = new System.Drawing.Point(30, 190);
             this.PrecioMinD.Name = "PrecioMinD";
             this.PrecioMinD.Size = new System.Drawing.Size(148, 22);
             this.PrecioMinD.TabIndex = 53;
@@ -114,7 +116,7 @@ namespace ProyectoAltavista
             // 
             this.NumRegisPublicosD.AutoSize = true;
             this.NumRegisPublicosD.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NumRegisPublicosD.Location = new System.Drawing.Point(28, 284);
+            this.NumRegisPublicosD.Location = new System.Drawing.Point(28, 235);
             this.NumRegisPublicosD.Name = "NumRegisPublicosD";
             this.NumRegisPublicosD.Size = new System.Drawing.Size(293, 22);
             this.NumRegisPublicosD.TabIndex = 54;
@@ -124,7 +126,7 @@ namespace ProyectoAltavista
             // 
             this.label1IdSectorD.AutoSize = true;
             this.label1IdSectorD.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1IdSectorD.Location = new System.Drawing.Point(28, 339);
+            this.label1IdSectorD.Location = new System.Drawing.Point(28, 279);
             this.label1IdSectorD.Name = "label1IdSectorD";
             this.label1IdSectorD.Size = new System.Drawing.Size(100, 22);
             this.label1IdSectorD.TabIndex = 55;
@@ -134,7 +136,7 @@ namespace ProyectoAltavista
             // 
             this.labelIDPropietarioD.AutoSize = true;
             this.labelIDPropietarioD.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelIDPropietarioD.Location = new System.Drawing.Point(28, 395);
+            this.labelIDPropietarioD.Location = new System.Drawing.Point(28, 328);
             this.labelIDPropietarioD.Name = "labelIDPropietarioD";
             this.labelIDPropietarioD.Size = new System.Drawing.Size(147, 22);
             this.labelIDPropietarioD.TabIndex = 56;
@@ -144,7 +146,7 @@ namespace ProyectoAltavista
             // 
             this.CantidadBañosD.AutoSize = true;
             this.CantidadBañosD.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CantidadBañosD.Location = new System.Drawing.Point(28, 448);
+            this.CantidadBañosD.Location = new System.Drawing.Point(30, 380);
             this.CantidadBañosD.Name = "CantidadBañosD";
             this.CantidadBañosD.Size = new System.Drawing.Size(164, 22);
             this.CantidadBañosD.TabIndex = 58;
@@ -154,7 +156,7 @@ namespace ProyectoAltavista
             // 
             this.CantidadHabitacionesD.AutoSize = true;
             this.CantidadHabitacionesD.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CantidadHabitacionesD.Location = new System.Drawing.Point(28, 500);
+            this.CantidadHabitacionesD.Location = new System.Drawing.Point(28, 432);
             this.CantidadHabitacionesD.Name = "CantidadHabitacionesD";
             this.CantidadHabitacionesD.Size = new System.Drawing.Size(258, 22);
             this.CantidadHabitacionesD.TabIndex = 59;
@@ -164,7 +166,7 @@ namespace ProyectoAltavista
             // 
             this.UbicacionPisosD.AutoSize = true;
             this.UbicacionPisosD.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UbicacionPisosD.Location = new System.Drawing.Point(28, 557);
+            this.UbicacionPisosD.Location = new System.Drawing.Point(33, 485);
             this.UbicacionPisosD.Name = "UbicacionPisosD";
             this.UbicacionPisosD.Size = new System.Drawing.Size(161, 22);
             this.UbicacionPisosD.TabIndex = 60;
@@ -174,7 +176,7 @@ namespace ProyectoAltavista
             // 
             this.MetrosCuadradosD.AutoSize = true;
             this.MetrosCuadradosD.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MetrosCuadradosD.Location = new System.Drawing.Point(28, 610);
+            this.MetrosCuadradosD.Location = new System.Drawing.Point(33, 530);
             this.MetrosCuadradosD.Name = "MetrosCuadradosD";
             this.MetrosCuadradosD.Size = new System.Drawing.Size(193, 22);
             this.MetrosCuadradosD.TabIndex = 61;
@@ -183,107 +185,108 @@ namespace ProyectoAltavista
             // txtDireccionD
             // 
             this.txtDireccionD.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDireccionD.Location = new System.Drawing.Point(145, 122);
+            this.txtDireccionD.Location = new System.Drawing.Point(145, 106);
             this.txtDireccionD.Multiline = true;
             this.txtDireccionD.Name = "txtDireccionD";
-            this.txtDireccionD.Size = new System.Drawing.Size(397, 33);
+            this.txtDireccionD.Size = new System.Drawing.Size(397, 32);
             this.txtDireccionD.TabIndex = 62;
             // 
             // textBox1PrecioD
             // 
             this.textBox1PrecioD.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1PrecioD.Location = new System.Drawing.Point(145, 176);
+            this.textBox1PrecioD.Location = new System.Drawing.Point(145, 147);
             this.textBox1PrecioD.Multiline = true;
             this.textBox1PrecioD.Name = "textBox1PrecioD";
-            this.textBox1PrecioD.Size = new System.Drawing.Size(399, 33);
+            this.textBox1PrecioD.Size = new System.Drawing.Size(399, 22);
             this.textBox1PrecioD.TabIndex = 63;
             // 
             // textBox1PrecionMinD
             // 
             this.textBox1PrecionMinD.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1PrecionMinD.Location = new System.Drawing.Point(178, 229);
+            this.textBox1PrecionMinD.Location = new System.Drawing.Point(184, 190);
             this.textBox1PrecionMinD.Multiline = true;
             this.textBox1PrecionMinD.Name = "textBox1PrecionMinD";
-            this.textBox1PrecionMinD.Size = new System.Drawing.Size(366, 33);
+            this.textBox1PrecionMinD.Size = new System.Drawing.Size(366, 22);
             this.textBox1PrecionMinD.TabIndex = 64;
             // 
             // textBox1IDSectorD
             // 
             this.textBox1IDSectorD.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1IDSectorD.Location = new System.Drawing.Point(130, 336);
+            this.textBox1IDSectorD.Location = new System.Drawing.Point(138, 279);
             this.textBox1IDSectorD.Multiline = true;
             this.textBox1IDSectorD.Name = "textBox1IDSectorD";
-            this.textBox1IDSectorD.Size = new System.Drawing.Size(412, 33);
+            this.textBox1IDSectorD.Size = new System.Drawing.Size(412, 22);
             this.textBox1IDSectorD.TabIndex = 65;
             // 
             // textBox1IDPropietarioD
             // 
             this.textBox1IDPropietarioD.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1IDPropietarioD.Location = new System.Drawing.Point(176, 395);
+            this.textBox1IDPropietarioD.Location = new System.Drawing.Point(181, 328);
             this.textBox1IDPropietarioD.Multiline = true;
             this.textBox1IDPropietarioD.Name = "textBox1IDPropietarioD";
-            this.textBox1IDPropietarioD.Size = new System.Drawing.Size(366, 33);
+            this.textBox1IDPropietarioD.Size = new System.Drawing.Size(366, 22);
             this.textBox1IDPropietarioD.TabIndex = 66;
             // 
             // textBox1CantBañosD
             // 
             this.textBox1CantBañosD.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1CantBañosD.Location = new System.Drawing.Point(190, 446);
+            this.textBox1CantBañosD.Location = new System.Drawing.Point(200, 380);
             this.textBox1CantBañosD.Multiline = true;
             this.textBox1CantBañosD.Name = "textBox1CantBañosD";
-            this.textBox1CantBañosD.Size = new System.Drawing.Size(351, 33);
+            this.textBox1CantBañosD.Size = new System.Drawing.Size(351, 22);
             this.textBox1CantBañosD.TabIndex = 67;
             // 
             // textBox1CantHabitacionesD
             // 
             this.textBox1CantHabitacionesD.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1CantHabitacionesD.Location = new System.Drawing.Point(272, 497);
+            this.textBox1CantHabitacionesD.Location = new System.Drawing.Point(292, 432);
             this.textBox1CantHabitacionesD.Multiline = true;
             this.textBox1CantHabitacionesD.Name = "textBox1CantHabitacionesD";
-            this.textBox1CantHabitacionesD.Size = new System.Drawing.Size(270, 33);
+            this.textBox1CantHabitacionesD.Size = new System.Drawing.Size(270, 22);
             this.textBox1CantHabitacionesD.TabIndex = 68;
             // 
             // textBox1UbicacionPisosD
             // 
             this.textBox1UbicacionPisosD.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1UbicacionPisosD.Location = new System.Drawing.Point(190, 554);
+            this.textBox1UbicacionPisosD.Location = new System.Drawing.Point(200, 485);
             this.textBox1UbicacionPisosD.Multiline = true;
             this.textBox1UbicacionPisosD.Name = "textBox1UbicacionPisosD";
-            this.textBox1UbicacionPisosD.Size = new System.Drawing.Size(351, 33);
+            this.textBox1UbicacionPisosD.Size = new System.Drawing.Size(351, 22);
             this.textBox1UbicacionPisosD.TabIndex = 69;
             // 
             // textBox1MetrosCuadradosD
             // 
             this.textBox1MetrosCuadradosD.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1MetrosCuadradosD.Location = new System.Drawing.Point(215, 608);
+            this.textBox1MetrosCuadradosD.Location = new System.Drawing.Point(232, 530);
             this.textBox1MetrosCuadradosD.Multiline = true;
             this.textBox1MetrosCuadradosD.Name = "textBox1MetrosCuadradosD";
-            this.textBox1MetrosCuadradosD.Size = new System.Drawing.Size(326, 33);
+            this.textBox1MetrosCuadradosD.Size = new System.Drawing.Size(326, 22);
             this.textBox1MetrosCuadradosD.TabIndex = 70;
             // 
             // textBox1NumRegistPublicosD
             // 
             this.textBox1NumRegistPublicosD.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1NumRegistPublicosD.Location = new System.Drawing.Point(316, 281);
+            this.textBox1NumRegistPublicosD.Location = new System.Drawing.Point(322, 235);
             this.textBox1NumRegistPublicosD.Multiline = true;
             this.textBox1NumRegistPublicosD.Name = "textBox1NumRegistPublicosD";
-            this.textBox1NumRegistPublicosD.Size = new System.Drawing.Size(228, 33);
+            this.textBox1NumRegistPublicosD.Size = new System.Drawing.Size(228, 22);
             this.textBox1NumRegistPublicosD.TabIndex = 71;
             // 
             // AceptarRegisDepartamento
             // 
             this.AceptarRegisDepartamento.Font = new System.Drawing.Font("Lucida Fax", 19.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AceptarRegisDepartamento.Location = new System.Drawing.Point(62, 682);
+            this.AceptarRegisDepartamento.Location = new System.Drawing.Point(76, 632);
             this.AceptarRegisDepartamento.Name = "AceptarRegisDepartamento";
             this.AceptarRegisDepartamento.Size = new System.Drawing.Size(173, 50);
             this.AceptarRegisDepartamento.TabIndex = 72;
             this.AceptarRegisDepartamento.Text = "Aceptar";
             this.AceptarRegisDepartamento.UseVisualStyleBackColor = true;
+            this.AceptarRegisDepartamento.Click += new System.EventHandler(this.AceptarRegisDepartamento_Click);
             // 
             // Regresar
             // 
             this.Regresar.Font = new System.Drawing.Font("Lucida Fax", 19.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Regresar.Location = new System.Drawing.Point(316, 682);
+            this.Regresar.Location = new System.Drawing.Point(322, 632);
             this.Regresar.Name = "Regresar";
             this.Regresar.Size = new System.Drawing.Size(173, 50);
             this.Regresar.TabIndex = 73;
@@ -291,11 +294,30 @@ namespace ProyectoAltavista
             this.Regresar.UseVisualStyleBackColor = true;
             this.Regresar.Click += new System.EventHandler(this.Regresar_Click);
             // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(259, 579);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(315, 20);
+            this.dateTimePicker1.TabIndex = 74;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(19, 579);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(230, 22);
+            this.label1.TabIndex = 75;
+            this.label1.Text = "Fecha de construccion:";
+            // 
             // RegistarDepartamento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(586, 749);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.Regresar);
             this.Controls.Add(this.AceptarRegisDepartamento);
             this.Controls.Add(this.textBox1NumRegistPublicosD);
@@ -356,5 +378,7 @@ namespace ProyectoAltavista
         private System.Windows.Forms.TextBox textBox1NumRegistPublicosD;
         private System.Windows.Forms.Button AceptarRegisDepartamento;
         private System.Windows.Forms.Button Regresar;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Label label1;
     }
 }
