@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CapaEntidad;
+using CapaLogica;
 
 namespace ProyectoAltavista
 {
@@ -65,6 +67,26 @@ namespace ProyectoAltavista
                     agregar.Fechacita = agregar.Fechacita.AddHours(16);
                     break;
             }
+            if (!logCita.Instancia.ExisteCita(agregar))
+            {
+                try
+                {
+
+                    logCita.Instancia.RegistrarCita(agregar);
+                    MessageBox.Show("La cita fue registrada correctamente.");
+                    mantCita.Show();
+                    this.Hide();
+                }
+                catch (Exception ex)
+                {
+                    throw ex;
+                }
+            }
+            else
+            {
+                MessageBox.Show("Ya existe una cita pendiente por ese Cliente a ese Inmueble");
+            }
         }
+    }
     }
 }
