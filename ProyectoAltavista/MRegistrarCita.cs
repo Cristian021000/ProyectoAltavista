@@ -22,7 +22,49 @@ namespace ProyectoAltavista
         private void btnCancelarRegistrarCita_Click(object sender, EventArgs e)
         {   
             mantCita.Show();
-            this.Close();
+            this.Hide();
+        }
+
+        private void btnAceptarRegistrarCita_Click(object sender, EventArgs e)
+        {
+            int reserva = comboBoxHoraCita.SelectedIndex;
+            entCita agregar = new entCita();
+            agregar.Fechacita = DateTime.Parse(dateTimePickerCita.Text.Trim());
+            agregar.InmuebleID = int.Parse(txtIdDelInmuebleRegistrarCita.Text.Trim());
+            agregar.ClienteID = int.Parse(txtIdDelClienteRegistrarCita.Text.Trim());
+            agregar.AgenteID = int.Parse(txtIdDelAgenteRegistrarCita.Text.Trim());
+
+
+            switch (reserva)
+            {
+                case 0:
+                    agregar.Fechacita = agregar.Fechacita.AddHours(8);
+                    break;
+                case 1:
+                    agregar.Fechacita = agregar.Fechacita.AddHours(9);
+                    break;
+                case 2:
+                    agregar.Fechacita = agregar.Fechacita.AddHours(10);
+                    break;
+                case 3:
+                    agregar.Fechacita = agregar.Fechacita.AddHours(11);
+                    break;
+                case 4:
+                    agregar.Fechacita = agregar.Fechacita.AddHours(12);
+                    break;
+                case 5:
+                    agregar.Fechacita = agregar.Fechacita.AddHours(13);
+                    break;
+                case 6:
+                    agregar.Fechacita = agregar.Fechacita.AddHours(14);
+                    break;
+                case 7:
+                    agregar.Fechacita = agregar.Fechacita.AddHours(15);
+                    break;
+                case 8:
+                    agregar.Fechacita = agregar.Fechacita.AddHours(16);
+                    break;
+            }
         }
     }
 }

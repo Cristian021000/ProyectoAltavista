@@ -111,6 +111,7 @@ namespace ProyectoAltavista
             this.btnAceptarRegistrarCita.TabIndex = 6;
             this.btnAceptarRegistrarCita.Text = "Aceptar";
             this.btnAceptarRegistrarCita.UseVisualStyleBackColor = true;
+            this.btnAceptarRegistrarCita.Click += new System.EventHandler(this.btnAceptarRegistrarCita_Click);
             // 
             // btnCancelarRegistrarCita
             // 
