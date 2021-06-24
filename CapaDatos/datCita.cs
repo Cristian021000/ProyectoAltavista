@@ -130,5 +130,32 @@ namespace CapaDatos
             finally { cmd.Connection.Close(); }
             return encontrado;
         }
+        public entCita DatosCita(int CitaID)
+        {
+            entCita Cita = new entCita();
+            SqlCommand cmd = null;
+            try
+            {
+                SqlConnection cn = Conexion.Instancia.Conectar();
+                cmd = new SqlCommand("DatosCita", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@CitaID", CitaID);
+                cn.Open();
+                SqlDataReader dr = cmd.ExecuteReader();
+                if (dr.Read())
+                {
+                    Cita.CitaID = Convert.ToInt32(dr["CitaID"]);
+                    Cita.Fechacita = Convert.ToDateTime(dr["Fechacita"]);
+                    Cita.Estadocita = Convert.ToBoolean(dr["Estadocita"]);
+                    Cita.Realizado = Convert.ToBoolean(dr["Realizado"]);
+                }
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally { cmd.Connection.Close(); }
+            return Cita;
+        }
     }
 }
