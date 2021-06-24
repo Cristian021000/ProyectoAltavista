@@ -30,7 +30,7 @@ namespace ProyectoAltavista
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ModificarCita));
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnRealizar = new System.Windows.Forms.Button();
             this.btDeshabilitar = new System.Windows.Forms.Button();
             this.btnRegresar = new System.Windows.Forms.Button();
             this.btnModificar = new System.Windows.Forms.Button();
@@ -45,15 +45,16 @@ namespace ProyectoAltavista
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // btnRealizar
             // 
-            this.button1.Font = new System.Drawing.Font("Lucida Fax", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(577, 295);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(188, 54);
-            this.button1.TabIndex = 54;
-            this.button1.Text = "Realizada";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnRealizar.Font = new System.Drawing.Font("Lucida Fax", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRealizar.Location = new System.Drawing.Point(577, 295);
+            this.btnRealizar.Name = "btnRealizar";
+            this.btnRealizar.Size = new System.Drawing.Size(188, 54);
+            this.btnRealizar.TabIndex = 54;
+            this.btnRealizar.Text = "Realizada";
+            this.btnRealizar.UseVisualStyleBackColor = true;
+            this.btnRealizar.Click += new System.EventHandler(this.btnRealizar_Click);
             // 
             // btDeshabilitar
             // 
@@ -64,6 +65,7 @@ namespace ProyectoAltavista
             this.btDeshabilitar.TabIndex = 53;
             this.btDeshabilitar.Text = "Deshabilitar";
             this.btDeshabilitar.UseVisualStyleBackColor = true;
+            this.btDeshabilitar.Click += new System.EventHandler(this.btDeshabilitar_Click);
             // 
             // btnRegresar
             // 
@@ -74,6 +76,7 @@ namespace ProyectoAltavista
             this.btnRegresar.TabIndex = 52;
             this.btnRegresar.Text = "Regresar";
             this.btnRegresar.UseVisualStyleBackColor = true;
+            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
             // 
             // btnModificar
             // 
@@ -84,6 +87,7 @@ namespace ProyectoAltavista
             this.btnModificar.TabIndex = 51;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = true;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // checkBoxRealizada
             // 
@@ -178,7 +182,7 @@ namespace ProyectoAltavista
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnRealizar);
             this.Controls.Add(this.btDeshabilitar);
             this.Controls.Add(this.btnRegresar);
             this.Controls.Add(this.btnModificar);
@@ -200,7 +204,7 @@ namespace ProyectoAltavista
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnRealizar;
         private System.Windows.Forms.Button btDeshabilitar;
         private System.Windows.Forms.Button btnRegresar;
         private System.Windows.Forms.Button btnModificar;
