@@ -172,6 +172,12 @@
     <Compile Include="ModificarBanco.Designer.cs">
       <DependentUpon>ModificarBanco.cs</DependentUpon>
     </Compile>
+    <Compile Include="ModificarCita.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarCita.Designer.cs">
+      <DependentUpon>ModificarCita.cs</DependentUpon>
+    </Compile>
     <Compile Include="ModificarInhabilitarCliPropietario.cs">
       <SubType>Form</SubType>
     </Compile>
