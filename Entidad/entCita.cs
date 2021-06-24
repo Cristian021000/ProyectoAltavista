@@ -8,5 +8,6 @@ namespace CapaEntidad
 {
     public class entCita
     {
+        f
     }
 }
