@@ -417,6 +417,9 @@
     <EmbeddedResource Include="ModificarBanco.resx">
       <DependentUpon>ModificarBanco.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ModificarCita.resx">
+      <DependentUpon>ModificarCita.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ModificarInhabilitarCliPropietario.resx">
       <DependentUpon>ModificarInhabilitarCliPropietario.cs</DependentUpon>
     </EmbeddedResource>
