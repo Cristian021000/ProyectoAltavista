@@ -32,7 +32,7 @@ namespace ProyectoAltavista
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MMostrarCita));
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1Fondo = new System.Windows.Forms.PictureBox();
-            this.btnModificar = new System.Windows.Forms.Button();
+            this.btnAceptar = new System.Windows.Forms.Button();
             this.btnSalirMostrarCita = new System.Windows.Forms.Button();
             this.txtIDClienteCita = new System.Windows.Forms.TextBox();
             this.lbDniClienteCita = new System.Windows.Forms.Label();
@@ -62,15 +62,16 @@ namespace ProyectoAltavista
             this.pictureBox1Fondo.TabIndex = 24;
             this.pictureBox1Fondo.TabStop = false;
             // 
-            // btnModificar
+            // btnAceptar
             // 
-            this.btnModificar.Font = new System.Drawing.Font("Lucida Fax", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnModificar.Location = new System.Drawing.Point(542, 219);
-            this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(132, 31);
-            this.btnModificar.TabIndex = 28;
-            this.btnModificar.Text = "Aceptar";
-            this.btnModificar.UseVisualStyleBackColor = true;
+            this.btnAceptar.Font = new System.Drawing.Font("Lucida Fax", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAceptar.Location = new System.Drawing.Point(542, 219);
+            this.btnAceptar.Name = "btnAceptar";
+            this.btnAceptar.Size = new System.Drawing.Size(132, 31);
+            this.btnAceptar.TabIndex = 28;
+            this.btnAceptar.Text = "Aceptar";
+            this.btnAceptar.UseVisualStyleBackColor = true;
+            this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
             // 
             // btnSalirMostrarCita
             // 
@@ -81,6 +82,7 @@ namespace ProyectoAltavista
             this.btnSalirMostrarCita.TabIndex = 27;
             this.btnSalirMostrarCita.Text = "Salir";
             this.btnSalirMostrarCita.UseVisualStyleBackColor = true;
+            this.btnSalirMostrarCita.Click += new System.EventHandler(this.btnSalirMostrarCita_Click);
             // 
             // txtIDClienteCita
             // 
@@ -113,7 +115,7 @@ namespace ProyectoAltavista
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.dataGridViewMostrarCita);
-            this.Controls.Add(this.btnModificar);
+            this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.btnSalirMostrarCita);
             this.Controls.Add(this.txtIDClienteCita);
             this.Controls.Add(this.lbDniClienteCita);
@@ -133,7 +135,7 @@ namespace ProyectoAltavista
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1Fondo;
-        private System.Windows.Forms.Button btnModificar;
+        private System.Windows.Forms.Button btnAceptar;
         private System.Windows.Forms.Button btnSalirMostrarCita;
         private System.Windows.Forms.TextBox txtIDClienteCita;
         private System.Windows.Forms.Label lbDniClienteCita;
