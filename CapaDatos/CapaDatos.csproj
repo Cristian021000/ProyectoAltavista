@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="datBanco.cs" />
     <Compile Include="datCasa.cs" />
+    <Compile Include="datCita.cs" />
     <Compile Include="datCiudad.cs" />
     <Compile Include="datCliente.cs" />
     <Compile Include="datDepartamento.cs" />
