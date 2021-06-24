@@ -38,5 +38,17 @@ namespace CapaLogica
         {
             return datCita.Instancia.DatosCita(CitaID);
         }
+        public void ModifcarCita(entCita cita)
+        {
+            datCita.Instancia.ModificarCita(cita);
+        }
+        public void DeshabilitarCita(entCita cita)
+        {
+            datCita.Instancia.DeshabilitarCita(cita);
+        }
+        public void CitaRealizada(entCita cita)
+        {
+            datCita.Instancia.CitaRealizada(cita);
+        }
     }
 }
