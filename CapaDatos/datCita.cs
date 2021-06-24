@@ -79,5 +79,32 @@ namespace CapaDatos
             finally { cmd.Connection.Close(); }
             return lista;
         }
+        public Boolean ExisteCita(entCita cita)
+        {
+            SqlCommand cmd = null;
+            Boolean existe = false;
+            try
+            {
+                SqlConnection cn = Conexion.Instancia.Conectar();
+                cmd = new SqlCommand("spExisteCita", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@id_Inmueble8", cita.InmuebleID);
+                cmd.Parameters.AddWithValue("@ClienteID", cita.ClienteID);
+                cmd.Parameters.AddWithValue("@AgenteID", cita.AgenteID);
+                cmd.Parameters.AddWithValue("@fecha", cita.Fechacita);
+                cn.Open();
+                SqlDataReader dr = cmd.ExecuteReader();
+                if (dr.Read())
+                {
+                    existe = true;
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally { cmd.Connection.Close(); }
+            return existe;
+        }
     }
 }
