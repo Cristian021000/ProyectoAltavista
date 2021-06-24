@@ -18,6 +18,25 @@ namespace CapaLogica
             get { return logCita._instancia; }
         }
         #endregion singleton
-
+        public void RegistrarCita(entCita cita)
+        {
+            datCita.Instancia.RegistrarCita(cita);
+        }
+        public List<entCita> ListarCita()
+        {
+            return datCita.Instancia.ListarCita();
+        }
+        public Boolean ExisteCita(entCita cita)
+        {
+            return datCita.Instancia.ExisteCita(cita);
+        }
+        public Boolean BuscarCita(entCita cita)
+        {
+            return datCita.Instancia.BuscarCita(cita);
+        }
+        public entCita DatosCita(int CitaID)
+        {
+            return datCita.Instancia.DatosCita(CitaID);
+        }
     }
 }
