@@ -157,5 +157,30 @@ namespace CapaDatos
             finally { cmd.Connection.Close(); }
             return Cita;
         }
+        public Boolean ModificarCita(entCita cita)
+        {
+            SqlCommand cmd = null;
+            Boolean modificar = false;
+            try
+            {
+                SqlConnection cn = Conexion.Instancia.Conectar();
+                cmd = new SqlCommand("spModificarCita", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@CitaID", cita.CitaID);
+                cmd.Parameters.AddWithValue("@fecha", cita.Fechacita);
+                cn.Open();
+                int i = cmd.ExecuteNonQuery();
+                if (i > 0)
+                {
+                    modificar = true;
+                }
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally { cmd.Connection.Close(); }
+            return modificar;
+        }
     }
 }
