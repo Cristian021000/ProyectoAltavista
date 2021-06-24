@@ -8,12 +8,12 @@ namespace CapaEntidad
 {
     public class entCita
     {
+        public int CitaID { get; set; }
+        public Boolean Estadocita { get; set; }
+        public DateTime Fechacita { get; set; }
         public int ClienteID { get; set; }
-        public int dnicliente { get; set; }
-        public string nombrecliente { get; set; }
-        public string apelcliente { get; set; }
-        public int edadcliente { get; set; }
-        public int celcliente { get; set; }
-        public Boolean estadocliente { get; set; }
+        public int AgenteID { get; set; }
+        public int InmuebleID { get; set; }
+        public Boolean Realizado { get; set; }
     }
 }

@@ -20,14 +20,7 @@ namespace ProyectoAltavista
             InitializeComponent();
             mantCita = ci;
         }
-
-        private void btnCancelarRegistrarCita_Click(object sender, EventArgs e)
-        {   
-            mantCita.Show();
-            this.Hide();
-        }
-
-        private void btnAceptarRegistrarCita_Click(object sender, EventArgs e)
+        private void btnAceptarRegistrarCita_Click_1(object sender, EventArgs e)
         {
             int reserva = comboBoxHoraCita.SelectedIndex;
             entCita agregar = new entCita();
@@ -86,6 +79,12 @@ namespace ProyectoAltavista
             {
                 MessageBox.Show("Ya existe una cita pendiente por ese Cliente a ese Inmueble");
             }
+        }
+
+        private void btnCancelarRegistrarCita_Click(object sender, EventArgs e)
+        {
+            mantCita.Show();
+            this.Hide();
         }
     }
     }
