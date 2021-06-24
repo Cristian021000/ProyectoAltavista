@@ -207,5 +207,30 @@ namespace CapaDatos
             finally { cmd.Connection.Close(); }
             return deshabilitar;
         }
+        public Boolean CitaRealizada(entCita cita)
+        {
+            SqlCommand cmd = null;
+            Boolean deshabilitar = false;
+            try
+            {
+                SqlConnection cn = Conexion.Instancia.Conectar();
+                cmd = new SqlCommand("spCitaRealizada", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@CitaID", cita.CitaID);
+                cmd.Parameters.AddWithValue("@Realizado", cita.Realizado);
+                cn.Open();
+                int i = cmd.ExecuteNonQuery();
+                if (i > 0)
+                {
+                    deshabilitar = true;
+                }
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally { cmd.Connection.Close(); }
+            return deshabilitar;
+        }
     }
 }
