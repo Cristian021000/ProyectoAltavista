@@ -19,10 +19,5 @@ namespace ProyectoAltavista
             cita = ci;
         }
 
-        private void btnSalirMostrarCita_Click(object sender, EventArgs e)
-        {
-            cita.Show();
-            this.Close();
-        }
     }
 }
