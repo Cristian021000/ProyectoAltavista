@@ -31,17 +31,15 @@ namespace ProyectoAltavista
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MRegistrarCita));
             this.label1 = new System.Windows.Forms.Label();
-            this.lbFechaCita = new System.Windows.Forms.Label();
-            this.lbEstadoCita = new System.Windows.Forms.Label();
-            this.lnIdInmuebleRegistrarCita = new System.Windows.Forms.Label();
             this.lbIdDelCliente = new System.Windows.Forms.Label();
             this.txtIdDelClienteRegistrarCita = new System.Windows.Forms.TextBox();
             this.btnAceptarRegistrarCita = new System.Windows.Forms.Button();
             this.btnCancelarRegistrarCita = new System.Windows.Forms.Button();
-            this.txtIdDelInmuebleRegistrarCita = new System.Windows.Forms.TextBox();
-            this.txtEstadoCita = new System.Windows.Forms.TextBox();
-            this.txtFechaCita = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.dateTimePickerCita = new System.Windows.Forms.DateTimePicker();
+            this.lbFechaCita = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.comboBoxHoraCita = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -54,36 +52,6 @@ namespace ProyectoAltavista
             this.label1.Size = new System.Drawing.Size(276, 57);
             this.label1.TabIndex = 0;
             this.label1.Text = "Registrar Cita";
-            // 
-            // lbFechaCita
-            // 
-            this.lbFechaCita.AutoSize = true;
-            this.lbFechaCita.Font = new System.Drawing.Font("Lucida Fax", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbFechaCita.Location = new System.Drawing.Point(26, 116);
-            this.lbFechaCita.Name = "lbFechaCita";
-            this.lbFechaCita.Size = new System.Drawing.Size(179, 24);
-            this.lbFechaCita.TabIndex = 1;
-            this.lbFechaCita.Text = "Fecha de la Cita";
-            // 
-            // lbEstadoCita
-            // 
-            this.lbEstadoCita.AutoSize = true;
-            this.lbEstadoCita.Font = new System.Drawing.Font("Lucida Fax", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbEstadoCita.Location = new System.Drawing.Point(26, 177);
-            this.lbEstadoCita.Name = "lbEstadoCita";
-            this.lbEstadoCita.Size = new System.Drawing.Size(188, 24);
-            this.lbEstadoCita.TabIndex = 2;
-            this.lbEstadoCita.Text = "Estado de la Cita";
-            // 
-            // lnIdInmuebleRegistrarCita
-            // 
-            this.lnIdInmuebleRegistrarCita.AutoSize = true;
-            this.lnIdInmuebleRegistrarCita.Font = new System.Drawing.Font("Lucida Fax", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lnIdInmuebleRegistrarCita.Location = new System.Drawing.Point(26, 234);
-            this.lnIdInmuebleRegistrarCita.Name = "lnIdInmuebleRegistrarCita";
-            this.lnIdInmuebleRegistrarCita.Size = new System.Drawing.Size(179, 24);
-            this.lnIdInmuebleRegistrarCita.TabIndex = 3;
-            this.lnIdInmuebleRegistrarCita.Text = "ID del Inmueble";
             // 
             // lbIdDelCliente
             // 
@@ -124,27 +92,6 @@ namespace ProyectoAltavista
             this.btnCancelarRegistrarCita.UseVisualStyleBackColor = true;
             this.btnCancelarRegistrarCita.Click += new System.EventHandler(this.btnCancelarRegistrarCita_Click);
             // 
-            // txtIdDelInmuebleRegistrarCita
-            // 
-            this.txtIdDelInmuebleRegistrarCita.Location = new System.Drawing.Point(225, 234);
-            this.txtIdDelInmuebleRegistrarCita.Name = "txtIdDelInmuebleRegistrarCita";
-            this.txtIdDelInmuebleRegistrarCita.Size = new System.Drawing.Size(447, 20);
-            this.txtIdDelInmuebleRegistrarCita.TabIndex = 8;
-            // 
-            // txtEstadoCita
-            // 
-            this.txtEstadoCita.Location = new System.Drawing.Point(225, 182);
-            this.txtEstadoCita.Name = "txtEstadoCita";
-            this.txtEstadoCita.Size = new System.Drawing.Size(447, 20);
-            this.txtEstadoCita.TabIndex = 9;
-            // 
-            // txtFechaCita
-            // 
-            this.txtFechaCita.Location = new System.Drawing.Point(225, 121);
-            this.txtFechaCita.Name = "txtFechaCita";
-            this.txtFechaCita.Size = new System.Drawing.Size(447, 20);
-            this.txtFechaCita.TabIndex = 10;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -156,21 +103,64 @@ namespace ProyectoAltavista
             this.pictureBox1.TabIndex = 11;
             this.pictureBox1.TabStop = false;
             // 
+            // dateTimePickerCita
+            // 
+            this.dateTimePickerCita.Location = new System.Drawing.Point(225, 133);
+            this.dateTimePickerCita.Name = "dateTimePickerCita";
+            this.dateTimePickerCita.Size = new System.Drawing.Size(229, 20);
+            this.dateTimePickerCita.TabIndex = 16;
+            // 
+            // lbFechaCita
+            // 
+            this.lbFechaCita.AutoSize = true;
+            this.lbFechaCita.Font = new System.Drawing.Font("Lucida Fax", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbFechaCita.Location = new System.Drawing.Point(26, 129);
+            this.lbFechaCita.Name = "lbFechaCita";
+            this.lbFechaCita.Size = new System.Drawing.Size(179, 24);
+            this.lbFechaCita.TabIndex = 15;
+            this.lbFechaCita.Text = "Fecha de la Cita";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Lucida Fax", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(26, 175);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(168, 24);
+            this.label3.TabIndex = 18;
+            this.label3.Text = "Hora de la Cita";
+            // 
+            // comboBoxHoraCita
+            // 
+            this.comboBoxHoraCita.FormattingEnabled = true;
+            this.comboBoxHoraCita.Items.AddRange(new object[] {
+            "8:00",
+            "9:00",
+            "10:00",
+            "11:00",
+            "12:00",
+            "13:00",
+            "14:00",
+            "15:00",
+            "16:00"});
+            this.comboBoxHoraCita.Location = new System.Drawing.Point(225, 180);
+            this.comboBoxHoraCita.Name = "comboBoxHoraCita";
+            this.comboBoxHoraCita.Size = new System.Drawing.Size(147, 21);
+            this.comboBoxHoraCita.TabIndex = 17;
+            // 
             // MRegistrarCita
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.txtFechaCita);
-            this.Controls.Add(this.txtEstadoCita);
-            this.Controls.Add(this.txtIdDelInmuebleRegistrarCita);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.comboBoxHoraCita);
+            this.Controls.Add(this.dateTimePickerCita);
+            this.Controls.Add(this.lbFechaCita);
             this.Controls.Add(this.btnCancelarRegistrarCita);
             this.Controls.Add(this.btnAceptarRegistrarCita);
             this.Controls.Add(this.txtIdDelClienteRegistrarCita);
             this.Controls.Add(this.lbIdDelCliente);
-            this.Controls.Add(this.lnIdInmuebleRegistrarCita);
-            this.Controls.Add(this.lbEstadoCita);
-            this.Controls.Add(this.lbFechaCita);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -185,16 +175,14 @@ namespace ProyectoAltavista
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label lbFechaCita;
-        private System.Windows.Forms.Label lbEstadoCita;
-        private System.Windows.Forms.Label lnIdInmuebleRegistrarCita;
         private System.Windows.Forms.Label lbIdDelCliente;
         private System.Windows.Forms.TextBox txtIdDelClienteRegistrarCita;
         private System.Windows.Forms.Button btnAceptarRegistrarCita;
         private System.Windows.Forms.Button btnCancelarRegistrarCita;
-        private System.Windows.Forms.TextBox txtIdDelInmuebleRegistrarCita;
-        private System.Windows.Forms.TextBox txtEstadoCita;
-        private System.Windows.Forms.TextBox txtFechaCita;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.DateTimePicker dateTimePickerCita;
+        private System.Windows.Forms.Label lbFechaCita;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ComboBox comboBoxHoraCita;
     }
 }
