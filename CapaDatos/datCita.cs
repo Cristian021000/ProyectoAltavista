@@ -106,5 +106,29 @@ namespace CapaDatos
             finally { cmd.Connection.Close(); }
             return existe;
         }
+        public Boolean BuscarCita(entCita cita)
+        {
+            Boolean encontrado = false;
+            SqlCommand cmd = null;
+            try
+            {
+                SqlConnection cn = Conexion.Instancia.Conectar();
+                cmd = new SqlCommand("spBuscarCita", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@CitaID", cita.@CitaID);
+                cn.Open();
+                SqlDataReader dr = cmd.ExecuteReader();
+                if (dr.Read())
+                {
+                    encontrado = true;
+                }
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally { cmd.Connection.Close(); }
+            return encontrado;
+        }
     }
 }
