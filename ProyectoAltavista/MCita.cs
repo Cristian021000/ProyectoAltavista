@@ -38,7 +38,7 @@ namespace ProyectoAltavista
             {
                mostrarCita = new MMostrarCita(this);
             }
-            
+            mostrarCita.ListarCita();
             mostrarCita.Show();
             this.Hide();
         }
