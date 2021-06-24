@@ -18,5 +18,32 @@ namespace CapaDatos
             get { return datCita._instancia; }
         }
         #endregion singleton
+        public Boolean RegistrarCita(entCita cita)
+        {
+            Boolean registrar = false;
+            SqlCommand cmd = null;
+            try
+            {
+                SqlConnection cn = Conexion.Instancia.Conectar();
+                cmd = new SqlCommand("spRegistrarCita", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@fecha", cita.Fechacita);
+                cmd.Parameters.AddWithValue("@id_Inmueble8", cita.InmuebleID);
+                cmd.Parameters.AddWithValue("@ClienteID", cita.ClienteID);
+                cmd.Parameters.AddWithValue("@AgenteID", cita.AgenteID);
+                cn.Open();
+                int i = cmd.ExecuteNonQuery();
+                if (i > 0)
+                {
+                    registrar = true;
+                }
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally { cmd.Connection.Close(); }
+            return registrar;
+        }
     }
 }
