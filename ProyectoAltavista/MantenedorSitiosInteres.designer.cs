@@ -35,6 +35,7 @@ namespace ProyectoAltavista
             this.lbSitioInteres = new System.Windows.Forms.Label();
             this.pictureBox1Fondo = new System.Windows.Forms.PictureBox();
             this.btnListarSI = new System.Windows.Forms.Button();
+            this.btnregistrarSitioInmueble = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1Fondo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -52,7 +53,7 @@ namespace ProyectoAltavista
             // btRegresar
             // 
             this.btRegresar.Font = new System.Drawing.Font("Lucida Fax", 19.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btRegresar.Location = new System.Drawing.Point(261, 318);
+            this.btRegresar.Location = new System.Drawing.Point(582, 388);
             this.btRegresar.Name = "btRegresar";
             this.btRegresar.Size = new System.Drawing.Size(173, 50);
             this.btRegresar.TabIndex = 56;
@@ -94,11 +95,23 @@ namespace ProyectoAltavista
             this.btnListarSI.UseVisualStyleBackColor = true;
             this.btnListarSI.Click += new System.EventHandler(this.btnListarSI_Click);
             // 
+            // btnregistrarSitioInmueble
+            // 
+            this.btnregistrarSitioInmueble.Font = new System.Drawing.Font("Lucida Fax", 19.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnregistrarSitioInmueble.Location = new System.Drawing.Point(270, 284);
+            this.btnregistrarSitioInmueble.Name = "btnregistrarSitioInmueble";
+            this.btnregistrarSitioInmueble.Size = new System.Drawing.Size(250, 77);
+            this.btnregistrarSitioInmueble.TabIndex = 60;
+            this.btnregistrarSitioInmueble.Text = "Registrar Sitio Inmueble";
+            this.btnregistrarSitioInmueble.UseVisualStyleBackColor = true;
+            this.btnregistrarSitioInmueble.Click += new System.EventHandler(this.btnregistrarSitioInmueble_Click);
+            // 
             // MantenedorSitiosInteres
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnregistrarSitioInmueble);
             this.Controls.Add(this.btnListarSI);
             this.Controls.Add(this.btRegistrarSitio);
             this.Controls.Add(this.btRegresar);
@@ -120,5 +133,6 @@ namespace ProyectoAltavista
         private System.Windows.Forms.Label lbSitioInteres;
         private System.Windows.Forms.PictureBox pictureBox1Fondo;
         private System.Windows.Forms.Button btnListarSI;
+        private System.Windows.Forms.Button btnregistrarSitioInmueble;
     }
 }

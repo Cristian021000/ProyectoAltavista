@@ -49,5 +49,10 @@ namespace ProyectoAltavista
             consultaSI.Show();
             this.Hide();
         }
+
+        private void btnregistrarSitioInmueble_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
