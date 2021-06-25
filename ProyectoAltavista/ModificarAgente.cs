@@ -27,7 +27,6 @@ namespace ProyectoAltavista
             txtId.Text = Agente.AgenteID.ToString();
             txtNombreAgente.Text = Agente.nombre.ToString();
             txtApellidoAgente.Text = Agente.apellido.ToString();
-            txtEdadAgente.Text = Agente.edad.ToString();
             txtCelularAgente.Text = Agente.celular.ToString();
             txtDatosCorreoElectronica.Text = Agente.correo.ToString();
             txtContraseñaDatosCliente.Text = Agente.contraseña.ToString();
@@ -38,7 +37,6 @@ namespace ProyectoAltavista
             txtId.Clear();
             txtNombreAgente.Clear();
             txtApellidoAgente.Clear();
-            txtEdadAgente.Clear();
             txtCelularAgente.Clear();
             txtDatosCorreoElectronica.Clear();
             txtContraseñaDatosCliente.Clear();
@@ -80,7 +78,6 @@ namespace ProyectoAltavista
                 Age.AgenteID = int.Parse(txtId.Text.Trim());
                 Age.nombre = txtNombreAgente.Text.Trim();
                 Age.apellido = txtApellidoAgente.Text.Trim();
-                Age.edad = int.Parse(txtEdadAgente.Text.Trim());
                 Age.celular = int.Parse(txtCelularAgente.Text.Trim());
                 Age.correo = txtDatosCorreoElectronica.Text.Trim();
                 Age.contraseña = txtContraseñaDatosCliente.Text.Trim();

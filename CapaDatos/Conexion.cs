@@ -21,7 +21,7 @@ namespace CapaDatos
         public SqlConnection Conectar()
         {
             SqlConnection cn = new SqlConnection();
-            cn.ConnectionString = "Data Source=KEVIN\\SQLEXPRESS;  Initial Catalog=Pruebita; Integrated Security=true";
+            cn.ConnectionString = "Data Source=KEVIN\\SQLEXPRESS;  Initial Catalog=Pruebita2.0; Integrated Security=true";
             return cn;
         }
 

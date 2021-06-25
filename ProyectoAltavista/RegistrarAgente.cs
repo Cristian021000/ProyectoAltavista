@@ -35,7 +35,7 @@ namespace ProyectoAltavista
                 age.dni = int.Parse(txtDniCliente.Text.Trim());
                 age.nombre = txtNombreCliente.Text.Trim();
                 age.apellido = txtApellidoCliente.Text.Trim();
-                age.edad = int.Parse(txtEdadCliente.Text.Trim());
+                age.Fechanacimiento = DateTime.Parse(dateTimePickerFechaNacimiento.Text.Trim());
                 age.celular = int.Parse(txtCelularCliente.Text.Trim());
                 age.correo = txtRegistraCorreoElectronicoAgente.Text.Trim();
                 age.contraseña = txtRegistrarContraseñaAgente.Text.Trim();

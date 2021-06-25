@@ -58,7 +58,7 @@ namespace CapaDatos
                 
                 cmd.Parameters.AddWithValue("@nombre", Agente.nombre);
                 cmd.Parameters.AddWithValue("@apellido", Agente.apellido);
-                cmd.Parameters.AddWithValue("@edad", Agente.edad);
+                cmd.Parameters.AddWithValue("@Fechanacimiento", Agente.Fechanacimiento);
                 cmd.Parameters.AddWithValue("@celular", Agente.celular);
                 cmd.Parameters.AddWithValue("@correo", Agente.correo);
                 cmd.Parameters.AddWithValue("@contraseña", Agente.contraseña);
@@ -139,7 +139,7 @@ namespace CapaDatos
                         Age.dni = Convert.ToInt32(dr["dni"]);
                         Age.nombre = dr["nombre"].ToString();
                         Age.apellido = dr["apellido"].ToString();
-                        Age.edad = Convert.ToInt32(dr["edad"]);
+                        Age.Fechanacimiento = Convert.ToDateTime(dr["Fechanacimiento"]);
                         Age.celular = Convert.ToInt32(dr["celular"]);
                         Age.correo = dr["correo"].ToString();
                         Age.contraseña = dr["contraseña"].ToString();
@@ -167,7 +167,6 @@ namespace CapaDatos
                 cmd.Parameters.AddWithValue("@AgenteID", Agente.AgenteID);         
                 cmd.Parameters.AddWithValue("@nombre", Agente.nombre);
                 cmd.Parameters.AddWithValue("@apellido", Agente.apellido);
-                cmd.Parameters.AddWithValue("@edad", Agente.edad);
                 cmd.Parameters.AddWithValue("@celular", Agente.celular);
                 cmd.Parameters.AddWithValue("@correo", Agente.correo);
                 cmd.Parameters.AddWithValue("@contraseña", Agente.contraseña);
@@ -227,7 +226,7 @@ namespace CapaDatos
                     Age.dni = Convert.ToInt32(dr["dni"]);
                     Age.nombre = dr["nombre"].ToString();
                     Age.apellido = dr["apellido"].ToString();
-                    Age.edad = Convert.ToInt32(dr["edad"]);
+                    Age.Fechanacimiento = Convert.ToDateTime(dr["Fechanacimiento"]);
                     Age.celular = Convert.ToInt32(dr["celular"]);
                     Age.correo = dr["correo"].ToString();
                     Age.contraseña = dr["contraseña"].ToString();

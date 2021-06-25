@@ -35,7 +35,7 @@ namespace ProyectoAltavista
                 Prop.Dnipropietario = int.Parse(txtDni.Text.Trim());
                 Prop.nombre = txtNombre.Text.Trim();
                 Prop.apellido = txtApellido.Text.Trim();
-                Prop.edad = int.Parse(txtEdad.Text.Trim());
+                Prop.Fechanacimiento = DateTime.Parse(dateTimePickerFechaNacimiento.Text.Trim());
                 Prop.celular = int.Parse(txtCelular.Text.Trim());
                 Prop.direccion = txtDireccion.Text.Trim();
                 Prop.estadoPropietario = true;

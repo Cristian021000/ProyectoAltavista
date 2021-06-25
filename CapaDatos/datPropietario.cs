@@ -33,7 +33,7 @@ namespace CapaDatos
                 cmd.Parameters.AddWithValue("@Dnipropietario", Propietario.Dnipropietario);
                 cmd.Parameters.AddWithValue("@nombre", Propietario.nombre);
                 cmd.Parameters.AddWithValue("@apellido", Propietario.apellido);
-                cmd.Parameters.AddWithValue("@edad", Propietario.edad);
+                cmd.Parameters.AddWithValue("@Fechanacimiento", Propietario.Fechanacimiento);
                 cmd.Parameters.AddWithValue("@celular", Propietario.celular);
                 cmd.Parameters.AddWithValue("@direccion", Propietario.direccion);
                 cmd.Parameters.AddWithValue("@estadoPropietario", Propietario.estadoPropietario);
@@ -102,7 +102,7 @@ namespace CapaDatos
                         prop.Dnipropietario = Convert.ToInt32(dr["Dnipropietario"]);
                         prop.nombre = dr["nombre"].ToString();
                         prop.apellido = dr["apellido"].ToString();
-                        prop.edad = Convert.ToInt32(dr["edad"]);
+                        prop.Fechanacimiento = Convert.ToDateTime(dr["Fechanacimiento"]);
                         prop.celular = Convert.ToInt32(dr["celular"]);
                         prop.direccion = dr["direccion"].ToString();
                         lista.Add(prop);
@@ -133,7 +133,6 @@ namespace CapaDatos
                 cmd.Parameters.AddWithValue("@Dnipropietario", Propietario.Dnipropietario);
                 cmd.Parameters.AddWithValue("@nombre", Propietario.nombre);
                 cmd.Parameters.AddWithValue("@apellido", Propietario.apellido);
-                cmd.Parameters.AddWithValue("@edad", Propietario.edad);
                 cmd.Parameters.AddWithValue("@celular", Propietario.celular);
                 cmd.Parameters.AddWithValue("@Direccion", Propietario.direccion);
                 cn.Open();
@@ -196,7 +195,7 @@ namespace CapaDatos
                     prop.Dnipropietario = Convert.ToInt32(dr["Dnipropietario"]);
                     prop.nombre = dr["nombre"].ToString();
                     prop.apellido = dr["apellido"].ToString();
-                    prop.edad = Convert.ToInt32(dr["edad"]);
+                    prop.Fechanacimiento = Convert.ToDateTime(dr["Fechanacimiento"]);
                     prop.celular = Convert.ToInt32(dr["celular"]);
                     prop.direccion = dr["direccion"].ToString();
                     prop.estadoPropietario = Convert.ToBoolean(dr["estadoPropietario"]);

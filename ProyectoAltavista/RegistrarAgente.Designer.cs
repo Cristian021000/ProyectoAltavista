@@ -31,7 +31,6 @@ namespace ProyectoAltavista
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegistrarAgente));
             this.txtCelularCliente = new System.Windows.Forms.TextBox();
-            this.txtEdadCliente = new System.Windows.Forms.TextBox();
             this.txtApellidoCliente = new System.Windows.Forms.TextBox();
             this.txtNombreCliente = new System.Windows.Forms.TextBox();
             this.txtDniCliente = new System.Windows.Forms.TextBox();
@@ -48,6 +47,7 @@ namespace ProyectoAltavista
             this.txtRegistrarContraseñaAgente = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.txtRegistraCorreoElectronicoAgente = new System.Windows.Forms.TextBox();
+            this.dateTimePickerFechaNacimiento = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1Fondo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -57,13 +57,6 @@ namespace ProyectoAltavista
             this.txtCelularCliente.Name = "txtCelularCliente";
             this.txtCelularCliente.Size = new System.Drawing.Size(141, 20);
             this.txtCelularCliente.TabIndex = 23;
-            // 
-            // txtEdadCliente
-            // 
-            this.txtEdadCliente.Location = new System.Drawing.Point(180, 279);
-            this.txtEdadCliente.Name = "txtEdadCliente";
-            this.txtEdadCliente.Size = new System.Drawing.Size(114, 20);
-            this.txtEdadCliente.TabIndex = 22;
             // 
             // txtApellidoCliente
             // 
@@ -133,9 +126,9 @@ namespace ProyectoAltavista
             this.label3.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(53, 280);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(63, 22);
+            this.label3.Size = new System.Drawing.Size(176, 22);
             this.label3.TabIndex = 34;
-            this.label3.Text = "Edad:";
+            this.label3.Text = "Fecha Nacimiento";
             // 
             // label4
             // 
@@ -216,11 +209,19 @@ namespace ProyectoAltavista
             this.txtRegistraCorreoElectronicoAgente.TabIndex = 41;
             this.txtRegistraCorreoElectronicoAgente.TextChanged += new System.EventHandler(this.txtRegistraCorreoElectronicoAgente_TextChanged);
             // 
+            // dateTimePickerFechaNacimiento
+            // 
+            this.dateTimePickerFechaNacimiento.Location = new System.Drawing.Point(239, 281);
+            this.dateTimePickerFechaNacimiento.Name = "dateTimePickerFechaNacimiento";
+            this.dateTimePickerFechaNacimiento.Size = new System.Drawing.Size(285, 20);
+            this.dateTimePickerFechaNacimiento.TabIndex = 43;
+            // 
             // RegistrarAgente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.dateTimePickerFechaNacimiento);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtRegistraCorreoElectronicoAgente);
             this.Controls.Add(this.label5);
@@ -233,7 +234,6 @@ namespace ProyectoAltavista
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtCelularCliente);
-            this.Controls.Add(this.txtEdadCliente);
             this.Controls.Add(this.txtApellidoCliente);
             this.Controls.Add(this.txtNombreCliente);
             this.Controls.Add(this.txtDniCliente);
@@ -250,7 +250,6 @@ namespace ProyectoAltavista
 
         #endregion
         private System.Windows.Forms.TextBox txtCelularCliente;
-        private System.Windows.Forms.TextBox txtEdadCliente;
         private System.Windows.Forms.TextBox txtApellidoCliente;
         private System.Windows.Forms.TextBox txtNombreCliente;
         private System.Windows.Forms.TextBox txtDniCliente;
@@ -267,5 +266,6 @@ namespace ProyectoAltavista
         private System.Windows.Forms.TextBox txtRegistrarContraseñaAgente;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtRegistraCorreoElectronicoAgente;
+        private System.Windows.Forms.DateTimePicker dateTimePickerFechaNacimiento;
     }
 }

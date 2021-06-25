@@ -33,13 +33,11 @@ namespace ProyectoAltavista
             this.btnInhabilitar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnModifcar = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.labelDatosPropietario = new System.Windows.Forms.Label();
             this.txtCelular = new System.Windows.Forms.TextBox();
-            this.txtEdad = new System.Windows.Forms.TextBox();
             this.txtApellido = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.pictureBox1Fondo = new System.Windows.Forms.PictureBox();
@@ -86,21 +84,11 @@ namespace ProyectoAltavista
             this.btnModifcar.UseVisualStyleBackColor = true;
             this.btnModifcar.Click += new System.EventHandler(this.btnModifcar_Click);
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(45, 301);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(63, 22);
-            this.label3.TabIndex = 46;
-            this.label3.Text = "Edad:";
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(45, 336);
+            this.label4.Location = new System.Drawing.Point(45, 286);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(85, 22);
             this.label4.TabIndex = 45;
@@ -140,17 +128,10 @@ namespace ProyectoAltavista
             // 
             // txtCelular
             // 
-            this.txtCelular.Location = new System.Drawing.Point(151, 340);
+            this.txtCelular.Location = new System.Drawing.Point(151, 290);
             this.txtCelular.Name = "txtCelular";
             this.txtCelular.Size = new System.Drawing.Size(193, 20);
             this.txtCelular.TabIndex = 40;
-            // 
-            // txtEdad
-            // 
-            this.txtEdad.Location = new System.Drawing.Point(151, 300);
-            this.txtEdad.Name = "txtEdad";
-            this.txtEdad.Size = new System.Drawing.Size(100, 20);
-            this.txtEdad.TabIndex = 39;
             // 
             // txtApellido
             // 
@@ -181,7 +162,7 @@ namespace ProyectoAltavista
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(45, 388);
+            this.label5.Location = new System.Drawing.Point(45, 333);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(95, 22);
             this.label5.TabIndex = 50;
@@ -189,7 +170,7 @@ namespace ProyectoAltavista
             // 
             // txtDireccion
             // 
-            this.txtDireccion.Location = new System.Drawing.Point(151, 388);
+            this.txtDireccion.Location = new System.Drawing.Point(151, 333);
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.Size = new System.Drawing.Size(321, 20);
             this.txtDireccion.TabIndex = 51;
@@ -198,7 +179,7 @@ namespace ProyectoAltavista
             // 
             this.checkHabilitar.AutoSize = true;
             this.checkHabilitar.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkHabilitar.Location = new System.Drawing.Point(191, 412);
+            this.checkHabilitar.Location = new System.Drawing.Point(201, 394);
             this.checkHabilitar.Name = "checkHabilitar";
             this.checkHabilitar.Size = new System.Drawing.Size(113, 26);
             this.checkHabilitar.TabIndex = 52;
@@ -254,13 +235,11 @@ namespace ProyectoAltavista
             this.Controls.Add(this.btnInhabilitar);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnModifcar);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.labelDatosPropietario);
             this.Controls.Add(this.txtCelular);
-            this.Controls.Add(this.txtEdad);
             this.Controls.Add(this.txtApellido);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.pictureBox1Fondo);
@@ -278,13 +257,11 @@ namespace ProyectoAltavista
         private System.Windows.Forms.Button btnInhabilitar;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnModifcar;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label labelDatosPropietario;
         private System.Windows.Forms.TextBox txtCelular;
-        private System.Windows.Forms.TextBox txtEdad;
         private System.Windows.Forms.TextBox txtApellido;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.PictureBox pictureBox1Fondo;

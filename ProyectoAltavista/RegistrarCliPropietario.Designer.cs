@@ -34,7 +34,6 @@ namespace ProyectoAltavista
             this.txtDni = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.txtApellido = new System.Windows.Forms.TextBox();
-            this.txtEdad = new System.Windows.Forms.TextBox();
             this.txtCelular = new System.Windows.Forms.TextBox();
             this.txtDireccion = new System.Windows.Forms.TextBox();
             this.pictureBox1Fondo = new System.Windows.Forms.PictureBox();
@@ -46,6 +45,7 @@ namespace ProyectoAltavista
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnRegistrar = new System.Windows.Forms.Button();
             this.labelRegristarPropietario = new System.Windows.Forms.Label();
+            this.dateTimePickerFechaNacimiento = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1Fondo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -79,13 +79,6 @@ namespace ProyectoAltavista
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(260, 20);
             this.txtApellido.TabIndex = 9;
-            // 
-            // txtEdad
-            // 
-            this.txtEdad.Location = new System.Drawing.Point(156, 267);
-            this.txtEdad.Name = "txtEdad";
-            this.txtEdad.Size = new System.Drawing.Size(64, 20);
-            this.txtEdad.TabIndex = 10;
             // 
             // txtCelular
             // 
@@ -138,9 +131,9 @@ namespace ProyectoAltavista
             this.label3.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(55, 267);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(63, 22);
+            this.label3.Size = new System.Drawing.Size(182, 22);
             this.label3.TabIndex = 34;
-            this.label3.Text = "Edad:";
+            this.label3.Text = "Fecha Nacimiento:";
             // 
             // label4
             // 
@@ -196,11 +189,19 @@ namespace ProyectoAltavista
             this.labelRegristarPropietario.TabIndex = 39;
             this.labelRegristarPropietario.Text = "Registrar Propietario";
             // 
+            // dateTimePickerFechaNacimiento
+            // 
+            this.dateTimePickerFechaNacimiento.Location = new System.Drawing.Point(243, 267);
+            this.dateTimePickerFechaNacimiento.Name = "dateTimePickerFechaNacimiento";
+            this.dateTimePickerFechaNacimiento.Size = new System.Drawing.Size(298, 20);
+            this.dateTimePickerFechaNacimiento.TabIndex = 40;
+            // 
             // RegistrarCliPropietario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.dateTimePickerFechaNacimiento);
             this.Controls.Add(this.labelRegristarPropietario);
             this.Controls.Add(this.btnRegistrar);
             this.Controls.Add(this.btnCancelar);
@@ -211,7 +212,6 @@ namespace ProyectoAltavista
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtDireccion);
             this.Controls.Add(this.txtCelular);
-            this.Controls.Add(this.txtEdad);
             this.Controls.Add(this.txtApellido);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.txtDni);
@@ -231,7 +231,6 @@ namespace ProyectoAltavista
         private System.Windows.Forms.TextBox txtDni;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.TextBox txtApellido;
-        private System.Windows.Forms.TextBox txtEdad;
         private System.Windows.Forms.TextBox txtCelular;
         private System.Windows.Forms.TextBox txtDireccion;
         private System.Windows.Forms.PictureBox pictureBox1Fondo;
@@ -243,5 +242,6 @@ namespace ProyectoAltavista
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnRegistrar;
         private System.Windows.Forms.Label labelRegristarPropietario;
+        private System.Windows.Forms.DateTimePicker dateTimePickerFechaNacimiento;
     }
 }

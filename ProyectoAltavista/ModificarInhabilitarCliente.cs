@@ -29,7 +29,6 @@ namespace ProyectoAltavista
             txtDniCliente.Text = Cliente.dnicliente.ToString();
             txtNombre.Text = Cliente.nombrecliente.ToString();
             txtApellido.Text = Cliente.apelcliente.ToString();
-            txtEdad.Text = Cliente.edadcliente.ToString();
             txtCelular.Text = Cliente.celcliente.ToString();
             checkBoxHablitar.Checked = Cliente.estadocliente;
         }
@@ -38,7 +37,6 @@ namespace ProyectoAltavista
             txtDniCliente.Clear();
             txtNombre.Clear();
             txtApellido.Clear();
-            txtEdad.Clear();
             txtCelular.Clear();
         }
 
@@ -69,7 +67,6 @@ namespace ProyectoAltavista
                 Cli.dnicliente = int.Parse(txtDniCliente.Text.Trim());
                 Cli.nombrecliente = txtNombre.Text.Trim();
                 Cli.apelcliente = txtApellido.Text.Trim();
-                Cli.edadcliente = int.Parse(txtEdad.Text.Trim());
                 Cli.celcliente = int.Parse(txtCelular.Text.Trim());
                 logCliente.Instancia.ModificarCliente(Cli);
                 MessageBox.Show("Se editaron correctamente los datos del Cliente.");

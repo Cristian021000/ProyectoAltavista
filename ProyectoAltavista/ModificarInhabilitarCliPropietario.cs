@@ -30,7 +30,6 @@ namespace ProyectoAltavista
             txtDNI.Text = propietario.Dnipropietario.ToString();
             txtNombre.Text = propietario.nombre.ToString();
             txtApellido.Text = propietario.apellido.ToString();
-            txtEdad.Text = propietario.edad.ToString();
             txtCelular.Text = propietario.celular.ToString();
             txtDireccion.Text = propietario.direccion.ToString();
             checkHabilitar.Checked = propietario.estadoPropietario;
@@ -41,7 +40,6 @@ namespace ProyectoAltavista
             txtDNI.Clear();
             txtNombre.Clear();
             txtApellido.Clear();
-            txtEdad.Clear();
             txtCelular.Clear();
             txtDireccion.Clear();
         }
@@ -63,7 +61,6 @@ namespace ProyectoAltavista
                 Prop.Dnipropietario = int.Parse(txtDNI.Text.Trim());
                 Prop.nombre = txtNombre.Text.Trim();
                 Prop.apellido = txtApellido.Text.Trim();
-                Prop.edad = int.Parse(txtEdad.Text.Trim());
                 Prop.celular = int.Parse(txtCelular.Text.Trim());
                 Prop.direccion = txtDireccion.Text.Trim();
                 logPropietario.Instancia.ModificarPropietario(Prop);

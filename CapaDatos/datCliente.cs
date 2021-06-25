@@ -35,7 +35,7 @@ namespace CapaDatos
                 cmd.Parameters.AddWithValue("@dnicliente", Cliente.dnicliente);
                 cmd.Parameters.AddWithValue("@nombrecliente", Cliente.nombrecliente);
                 cmd.Parameters.AddWithValue("@apelcliente", Cliente.apelcliente);
-                cmd.Parameters.AddWithValue("@edadcliente", Cliente.edadcliente);
+                cmd.Parameters.AddWithValue("@Fechanacimiento", Cliente.Fechanacimiento);
                 cmd.Parameters.AddWithValue("@celcliente", Cliente.celcliente);
                 cmd.Parameters.AddWithValue("@estadocliente", Cliente.estadocliente);
                 cn.Open();
@@ -104,7 +104,7 @@ namespace CapaDatos
                         Cli.dnicliente = Convert.ToInt32(dr["dnicliente"]);
                         Cli.nombrecliente = dr["nombrecliente"].ToString();
                         Cli.apelcliente = dr["apelcliente"].ToString();
-                        Cli.edadcliente = Convert.ToInt32(dr["edadcliente"]);
+                        Cli.Fechanacimiento = Convert.ToDateTime(dr["Fechanacimiento"]);
                         Cli.celcliente = Convert.ToInt32(dr["celcliente"]);
                         lista.Add(Cli);
                     }
@@ -131,7 +131,6 @@ namespace CapaDatos
                 cmd.Parameters.AddWithValue("@dnicliente", Cliente.dnicliente);
                 cmd.Parameters.AddWithValue("@nombrecliente", Cliente.nombrecliente);
                 cmd.Parameters.AddWithValue("@apelcliente", Cliente.apelcliente);
-                cmd.Parameters.AddWithValue("@edadcliente", Cliente.edadcliente);
                 cmd.Parameters.AddWithValue("@celcliente", Cliente.celcliente);
                 cn.Open();
                 int i = cmd.ExecuteNonQuery();
@@ -191,7 +190,7 @@ namespace CapaDatos
                     Cli.dnicliente = Convert.ToInt32(dr["dnicliente"]);
                     Cli.nombrecliente = dr["nombrecliente"].ToString();
                     Cli.apelcliente = dr["apelcliente"].ToString();
-                    Cli.edadcliente = Convert.ToInt32(dr["edadcliente"]);
+                    Cli.Fechanacimiento = Convert.ToDateTime(dr["Fechanacimiento"]);
                     Cli.celcliente = Convert.ToInt32(dr["celcliente"]);
                     Cli.estadocliente = Convert.ToBoolean(dr["estadocliente"]);
                 }

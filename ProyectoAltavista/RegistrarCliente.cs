@@ -59,7 +59,7 @@ namespace ProyectoAltavista
                 cli.dnicliente = int.Parse(txtDniCliente.Text.Trim());
                 cli.nombrecliente = txtNombreCliente.Text.Trim();
                 cli.apelcliente = txtApellidoCliente.Text.Trim();
-                cli.edadcliente = int.Parse(txtEdadCliente.Text.Trim());
+                cli.Fechanacimiento = DateTime.Parse(dateTimePickerFechaNacimiento.Text.Trim());
                 cli.celcliente = int.Parse(txtCelularCliente.Text.Trim());
                 cli.estadocliente = true;
 

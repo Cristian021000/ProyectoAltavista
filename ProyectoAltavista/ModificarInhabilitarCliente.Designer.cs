@@ -32,14 +32,12 @@ namespace ProyectoAltavista
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ModificarInhabilitarCliente));
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.txtApellido = new System.Windows.Forms.TextBox();
-            this.txtEdad = new System.Windows.Forms.TextBox();
             this.txtCelular = new System.Windows.Forms.TextBox();
             this.pictureBox1Fondo = new System.Windows.Forms.PictureBox();
             this.label1Bnaco = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.btnModifcar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnDeshabilitar = new System.Windows.Forms.Button();
@@ -65,16 +63,9 @@ namespace ProyectoAltavista
             this.txtApellido.Size = new System.Drawing.Size(321, 20);
             this.txtApellido.TabIndex = 6;
             // 
-            // txtEdad
-            // 
-            this.txtEdad.Location = new System.Drawing.Point(112, 264);
-            this.txtEdad.Name = "txtEdad";
-            this.txtEdad.Size = new System.Drawing.Size(100, 20);
-            this.txtEdad.TabIndex = 7;
-            // 
             // txtCelular
             // 
-            this.txtCelular.Location = new System.Drawing.Point(136, 322);
+            this.txtCelular.Location = new System.Drawing.Point(135, 266);
             this.txtCelular.Name = "txtCelular";
             this.txtCelular.Size = new System.Drawing.Size(193, 20);
             this.txtCelular.TabIndex = 8;
@@ -127,21 +118,11 @@ namespace ProyectoAltavista
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(45, 322);
+            this.label4.Location = new System.Drawing.Point(44, 266);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(85, 22);
             this.label4.TabIndex = 32;
             this.label4.Text = "Celular:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(45, 264);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(63, 22);
-            this.label3.TabIndex = 33;
-            this.label3.Text = "Edad:";
             // 
             // btnModifcar
             // 
@@ -180,7 +161,7 @@ namespace ProyectoAltavista
             // 
             this.checkBoxHablitar.AutoSize = true;
             this.checkBoxHablitar.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxHablitar.Location = new System.Drawing.Point(142, 399);
+            this.checkBoxHablitar.Location = new System.Drawing.Point(227, 336);
             this.checkBoxHablitar.Name = "checkBoxHablitar";
             this.checkBoxHablitar.Size = new System.Drawing.Size(129, 26);
             this.checkBoxHablitar.TabIndex = 37;
@@ -234,13 +215,11 @@ namespace ProyectoAltavista
             this.Controls.Add(this.btnDeshabilitar);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnModifcar);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label1Bnaco);
             this.Controls.Add(this.txtCelular);
-            this.Controls.Add(this.txtEdad);
             this.Controls.Add(this.txtApellido);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.pictureBox1Fondo);
@@ -256,14 +235,12 @@ namespace ProyectoAltavista
         #endregion
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.TextBox txtApellido;
-        private System.Windows.Forms.TextBox txtEdad;
         private System.Windows.Forms.TextBox txtCelular;
         private System.Windows.Forms.PictureBox pictureBox1Fondo;
         private System.Windows.Forms.Label label1Bnaco;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnModifcar;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnDeshabilitar;

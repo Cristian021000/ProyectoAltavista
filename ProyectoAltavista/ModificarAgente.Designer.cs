@@ -31,14 +31,12 @@ namespace ProyectoAltavista
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ModificarAgente));
             this.txtCelularAgente = new System.Windows.Forms.TextBox();
-            this.txtEdadAgente = new System.Windows.Forms.TextBox();
             this.txtApellidoAgente = new System.Windows.Forms.TextBox();
             this.txtNombreAgente = new System.Windows.Forms.TextBox();
             this.pictureBox1Fondo = new System.Windows.Forms.PictureBox();
             this.labelDatosCliente = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.btnModificar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
@@ -55,18 +53,11 @@ namespace ProyectoAltavista
             // 
             // txtCelularAgente
             // 
-            this.txtCelularAgente.Location = new System.Drawing.Point(145, 267);
+            this.txtCelularAgente.Location = new System.Drawing.Point(151, 220);
             this.txtCelularAgente.Name = "txtCelularAgente";
             this.txtCelularAgente.Size = new System.Drawing.Size(137, 20);
             this.txtCelularAgente.TabIndex = 21;
             this.txtCelularAgente.TextChanged += new System.EventHandler(this.txtCelular_TextChanged);
-            // 
-            // txtEdadAgente
-            // 
-            this.txtEdadAgente.Location = new System.Drawing.Point(145, 225);
-            this.txtEdadAgente.Name = "txtEdadAgente";
-            this.txtEdadAgente.Size = new System.Drawing.Size(65, 20);
-            this.txtEdadAgente.TabIndex = 20;
             // 
             // txtApellidoAgente
             // 
@@ -125,21 +116,11 @@ namespace ProyectoAltavista
             this.label2.TabIndex = 28;
             this.label2.Text = "Apellido:";
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(41, 225);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(63, 22);
-            this.label3.TabIndex = 29;
-            this.label3.Text = "Edad:";
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(41, 267);
+            this.label4.Location = new System.Drawing.Point(47, 220);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(85, 22);
             this.label4.TabIndex = 30;
@@ -172,7 +153,7 @@ namespace ProyectoAltavista
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(39, 315);
+            this.label5.Location = new System.Drawing.Point(45, 268);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(188, 22);
             this.label5.TabIndex = 34;
@@ -180,7 +161,7 @@ namespace ProyectoAltavista
             // 
             // txtDatosCorreoElectronica
             // 
-            this.txtDatosCorreoElectronica.Location = new System.Drawing.Point(244, 315);
+            this.txtDatosCorreoElectronica.Location = new System.Drawing.Point(250, 268);
             this.txtDatosCorreoElectronica.Name = "txtDatosCorreoElectronica";
             this.txtDatosCorreoElectronica.Size = new System.Drawing.Size(255, 20);
             this.txtDatosCorreoElectronica.TabIndex = 33;
@@ -190,7 +171,7 @@ namespace ProyectoAltavista
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(41, 358);
+            this.label6.Location = new System.Drawing.Point(47, 311);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(124, 22);
             this.label6.TabIndex = 36;
@@ -198,7 +179,7 @@ namespace ProyectoAltavista
             // 
             // txtContraseñaDatosCliente
             // 
-            this.txtContraseñaDatosCliente.Location = new System.Drawing.Point(171, 358);
+            this.txtContraseñaDatosCliente.Location = new System.Drawing.Point(177, 311);
             this.txtContraseñaDatosCliente.Name = "txtContraseñaDatosCliente";
             this.txtContraseñaDatosCliente.Size = new System.Drawing.Size(328, 20);
             this.txtContraseñaDatosCliente.TabIndex = 35;
@@ -207,7 +188,7 @@ namespace ProyectoAltavista
             // 
             this.chbHabilitado.AutoSize = true;
             this.chbHabilitado.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chbHabilitado.Location = new System.Drawing.Point(45, 406);
+            this.chbHabilitado.Location = new System.Drawing.Point(214, 372);
             this.chbHabilitado.Name = "chbHabilitado";
             this.chbHabilitado.Size = new System.Drawing.Size(110, 22);
             this.chbHabilitado.TabIndex = 37;
@@ -258,12 +239,10 @@ namespace ProyectoAltavista
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.labelDatosCliente);
             this.Controls.Add(this.txtCelularAgente);
-            this.Controls.Add(this.txtEdadAgente);
             this.Controls.Add(this.txtApellidoAgente);
             this.Controls.Add(this.txtNombreAgente);
             this.Controls.Add(this.pictureBox1Fondo);
@@ -278,14 +257,12 @@ namespace ProyectoAltavista
 
         #endregion
         private System.Windows.Forms.TextBox txtCelularAgente;
-        private System.Windows.Forms.TextBox txtEdadAgente;
         private System.Windows.Forms.TextBox txtApellidoAgente;
         private System.Windows.Forms.TextBox txtNombreAgente;
         private System.Windows.Forms.PictureBox pictureBox1Fondo;
         private System.Windows.Forms.Label labelDatosCliente;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnModificar;
         private System.Windows.Forms.Button btnCancelar;
