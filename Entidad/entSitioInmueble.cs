@@ -8,5 +8,9 @@ namespace CapaEntidad
 {
     public class entSitioInmueble
     {
+        public int INMUEBLESitioDeinteresID { get; set; }
+        public int Distancia { get; set; }
+        public int SitiodeinteresID { get; set; }
+        public int InmuebleID { get; set; }
     }
 }
