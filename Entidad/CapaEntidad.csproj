@@ -51,6 +51,7 @@
     <Compile Include="entInmueble.cs" />
     <Compile Include="entPropietario.cs" />
     <Compile Include="entSector.cs" />
+    <Compile Include="entSitioInmueble.cs" />
     <Compile Include="entSitioInteres.cs" />
     <Compile Include="entTerreno.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
