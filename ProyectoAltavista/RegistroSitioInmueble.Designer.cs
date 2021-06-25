@@ -80,6 +80,7 @@ namespace ProyectoAltavista
             this.btnCancerlarModificarSI.TabIndex = 18;
             this.btnCancerlarModificarSI.Text = "Cancelar";
             this.btnCancerlarModificarSI.UseVisualStyleBackColor = true;
+            this.btnCancerlarModificarSI.Click += new System.EventHandler(this.btnCancerlarModificarSI_Click);
             // 
             // LbSitioine
             // 
@@ -149,6 +150,7 @@ namespace ProyectoAltavista
             this.BtRegistrarSiti.TabIndex = 26;
             this.BtRegistrarSiti.Text = "Registrar";
             this.BtRegistrarSiti.UseVisualStyleBackColor = true;
+            this.BtRegistrarSiti.Click += new System.EventHandler(this.BtRegistrarSiti_Click);
             // 
             // dataGridViewRegistrarSitioInmueble
             // 
@@ -225,6 +227,7 @@ namespace ProyectoAltavista
             this.comboBoxTipoInmueble.Name = "comboBoxTipoInmueble";
             this.comboBoxTipoInmueble.Size = new System.Drawing.Size(213, 21);
             this.comboBoxTipoInmueble.TabIndex = 34;
+            this.comboBoxTipoInmueble.SelectedIndexChanged += new System.EventHandler(this.comboBoxTipoInmueble_SelectedIndexChanged);
             // 
             // RegistroSitioInmueble
             // 
