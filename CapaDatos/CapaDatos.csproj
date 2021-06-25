@@ -50,6 +50,7 @@
     <Compile Include="datInmueble.cs" />
     <Compile Include="datPropietario.cs" />
     <Compile Include="datSector.cs" />
+    <Compile Include="datSitioInmueble.cs" />
     <Compile Include="datSitioInteres.cs" />
     <Compile Include="datAgente.cs" />
     <Compile Include="Conexion.cs" />
