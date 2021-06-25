@@ -44,6 +44,10 @@ namespace ProyectoAltavista
             this.InmueblesVista = new System.Windows.Forms.DataGridView();
             this.SitioDeInteresVista = new System.Windows.Forms.DataGridView();
             this.pictureBox1Fondo = new System.Windows.Forms.PictureBox();
+            this.txtDsitancia = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.comboBoxTipoInmueble = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewRegistrarSitioInmueble)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.InmueblesVista)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SitioDeInteresVista)).BeginInit();
@@ -52,9 +56,8 @@ namespace ProyectoAltavista
             // 
             // txtIdInmuebleC
             // 
-            this.txtIdInmuebleC.Location = new System.Drawing.Point(270, 73);
+            this.txtIdInmuebleC.Location = new System.Drawing.Point(270, 48);
             this.txtIdInmuebleC.Name = "txtIdInmuebleC";
-            this.txtIdInmuebleC.ReadOnly = true;
             this.txtIdInmuebleC.Size = new System.Drawing.Size(213, 20);
             this.txtIdInmuebleC.TabIndex = 21;
             // 
@@ -62,7 +65,7 @@ namespace ProyectoAltavista
             // 
             this.IdInmueble.AutoSize = true;
             this.IdInmueble.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.IdInmueble.Location = new System.Drawing.Point(29, 71);
+            this.IdInmueble.Location = new System.Drawing.Point(29, 48);
             this.IdInmueble.Name = "IdInmueble";
             this.IdInmueble.Size = new System.Drawing.Size(183, 20);
             this.IdInmueble.TabIndex = 20;
@@ -71,7 +74,7 @@ namespace ProyectoAltavista
             // btnCancerlarModificarSI
             // 
             this.btnCancerlarModificarSI.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancerlarModificarSI.Location = new System.Drawing.Point(683, 404);
+            this.btnCancerlarModificarSI.Location = new System.Drawing.Point(699, 404);
             this.btnCancerlarModificarSI.Name = "btnCancerlarModificarSI";
             this.btnCancerlarModificarSI.Size = new System.Drawing.Size(105, 34);
             this.btnCancerlarModificarSI.TabIndex = 18;
@@ -82,7 +85,7 @@ namespace ProyectoAltavista
             // 
             this.LbSitioine.AutoSize = true;
             this.LbSitioine.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LbSitioine.Location = new System.Drawing.Point(29, 281);
+            this.LbSitioine.Location = new System.Drawing.Point(29, 335);
             this.LbSitioine.Name = "LbSitioine";
             this.LbSitioine.Size = new System.Drawing.Size(116, 20);
             this.LbSitioine.TabIndex = 14;
@@ -93,7 +96,7 @@ namespace ProyectoAltavista
             // 
             this.LbSitioDeInteres.AutoSize = true;
             this.LbSitioDeInteres.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LbSitioDeInteres.Location = new System.Drawing.Point(502, 71);
+            this.LbSitioDeInteres.Location = new System.Drawing.Point(565, 71);
             this.LbSitioDeInteres.Name = "LbSitioDeInteres";
             this.LbSitioDeInteres.Size = new System.Drawing.Size(111, 20);
             this.LbSitioDeInteres.TabIndex = 12;
@@ -103,7 +106,7 @@ namespace ProyectoAltavista
             // 
             this.labelModificarSitioInteres.AutoSize = true;
             this.labelModificarSitioInteres.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelModificarSitioInteres.Location = new System.Drawing.Point(277, 25);
+            this.labelModificarSitioInteres.Location = new System.Drawing.Point(279, 9);
             this.labelModificarSitioInteres.Name = "labelModificarSitioInteres";
             this.labelModificarSitioInteres.Size = new System.Drawing.Size(271, 25);
             this.labelModificarSitioInteres.TabIndex = 11;
@@ -113,7 +116,7 @@ namespace ProyectoAltavista
             // 
             this.IdSitioDeInteres.AutoSize = true;
             this.IdSitioDeInteres.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.IdSitioDeInteres.Location = new System.Drawing.Point(29, 104);
+            this.IdSitioDeInteres.Location = new System.Drawing.Point(29, 84);
             this.IdSitioDeInteres.Name = "IdSitioDeInteres";
             this.IdSitioDeInteres.Size = new System.Drawing.Size(228, 20);
             this.IdSitioDeInteres.TabIndex = 22;
@@ -121,9 +124,8 @@ namespace ProyectoAltavista
             // 
             // txtIdSitioInteress
             // 
-            this.txtIdSitioInteress.Location = new System.Drawing.Point(270, 106);
+            this.txtIdSitioInteress.Location = new System.Drawing.Point(270, 86);
             this.txtIdSitioInteress.Name = "txtIdSitioInteress";
-            this.txtIdSitioInteress.ReadOnly = true;
             this.txtIdSitioInteress.Size = new System.Drawing.Size(213, 20);
             this.txtIdSitioInteress.TabIndex = 23;
             // 
@@ -131,7 +133,7 @@ namespace ProyectoAltavista
             // 
             this.LbInmuebles.AutoSize = true;
             this.LbInmuebles.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LbInmuebles.Location = new System.Drawing.Point(29, 142);
+            this.LbInmuebles.Location = new System.Drawing.Point(29, 196);
             this.LbInmuebles.Name = "LbInmuebles";
             this.LbInmuebles.Size = new System.Drawing.Size(83, 20);
             this.LbInmuebles.TabIndex = 25;
@@ -141,7 +143,7 @@ namespace ProyectoAltavista
             // BtRegistrarSiti
             // 
             this.BtRegistrarSiti.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtRegistrarSiti.Location = new System.Drawing.Point(548, 404);
+            this.BtRegistrarSiti.Location = new System.Drawing.Point(572, 404);
             this.BtRegistrarSiti.Name = "BtRegistrarSiti";
             this.BtRegistrarSiti.Size = new System.Drawing.Size(105, 34);
             this.BtRegistrarSiti.TabIndex = 26;
@@ -151,7 +153,7 @@ namespace ProyectoAltavista
             // dataGridViewRegistrarSitioInmueble
             // 
             this.dataGridViewRegistrarSitioInmueble.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewRegistrarSitioInmueble.Location = new System.Drawing.Point(506, 94);
+            this.dataGridViewRegistrarSitioInmueble.Location = new System.Drawing.Point(569, 94);
             this.dataGridViewRegistrarSitioInmueble.Name = "dataGridViewRegistrarSitioInmueble";
             this.dataGridViewRegistrarSitioInmueble.Size = new System.Drawing.Size(235, 268);
             this.dataGridViewRegistrarSitioInmueble.TabIndex = 27;
@@ -159,7 +161,7 @@ namespace ProyectoAltavista
             // InmueblesVista
             // 
             this.InmueblesVista.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.InmueblesVista.Location = new System.Drawing.Point(33, 165);
+            this.InmueblesVista.Location = new System.Drawing.Point(33, 219);
             this.InmueblesVista.Name = "InmueblesVista";
             this.InmueblesVista.Size = new System.Drawing.Size(450, 113);
             this.InmueblesVista.TabIndex = 28;
@@ -167,9 +169,9 @@ namespace ProyectoAltavista
             // SitioDeInteresVista
             // 
             this.SitioDeInteresVista.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.SitioDeInteresVista.Location = new System.Drawing.Point(33, 304);
+            this.SitioDeInteresVista.Location = new System.Drawing.Point(33, 358);
             this.SitioDeInteresVista.Name = "SitioDeInteresVista";
-            this.SitioDeInteresVista.Size = new System.Drawing.Size(450, 104);
+            this.SitioDeInteresVista.Size = new System.Drawing.Size(450, 89);
             this.SitioDeInteresVista.TabIndex = 29;
             // 
             // pictureBox1Fondo
@@ -183,11 +185,56 @@ namespace ProyectoAltavista
             this.pictureBox1Fondo.TabIndex = 30;
             this.pictureBox1Fondo.TabStop = false;
             // 
+            // txtDsitancia
+            // 
+            this.txtDsitancia.Location = new System.Drawing.Point(270, 117);
+            this.txtDsitancia.Name = "txtDsitancia";
+            this.txtDsitancia.Size = new System.Drawing.Size(213, 20);
+            this.txtDsitancia.TabIndex = 31;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(182, 115);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(75, 20);
+            this.label1.TabIndex = 32;
+            this.label1.Text = "Distancia";
+            this.label1.Click += new System.EventHandler(this.label1_Click_1);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(78, 148);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(179, 20);
+            this.label2.TabIndex = 33;
+            this.label2.Text = "Ingrese Tipo Inmueble : ";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // comboBoxTipoInmueble
+            // 
+            this.comboBoxTipoInmueble.FormattingEnabled = true;
+            this.comboBoxTipoInmueble.Items.AddRange(new object[] {
+            "Casa",
+            "Departamento ",
+            "Terreno"});
+            this.comboBoxTipoInmueble.Location = new System.Drawing.Point(270, 148);
+            this.comboBoxTipoInmueble.Name = "comboBoxTipoInmueble";
+            this.comboBoxTipoInmueble.Size = new System.Drawing.Size(213, 21);
+            this.comboBoxTipoInmueble.TabIndex = 34;
+            // 
             // RegistroSitioInmueble
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(816, 459);
+            this.Controls.Add(this.comboBoxTipoInmueble);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtDsitancia);
             this.Controls.Add(this.SitioDeInteresVista);
             this.Controls.Add(this.InmueblesVista);
             this.Controls.Add(this.dataGridViewRegistrarSitioInmueble);
@@ -230,5 +277,9 @@ namespace ProyectoAltavista
         private System.Windows.Forms.DataGridView InmueblesVista;
         private System.Windows.Forms.DataGridView SitioDeInteresVista;
         private System.Windows.Forms.PictureBox pictureBox1Fondo;
+        private System.Windows.Forms.TextBox txtDsitancia;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox comboBoxTipoInmueble;
     }
 }
