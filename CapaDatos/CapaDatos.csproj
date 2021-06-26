@@ -54,7 +54,7 @@
     <Compile Include="datSitioInteres.cs" />
     <Compile Include="datAgente.cs" />
     <Compile Include="Conexion.cs" />
-    <Compile Include="datVentas.cs" />
+    <Compile Include="datVenta.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="datTerreno.cs" />
   </ItemGroup>

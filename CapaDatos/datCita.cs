@@ -148,6 +148,9 @@ namespace CapaDatos
                     Cita.Fechacita = Convert.ToDateTime(dr["Fechacita"]);
                     Cita.Estadocita = Convert.ToBoolean(dr["Estadocita"]);
                     Cita.Realizado = Convert.ToBoolean(dr["Realizado"]);
+                    Cita.AgenteID = Convert.ToInt32(dr["AgenteID"]);
+                    Cita.ClienteID = Convert.ToInt32(dr["ClienteID"]);
+                    Cita.InmuebleID = Convert.ToInt32(dr["InmuebleID"]);
                 }
             }
             catch (Exception e)

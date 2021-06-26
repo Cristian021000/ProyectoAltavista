@@ -54,6 +54,7 @@
     <Compile Include="logSitioInmueble.cs" />
     <Compile Include="logSitioInteres.cs" />
     <Compile Include="logTerreno.cs" />
+    <Compile Include="logVenta.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -64,5 +64,9 @@ namespace CapaLogica
         {
             return datInmueble.Instancia.DatosInmueble(InmuebleID);
         }
+        public Boolean ExisteNRegistros(int NRegistros)
+        {
+            return datInmueble.Instancia.ExisteNRegistrosPublicos(NRegistros);
+        }
     }
 }

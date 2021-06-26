@@ -44,14 +44,14 @@ namespace ProyectoAltavista
                 if (!logAgente.Instancia.ExisteDatosAgente(age))
                 {
                     logAgente.Instancia.RegistrarAgente(age);
+                    MessageBox.Show("El agente se a registrado correctamente");
+                    MantenedorAgen.Show();
+                    this.Hide();
                 }
                 else
                 {
                     MessageBox.Show("El correo o el número de celular ya se encuentran en uso");
                 }
-                MessageBox.Show("El agente se a registrado correctamente");
-                MantenedorAgen.Show();
-                this.Hide();
             }
             catch (Exception ex)
             {

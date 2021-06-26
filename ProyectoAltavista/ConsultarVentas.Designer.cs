@@ -31,11 +31,11 @@ namespace ProyectoAltavista
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConsultarVentas));
             this.lbDatosVentas = new System.Windows.Forms.Label();
-            this.rbVentaPropia = new System.Windows.Forms.RadioButton();
-            this.dbVentaTerceros = new System.Windows.Forms.RadioButton();
             this.btRegresar = new System.Windows.Forms.Button();
             this.dgvDatosVenta = new System.Windows.Forms.DataGridView();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDatosVenta)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -50,30 +50,6 @@ namespace ProyectoAltavista
             this.lbDatosVentas.TabIndex = 0;
             this.lbDatosVentas.Text = "Datos de venta de inmuebles";
             // 
-            // rbVentaPropia
-            // 
-            this.rbVentaPropia.AutoSize = true;
-            this.rbVentaPropia.Font = new System.Drawing.Font("Lucida Fax", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbVentaPropia.Location = new System.Drawing.Point(68, 99);
-            this.rbVentaPropia.Name = "rbVentaPropia";
-            this.rbVentaPropia.Size = new System.Drawing.Size(165, 28);
-            this.rbVentaPropia.TabIndex = 1;
-            this.rbVentaPropia.TabStop = true;
-            this.rbVentaPropia.Text = "Venta propia";
-            this.rbVentaPropia.UseVisualStyleBackColor = true;
-            // 
-            // dbVentaTerceros
-            // 
-            this.dbVentaTerceros.AutoSize = true;
-            this.dbVentaTerceros.Font = new System.Drawing.Font("Lucida Fax", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dbVentaTerceros.Location = new System.Drawing.Point(68, 143);
-            this.dbVentaTerceros.Name = "dbVentaTerceros";
-            this.dbVentaTerceros.Size = new System.Drawing.Size(214, 28);
-            this.dbVentaTerceros.TabIndex = 2;
-            this.dbVentaTerceros.TabStop = true;
-            this.dbVentaTerceros.Text = "Venta de terceros";
-            this.dbVentaTerceros.UseVisualStyleBackColor = true;
-            // 
             // btRegresar
             // 
             this.btRegresar.Font = new System.Drawing.Font("Lucida Fax", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -87,9 +63,9 @@ namespace ProyectoAltavista
             // dgvDatosVenta
             // 
             this.dgvDatosVenta.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDatosVenta.Location = new System.Drawing.Point(68, 192);
+            this.dgvDatosVenta.Location = new System.Drawing.Point(12, 103);
             this.dgvDatosVenta.Name = "dgvDatosVenta";
-            this.dgvDatosVenta.Size = new System.Drawing.Size(554, 225);
+            this.dgvDatosVenta.Size = new System.Drawing.Size(416, 314);
             this.dgvDatosVenta.TabIndex = 5;
             // 
             // pictureBox1
@@ -103,15 +79,31 @@ namespace ProyectoAltavista
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(491, 154);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(252, 45);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Ingresar ID de Venta que desea consultar:";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(495, 223);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(263, 20);
+            this.textBox1.TabIndex = 7;
+            // 
             // ConsultarVentas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvDatosVenta);
             this.Controls.Add(this.btRegresar);
-            this.Controls.Add(this.dbVentaTerceros);
-            this.Controls.Add(this.rbVentaPropia);
             this.Controls.Add(this.lbDatosVentas);
             this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -127,10 +119,10 @@ namespace ProyectoAltavista
         #endregion
 
         private System.Windows.Forms.Label lbDatosVentas;
-        private System.Windows.Forms.RadioButton rbVentaPropia;
-        private System.Windows.Forms.RadioButton dbVentaTerceros;
         private System.Windows.Forms.Button btRegresar;
         private System.Windows.Forms.DataGridView dgvDatosVenta;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

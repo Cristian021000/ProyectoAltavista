@@ -48,16 +48,23 @@ namespace ProyectoAltavista
                 casa.piscina = chbPiscina.Checked;
                 casa.jardin = chbJardin.Checked;
                 casa.fechaConstruccion = dtpFecha.Value;
-                logInmueble.Instancia.RegistrarInmueble(inmueble);
-                casa.InmuebleID1 = logInmueble.Instancia.BuscarNRegistroPublico(inmueble.nRegistroPublico).InmuebleID;
-                MessageBox.Show("Se registró correctamente el inmueble casa");
-                logCasa.Instancia.RegistrarInmuebleCasa(casa);
-                this.Hide();
-                Mantinmueble.Show();
+                if (!logInmueble.Instancia.ExisteNRegistros(inmueble.nRegistroPublico))
+                {
+                    logInmueble.Instancia.RegistrarInmueble(inmueble);
+                    casa.InmuebleID1 = logInmueble.Instancia.BuscarNRegistroPublico(inmueble.nRegistroPublico).InmuebleID;
+                    MessageBox.Show("Se registró correctamente la casa");
+                    logCasa.Instancia.RegistrarInmuebleCasa(casa);
+                    this.Hide();
+                    Mantinmueble.Show();
+                }
+                else
+                {
+                    MessageBox.Show("El número de registro público ya se encuentra registrado en otro inmueble.");
+                }
             }
             catch (Exception ex)
             {
-                throw ex;
+                MessageBox.Show("error.." + ex);
             }
         }
 

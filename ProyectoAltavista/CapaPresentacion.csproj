@@ -336,12 +336,6 @@
     <Compile Include="RegistrarVentaPropios.Designer.cs">
       <DependentUpon>RegistrarVentaPropios.cs</DependentUpon>
     </Compile>
-    <Compile Include="RegistrarVentaTerceros.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="RegistrarVentaTerceros.Designer.cs">
-      <DependentUpon>RegistrarVentaTerceros.cs</DependentUpon>
-    </Compile>
     <Compile Include="RegistroBanco.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -506,9 +500,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="RegistrarVentaPropios.resx">
       <DependentUpon>RegistrarVentaPropios.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="RegistrarVentaTerceros.resx">
-      <DependentUpon>RegistrarVentaTerceros.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RegistroBanco.resx">
       <DependentUpon>RegistroBanco.cs</DependentUpon>

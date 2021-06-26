@@ -46,11 +46,20 @@ namespace ProyectoAltavista
                 departamento.Ubipisos = int.Parse(textBox1UbicacionPisosD.Text.Trim());
                 departamento.Aream2 = (float)Convert.ToDouble(textBox1MetrosCuadradosD.Text.Trim());
                 departamento.Fechaconstruccion = dateTimePicker1.Value;
-                logInmueble.Instancia.RegistrarInmueble(inmueble);
-                departamento.InmuebleID2 = logInmueble.Instancia.BuscarNRegistroPublico(inmueble.nRegistroPublico).InmuebleID;
-                logDepartamento.Instancia.RegistrarInmuebleDepartamento(departamento);
-                this.Hide();
-                inmuebles.Show();
+                if (!logInmueble.Instancia.ExisteNRegistros(inmueble.nRegistroPublico))
+                {
+                    logInmueble.Instancia.RegistrarInmueble(inmueble);
+                    departamento.InmuebleID2 = logInmueble.Instancia.BuscarNRegistroPublico(inmueble.nRegistroPublico).InmuebleID;
+                    logDepartamento.Instancia.RegistrarInmuebleDepartamento(departamento);
+                    MessageBox.Show("Se registró correctamente el departamento.");
+                    this.Hide();
+                    inmuebles.Show();
+                }
+                else
+                {
+                    MessageBox.Show("El número de registro público ya se encuentra registrado en otro inmueble.");
+                }
+               
             }
             catch (Exception ex)
             {

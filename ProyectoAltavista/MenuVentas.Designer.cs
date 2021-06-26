@@ -32,7 +32,6 @@ namespace ProyectoAltavista
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuVentas));
             this.lbVenta = new System.Windows.Forms.Label();
             this.btVentaPropio = new System.Windows.Forms.Button();
-            this.btVentaTerceros = new System.Windows.Forms.Button();
             this.btSalir = new System.Windows.Forms.Button();
             this.btConsultarVenta = new System.Windows.Forms.Button();
             this.pictureBox1Fondo = new System.Windows.Forms.PictureBox();
@@ -52,22 +51,13 @@ namespace ProyectoAltavista
             // btVentaPropio
             // 
             this.btVentaPropio.Font = new System.Drawing.Font("Lucida Fax", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btVentaPropio.Location = new System.Drawing.Point(28, 131);
+            this.btVentaPropio.Location = new System.Drawing.Point(33, 183);
             this.btVentaPropio.Name = "btVentaPropio";
             this.btVentaPropio.Size = new System.Drawing.Size(232, 93);
             this.btVentaPropio.TabIndex = 1;
-            this.btVentaPropio.Text = "Venta de inmuebles propios";
+            this.btVentaPropio.Text = "Venta de inmuebles";
             this.btVentaPropio.UseVisualStyleBackColor = true;
-            // 
-            // btVentaTerceros
-            // 
-            this.btVentaTerceros.Font = new System.Drawing.Font("Lucida Fax", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btVentaTerceros.Location = new System.Drawing.Point(501, 131);
-            this.btVentaTerceros.Name = "btVentaTerceros";
-            this.btVentaTerceros.Size = new System.Drawing.Size(249, 93);
-            this.btVentaTerceros.TabIndex = 2;
-            this.btVentaTerceros.Text = "Venta de inmuebles de terceros";
-            this.btVentaTerceros.UseVisualStyleBackColor = true;
+            this.btVentaPropio.Click += new System.EventHandler(this.btVentaPropio_Click);
             // 
             // btSalir
             // 
@@ -78,16 +68,18 @@ namespace ProyectoAltavista
             this.btSalir.TabIndex = 3;
             this.btSalir.Text = "Salir";
             this.btSalir.UseVisualStyleBackColor = true;
+            this.btSalir.Click += new System.EventHandler(this.btSalir_Click);
             // 
             // btConsultarVenta
             // 
             this.btConsultarVenta.Font = new System.Drawing.Font("Lucida Fax", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btConsultarVenta.Location = new System.Drawing.Point(317, 265);
+            this.btConsultarVenta.Location = new System.Drawing.Point(524, 183);
             this.btConsultarVenta.Name = "btConsultarVenta";
-            this.btConsultarVenta.Size = new System.Drawing.Size(145, 70);
+            this.btConsultarVenta.Size = new System.Drawing.Size(226, 93);
             this.btConsultarVenta.TabIndex = 4;
-            this.btConsultarVenta.Text = "Consultar";
+            this.btConsultarVenta.Text = "Consultar Venta Inmuebles";
             this.btConsultarVenta.UseVisualStyleBackColor = true;
+            this.btConsultarVenta.Click += new System.EventHandler(this.btConsultarVenta_Click);
             // 
             // pictureBox1Fondo
             // 
@@ -107,7 +99,6 @@ namespace ProyectoAltavista
             this.ClientSize = new System.Drawing.Size(800, 459);
             this.Controls.Add(this.btConsultarVenta);
             this.Controls.Add(this.btSalir);
-            this.Controls.Add(this.btVentaTerceros);
             this.Controls.Add(this.btVentaPropio);
             this.Controls.Add(this.lbVenta);
             this.Controls.Add(this.pictureBox1Fondo);
@@ -124,7 +115,6 @@ namespace ProyectoAltavista
 
         private System.Windows.Forms.Label lbVenta;
         private System.Windows.Forms.Button btVentaPropio;
-        private System.Windows.Forms.Button btVentaTerceros;
         private System.Windows.Forms.Button btSalir;
         private System.Windows.Forms.Button btConsultarVenta;
         private System.Windows.Forms.PictureBox pictureBox1Fondo;

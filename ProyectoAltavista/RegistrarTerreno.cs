@@ -45,12 +45,20 @@ namespace ProyectoAltavista
                 terreno.Luz = chbLuz.Checked;
                 terreno.Alcantarillado = chbAlcantarillado.Checked;
                 terreno.Desague = chbDesague.Checked;
-                logInmueble.Instancia.RegistrarInmueble(inmueble);
-                terreno.InmuebleID3 = logInmueble.Instancia.BuscarNRegistroPublico(inmueble.nRegistroPublico).InmuebleID;
-                logTerreno.Instancia.RegistrarInmuebleTerreno(terreno);
-                MessageBox.Show("Se registró correctamente el terreno");
-                inmuebles.Show();
-                this.Hide();
+                if (!logInmueble.Instancia.ExisteNRegistros(inmueble.nRegistroPublico))
+                {
+                    logInmueble.Instancia.RegistrarInmueble(inmueble);
+                    terreno.InmuebleID3 = logInmueble.Instancia.BuscarNRegistroPublico(inmueble.nRegistroPublico).InmuebleID;
+                    logTerreno.Instancia.RegistrarInmuebleTerreno(terreno);
+                    MessageBox.Show("Se registró correctamente el terreno");
+                    inmuebles.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("El número de registro público ya se encuentra registrado en otro inmueble.");
+                }
+                
             }
             catch (Exception ex)
             {
