@@ -28,9 +28,9 @@ namespace CapaLogica
         {
             datInmueble.Instancia.modificarInmueble(inmueble);
         }
-        public Boolean BuscarInmuebleCasa(entInmueble inmueble)
+        public Boolean BuscarInmueble(int inmueble)
         {
-            return datInmueble.Instancia.BuscarInmuebleCasa(inmueble);
+            return datInmueble.Instancia.BuscarInmueble(inmueble);
         }
         public void DeshabilitarInmueble(entInmueble idInm)
         {

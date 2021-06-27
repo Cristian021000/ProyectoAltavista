@@ -41,19 +41,20 @@ namespace ProyectoAltavista
             // lbCita
             // 
             this.lbCita.AutoSize = true;
-            this.lbCita.Font = new System.Drawing.Font("Monotype Corsiva", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbCita.Location = new System.Drawing.Point(340, 26);
+            this.lbCita.Font = new System.Drawing.Font("Monotype Corsiva", 48F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
+                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbCita.Location = new System.Drawing.Point(318, 21);
             this.lbCita.Name = "lbCita";
-            this.lbCita.Size = new System.Drawing.Size(126, 57);
+            this.lbCita.Size = new System.Drawing.Size(172, 79);
             this.lbCita.TabIndex = 0;
-            this.lbCita.Text = "CITA";
+            this.lbCita.Text = "Menu";
             // 
             // btnRegistrarCita
             // 
-            this.btnRegistrarCita.Font = new System.Drawing.Font("Lucida Fax", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegistrarCita.Location = new System.Drawing.Point(130, 149);
+            this.btnRegistrarCita.Font = new System.Drawing.Font("Lucida Fax", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegistrarCita.Location = new System.Drawing.Point(28, 184);
             this.btnRegistrarCita.Name = "btnRegistrarCita";
-            this.btnRegistrarCita.Size = new System.Drawing.Size(177, 68);
+            this.btnRegistrarCita.Size = new System.Drawing.Size(236, 68);
             this.btnRegistrarCita.TabIndex = 1;
             this.btnRegistrarCita.Text = "Registrar Cita";
             this.btnRegistrarCita.UseVisualStyleBackColor = true;
@@ -61,10 +62,10 @@ namespace ProyectoAltavista
             // 
             // btnMostrarCita
             // 
-            this.btnMostrarCita.Font = new System.Drawing.Font("Lucida Fax", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMostrarCita.Location = new System.Drawing.Point(508, 149);
+            this.btnMostrarCita.Font = new System.Drawing.Font("Lucida Fax", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMostrarCita.Location = new System.Drawing.Point(521, 184);
             this.btnMostrarCita.Name = "btnMostrarCita";
-            this.btnMostrarCita.Size = new System.Drawing.Size(177, 68);
+            this.btnMostrarCita.Size = new System.Drawing.Size(236, 68);
             this.btnMostrarCita.TabIndex = 2;
             this.btnMostrarCita.Text = "Mostrar Cita";
             this.btnMostrarCita.UseVisualStyleBackColor = true;
@@ -73,7 +74,7 @@ namespace ProyectoAltavista
             // btnRegresarCita
             // 
             this.btnRegresarCita.Font = new System.Drawing.Font("Lucida Fax", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegresarCita.Location = new System.Drawing.Point(627, 386);
+            this.btnRegresarCita.Location = new System.Drawing.Point(627, 384);
             this.btnRegresarCita.Name = "btnRegresarCita";
             this.btnRegresarCita.Size = new System.Drawing.Size(130, 34);
             this.btnRegresarCita.TabIndex = 3;

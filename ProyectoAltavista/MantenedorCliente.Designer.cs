@@ -45,7 +45,7 @@ namespace ProyectoAltavista
             this.btRegistrar.Name = "btRegistrar";
             this.btRegistrar.Size = new System.Drawing.Size(254, 50);
             this.btRegistrar.TabIndex = 53;
-            this.btRegistrar.Text = "Registrar ";
+            this.btRegistrar.Text = "Registrar Cliente";
             this.btRegistrar.UseVisualStyleBackColor = true;
             this.btRegistrar.Click += new System.EventHandler(this.btRegistrar_Click);
             // 
@@ -56,14 +56,14 @@ namespace ProyectoAltavista
             this.btLista.Name = "btLista";
             this.btLista.Size = new System.Drawing.Size(272, 50);
             this.btLista.TabIndex = 52;
-            this.btLista.Text = "Lista";
+            this.btLista.Text = "Consultar Cliente";
             this.btLista.UseVisualStyleBackColor = true;
             this.btLista.Click += new System.EventHandler(this.btLista_Click);
             // 
             // btRegresar
             // 
             this.btRegresar.Font = new System.Drawing.Font("Lucida Fax", 19.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btRegresar.Location = new System.Drawing.Point(284, 323);
+            this.btRegresar.Location = new System.Drawing.Point(303, 323);
             this.btRegresar.Name = "btRegresar";
             this.btRegresar.Size = new System.Drawing.Size(173, 50);
             this.btRegresar.TabIndex = 51;

@@ -41,12 +41,12 @@ namespace ProyectoAltavista
             // lbVenta
             // 
             this.lbVenta.AutoSize = true;
-            this.lbVenta.Font = new System.Drawing.Font("Monotype Corsiva", 36F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbVenta.Font = new System.Drawing.Font("Monotype Corsiva", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbVenta.Location = new System.Drawing.Point(333, 42);
             this.lbVenta.Name = "lbVenta";
-            this.lbVenta.Size = new System.Drawing.Size(129, 57);
+            this.lbVenta.Size = new System.Drawing.Size(168, 79);
             this.lbVenta.TabIndex = 0;
-            this.lbVenta.Text = "Venta";
+            this.lbVenta.Text = "Menu";
             // 
             // btVentaPropio
             // 

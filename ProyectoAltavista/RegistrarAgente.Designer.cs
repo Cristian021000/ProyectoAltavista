@@ -30,10 +30,10 @@ namespace ProyectoAltavista
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegistrarAgente));
-            this.txtCelularCliente = new System.Windows.Forms.TextBox();
-            this.txtApellidoCliente = new System.Windows.Forms.TextBox();
-            this.txtNombreCliente = new System.Windows.Forms.TextBox();
-            this.txtDniCliente = new System.Windows.Forms.TextBox();
+            this.txtCelularAgente = new System.Windows.Forms.TextBox();
+            this.txtApellidoAgente = new System.Windows.Forms.TextBox();
+            this.txtNombreAgente = new System.Windows.Forms.TextBox();
+            this.txtDniAgente = new System.Windows.Forms.TextBox();
             this.lbDniAgente = new System.Windows.Forms.Label();
             this.pictureBox1Fondo = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -51,33 +51,33 @@ namespace ProyectoAltavista
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1Fondo)).BeginInit();
             this.SuspendLayout();
             // 
-            // txtCelularCliente
+            // txtCelularAgente
             // 
-            this.txtCelularCliente.Location = new System.Drawing.Point(180, 331);
-            this.txtCelularCliente.Name = "txtCelularCliente";
-            this.txtCelularCliente.Size = new System.Drawing.Size(141, 20);
-            this.txtCelularCliente.TabIndex = 23;
+            this.txtCelularAgente.Location = new System.Drawing.Point(180, 331);
+            this.txtCelularAgente.Name = "txtCelularAgente";
+            this.txtCelularAgente.Size = new System.Drawing.Size(141, 20);
+            this.txtCelularAgente.TabIndex = 23;
             // 
-            // txtApellidoCliente
+            // txtApellidoAgente
             // 
-            this.txtApellidoCliente.Location = new System.Drawing.Point(180, 217);
-            this.txtApellidoCliente.Name = "txtApellidoCliente";
-            this.txtApellidoCliente.Size = new System.Drawing.Size(360, 20);
-            this.txtApellidoCliente.TabIndex = 21;
+            this.txtApellidoAgente.Location = new System.Drawing.Point(180, 217);
+            this.txtApellidoAgente.Name = "txtApellidoAgente";
+            this.txtApellidoAgente.Size = new System.Drawing.Size(360, 20);
+            this.txtApellidoAgente.TabIndex = 21;
             // 
-            // txtNombreCliente
+            // txtNombreAgente
             // 
-            this.txtNombreCliente.Location = new System.Drawing.Point(180, 161);
-            this.txtNombreCliente.Name = "txtNombreCliente";
-            this.txtNombreCliente.Size = new System.Drawing.Size(360, 20);
-            this.txtNombreCliente.TabIndex = 20;
+            this.txtNombreAgente.Location = new System.Drawing.Point(180, 161);
+            this.txtNombreAgente.Name = "txtNombreAgente";
+            this.txtNombreAgente.Size = new System.Drawing.Size(360, 20);
+            this.txtNombreAgente.TabIndex = 20;
             // 
-            // txtDniCliente
+            // txtDniAgente
             // 
-            this.txtDniCliente.Location = new System.Drawing.Point(180, 108);
-            this.txtDniCliente.Name = "txtDniCliente";
-            this.txtDniCliente.Size = new System.Drawing.Size(141, 20);
-            this.txtDniCliente.TabIndex = 19;
+            this.txtDniAgente.Location = new System.Drawing.Point(180, 108);
+            this.txtDniAgente.Name = "txtDniAgente";
+            this.txtDniAgente.Size = new System.Drawing.Size(141, 20);
+            this.txtDniAgente.TabIndex = 19;
             // 
             // lbDniAgente
             // 
@@ -233,10 +233,10 @@ namespace ProyectoAltavista
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.txtCelularCliente);
-            this.Controls.Add(this.txtApellidoCliente);
-            this.Controls.Add(this.txtNombreCliente);
-            this.Controls.Add(this.txtDniCliente);
+            this.Controls.Add(this.txtCelularAgente);
+            this.Controls.Add(this.txtApellidoAgente);
+            this.Controls.Add(this.txtNombreAgente);
+            this.Controls.Add(this.txtDniAgente);
             this.Controls.Add(this.lbDniAgente);
             this.Controls.Add(this.pictureBox1Fondo);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -249,10 +249,10 @@ namespace ProyectoAltavista
         }
 
         #endregion
-        private System.Windows.Forms.TextBox txtCelularCliente;
-        private System.Windows.Forms.TextBox txtApellidoCliente;
-        private System.Windows.Forms.TextBox txtNombreCliente;
-        private System.Windows.Forms.TextBox txtDniCliente;
+        private System.Windows.Forms.TextBox txtCelularAgente;
+        private System.Windows.Forms.TextBox txtApellidoAgente;
+        private System.Windows.Forms.TextBox txtNombreAgente;
+        private System.Windows.Forms.TextBox txtDniAgente;
         private System.Windows.Forms.Label lbDniAgente;
         private System.Windows.Forms.PictureBox pictureBox1Fondo;
         private System.Windows.Forms.Label label1;

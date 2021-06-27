@@ -45,36 +45,32 @@ namespace ProyectoAltavista
             // 
             // txtNombreCiudad
             // 
-            this.txtNombreCiudad.Location = new System.Drawing.Point(352, 209);
-            this.txtNombreCiudad.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNombreCiudad.Location = new System.Drawing.Point(264, 170);
             this.txtNombreCiudad.Name = "txtNombreCiudad";
-            this.txtNombreCiudad.Size = new System.Drawing.Size(479, 22);
+            this.txtNombreCiudad.Size = new System.Drawing.Size(360, 20);
             this.txtNombreCiudad.TabIndex = 7;
             // 
             // textCódigoPostal
             // 
-            this.textCódigoPostal.Location = new System.Drawing.Point(352, 306);
-            this.textCódigoPostal.Margin = new System.Windows.Forms.Padding(4);
+            this.textCódigoPostal.Location = new System.Drawing.Point(264, 249);
             this.textCódigoPostal.Name = "textCódigoPostal";
-            this.textCódigoPostal.Size = new System.Drawing.Size(479, 22);
+            this.textCódigoPostal.Size = new System.Drawing.Size(360, 20);
             this.textCódigoPostal.TabIndex = 9;
             // 
             // textReferenciasCiudad
             // 
-            this.textReferenciasCiudad.Location = new System.Drawing.Point(352, 388);
-            this.textReferenciasCiudad.Margin = new System.Windows.Forms.Padding(4);
+            this.textReferenciasCiudad.Location = new System.Drawing.Point(264, 315);
             this.textReferenciasCiudad.Name = "textReferenciasCiudad";
-            this.textReferenciasCiudad.Size = new System.Drawing.Size(479, 22);
+            this.textReferenciasCiudad.Size = new System.Drawing.Size(360, 20);
             this.textReferenciasCiudad.TabIndex = 10;
             // 
             // pictureBox1Fondo
             // 
             this.pictureBox1Fondo.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1Fondo.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1Fondo.Image")));
-            this.pictureBox1Fondo.Location = new System.Drawing.Point(-9, -15);
-            this.pictureBox1Fondo.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1Fondo.Location = new System.Drawing.Point(-7, -12);
             this.pictureBox1Fondo.Name = "pictureBox1Fondo";
-            this.pictureBox1Fondo.Size = new System.Drawing.Size(1119, 572);
+            this.pictureBox1Fondo.Size = new System.Drawing.Size(839, 465);
             this.pictureBox1Fondo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1Fondo.TabIndex = 28;
             this.pictureBox1Fondo.TabStop = false;
@@ -82,10 +78,9 @@ namespace ProyectoAltavista
             // btnCancelar
             // 
             this.btnCancelar.Font = new System.Drawing.Font("Lucida Fax", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.Location = new System.Drawing.Point(815, 458);
-            this.btnCancelar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCancelar.Location = new System.Drawing.Point(611, 372);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(213, 60);
+            this.btnCancelar.Size = new System.Drawing.Size(160, 49);
             this.btnCancelar.TabIndex = 36;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
@@ -94,10 +89,9 @@ namespace ProyectoAltavista
             // btnRegistrar
             // 
             this.btnRegistrar.Font = new System.Drawing.Font("Lucida Fax", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegistrar.Location = new System.Drawing.Point(535, 458);
-            this.btnRegistrar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnRegistrar.Location = new System.Drawing.Point(401, 372);
             this.btnRegistrar.Name = "btnRegistrar";
-            this.btnRegistrar.Size = new System.Drawing.Size(213, 60);
+            this.btnRegistrar.Size = new System.Drawing.Size(160, 49);
             this.btnRegistrar.TabIndex = 37;
             this.btnRegistrar.Text = "Registrar";
             this.btnRegistrar.UseVisualStyleBackColor = true;
@@ -107,21 +101,19 @@ namespace ProyectoAltavista
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(83, 209);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(62, 170);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(245, 27);
+            this.label1.Size = new System.Drawing.Size(192, 22);
             this.label1.TabIndex = 38;
-            this.label1.Text = "Nombre de Cuidad:";
+            this.label1.Text = "Nombre de Ciudad:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(83, 300);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(62, 244);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(182, 27);
+            this.label3.Size = new System.Drawing.Size(144, 22);
             this.label3.TabIndex = 40;
             this.label3.Text = "Código Postal:";
             // 
@@ -129,10 +121,9 @@ namespace ProyectoAltavista
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(83, 388);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(62, 315);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(159, 27);
+            this.label4.Size = new System.Drawing.Size(125, 22);
             this.label4.TabIndex = 41;
             this.label4.Text = "Referencias:";
             // 
@@ -142,18 +133,17 @@ namespace ProyectoAltavista
             this.labelRegistarCiudad.BackColor = System.Drawing.Color.WhiteSmoke;
             this.labelRegistarCiudad.Font = new System.Drawing.Font("Monotype Corsiva", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelRegistarCiudad.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.labelRegistarCiudad.Location = new System.Drawing.Point(269, 57);
-            this.labelRegistarCiudad.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelRegistarCiudad.Location = new System.Drawing.Point(202, 46);
             this.labelRegistarCiudad.Name = "labelRegistarCiudad";
-            this.labelRegistarCiudad.Size = new System.Drawing.Size(522, 97);
+            this.labelRegistarCiudad.Size = new System.Drawing.Size(414, 79);
             this.labelRegistarCiudad.TabIndex = 42;
             this.labelRegistarCiudad.Text = "Registrar Ciudad";
             // 
             // RegistrarCiudad
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.labelRegistarCiudad);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -165,7 +155,6 @@ namespace ProyectoAltavista
             this.Controls.Add(this.txtNombreCiudad);
             this.Controls.Add(this.pictureBox1Fondo);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "RegistrarCiudad";
             this.Text = "RegistrarCiudad";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1Fondo)).EndInit();

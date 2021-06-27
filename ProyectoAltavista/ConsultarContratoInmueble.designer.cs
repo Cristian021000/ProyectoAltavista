@@ -53,12 +53,12 @@ namespace ProyectoAltavista
             // lbDatosContrato
             // 
             this.lbDatosContrato.AutoSize = true;
-            this.lbDatosContrato.Font = new System.Drawing.Font("Monotype Corsiva", 35.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbDatosContrato.Font = new System.Drawing.Font("Monotype Corsiva", 35.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbDatosContrato.Location = new System.Drawing.Point(168, 9);
             this.lbDatosContrato.Name = "lbDatosContrato";
-            this.lbDatosContrato.Size = new System.Drawing.Size(495, 56);
+            this.lbDatosContrato.Size = new System.Drawing.Size(508, 56);
             this.lbDatosContrato.TabIndex = 1;
-            this.lbDatosContrato.Text = "Datos de Contrato Inmueble";
+            this.lbDatosContrato.Text = "Consultar Contrato Inmueble";
             // 
             // labelIngresoDNIDCI
             // 

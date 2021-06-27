@@ -21,9 +21,12 @@ namespace ProyectoAltavista
             mantSitioInteres = mant;
             ListarSitioInteres();
         }
-        public void abrir()
+        public void limpiarVariableInterfazReg()
         {
-            ListarSitioInteres();
+            txtDsitancia.Clear();
+            txtIdInmuebleC.Clear();
+            txtIdSitioInteress.Clear();
+            comboBoxTipoInmueble.Text = "";
         }
         public void ListarSitioInteres()
         {
@@ -55,17 +58,35 @@ namespace ProyectoAltavista
 
         private void BtRegistrarSiti_Click(object sender, EventArgs e)
         {
-            entSitioInmueble sitioInmueble = new entSitioInmueble();
-            sitioInmueble.InmuebleID = int.Parse(txtIdInmuebleC.Text);
-            sitioInmueble.SitiodeinteresID = int.Parse(txtIdSitioInteress.Text);
-            sitioInmueble.Distancia = int.Parse(txtDsitancia.Text);
-            logSitioInmueble.Instancia.RegistrarSitioInmueble(sitioInmueble);
-            MessageBox.Show("Se registro correctamente el sitio inmueble");
-            ListarSitioInmueble();
+            try
+            {
+                entSitioInmueble sitioInmueble = new entSitioInmueble();
+                sitioInmueble.InmuebleID = int.Parse(txtIdInmuebleC.Text);
+                sitioInmueble.SitiodeinteresID = int.Parse(txtIdSitioInteress.Text);
+                sitioInmueble.Distancia = int.Parse(txtDsitancia.Text);
+                if (!logSitioInmueble.Instancia.ExisteSitioInmueble(sitioInmueble))
+                {
+                    logSitioInmueble.Instancia.RegistrarSitioInmueble(sitioInmueble);
+                    MessageBox.Show("Se registro correctamente el sitio inmueble");
+                    limpiarVariableInterfazReg();
+                }
+                else
+                {
+                    MessageBox.Show("El sitio inmueble ingresado ya está registrado.");
+                }
+                ListarSitioInmueble();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("error.." + ex);
+            }
+            
+            
         }
 
         private void btnCancerlarModificarSI_Click(object sender, EventArgs e)
         {
+            limpiarVariableInterfazReg();
             mantSitioInteres.Show();
             this.Hide();
         }

@@ -20,9 +20,19 @@ namespace ProyectoAltavista
             InitializeComponent();
             MantenedorAgen = ag;
         }
-
+        public void limpiarVariableInterfazReg()
+        {
+            txtRegistraCorreoElectronicoAgente.Clear();
+            txtRegistrarContraseñaAgente.Clear();
+            txtApellidoAgente.Clear();
+            txtCelularAgente.Clear();
+            txtDniAgente.Clear();
+            txtNombreAgente.Clear();
+            dateTimePickerFechaNacimiento.Text = "";
+        }
         private void btnCancelar_Click(object sender, EventArgs e)
         {
+            limpiarVariableInterfazReg();
             MantenedorAgen.Show();
             this.Hide();
         }
@@ -32,11 +42,11 @@ namespace ProyectoAltavista
             try
             {
                 entAgente age = new entAgente();
-                age.dni = int.Parse(txtDniCliente.Text.Trim());
-                age.nombre = txtNombreCliente.Text.Trim();
-                age.apellido = txtApellidoCliente.Text.Trim();
+                age.dni = int.Parse(txtDniAgente.Text.Trim());
+                age.nombre = txtNombreAgente.Text.Trim();
+                age.apellido = txtApellidoAgente.Text.Trim();
                 age.Fechanacimiento = DateTime.Parse(dateTimePickerFechaNacimiento.Text.Trim());
-                age.celular = int.Parse(txtCelularCliente.Text.Trim());
+                age.celular = int.Parse(txtCelularAgente.Text.Trim());
                 age.correo = txtRegistraCorreoElectronicoAgente.Text.Trim();
                 age.contraseña = txtRegistrarContraseñaAgente.Text.Trim();
                 age.estado = true;
@@ -45,6 +55,7 @@ namespace ProyectoAltavista
                 {
                     logAgente.Instancia.RegistrarAgente(age);
                     MessageBox.Show("El agente se a registrado correctamente");
+                    limpiarVariableInterfazReg();
                     MantenedorAgen.Show();
                     this.Hide();
                 }
@@ -57,8 +68,6 @@ namespace ProyectoAltavista
             {
                 MessageBox.Show("error.." + ex);
             }
-
-            
         }
 
         private void txtRegistraCorreoElectronicoAgente_TextChanged(object sender, EventArgs e)

@@ -57,9 +57,9 @@ namespace ProyectoAltavista
             {
                 registrarSitioInmueble = new RegistroSitioInmueble(this);
             }
+            registrarSitioInmueble.ListarSitioInteres();
             this.Hide();
             registrarSitioInmueble.Show();
-            registrarSitioInmueble.Hide();
         }
     }
 }

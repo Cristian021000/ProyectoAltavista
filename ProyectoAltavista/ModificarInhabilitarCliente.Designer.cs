@@ -89,9 +89,9 @@ namespace ProyectoAltavista
             this.label1Bnaco.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label1Bnaco.Location = new System.Drawing.Point(48, 7);
             this.label1Bnaco.Name = "label1Bnaco";
-            this.label1Bnaco.Size = new System.Drawing.Size(421, 79);
+            this.label1Bnaco.Size = new System.Drawing.Size(430, 79);
             this.label1Bnaco.TabIndex = 28;
-            this.label1Bnaco.Text = "Datos del Cliente";
+            this.label1Bnaco.Text = "Modificar Cliente";
             // 
             // label1
             // 

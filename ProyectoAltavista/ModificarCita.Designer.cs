@@ -30,7 +30,6 @@ namespace ProyectoAltavista
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ModificarCita));
-            this.btnRealizar = new System.Windows.Forms.Button();
             this.btDeshabilitar = new System.Windows.Forms.Button();
             this.btnRegresar = new System.Windows.Forms.Button();
             this.btnModificar = new System.Windows.Forms.Button();
@@ -44,17 +43,6 @@ namespace ProyectoAltavista
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btnRealizar
-            // 
-            this.btnRealizar.Font = new System.Drawing.Font("Lucida Fax", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRealizar.Location = new System.Drawing.Point(577, 295);
-            this.btnRealizar.Name = "btnRealizar";
-            this.btnRealizar.Size = new System.Drawing.Size(188, 54);
-            this.btnRealizar.TabIndex = 54;
-            this.btnRealizar.Text = "Realizada";
-            this.btnRealizar.UseVisualStyleBackColor = true;
-            this.btnRealizar.Click += new System.EventHandler(this.btnRealizar_Click);
             // 
             // btDeshabilitar
             // 
@@ -70,7 +58,7 @@ namespace ProyectoAltavista
             // btnRegresar
             // 
             this.btnRegresar.Font = new System.Drawing.Font("Lucida Fax", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegresar.Location = new System.Drawing.Point(577, 378);
+            this.btnRegresar.Location = new System.Drawing.Point(577, 300);
             this.btnRegresar.Name = "btnRegresar";
             this.btnRegresar.Size = new System.Drawing.Size(188, 54);
             this.btnRegresar.TabIndex = 52;
@@ -114,10 +102,10 @@ namespace ProyectoAltavista
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Monotype Corsiva", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Monotype Corsiva", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(272, 19);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(291, 57);
+            this.label1.Size = new System.Drawing.Size(277, 57);
             this.label1.TabIndex = 47;
             this.label1.Text = "Modificar Cita";
             // 
@@ -182,7 +170,6 @@ namespace ProyectoAltavista
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btnRealizar);
             this.Controls.Add(this.btDeshabilitar);
             this.Controls.Add(this.btnRegresar);
             this.Controls.Add(this.btnModificar);
@@ -203,8 +190,6 @@ namespace ProyectoAltavista
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnRealizar;
         private System.Windows.Forms.Button btDeshabilitar;
         private System.Windows.Forms.Button btnRegresar;
         private System.Windows.Forms.Button btnModificar;

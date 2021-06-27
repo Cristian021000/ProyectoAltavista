@@ -19,10 +19,38 @@ namespace ProyectoAltavista
         {
             InitializeComponent();
             inmuebles = inm;
+            ListarSector();
+            ListarPropietario();
+        }
+        public void ListarSector()
+        {
+            comboBoxSector.DataSource = logSector.Instancia.ListarSector();
+            comboBoxSector.DisplayMember = "Nombresector";
+            comboBoxSector.ValueMember = "SectorID";
+        }
+        public void ListarPropietario()
+        {
+            comboBoxPropietario.DataSource = logPropietario.Instancia.ListarPropietario();
+            comboBoxPropietario.DisplayMember = "Nombre";
+            comboBoxPropietario.ValueMember = "PropietarioID";
+        }
+        public void limpiarVariableInterfazReg()
+        {
+            txtDireccionT.Clear();
+            txtPrecioMinT.Clear();
+            txtPrecioT.Clear();
+            txtRegisPubliT.Clear();
+            chbAgua.Checked = false;
+            chbAlcantarillado.Checked = false;
+            chbLuz.Checked = false;
+            chbDesague.Checked = false;
         }
 
         private void RegresarTerreno_Click(object sender, EventArgs e)
         {
+            limpiarVariableInterfazReg();
+            ListarSector();
+            ListarPropietario();
             this.Hide();
             inmuebles.Show();
         }
@@ -33,8 +61,8 @@ namespace ProyectoAltavista
             {
                 entInmueble inmueble = new entInmueble();
                 entTerreno terreno = new entTerreno();
-                inmueble.SectorID = int.Parse(txIDSectorT.Text.Trim());
-                inmueble.idPropietario = int.Parse(txtIDPropietarioT.Text.Trim());
+                inmueble.SectorID = Convert.ToInt32(comboBoxSector.SelectedValue);
+                inmueble.idPropietario = Convert.ToInt32(comboBoxPropietario.SelectedValue);
                 inmueble.direccion = txtDireccionT.Text.Trim();
                 inmueble.precio = (float)Convert.ToDouble(txtPrecioT.Text.Trim());
                 inmueble.precioMinimo = (float)Convert.ToDouble(txtPrecioMinT.Text.Trim());
@@ -51,6 +79,7 @@ namespace ProyectoAltavista
                     terreno.InmuebleID3 = logInmueble.Instancia.BuscarNRegistroPublico(inmueble.nRegistroPublico).InmuebleID;
                     logTerreno.Instancia.RegistrarInmuebleTerreno(terreno);
                     MessageBox.Show("Se registró correctamente el terreno");
+                    limpiarVariableInterfazReg();
                     inmuebles.Show();
                     this.Hide();
                 }
@@ -58,6 +87,8 @@ namespace ProyectoAltavista
                 {
                     MessageBox.Show("El número de registro público ya se encuentra registrado en otro inmueble.");
                 }
+                ListarPropietario();
+                ListarSector();
                 
             }
             catch (Exception ex)

@@ -20,7 +20,12 @@ namespace ProyectoAltavista
             InitializeComponent();
             ciud = ci;
         }
-
+        public void limpiarVariableInterfazReg()
+        {
+            txtNombreCiudad.Clear();
+            textCódigoPostal.Clear();
+            textReferenciasCiudad.Clear();
+        }
         private void lbRegistrarCiudad_Click(object sender, EventArgs e)
         {
 
@@ -28,6 +33,7 @@ namespace ProyectoAltavista
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
+            limpiarVariableInterfazReg();
             ciud.Show();
             this.Hide();
         }
@@ -41,7 +47,8 @@ namespace ProyectoAltavista
                 ciudad.referenciasCiudad = textReferenciasCiudad.Text.Trim();
                 ciudad.postalCiudad = int.Parse(textCódigoPostal.Text.Trim());
                 logCiudad.Instancia.RegistrarCiudad(ciudad);
-                MessageBox.Show("Ciudad Registrada Correctamente");
+                MessageBox.Show("Ciudad Registrada Correctamente.");
+                limpiarVariableInterfazReg();
                 ciud.Show();
                 this.Hide();
 

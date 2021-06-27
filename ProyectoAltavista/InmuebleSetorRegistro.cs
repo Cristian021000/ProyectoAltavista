@@ -22,7 +22,12 @@ namespace ProyectoAltavista
             ManteSector = ManteneSector;
             ListaCiudades();
         }
-
+        public void limpiarVariableInterfazReg()
+        {
+            txtComentarioSector.Clear();
+            txtNombreSector.Clear();
+            comboBoxCiudad.Text = "";
+        }
         private void btnAgregarSector_Click(object sender, EventArgs e)
         {
             try
@@ -36,6 +41,7 @@ namespace ProyectoAltavista
                     sec.Comentario = txtComentarioSector.Text.Trim();
                     logSector.Instancia.RegistrarSector(sec);
                     MessageBox.Show("Se registro correctamente el sector");
+                    limpiarVariableInterfazReg();
                     ManteSector.Show();
                     this.Hide();
                 }
@@ -45,7 +51,6 @@ namespace ProyectoAltavista
                 }
                 
                 ListaCiudades();
-                limpiarVariableInterfazMod();
             }
             catch (Exception ex)
             {
@@ -53,17 +58,6 @@ namespace ProyectoAltavista
             }
 
         }
-
-        /*private void ListaCiudades()
-        {
-            List<entCiudad> listciudad= logCiudad.Instancia.ListarCiudad();
-            foreach (entCiudad a in listciudad)
-            {
-                comboBoxCiudad.Items.Add(a.nombrCiudad);
-            }
-
-        }*/
-
         public void ListaCiudades()
         {
             comboBoxCiudad.DataSource = logCiudad.Instancia.ListarCiudad();
@@ -71,19 +65,11 @@ namespace ProyectoAltavista
             comboBoxCiudad.ValueMember = "CiudadID";
         }
 
-        public void limpiarVariableInterfazMod()
-        {
-            txtNombreSector.Clear();
-            txtComentarioSector.Clear();
-        }
-
-
-
         private void Regresar_Click(object sender, EventArgs e)
         {
+            limpiarVariableInterfazReg();
             ManteSector.Show();
             this.Hide();
-            limpiarVariableInterfazMod();
         }
     }
 }

@@ -52,21 +52,21 @@ namespace ProyectoAltavista
             // 
             // bt3MostraBanco
             // 
-            this.bt3MostraBanco.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt3MostraBanco.Location = new System.Drawing.Point(62, 297);
+            this.bt3MostraBanco.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt3MostraBanco.Location = new System.Drawing.Point(25, 310);
             this.bt3MostraBanco.Name = "bt3MostraBanco";
-            this.bt3MostraBanco.Size = new System.Drawing.Size(168, 33);
+            this.bt3MostraBanco.Size = new System.Drawing.Size(235, 33);
             this.bt3MostraBanco.TabIndex = 10;
-            this.bt3MostraBanco.Text = "Mostrar Banco";
+            this.bt3MostraBanco.Text = "Consultar Banco";
             this.bt3MostraBanco.UseVisualStyleBackColor = true;
             this.bt3MostraBanco.Click += new System.EventHandler(this.bt3MostraBanco_Click);
             // 
             // bt2RegistarBanco
             // 
-            this.bt2RegistarBanco.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt2RegistarBanco.Location = new System.Drawing.Point(62, 126);
+            this.bt2RegistarBanco.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt2RegistarBanco.Location = new System.Drawing.Point(25, 139);
             this.bt2RegistarBanco.Name = "bt2RegistarBanco";
-            this.bt2RegistarBanco.Size = new System.Drawing.Size(168, 33);
+            this.bt2RegistarBanco.Size = new System.Drawing.Size(235, 33);
             this.bt2RegistarBanco.TabIndex = 9;
             this.bt2RegistarBanco.Text = "Registrar Banco";
             this.bt2RegistarBanco.UseVisualStyleBackColor = true;
@@ -92,9 +92,9 @@ namespace ProyectoAltavista
             this.label1Bnaco.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label1Bnaco.Location = new System.Drawing.Point(350, 9);
             this.label1Bnaco.Name = "label1Bnaco";
-            this.label1Bnaco.Size = new System.Drawing.Size(190, 79);
+            this.label1Bnaco.Size = new System.Drawing.Size(168, 79);
             this.label1Bnaco.TabIndex = 6;
-            this.label1Bnaco.Text = "Banco ";
+            this.label1Bnaco.Text = "Menu";
             // 
             // pictureBox1Fondo
             // 

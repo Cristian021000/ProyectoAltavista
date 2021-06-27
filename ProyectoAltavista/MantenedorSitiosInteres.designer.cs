@@ -67,11 +67,11 @@ namespace ProyectoAltavista
             this.lbSitioInteres.BackColor = System.Drawing.Color.WhiteSmoke;
             this.lbSitioInteres.Font = new System.Drawing.Font("Monotype Corsiva", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbSitioInteres.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lbSitioInteres.Location = new System.Drawing.Point(210, 33);
+            this.lbSitioInteres.Location = new System.Drawing.Point(306, 9);
             this.lbSitioInteres.Name = "lbSitioInteres";
-            this.lbSitioInteres.Size = new System.Drawing.Size(373, 79);
+            this.lbSitioInteres.Size = new System.Drawing.Size(168, 79);
             this.lbSitioInteres.TabIndex = 54;
-            this.lbSitioInteres.Text = "Sitio de Interés";
+            this.lbSitioInteres.Text = "Menu";
             // 
             // pictureBox1Fondo
             // 
@@ -91,7 +91,7 @@ namespace ProyectoAltavista
             this.btnListarSI.Name = "btnListarSI";
             this.btnListarSI.Size = new System.Drawing.Size(250, 77);
             this.btnListarSI.TabIndex = 59;
-            this.btnListarSI.Text = "Listar Sitios de interés";
+            this.btnListarSI.Text = "Consultar Sitios de interés";
             this.btnListarSI.UseVisualStyleBackColor = true;
             this.btnListarSI.Click += new System.EventHandler(this.btnListarSI_Click);
             // 

@@ -22,7 +22,12 @@ namespace ProyectoAltavista
             siti = si;
         
         }
-
+        public void limpiarVariableInterfazReg()
+        {
+            txtCodigoRegistrarSI.Clear();
+            txtRegistrarDireccionSI.Clear();
+            txtRegistrarNombreSI.Clear();
+        }
         private void label2_Click(object sender, EventArgs e)
         {
 
@@ -30,6 +35,7 @@ namespace ProyectoAltavista
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
+            limpiarVariableInterfazReg();
             siti.Show();
             this.Hide();
         }
@@ -44,6 +50,7 @@ namespace ProyectoAltavista
                 Sitio.estadoSI = true;
                 logSitioInteres.Instancia.RegistrarSI(Sitio);
                 MessageBox.Show("El sitio de interes fue registrado.");
+                limpiarVariableInterfazReg();
                 siti.Show();
                 this.Hide();
             }

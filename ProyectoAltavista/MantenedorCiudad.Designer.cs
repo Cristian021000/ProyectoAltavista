@@ -90,7 +90,7 @@ namespace ProyectoAltavista
             this.btListarCiudad.Name = "btListarCiudad";
             this.btListarCiudad.Size = new System.Drawing.Size(272, 50);
             this.btListarCiudad.TabIndex = 53;
-            this.btListarCiudad.Text = "Listar Ciudad";
+            this.btListarCiudad.Text = "Consultar Ciudad";
             this.btListarCiudad.UseVisualStyleBackColor = true;
             this.btListarCiudad.Click += new System.EventHandler(this.btListarCiudad_Click);
             // 

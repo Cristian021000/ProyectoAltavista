@@ -38,7 +38,7 @@ namespace ProyectoAltavista
             {
                mossector = new InmuebleMostrarSector(this);
             }
-            
+            mossector.ListarSectores();
             mossector.Show();
             this.Hide();
         }

@@ -60,7 +60,6 @@ namespace CapaDatos
                 while (dr.Read())
                 {
                     entSitioInmueble sitioInmueble = new entSitioInmueble();
-                    sitioInmueble.INMUEBLESitioDeinteresID = Convert.ToInt32(dr["INMUEBLESitioDeinteresID"]);
                     sitioInmueble.Distancia = Convert.ToInt32(dr["Distancia"]);
                     sitioInmueble.SitiodeinteresID = Convert.ToInt32(dr["SitiodeinteresID"]);
                     sitioInmueble.InmuebleID = Convert.ToInt32(dr["InmuebleID"]);
@@ -74,6 +73,35 @@ namespace CapaDatos
             }
             finally { cmd.Connection.Close(); }
             return lista;
+        }
+        public Boolean ExisteSitioInmueble(entSitioInmueble sitioInmueble)
+        {
+            Boolean existe = false;
+            SqlCommand cmd = null;
+            try
+            {
+                SqlConnection cn = Conexion.Instancia.Conectar();
+                cmd = new SqlCommand("spExisteSitioInmueble", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@InmuebleID", sitioInmueble.InmuebleID);
+                cmd.Parameters.AddWithValue("@SitiodeinteresID", sitioInmueble.SitiodeinteresID);
+                cn.Open();
+
+                SqlDataReader dr = cmd.ExecuteReader();
+
+                if (dr.Read())
+                {
+                    existe = true;
+                }
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally { cmd.Connection.Close(); }
+
+
+            return existe;
         }
     }
 }

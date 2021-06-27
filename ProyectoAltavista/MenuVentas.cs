@@ -29,7 +29,6 @@ namespace ProyectoAltavista
                 regVentaPropio = new RegistrarVentaPropios(this);
             }
             regVentaPropio.ListarBancos();
-            regVentaPropio.ListarCitas();
             //regVentaPropio.ListarIDCita();
             regVentaPropio.Show();
             this.Hide();
@@ -39,8 +38,10 @@ namespace ProyectoAltavista
         {
             if (consultaVenta == null)
             {
-                //consultaVenta = new ConsultarVentas(this);
+                consultaVenta = new ConsultarVentas(this);
             }
+            consultaVenta.ListarCita();
+            consultaVenta.ListarVenta();
             consultaVenta.Show();
             this.Hide();
         }

@@ -55,11 +55,11 @@ namespace ProyectoAltavista
             this.lbInmueble.BackColor = System.Drawing.Color.WhiteSmoke;
             this.lbInmueble.Font = new System.Drawing.Font("Monotype Corsiva", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbInmueble.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lbInmueble.Location = new System.Drawing.Point(235, 21);
+            this.lbInmueble.Location = new System.Drawing.Point(280, 9);
             this.lbInmueble.Name = "lbInmueble";
-            this.lbInmueble.Size = new System.Drawing.Size(242, 79);
+            this.lbInmueble.Size = new System.Drawing.Size(168, 79);
             this.lbInmueble.TabIndex = 45;
-            this.lbInmueble.Text = "Inmueble";
+            this.lbInmueble.Text = "Menu";
             // 
             // btRegistrarInmueble
             // 
@@ -79,7 +79,7 @@ namespace ProyectoAltavista
             this.MostrarInmueble.Name = "MostrarInmueble";
             this.MostrarInmueble.Size = new System.Drawing.Size(275, 78);
             this.MostrarInmueble.TabIndex = 51;
-            this.MostrarInmueble.Text = "Consultar";
+            this.MostrarInmueble.Text = "Consultar Inmuebles";
             this.MostrarInmueble.UseVisualStyleBackColor = true;
             this.MostrarInmueble.Click += new System.EventHandler(this.MostrarInmueble_Click);
             // 

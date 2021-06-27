@@ -67,12 +67,12 @@ namespace ProyectoAltavista
             // lbDatosContrato
             // 
             this.lbDatosContrato.AutoSize = true;
-            this.lbDatosContrato.Font = new System.Drawing.Font("Monotype Corsiva", 35.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbDatosContrato.Font = new System.Drawing.Font("Monotype Corsiva", 35.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbDatosContrato.Location = new System.Drawing.Point(261, 9);
             this.lbDatosContrato.Name = "lbDatosContrato";
-            this.lbDatosContrato.Size = new System.Drawing.Size(352, 56);
+            this.lbDatosContrato.Size = new System.Drawing.Size(365, 56);
             this.lbDatosContrato.TabIndex = 28;
-            this.lbDatosContrato.Text = "Datos de Inmuebles";
+            this.lbDatosContrato.Text = "Consultar Inmuebles";
             // 
             // comboBoxTipoInmueble
             // 

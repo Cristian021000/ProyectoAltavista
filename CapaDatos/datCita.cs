@@ -220,7 +220,6 @@ namespace CapaDatos
                 cmd = new SqlCommand("spCitaRealizada", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@CitaID", cita.CitaID);
-                cmd.Parameters.AddWithValue("@Realizado", cita.Realizado);
                 cn.Open();
                 int i = cmd.ExecuteNonQuery();
                 if (i > 0)
@@ -234,6 +233,37 @@ namespace CapaDatos
             }
             finally { cmd.Connection.Close(); }
             return deshabilitar;
+        }
+        public List<entCita> ListarCitasVenta()
+        {
+            List<entCita> lista = new List<entCita>();
+            SqlCommand cmd = null;
+            try
+            {
+                SqlConnection cn = Conexion.Instancia.Conectar();
+                cmd = new SqlCommand("spListarCitasVenta", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cn.Open();
+                SqlDataReader dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    entCita cita = new entCita();
+                    cita.Estadocita = Convert.ToBoolean(dr["Estadocita"]);
+                    cita.CitaID = Convert.ToInt32(dr["CitaID"]);
+                    cita.AgenteID = Convert.ToInt32(dr["AgenteID"]);
+                    cita.ClienteID = Convert.ToInt32(dr["ClienteID"]);
+                    cita.InmuebleID = Convert.ToInt32(dr["InmuebleID"]);
+                    cita.Fechacita = Convert.ToDateTime(dr["Fechacita"]);
+                    cita.Realizado = Convert.ToBoolean(dr["Realizado"]);
+                    lista.Add(cita);
+                }
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally { cmd.Connection.Close(); }
+            return lista;
         }
     }
 }

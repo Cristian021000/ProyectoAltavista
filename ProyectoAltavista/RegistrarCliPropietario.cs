@@ -20,9 +20,19 @@ namespace ProyectoAltavista
             InitializeComponent();
             prop = pro;
         }
+        public void limpiarVariableInterfazReg()
+        {
+            txtApellido.Clear();
+            txtCelular.Clear();
+            txtDireccion.Clear();
+            txtDni.Clear();
+            txtNombre.Clear();
+            dateTimePickerFechaNacimiento.Text = "";
+        }
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
+            limpiarVariableInterfazReg();
             prop.Show();
             this.Hide();
         }
@@ -42,6 +52,7 @@ namespace ProyectoAltavista
                 if (!logPropietario.Instancia.ExisteDatosPropietario(Prop))
                 {
                     logPropietario.Instancia.RegistrarPropietario(Prop);
+                    limpiarVariableInterfazReg();
                 }
                 else
                 {

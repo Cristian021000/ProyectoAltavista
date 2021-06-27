@@ -36,20 +36,20 @@ namespace ProyectoAltavista
             this.PrecioT = new System.Windows.Forms.Label();
             this.PrecioMinT = new System.Windows.Forms.Label();
             this.NumRegisPublicosT = new System.Windows.Forms.Label();
-            this.label1IdSectorT = new System.Windows.Forms.Label();
-            this.labelIDPropietarioT = new System.Windows.Forms.Label();
             this.txtDireccionT = new System.Windows.Forms.TextBox();
             this.txtPrecioT = new System.Windows.Forms.TextBox();
             this.txtPrecioMinT = new System.Windows.Forms.TextBox();
             this.txtRegisPubliT = new System.Windows.Forms.TextBox();
-            this.txIDSectorT = new System.Windows.Forms.TextBox();
-            this.txtIDPropietarioT = new System.Windows.Forms.TextBox();
             this.AceptarRegisTerreno = new System.Windows.Forms.Button();
             this.RegresarTerreno = new System.Windows.Forms.Button();
             this.chbAgua = new System.Windows.Forms.CheckBox();
             this.chbAlcantarillado = new System.Windows.Forms.CheckBox();
             this.chbDesague = new System.Windows.Forms.CheckBox();
             this.chbLuz = new System.Windows.Forms.CheckBox();
+            this.comboBoxPropietario = new System.Windows.Forms.ComboBox();
+            this.comboBoxSector = new System.Windows.Forms.ComboBox();
+            this.labelIDPropietarioD = new System.Windows.Forms.Label();
+            this.label1IdSectorD = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.FondoT)).BeginInit();
             this.SuspendLayout();
             // 
@@ -116,26 +116,6 @@ namespace ProyectoAltavista
             this.NumRegisPublicosT.TabIndex = 55;
             this.NumRegisPublicosT.Text = "Numero de Registros Publicos:";
             // 
-            // label1IdSectorT
-            // 
-            this.label1IdSectorT.AutoSize = true;
-            this.label1IdSectorT.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1IdSectorT.Location = new System.Drawing.Point(46, 325);
-            this.label1IdSectorT.Name = "label1IdSectorT";
-            this.label1IdSectorT.Size = new System.Drawing.Size(100, 22);
-            this.label1IdSectorT.TabIndex = 56;
-            this.label1IdSectorT.Text = "ID Sector:";
-            // 
-            // labelIDPropietarioT
-            // 
-            this.labelIDPropietarioT.AutoSize = true;
-            this.labelIDPropietarioT.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelIDPropietarioT.Location = new System.Drawing.Point(46, 379);
-            this.labelIDPropietarioT.Name = "labelIDPropietarioT";
-            this.labelIDPropietarioT.Size = new System.Drawing.Size(147, 22);
-            this.labelIDPropietarioT.TabIndex = 57;
-            this.labelIDPropietarioT.Text = "ID Propietario:";
-            // 
             // txtDireccionT
             // 
             this.txtDireccionT.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -171,24 +151,6 @@ namespace ProyectoAltavista
             this.txtRegisPubliT.Name = "txtRegisPubliT";
             this.txtRegisPubliT.Size = new System.Drawing.Size(216, 33);
             this.txtRegisPubliT.TabIndex = 66;
-            // 
-            // txIDSectorT
-            // 
-            this.txIDSectorT.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txIDSectorT.Location = new System.Drawing.Point(148, 323);
-            this.txIDSectorT.Multiline = true;
-            this.txIDSectorT.Name = "txIDSectorT";
-            this.txIDSectorT.Size = new System.Drawing.Size(397, 33);
-            this.txIDSectorT.TabIndex = 67;
-            // 
-            // txtIDPropietarioT
-            // 
-            this.txtIDPropietarioT.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIDPropietarioT.Location = new System.Drawing.Point(194, 376);
-            this.txtIDPropietarioT.Multiline = true;
-            this.txtIDPropietarioT.Name = "txtIDPropietarioT";
-            this.txtIDPropietarioT.Size = new System.Drawing.Size(351, 33);
-            this.txtIDPropietarioT.TabIndex = 68;
             // 
             // AceptarRegisTerreno
             // 
@@ -256,25 +218,61 @@ namespace ProyectoAltavista
             this.chbLuz.Text = "Luz";
             this.chbLuz.UseVisualStyleBackColor = true;
             // 
+            // comboBoxPropietario
+            // 
+            this.comboBoxPropietario.FormattingEnabled = true;
+            this.comboBoxPropietario.Location = new System.Drawing.Point(171, 367);
+            this.comboBoxPropietario.Name = "comboBoxPropietario";
+            this.comboBoxPropietario.Size = new System.Drawing.Size(234, 21);
+            this.comboBoxPropietario.TabIndex = 82;
+            // 
+            // comboBoxSector
+            // 
+            this.comboBoxSector.FormattingEnabled = true;
+            this.comboBoxSector.Location = new System.Drawing.Point(124, 322);
+            this.comboBoxSector.Name = "comboBoxSector";
+            this.comboBoxSector.Size = new System.Drawing.Size(172, 21);
+            this.comboBoxSector.TabIndex = 81;
+            // 
+            // labelIDPropietarioD
+            // 
+            this.labelIDPropietarioD.AutoSize = true;
+            this.labelIDPropietarioD.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelIDPropietarioD.Location = new System.Drawing.Point(45, 367);
+            this.labelIDPropietarioD.Name = "labelIDPropietarioD";
+            this.labelIDPropietarioD.Size = new System.Drawing.Size(120, 22);
+            this.labelIDPropietarioD.TabIndex = 80;
+            this.labelIDPropietarioD.Text = "Propietario:";
+            // 
+            // label1IdSectorD
+            // 
+            this.label1IdSectorD.AutoSize = true;
+            this.label1IdSectorD.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1IdSectorD.Location = new System.Drawing.Point(45, 318);
+            this.label1IdSectorD.Name = "label1IdSectorD";
+            this.label1IdSectorD.Size = new System.Drawing.Size(73, 22);
+            this.label1IdSectorD.TabIndex = 79;
+            this.label1IdSectorD.Text = "Sector:";
+            // 
             // RegistrarTerreno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(586, 652);
+            this.Controls.Add(this.comboBoxPropietario);
+            this.Controls.Add(this.comboBoxSector);
+            this.Controls.Add(this.labelIDPropietarioD);
+            this.Controls.Add(this.label1IdSectorD);
             this.Controls.Add(this.chbLuz);
             this.Controls.Add(this.chbDesague);
             this.Controls.Add(this.chbAlcantarillado);
             this.Controls.Add(this.chbAgua);
             this.Controls.Add(this.RegresarTerreno);
             this.Controls.Add(this.AceptarRegisTerreno);
-            this.Controls.Add(this.txtIDPropietarioT);
-            this.Controls.Add(this.txIDSectorT);
             this.Controls.Add(this.txtRegisPubliT);
             this.Controls.Add(this.txtPrecioMinT);
             this.Controls.Add(this.txtPrecioT);
             this.Controls.Add(this.txtDireccionT);
-            this.Controls.Add(this.labelIDPropietarioT);
-            this.Controls.Add(this.label1IdSectorT);
             this.Controls.Add(this.NumRegisPublicosT);
             this.Controls.Add(this.PrecioMinT);
             this.Controls.Add(this.PrecioT);
@@ -299,19 +297,19 @@ namespace ProyectoAltavista
         private System.Windows.Forms.Label PrecioT;
         private System.Windows.Forms.Label PrecioMinT;
         private System.Windows.Forms.Label NumRegisPublicosT;
-        private System.Windows.Forms.Label label1IdSectorT;
-        private System.Windows.Forms.Label labelIDPropietarioT;
         private System.Windows.Forms.TextBox txtDireccionT;
         private System.Windows.Forms.TextBox txtPrecioT;
         private System.Windows.Forms.TextBox txtPrecioMinT;
         private System.Windows.Forms.TextBox txtRegisPubliT;
-        private System.Windows.Forms.TextBox txIDSectorT;
-        private System.Windows.Forms.TextBox txtIDPropietarioT;
         private System.Windows.Forms.Button AceptarRegisTerreno;
         private System.Windows.Forms.Button RegresarTerreno;
         private System.Windows.Forms.CheckBox chbAgua;
         private System.Windows.Forms.CheckBox chbAlcantarillado;
         private System.Windows.Forms.CheckBox chbDesague;
         private System.Windows.Forms.CheckBox chbLuz;
+        private System.Windows.Forms.ComboBox comboBoxPropietario;
+        private System.Windows.Forms.ComboBox comboBoxSector;
+        private System.Windows.Forms.Label labelIDPropietarioD;
+        private System.Windows.Forms.Label label1IdSectorD;
     }
 }

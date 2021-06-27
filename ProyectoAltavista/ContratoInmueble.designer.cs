@@ -65,7 +65,7 @@ namespace ProyectoAltavista
             this.btnListarContratoInmueble.Name = "btnListarContratoInmueble";
             this.btnListarContratoInmueble.Size = new System.Drawing.Size(214, 61);
             this.btnListarContratoInmueble.TabIndex = 3;
-            this.btnListarContratoInmueble.Text = "Listar";
+            this.btnListarContratoInmueble.Text = "Consultar Contrato Inmueble";
             this.btnListarContratoInmueble.UseVisualStyleBackColor = true;
             // 
             // button1

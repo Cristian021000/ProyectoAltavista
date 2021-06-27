@@ -45,8 +45,6 @@ namespace ProyectoAltavista
             this.txtDireccionD = new System.Windows.Forms.TextBox();
             this.textBox1PrecioD = new System.Windows.Forms.TextBox();
             this.textBox1PrecionMinD = new System.Windows.Forms.TextBox();
-            this.textBox1IDSectorD = new System.Windows.Forms.TextBox();
-            this.textBox1IDPropietarioD = new System.Windows.Forms.TextBox();
             this.textBox1CantBañosD = new System.Windows.Forms.TextBox();
             this.textBox1CantHabitacionesD = new System.Windows.Forms.TextBox();
             this.textBox1UbicacionPisosD = new System.Windows.Forms.TextBox();
@@ -56,6 +54,8 @@ namespace ProyectoAltavista
             this.Regresar = new System.Windows.Forms.Button();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
+            this.comboBoxSector = new System.Windows.Forms.ComboBox();
+            this.comboBoxPropietario = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.Fondo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -74,11 +74,11 @@ namespace ProyectoAltavista
             // 
             this.RegistrarDepartamento.AutoSize = true;
             this.RegistrarDepartamento.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.RegistrarDepartamento.Font = new System.Drawing.Font("Monotype Corsiva", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RegistrarDepartamento.Font = new System.Drawing.Font("Monotype Corsiva", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RegistrarDepartamento.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.RegistrarDepartamento.Location = new System.Drawing.Point(20, 7);
+            this.RegistrarDepartamento.Location = new System.Drawing.Point(80, 19);
             this.RegistrarDepartamento.Name = "RegistrarDepartamento";
-            this.RegistrarDepartamento.Size = new System.Drawing.Size(579, 79);
+            this.RegistrarDepartamento.Size = new System.Drawing.Size(432, 57);
             this.RegistrarDepartamento.TabIndex = 50;
             this.RegistrarDepartamento.Text = "Registrar Departamento";
             // 
@@ -128,9 +128,9 @@ namespace ProyectoAltavista
             this.label1IdSectorD.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1IdSectorD.Location = new System.Drawing.Point(28, 279);
             this.label1IdSectorD.Name = "label1IdSectorD";
-            this.label1IdSectorD.Size = new System.Drawing.Size(100, 22);
+            this.label1IdSectorD.Size = new System.Drawing.Size(73, 22);
             this.label1IdSectorD.TabIndex = 55;
-            this.label1IdSectorD.Text = "ID Sector:";
+            this.label1IdSectorD.Text = "Sector:";
             // 
             // labelIDPropietarioD
             // 
@@ -138,9 +138,9 @@ namespace ProyectoAltavista
             this.labelIDPropietarioD.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelIDPropietarioD.Location = new System.Drawing.Point(28, 328);
             this.labelIDPropietarioD.Name = "labelIDPropietarioD";
-            this.labelIDPropietarioD.Size = new System.Drawing.Size(147, 22);
+            this.labelIDPropietarioD.Size = new System.Drawing.Size(120, 22);
             this.labelIDPropietarioD.TabIndex = 56;
-            this.labelIDPropietarioD.Text = "ID Propietario:";
+            this.labelIDPropietarioD.Text = "Propietario:";
             // 
             // CantidadBañosD
             // 
@@ -208,24 +208,6 @@ namespace ProyectoAltavista
             this.textBox1PrecionMinD.Name = "textBox1PrecionMinD";
             this.textBox1PrecionMinD.Size = new System.Drawing.Size(366, 22);
             this.textBox1PrecionMinD.TabIndex = 64;
-            // 
-            // textBox1IDSectorD
-            // 
-            this.textBox1IDSectorD.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1IDSectorD.Location = new System.Drawing.Point(138, 279);
-            this.textBox1IDSectorD.Multiline = true;
-            this.textBox1IDSectorD.Name = "textBox1IDSectorD";
-            this.textBox1IDSectorD.Size = new System.Drawing.Size(412, 22);
-            this.textBox1IDSectorD.TabIndex = 65;
-            // 
-            // textBox1IDPropietarioD
-            // 
-            this.textBox1IDPropietarioD.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1IDPropietarioD.Location = new System.Drawing.Point(181, 328);
-            this.textBox1IDPropietarioD.Multiline = true;
-            this.textBox1IDPropietarioD.Name = "textBox1IDPropietarioD";
-            this.textBox1IDPropietarioD.Size = new System.Drawing.Size(366, 22);
-            this.textBox1IDPropietarioD.TabIndex = 66;
             // 
             // textBox1CantBañosD
             // 
@@ -311,11 +293,29 @@ namespace ProyectoAltavista
             this.label1.TabIndex = 75;
             this.label1.Text = "Fecha de construccion:";
             // 
+            // comboBoxSector
+            // 
+            this.comboBoxSector.FormattingEnabled = true;
+            this.comboBoxSector.Location = new System.Drawing.Point(107, 283);
+            this.comboBoxSector.Name = "comboBoxSector";
+            this.comboBoxSector.Size = new System.Drawing.Size(172, 21);
+            this.comboBoxSector.TabIndex = 76;
+            // 
+            // comboBoxPropietario
+            // 
+            this.comboBoxPropietario.FormattingEnabled = true;
+            this.comboBoxPropietario.Location = new System.Drawing.Point(154, 328);
+            this.comboBoxPropietario.Name = "comboBoxPropietario";
+            this.comboBoxPropietario.Size = new System.Drawing.Size(234, 21);
+            this.comboBoxPropietario.TabIndex = 77;
+            // 
             // RegistarDepartamento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(586, 749);
+            this.Controls.Add(this.comboBoxPropietario);
+            this.Controls.Add(this.comboBoxSector);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.Regresar);
@@ -325,8 +325,6 @@ namespace ProyectoAltavista
             this.Controls.Add(this.textBox1UbicacionPisosD);
             this.Controls.Add(this.textBox1CantHabitacionesD);
             this.Controls.Add(this.textBox1CantBañosD);
-            this.Controls.Add(this.textBox1IDPropietarioD);
-            this.Controls.Add(this.textBox1IDSectorD);
             this.Controls.Add(this.textBox1PrecionMinD);
             this.Controls.Add(this.textBox1PrecioD);
             this.Controls.Add(this.txtDireccionD);
@@ -369,8 +367,6 @@ namespace ProyectoAltavista
         private System.Windows.Forms.TextBox txtDireccionD;
         private System.Windows.Forms.TextBox textBox1PrecioD;
         private System.Windows.Forms.TextBox textBox1PrecionMinD;
-        private System.Windows.Forms.TextBox textBox1IDSectorD;
-        private System.Windows.Forms.TextBox textBox1IDPropietarioD;
         private System.Windows.Forms.TextBox textBox1CantBañosD;
         private System.Windows.Forms.TextBox textBox1CantHabitacionesD;
         private System.Windows.Forms.TextBox textBox1UbicacionPisosD;
@@ -380,5 +376,7 @@ namespace ProyectoAltavista
         private System.Windows.Forms.Button Regresar;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox comboBoxSector;
+        private System.Windows.Forms.ComboBox comboBoxPropietario;
     }
 }

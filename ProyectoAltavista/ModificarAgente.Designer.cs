@@ -92,9 +92,9 @@ namespace ProyectoAltavista
             this.labelDatosCliente.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.labelDatosCliente.Location = new System.Drawing.Point(55, 9);
             this.labelDatosCliente.Name = "labelDatosCliente";
-            this.labelDatosCliente.Size = new System.Drawing.Size(424, 79);
+            this.labelDatosCliente.Size = new System.Drawing.Size(433, 79);
             this.labelDatosCliente.TabIndex = 26;
-            this.labelDatosCliente.Text = "Datos del Agente";
+            this.labelDatosCliente.Text = "Modificar Agente";
             // 
             // label1
             // 

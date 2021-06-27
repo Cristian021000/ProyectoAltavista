@@ -20,7 +20,14 @@ namespace ProyectoAltavista
             InitializeComponent();
             clie = cl;
         }
-
+        public void limpiarVariableInterfazReg()
+        {
+            txtApellidoCliente.Clear();
+            txtCelularCliente.Clear();
+            txtDniCliente.Clear();
+            txtNombreCliente.Clear();
+            dateTimePickerFechaNacimiento.Text = "";
+        }
         private void lbRegistrarCliente_Click(object sender, EventArgs e)
         {
 
@@ -44,7 +51,7 @@ namespace ProyectoAltavista
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            
+            limpiarVariableInterfazReg();
             clie.Show();
             this.Hide();
         }
@@ -66,6 +73,7 @@ namespace ProyectoAltavista
                 if (!logCliente.Instancia.ExisteDatosCliente(cli))
                 {
                     logCliente.Instancia.RegistrarCliente(cli);
+                    limpiarVariableInterfazReg();
                 }
                 else
                 {

@@ -21,9 +21,15 @@ namespace ProyectoAltavista
             textBox1CodigoBanco.Enabled = false;
             mantBanco = ban;
         }
+        public void limpiarVariableInterfazReg()
+        {
+            textbAgregarBanco.Clear();
+            textBox1CodigoBanco.Clear();
+        }
 
         private void btSalir_Click(object sender, EventArgs e)
         {
+            limpiarVariableInterfazReg();
             mantBanco.Show();
             this.Hide();
         }
@@ -37,6 +43,7 @@ namespace ProyectoAltavista
                 ban.estadoBanco = true;
                 logBanco.Instancia.RegistrarBanco(ban);
                 MessageBox.Show("El banco se a registrado correctamente.");
+                limpiarVariableInterfazReg();
                 mantBanco.Show();
                 this.Hide();
             }

@@ -103,9 +103,9 @@ namespace ProyectoAltavista
             this.label1Bnaco.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label1Bnaco.Location = new System.Drawing.Point(187, 3);
             this.label1Bnaco.Name = "label1Bnaco";
-            this.label1Bnaco.Size = new System.Drawing.Size(453, 79);
+            this.label1Bnaco.Size = new System.Drawing.Size(422, 79);
             this.label1Bnaco.TabIndex = 20;
-            this.label1Bnaco.Text = "Mostrando Banco ";
+            this.label1Bnaco.Text = "Consultar Banco ";
             // 
             // pictureBox1Fondo
             // 

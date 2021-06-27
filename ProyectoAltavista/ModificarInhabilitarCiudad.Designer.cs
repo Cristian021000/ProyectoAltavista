@@ -83,11 +83,11 @@ namespace ProyectoAltavista
             this.labelModificarCiudad.BackColor = System.Drawing.Color.WhiteSmoke;
             this.labelModificarCiudad.Font = new System.Drawing.Font("Monotype Corsiva", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelModificarCiudad.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.labelModificarCiudad.Location = new System.Drawing.Point(90, 29);
+            this.labelModificarCiudad.Location = new System.Drawing.Point(210, 18);
             this.labelModificarCiudad.Name = "labelModificarCiudad";
-            this.labelModificarCiudad.Size = new System.Drawing.Size(410, 79);
+            this.labelModificarCiudad.Size = new System.Drawing.Size(434, 79);
             this.labelModificarCiudad.TabIndex = 27;
-            this.labelModificarCiudad.Text = "Datos de Cuidad";
+            this.labelModificarCiudad.Text = "Modificar Ciudad";
             this.labelModificarCiudad.Click += new System.EventHandler(this.label1Bnaco_Click);
             // 
             // label1

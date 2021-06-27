@@ -84,7 +84,7 @@ namespace CapaDatos
             try
             {
                 SqlConnection cn = Conexion.Instancia.Conectar();
-                cmd = new SqlCommand("sp_VenderInmueble", cn);
+                cmd = new SqlCommand("spVenderInmueble", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@InmuebleID", idInm);
 
@@ -230,16 +230,16 @@ namespace CapaDatos
             finally { cmd.Connection.Close(); }
             return lista;
         }
-        public Boolean BuscarInmuebleCasa(entInmueble inmueble)
+        public Boolean BuscarInmueble(int InmuebleID)
         {
             SqlCommand cmd = null;
             Boolean encontrado = false;
             try
             {
                 SqlConnection cn = Conexion.Instancia.Conectar();
-                cmd = new SqlCommand("spBuscarInmuebleCasa", cn);
+                cmd = new SqlCommand("spBuscarInmueble", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@InmuebleID", inmueble.InmuebleID);
+                cmd.Parameters.AddWithValue("@InmuebleID", InmuebleID);
                 cn.Open();
                 SqlDataReader dr = cmd.ExecuteReader();
                 if (dr.Read())

@@ -26,5 +26,9 @@ namespace CapaLogica
         {
             return datSitioInmueble.Instancia.ListarSitioInmueble();
         }
+        public Boolean ExisteSitioInmueble(entSitioInmueble sitioInmueble)
+        {
+            return datSitioInmueble.Instancia.ExisteSitioInmueble(sitioInmueble);
+        }
     }
 }

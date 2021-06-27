@@ -79,9 +79,9 @@ namespace ProyectoAltavista
             this.lbSector.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lbSector.Location = new System.Drawing.Point(299, 44);
             this.lbSector.Name = "lbSector";
-            this.lbSector.Size = new System.Drawing.Size(172, 79);
+            this.lbSector.Size = new System.Drawing.Size(168, 79);
             this.lbSector.TabIndex = 49;
-            this.lbSector.Text = "Sector";
+            this.lbSector.Text = "Menu";
             // 
             // pictureBox1Fondo
             // 

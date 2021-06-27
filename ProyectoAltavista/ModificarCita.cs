@@ -117,27 +117,5 @@ namespace ProyectoAltavista
                 throw exe;
             }
         }
-
-        private void btnRealizar_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                entCita cita = new entCita();
-                cita.CitaID = idAuxCita;
-                checkBoxRealizada.Checked = true;
-                cita.Realizado = checkBoxRealizada.Checked;
-                logCita.Instancia.CitaRealizada(cita);
-                MessageBox.Show("La cita a sido realizada exitosamente.");
-                muestraCita.ListarCita();
-                muestraCita.limpiarVariableConsultar();
-                limpiarVariableInterfazMod();
-                muestraCita.Show();
-                this.Hide();
-            }
-            catch (Exception exe)
-            {
-                throw exe;
-            }
-        }
     }
 }

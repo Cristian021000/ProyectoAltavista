@@ -43,13 +43,14 @@ namespace ProyectoAltavista
             this.comboBoxBanco = new System.Windows.Forms.ComboBox();
             this.txtEscrituraPublica = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.comboBoxCita = new System.Windows.Forms.ComboBox();
             this.txtIDAgente = new System.Windows.Forms.TextBox();
             this.txtIDCliente = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.txtIDInmueble = new System.Windows.Forms.TextBox();
+            this.txtIDCita = new System.Windows.Forms.TextBox();
+            this.btnVerificar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1Fondo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -110,7 +111,7 @@ namespace ProyectoAltavista
             // labelRegistrarVenta
             // 
             this.labelRegistrarVenta.AutoSize = true;
-            this.labelRegistrarVenta.Font = new System.Drawing.Font("Monotype Corsiva", 35.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelRegistrarVenta.Font = new System.Drawing.Font("Monotype Corsiva", 35.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelRegistrarVenta.Location = new System.Drawing.Point(283, 9);
             this.labelRegistrarVenta.Name = "labelRegistrarVenta";
             this.labelRegistrarVenta.Size = new System.Drawing.Size(289, 56);
@@ -175,15 +176,6 @@ namespace ProyectoAltavista
             this.label1.TabIndex = 32;
             this.label1.Text = "NEscritura Pública:";
             // 
-            // comboBoxCita
-            // 
-            this.comboBoxCita.FormattingEnabled = true;
-            this.comboBoxCita.Location = new System.Drawing.Point(122, 177);
-            this.comboBoxCita.Name = "comboBoxCita";
-            this.comboBoxCita.Size = new System.Drawing.Size(296, 21);
-            this.comboBoxCita.TabIndex = 34;
-            this.comboBoxCita.SelectedIndexChanged += new System.EventHandler(this.comboBoxCita_SelectedIndexChanged);
-            // 
             // txtIDAgente
             // 
             this.txtIDAgente.Location = new System.Drawing.Point(154, 305);
@@ -238,18 +230,37 @@ namespace ProyectoAltavista
             this.txtIDInmueble.Size = new System.Drawing.Size(219, 20);
             this.txtIDInmueble.TabIndex = 39;
             // 
+            // txtIDCita
+            // 
+            this.txtIDCita.Location = new System.Drawing.Point(125, 177);
+            this.txtIDCita.Name = "txtIDCita";
+            this.txtIDCita.Size = new System.Drawing.Size(194, 20);
+            this.txtIDCita.TabIndex = 41;
+            // 
+            // btnVerificar
+            // 
+            this.btnVerificar.Font = new System.Drawing.Font("Lucida Fax", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVerificar.Location = new System.Drawing.Point(339, 173);
+            this.btnVerificar.Name = "btnVerificar";
+            this.btnVerificar.Size = new System.Drawing.Size(114, 31);
+            this.btnVerificar.TabIndex = 42;
+            this.btnVerificar.Text = "Verificar";
+            this.btnVerificar.UseVisualStyleBackColor = true;
+            this.btnVerificar.Click += new System.EventHandler(this.btnVerificar_Click);
+            // 
             // RegistrarVentaPropios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnVerificar);
+            this.Controls.Add(this.txtIDCita);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtIDInmueble);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtIDAgente);
             this.Controls.Add(this.txtIDCliente);
-            this.Controls.Add(this.comboBoxCita);
             this.Controls.Add(this.txtEscrituraPublica);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBoxBanco);
@@ -286,12 +297,13 @@ namespace ProyectoAltavista
         private System.Windows.Forms.ComboBox comboBoxBanco;
         private System.Windows.Forms.TextBox txtEscrituraPublica;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBoxCita;
         private System.Windows.Forms.TextBox txtIDAgente;
         private System.Windows.Forms.TextBox txtIDCliente;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtIDInmueble;
+        private System.Windows.Forms.TextBox txtIDCita;
+        private System.Windows.Forms.Button btnVerificar;
     }
 }

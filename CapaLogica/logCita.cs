@@ -50,5 +50,9 @@ namespace CapaLogica
         {
             datCita.Instancia.CitaRealizada(cita);
         }
+        public List<entCita> ListarCitasVenta()
+        {
+            return datCita.Instancia.ListarCitasVenta();
+        }
     }
 }

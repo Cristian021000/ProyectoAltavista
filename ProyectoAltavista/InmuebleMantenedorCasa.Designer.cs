@@ -37,16 +37,12 @@ namespace ProyectoAltavista
             this.label1Precio = new System.Windows.Forms.Label();
             this.PrecioMin = new System.Windows.Forms.Label();
             this.NumRegisPublicos = new System.Windows.Forms.Label();
-            this.label1IdSector = new System.Windows.Forms.Label();
-            this.labelIDPropietario = new System.Windows.Forms.Label();
             this.CantidadPisos = new System.Windows.Forms.Label();
             this.label1CantidadBaños = new System.Windows.Forms.Label();
             this.label1CantidadHabitaciones = new System.Windows.Forms.Label();
             this.textBox1Precio = new System.Windows.Forms.TextBox();
             this.textBox1PrecioMin = new System.Windows.Forms.TextBox();
             this.textBox1RegistrosPublios = new System.Windows.Forms.TextBox();
-            this.textBox1IDSetor = new System.Windows.Forms.TextBox();
-            this.textBox1IDPropietario = new System.Windows.Forms.TextBox();
             this.textBox1CantidadPisos = new System.Windows.Forms.TextBox();
             this.textBox1CantidadBaños = new System.Windows.Forms.TextBox();
             this.textBox1CantidadHabitaciones = new System.Windows.Forms.TextBox();
@@ -58,6 +54,10 @@ namespace ProyectoAltavista
             this.dtpFecha = new System.Windows.Forms.DateTimePicker();
             this.txtAream2 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.comboBoxPropietario = new System.Windows.Forms.ComboBox();
+            this.comboBoxSector = new System.Windows.Forms.ComboBox();
+            this.labelIDPropietarioD = new System.Windows.Forms.Label();
+            this.label1IdSectorD = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.Fondo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -134,26 +134,6 @@ namespace ProyectoAltavista
             this.NumRegisPublicos.TabIndex = 53;
             this.NumRegisPublicos.Text = "Numero de Registros Publicos:";
             // 
-            // label1IdSector
-            // 
-            this.label1IdSector.AutoSize = true;
-            this.label1IdSector.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1IdSector.Location = new System.Drawing.Point(43, 278);
-            this.label1IdSector.Name = "label1IdSector";
-            this.label1IdSector.Size = new System.Drawing.Size(100, 22);
-            this.label1IdSector.TabIndex = 54;
-            this.label1IdSector.Text = "ID Sector:";
-            // 
-            // labelIDPropietario
-            // 
-            this.labelIDPropietario.AutoSize = true;
-            this.labelIDPropietario.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelIDPropietario.Location = new System.Drawing.Point(44, 321);
-            this.labelIDPropietario.Name = "labelIDPropietario";
-            this.labelIDPropietario.Size = new System.Drawing.Size(147, 22);
-            this.labelIDPropietario.TabIndex = 55;
-            this.labelIDPropietario.Text = "ID Propietario:";
-            // 
             // CantidadPisos
             // 
             this.CantidadPisos.AutoSize = true;
@@ -210,24 +190,6 @@ namespace ProyectoAltavista
             this.textBox1RegistrosPublios.Name = "textBox1RegistrosPublios";
             this.textBox1RegistrosPublios.Size = new System.Drawing.Size(174, 33);
             this.textBox1RegistrosPublios.TabIndex = 63;
-            // 
-            // textBox1IDSetor
-            // 
-            this.textBox1IDSetor.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1IDSetor.Location = new System.Drawing.Point(151, 278);
-            this.textBox1IDSetor.Multiline = true;
-            this.textBox1IDSetor.Name = "textBox1IDSetor";
-            this.textBox1IDSetor.Size = new System.Drawing.Size(351, 25);
-            this.textBox1IDSetor.TabIndex = 64;
-            // 
-            // textBox1IDPropietario
-            // 
-            this.textBox1IDPropietario.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1IDPropietario.Location = new System.Drawing.Point(201, 321);
-            this.textBox1IDPropietario.Multiline = true;
-            this.textBox1IDPropietario.Name = "textBox1IDPropietario";
-            this.textBox1IDPropietario.Size = new System.Drawing.Size(308, 22);
-            this.textBox1IDPropietario.TabIndex = 65;
             // 
             // textBox1CantidadPisos
             // 
@@ -334,11 +296,51 @@ namespace ProyectoAltavista
             this.label2.TabIndex = 78;
             this.label2.Text = "Area";
             // 
+            // comboBoxPropietario
+            // 
+            this.comboBoxPropietario.FormattingEnabled = true;
+            this.comboBoxPropietario.Location = new System.Drawing.Point(166, 321);
+            this.comboBoxPropietario.Name = "comboBoxPropietario";
+            this.comboBoxPropietario.Size = new System.Drawing.Size(234, 21);
+            this.comboBoxPropietario.TabIndex = 82;
+            // 
+            // comboBoxSector
+            // 
+            this.comboBoxSector.FormattingEnabled = true;
+            this.comboBoxSector.Location = new System.Drawing.Point(119, 276);
+            this.comboBoxSector.Name = "comboBoxSector";
+            this.comboBoxSector.Size = new System.Drawing.Size(172, 21);
+            this.comboBoxSector.TabIndex = 81;
+            // 
+            // labelIDPropietarioD
+            // 
+            this.labelIDPropietarioD.AutoSize = true;
+            this.labelIDPropietarioD.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelIDPropietarioD.Location = new System.Drawing.Point(40, 321);
+            this.labelIDPropietarioD.Name = "labelIDPropietarioD";
+            this.labelIDPropietarioD.Size = new System.Drawing.Size(120, 22);
+            this.labelIDPropietarioD.TabIndex = 80;
+            this.labelIDPropietarioD.Text = "Propietario:";
+            // 
+            // label1IdSectorD
+            // 
+            this.label1IdSectorD.AutoSize = true;
+            this.label1IdSectorD.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1IdSectorD.Location = new System.Drawing.Point(40, 272);
+            this.label1IdSectorD.Name = "label1IdSectorD";
+            this.label1IdSectorD.Size = new System.Drawing.Size(73, 22);
+            this.label1IdSectorD.TabIndex = 79;
+            this.label1IdSectorD.Text = "Sector:";
+            // 
             // InmuebleMantenedorCasa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(586, 749);
+            this.Controls.Add(this.comboBoxPropietario);
+            this.Controls.Add(this.comboBoxSector);
+            this.Controls.Add(this.labelIDPropietarioD);
+            this.Controls.Add(this.label1IdSectorD);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtAream2);
             this.Controls.Add(this.dtpFecha);
@@ -350,16 +352,12 @@ namespace ProyectoAltavista
             this.Controls.Add(this.textBox1CantidadHabitaciones);
             this.Controls.Add(this.textBox1CantidadBaños);
             this.Controls.Add(this.textBox1CantidadPisos);
-            this.Controls.Add(this.textBox1IDPropietario);
-            this.Controls.Add(this.textBox1IDSetor);
             this.Controls.Add(this.textBox1RegistrosPublios);
             this.Controls.Add(this.textBox1PrecioMin);
             this.Controls.Add(this.textBox1Precio);
             this.Controls.Add(this.label1CantidadHabitaciones);
             this.Controls.Add(this.label1CantidadBaños);
             this.Controls.Add(this.CantidadPisos);
-            this.Controls.Add(this.labelIDPropietario);
-            this.Controls.Add(this.label1IdSector);
             this.Controls.Add(this.NumRegisPublicos);
             this.Controls.Add(this.PrecioMin);
             this.Controls.Add(this.label1Precio);
@@ -386,16 +384,12 @@ namespace ProyectoAltavista
         private System.Windows.Forms.Label label1Precio;
         private System.Windows.Forms.Label PrecioMin;
         private System.Windows.Forms.Label NumRegisPublicos;
-        private System.Windows.Forms.Label label1IdSector;
-        private System.Windows.Forms.Label labelIDPropietario;
         private System.Windows.Forms.Label CantidadPisos;
         private System.Windows.Forms.Label label1CantidadBaños;
         private System.Windows.Forms.Label label1CantidadHabitaciones;
         private System.Windows.Forms.TextBox textBox1Precio;
         private System.Windows.Forms.TextBox textBox1PrecioMin;
         private System.Windows.Forms.TextBox textBox1RegistrosPublios;
-        private System.Windows.Forms.TextBox textBox1IDSetor;
-        private System.Windows.Forms.TextBox textBox1IDPropietario;
         private System.Windows.Forms.TextBox textBox1CantidadPisos;
         private System.Windows.Forms.TextBox textBox1CantidadBaños;
         private System.Windows.Forms.TextBox textBox1CantidadHabitaciones;
@@ -407,5 +401,9 @@ namespace ProyectoAltavista
         private System.Windows.Forms.DateTimePicker dtpFecha;
         private System.Windows.Forms.TextBox txtAream2;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox comboBoxPropietario;
+        private System.Windows.Forms.ComboBox comboBoxSector;
+        private System.Windows.Forms.Label labelIDPropietarioD;
+        private System.Windows.Forms.Label label1IdSectorD;
     }
 }

@@ -122,9 +122,9 @@ namespace ProyectoAltavista
             this.labelDatosPropietario.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.labelDatosPropietario.Location = new System.Drawing.Point(45, 7);
             this.labelDatosPropietario.Name = "labelDatosPropietario";
-            this.labelDatosPropietario.Size = new System.Drawing.Size(517, 79);
+            this.labelDatosPropietario.Size = new System.Drawing.Size(526, 79);
             this.labelDatosPropietario.TabIndex = 42;
-            this.labelDatosPropietario.Text = "Datos del Propietario";
+            this.labelDatosPropietario.Text = "Modificar Propietario";
             // 
             // txtCelular
             // 

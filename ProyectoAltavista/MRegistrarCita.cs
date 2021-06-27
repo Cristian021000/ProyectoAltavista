@@ -20,6 +20,14 @@ namespace ProyectoAltavista
             InitializeComponent();
             mantCita = ci;
         }
+        public void limpiarVariableInterfazReg()
+        {
+            txtIdDelAgenteRegistrarCita.Clear();
+            txtIdDelClienteRegistrarCita.Clear();
+            txtIdDelInmuebleRegistrarCita.Clear();
+            comboBoxHoraCita.Text = "";
+            dateTimePickerCita.Text = "";
+        }
         private void btnAceptarRegistrarCita_Click_1(object sender, EventArgs e)
         {
             int reserva = comboBoxHoraCita.SelectedIndex;
