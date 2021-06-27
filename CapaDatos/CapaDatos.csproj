@@ -46,6 +46,7 @@
     <Compile Include="datCita.cs" />
     <Compile Include="datCiudad.cs" />
     <Compile Include="datCliente.cs" />
+    <Compile Include="datContrato.cs" />
     <Compile Include="datDepartamento.cs" />
     <Compile Include="datInmueble.cs" />
     <Compile Include="datPropietario.cs" />

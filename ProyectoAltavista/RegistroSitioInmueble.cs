@@ -32,10 +32,6 @@ namespace ProyectoAltavista
         {
             SitioDeInteresVista.DataSource = logSitioInteres.Instancia.ListarSitioInteres();
         }
-        public void ListarSitioInmueble()
-        {
-            dataGridViewRegistrarSitioInmueble.DataSource = logSitioInmueble.Instancia.ListarSitiosInmuebles();
-        }
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -74,7 +70,6 @@ namespace ProyectoAltavista
                 {
                     MessageBox.Show("El sitio inmueble ingresado ya está registrado.");
                 }
-                ListarSitioInmueble();
             }
             catch (Exception ex)
             {

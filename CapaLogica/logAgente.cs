@@ -27,9 +27,17 @@ namespace CapaLogica
         {
             datAgente.Instancia.RegistrarAgente(Agente);
         }
-        public Boolean ExisteDatosAgente(entAgente Agente)
+        public Boolean ExisteDatosAgenteDNI(entAgente Agente)
         {
-            return datAgente.Instancia.ExisteDatosAgente(Agente);
+            return datAgente.Instancia.ExisteDatosAgenteDNI(Agente);
+        }
+        public Boolean ExisteDatosAgenteCorreo(entAgente Agente)
+        {
+            return datAgente.Instancia.ExisteDatosAgenteCorreo(Agente);
+        }
+        public Boolean ExisteDatosAgenteCelular(entAgente Agente)
+        {
+            return datAgente.Instancia.ExisteDatosAgenteCelular(Agente);
         }
         public List<entAgente> ListarAgentes()
         {

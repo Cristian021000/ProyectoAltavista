@@ -78,17 +78,15 @@ namespace CapaDatos
             finally { cmd.Connection.Close(); }
             return registrar;
         }
-        public Boolean ExisteDatosAgente(entAgente Agente)
+        public Boolean ExisteDatosAgenteDNI(entAgente Agente)
         {
             Boolean existe = false;
             SqlCommand cmd = null;
             try
             {
                 SqlConnection cn = Conexion.Instancia.Conectar();
-                cmd = new SqlCommand("spExisteDatosAgente", cn);
+                cmd = new SqlCommand("spExisteDatosAgenteDNI", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@correo", Agente.correo);
-                cmd.Parameters.AddWithValue("@celular", Agente.celular);
                 cmd.Parameters.AddWithValue("@dni", Agente.dni);
                 cn.Open();
              
@@ -98,25 +96,66 @@ namespace CapaDatos
                 {
                     existe = true;                
                 }
-               
-                /*
-                  
-
-                int count = Convert.ToInt32(cmd.ExecuteScalar());
-                if (count > 0)
-                {
-                    existe = true;
-                }*/
             }
             catch (Exception e)
             {
                 throw e;
             }
             finally { cmd.Connection.Close(); }
-            
-            
             return existe;
-        }  
+        }
+        public Boolean ExisteDatosAgenteCorreo(entAgente Agente)
+        {
+            Boolean existe = false;
+            SqlCommand cmd = null;
+            try
+            {
+                SqlConnection cn = Conexion.Instancia.Conectar();
+                cmd = new SqlCommand("spExisteDatosAgenteCorreo", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@correo", Agente.correo);
+                cn.Open();
+
+                SqlDataReader dr = cmd.ExecuteReader();
+
+                if (dr.Read())
+                {
+                    existe = true;
+                }
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally { cmd.Connection.Close(); }
+            return existe;
+        }
+        public Boolean ExisteDatosAgenteCelular(entAgente Agente)
+        {
+            Boolean existe = false;
+            SqlCommand cmd = null;
+            try
+            {
+                SqlConnection cn = Conexion.Instancia.Conectar();
+                cmd = new SqlCommand("spExisteDatosAgenteCelular", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@celular", Agente.celular);
+                cn.Open();
+
+                SqlDataReader dr = cmd.ExecuteReader();
+
+                if (dr.Read())
+                {
+                    existe = true;
+                }
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally { cmd.Connection.Close(); }
+            return existe;
+        }
 
         public List<entAgente> ListarAgentes()
         {

@@ -53,16 +53,43 @@ namespace CapaDatos
             return registrar;
         }
 
-        public Boolean ExisteDatosCliente(entCliente Cliente)
+        public Boolean ExisteDatosClienteDNI(entCliente Cliente)
         {
             Boolean existe = false;
             SqlCommand cmd = null;
             try
             {
                 SqlConnection cn = Conexion.Instancia.Conectar();
-                cmd = new SqlCommand("spExisteDatosCliente", cn);
+                cmd = new SqlCommand("spExisteDatosClienteDNI", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@dnicliente", Cliente.dnicliente);
+                cn.Open();
+
+                SqlDataReader dr = cmd.ExecuteReader();
+
+                if (dr.Read())
+                {
+                    existe = true;
+                }
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally { cmd.Connection.Close(); }
+
+
+            return existe;
+        }
+        public Boolean ExisteDatosClienteCelular(entCliente Cliente)
+        {
+            Boolean existe = false;
+            SqlCommand cmd = null;
+            try
+            {
+                SqlConnection cn = Conexion.Instancia.Conectar();
+                cmd = new SqlCommand("spExisteDatosClienteCelular", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@celcliente", Cliente.celcliente);
                 cn.Open();
 

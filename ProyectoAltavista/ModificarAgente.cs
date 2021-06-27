@@ -81,19 +81,34 @@ namespace ProyectoAltavista
                 Age.celular = int.Parse(txtCelularAgente.Text.Trim());
                 Age.correo = txtDatosCorreoElectronica.Text.Trim();
                 Age.contraseña = txtContraseñaDatosCliente.Text.Trim();
-                logAgente.Instancia.ModificarAgente(Age);
-                MessageBox.Show("Se editaron correctamente los datos del agente");
-                consulta.ListarAgente();
-                consulta.limpiarVariableConsultar();
-                limpiarVariableInterfazMod();
-                consulta.Show();
-                this.Hide();
+                if (logAgente.Instancia.ExisteDatosAgenteCorreo(Age) && logAgente.Instancia.ExisteDatosAgenteCelular(Age))
+                {
+                    MessageBox.Show("Tanto el correo y celular ya se encuentran en uso.");
+                }
+                else if (logAgente.Instancia.ExisteDatosAgenteCorreo(Age))
+                {
+                    MessageBox.Show("El correo ya se encuentra en uso.");
+                }
+                else if (logAgente.Instancia.ExisteDatosAgenteCelular(Age))
+                {
+                    MessageBox.Show("El celular ya se encuentra en uso.");
+                }
+                else
+                {
+                    logAgente.Instancia.ModificarAgente(Age);
+                    MessageBox.Show("Se editaron correctamente los datos del agente");
+                    consulta.ListarAgente();
+                    consulta.limpiarVariableConsultar();
+                    limpiarVariableInterfazMod();
+                    consulta.Show();
+                    this.Hide();
+                }
+                
             }
             catch (Exception ex)
             {
                 throw ex;
             }
-            
         }
 
         private void btDeshabilitar_Click(object sender, EventArgs e)

@@ -70,18 +70,26 @@ namespace ProyectoAltavista
                 cli.celcliente = int.Parse(txtCelularCliente.Text.Trim());
                 cli.estadocliente = true;
 
-                if (!logCliente.Instancia.ExisteDatosCliente(cli))
+                if (logCliente.Instancia.ExisteDatosClienteDNI(cli) && logCliente.Instancia.ExisteDatosClienteCelular(cli))
                 {
-                    logCliente.Instancia.RegistrarCliente(cli);
-                    limpiarVariableInterfazReg();
+                    MessageBox.Show("Tanto el DNI como el celular ya se encuentra en uso.");
+                }
+                else if (logCliente.Instancia.ExisteDatosClienteDNI(cli))
+                {
+                    MessageBox.Show("El DNI ya se encuentra en uso.");
+                }
+                else if (logCliente.Instancia.ExisteDatosClienteCelular(cli))
+                {
+                    MessageBox.Show("El celular ya se encuentra en uso.");
                 }
                 else
                 {
-                    MessageBox.Show(" El cliente ya esta Registrado ");
+                    logCliente.Instancia.RegistrarCliente(cli);
+                    MessageBox.Show("El cliente se a registrado correctamente");
+                    limpiarVariableInterfazReg();
+                    clie.Show();
+                    this.Hide();
                 }
-                MessageBox.Show("El cliente se a registrado correctamente");
-                clie.Show();
-                this.Hide();
             }
             catch (Exception ex)
             {

@@ -50,18 +50,32 @@ namespace ProyectoAltavista
                 age.correo = txtRegistraCorreoElectronicoAgente.Text.Trim();
                 age.contraseña = txtRegistrarContraseñaAgente.Text.Trim();
                 age.estado = true;
-                
-                if (!logAgente.Instancia.ExisteDatosAgente(age))
+
+                if (logAgente.Instancia.ExisteDatosAgenteDNI(age) && logAgente.Instancia.ExisteDatosAgenteCorreo(age)
+                    && logAgente.Instancia.ExisteDatosAgenteCelular(age))
+                    
+                {
+                    MessageBox.Show("Tanto el DNI, correo y celular ya se encuentran en uso.");
+                }
+                else if (logAgente.Instancia.ExisteDatosAgenteDNI(age))
+                {
+                    MessageBox.Show("El DNI ya se encuentra en uso.");
+                }
+                else if (logAgente.Instancia.ExisteDatosAgenteCorreo(age))
+                {
+                    MessageBox.Show("El correo ya se encuentra en uso.");
+                }
+                else if (logAgente.Instancia.ExisteDatosAgenteCelular(age))
+                {
+                    MessageBox.Show("El celular ya se encuentra en uso.");
+                }
+                else
                 {
                     logAgente.Instancia.RegistrarAgente(age);
                     MessageBox.Show("El agente se a registrado correctamente");
                     limpiarVariableInterfazReg();
                     MantenedorAgen.Show();
                     this.Hide();
-                }
-                else
-                {
-                    MessageBox.Show("El correo o el número de celular ya se encuentran en uso");
                 }
             }
             catch (Exception ex)

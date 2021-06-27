@@ -24,9 +24,13 @@ namespace CapaLogica
         {
             datCliente.Instancia.RegistrarCliente(Cliente);
         }
-        public Boolean ExisteDatosCliente(entCliente Cliente)
+        public Boolean ExisteDatosClienteDNI(entCliente Cliente)
         {
-            return datCliente.Instancia.ExisteDatosCliente(Cliente);
+            return datCliente.Instancia.ExisteDatosClienteDNI(Cliente);
+        }
+        public Boolean ExisteDatosClienteCelular(entCliente Cliente)
+        {
+            return datCliente.Instancia.ExisteDatosClienteCelular(Cliente);
         }
         public List<entCliente> ListarClientes()
         {

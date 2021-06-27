@@ -68,19 +68,25 @@ namespace ProyectoAltavista
                 Cli.nombrecliente = txtNombre.Text.Trim();
                 Cli.apelcliente = txtApellido.Text.Trim();
                 Cli.celcliente = int.Parse(txtCelular.Text.Trim());
-                logCliente.Instancia.ModificarCliente(Cli);
-                MessageBox.Show("Se editaron correctamente los datos del Cliente.");
-                clien.ListarClientes();
-                clien.limpiarVariableConsultar();
-                limpiarVariableInterfazMod();
-                clien.Show();
-                this.Hide();
+                if (logCliente.Instancia.ExisteDatosClienteCelular(Cli))
+                {
+                    MessageBox.Show("El celular ya se encuentra en uso.");
+                }
+                else
+                {
+                    logCliente.Instancia.ModificarCliente(Cli);
+                    MessageBox.Show("Se editaron correctamente los datos del Cliente.");
+                    clien.ListarClientes();
+                    clien.limpiarVariableConsultar();
+                    limpiarVariableInterfazMod();
+                    clien.Show();
+                    this.Hide();
+                }
             }
             catch (Exception ex)
             {
                 throw ex;
             }
-
         }
 
         private void btnDeshabilitar_Click(object sender, EventArgs e)
