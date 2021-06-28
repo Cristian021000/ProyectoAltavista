@@ -39,6 +39,7 @@ namespace ProyectoAltavista
             {
                 entVenta venta = new entVenta();
                 entCita cita = new entCita();
+                entContrato contrato = new entContrato();
                 
                 venta.Fechaventa = DateTime.Parse(dtpFecha.Text.Trim());
                 venta.BancoID = Convert.ToInt32(comboBoxBanco.SelectedValue);
@@ -46,7 +47,8 @@ namespace ProyectoAltavista
                 cita = logCita.Instancia.DatosCita(venta.CitaID);
                 venta.Escriturapublica = Convert.ToInt32(txtEscrituraPublica.Text.Trim());
                 venta.Precio = (float)Convert.ToDouble(txtPrecio.Text.Trim());
-                venta.ContratoID = 3;
+                contrato = logContrato.Instancia.DatosContrato();
+                venta.ContratoID = contrato.ContratoID;
                 if (!logVenta.Instancia.ExisteNEscritura(venta.Escriturapublica))
                 {
                     logVenta.Instancia.RegistrarVenta(venta);

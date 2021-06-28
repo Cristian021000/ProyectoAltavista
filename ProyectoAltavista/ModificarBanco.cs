@@ -50,13 +50,19 @@ namespace ProyectoAltavista
                 entBanco banco = new entBanco();
                 banco.BancoID = int.Parse(txtIdBanco.Text.Trim());
                 banco.Nombre = textBox1NombreBanco.Text.Trim();
-                logBanco.Instancia.EditarBanco(banco);
-                MessageBox.Show("Cambio realizado con exito");
-                banc.ListarBanco();
-                banc.limpiarVariableConsultar();
-                limpiarVariableInterfazMod();
-                banc.Show();
-                this.Hide();
+                if (logBanco.Instancia.ExisteDatosBancoNombre(banco))
+                {
+                    MessageBox.Show("El nombre del banco ingresado ya está en uso.");
+                }
+                else {
+                    logBanco.Instancia.EditarBanco(banco);
+                    MessageBox.Show("Cambio realizado con exito");
+                    banc.ListarBanco();
+                    banc.limpiarVariableConsultar();
+                    limpiarVariableInterfazMod();
+                    banc.Show();
+                    this.Hide();
+                }
             }
             catch (Exception ex)
             {

@@ -42,6 +42,13 @@ namespace CapaLogica
         {
             datSitioInteres.Instancia.DeshabilitarSitioInteres(Sitio);
         }
-
+        public Boolean ExisteDatosSitioInteresNombre(entSitioInteres sitio)
+        {
+            return datSitioInteres.Instancia.ExisteDatosSitioInteresNombre(sitio);
+        }
+        public Boolean ExisteDatosSitioInteresDireccion(entSitioInteres sitio)
+        {
+            return datSitioInteres.Instancia.ExisteDatosSitioInteresDireccion(sitio);
+        }
     }
 }

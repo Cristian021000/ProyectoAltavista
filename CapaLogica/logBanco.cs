@@ -45,6 +45,9 @@ namespace CapaLogica
         {
             datBanco.Instancia.DeshabilitarBanco(banco);
         }
-
+        public Boolean ExisteDatosBancoNombre(entBanco banco)
+        {
+            return datBanco.Instancia.ExisteDatosBancoNombre(banco);
+        }
     }
 }

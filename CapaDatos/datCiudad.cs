@@ -153,6 +153,31 @@ namespace CapaDatos
             finally { cmd.Connection.Close(); }
             return modificar;
         }
-    }
+        public Boolean ExisteDatosCiudadNombre(entCiudad ciudad)
+        {
+            Boolean existe = false;
+            SqlCommand cmd = null;
+            try
+            {
+                SqlConnection cn = Conexion.Instancia.Conectar();
+                cmd = new SqlCommand("spExisteDatosCiudadNombre", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@nombrCiudad", ciudad.nombrCiudad);
+                cn.Open();
 
+                SqlDataReader dr = cmd.ExecuteReader();
+
+                if (dr.Read())
+                {
+                    existe = true;
+                }
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally { cmd.Connection.Close(); }
+            return existe;
+        }
+    }
 }

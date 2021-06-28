@@ -44,13 +44,29 @@ namespace ProyectoAltavista
                 Sitio.SitiodeinteresID = int.Parse(txtCodigoModificaSI.Text.Trim());
                 Sitio.NombreSI = txtModificarNombreSI.Text.Trim();
                 Sitio.DireccionSI = txtModificarDireccionSI.Text.Trim();
-                logSitioInteres.Instancia.ModificarSI(Sitio);
-                MessageBox.Show("Se editaron correctamente los datos del sitio de interes.");
-                consulta.listarSitioInteres();
-                consulta.limpiarVariableConsultar();
-                limpiarVariableInterfazMod();
-                consulta.Show();
-                this.Hide();
+                if (logSitioInteres.Instancia.ExisteDatosSitioInteresNombre(Sitio) && logSitioInteres.Instancia.ExisteDatosSitioInteresDireccion(Sitio))
+
+                {
+                    MessageBox.Show("Tanto el nombre como la dirección ya se encuentran en uso.");
+                }
+                else if (logSitioInteres.Instancia.ExisteDatosSitioInteresNombre(Sitio))
+                {
+                    MessageBox.Show("El Nombre ya se encuentra en uso.");
+                }
+                else if (logSitioInteres.Instancia.ExisteDatosSitioInteresDireccion(Sitio))
+                {
+                    MessageBox.Show("La Dirección ya se encuentra en uso.");
+                }
+                else
+                {
+                    logSitioInteres.Instancia.ModificarSI(Sitio);
+                    MessageBox.Show("Se editaron correctamente los datos del sitio de interes.");
+                    consulta.listarSitioInteres();
+                    consulta.limpiarVariableConsultar();
+                    limpiarVariableInterfazMod();
+                    consulta.Show();
+                    this.Hide();
+                }
             }
             catch (Exception ex)
             {

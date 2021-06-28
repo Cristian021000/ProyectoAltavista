@@ -40,5 +40,9 @@ namespace CapaLogica
         {
             datCiudad.Instancia.ModificarCiudad(ciudad);
         }
+        public Boolean ExisteDatosCiudadNombre(entCiudad ciudad)
+        {
+            return datCiudad.Instancia.ExisteDatosCiudadNombre(ciudad);
+        }
     }
 }

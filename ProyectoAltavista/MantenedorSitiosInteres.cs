@@ -17,6 +17,7 @@ namespace ProyectoAltavista
         MRegistrarSitioInteres RegistrarSI;
         ConsultarSitiosInteres consultaSI;
         RegistroSitioInmueble registrarSitioInmueble;
+        ConsultarSitioInmueble consultaSitioInmueble;
         public MantenedorSitiosInteres(MenuPrincipal menu)
         {
             InitializeComponent();
@@ -60,6 +61,17 @@ namespace ProyectoAltavista
             registrarSitioInmueble.ListarSitioInteres();
             this.Hide();
             registrarSitioInmueble.Show();
+        }
+
+        private void btnConsultarSitioInmueble_Click(object sender, EventArgs e)
+        {
+            if (consultaSitioInmueble == null)
+            {
+                consultaSitioInmueble = new ConsultarSitioInmueble(this);
+            }
+            consultaSitioInmueble.ListarInmueble();
+            consultaSitioInmueble.Show();
+            this.Hide();
         }
     }
 }

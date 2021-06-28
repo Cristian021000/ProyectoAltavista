@@ -41,11 +41,19 @@ namespace ProyectoAltavista
                 entBanco ban = new entBanco();
                 ban.Nombre = textbAgregarBanco.Text.Trim();
                 ban.estadoBanco = true;
-                logBanco.Instancia.RegistrarBanco(ban);
-                MessageBox.Show("El banco se a registrado correctamente.");
-                limpiarVariableInterfazReg();
-                mantBanco.Show();
-                this.Hide();
+
+                if (logBanco.Instancia.ExisteDatosBancoNombre(ban))
+                {
+                    MessageBox.Show("El Nombre del banco ya se encuentra en uso.");
+                }
+                else
+                {
+                    logBanco.Instancia.RegistrarBanco(ban);
+                    MessageBox.Show("El banco se a registrado correctamente.");
+                    limpiarVariableInterfazReg();
+                    mantBanco.Show();
+                    this.Hide();
+                }
             }
             catch (Exception ex)
             {

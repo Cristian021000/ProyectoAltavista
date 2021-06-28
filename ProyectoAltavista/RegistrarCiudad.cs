@@ -46,12 +46,18 @@ namespace ProyectoAltavista
                 ciudad.nombrCiudad = txtNombreCiudad.Text.Trim();
                 ciudad.referenciasCiudad = textReferenciasCiudad.Text.Trim();
                 ciudad.postalCiudad = int.Parse(textCódigoPostal.Text.Trim());
-                logCiudad.Instancia.RegistrarCiudad(ciudad);
-                MessageBox.Show("Ciudad Registrada Correctamente.");
-                limpiarVariableInterfazReg();
-                ciud.Show();
-                this.Hide();
-
+                if (logCiudad.Instancia.ExisteDatosCiudadNombre(ciudad))
+                {
+                    MessageBox.Show("El nombre de la ciudad ya está en uso.");
+                }
+                else
+                {
+                    logCiudad.Instancia.RegistrarCiudad(ciudad);
+                    MessageBox.Show("Ciudad Registrada Correctamente.");
+                    limpiarVariableInterfazReg();
+                    ciud.Show();
+                    this.Hide();
+                }
             }
             catch (Exception ex)
             {

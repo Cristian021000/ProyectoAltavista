@@ -48,11 +48,27 @@ namespace ProyectoAltavista
                 Sitio.NombreSI = txtRegistrarNombreSI.Text.Trim();
                 Sitio.DireccionSI = txtRegistrarDireccionSI.Text.Trim();
                 Sitio.estadoSI = true;
-                logSitioInteres.Instancia.RegistrarSI(Sitio);
-                MessageBox.Show("El sitio de interes fue registrado.");
-                limpiarVariableInterfazReg();
-                siti.Show();
-                this.Hide();
+                if (logSitioInteres.Instancia.ExisteDatosSitioInteresNombre(Sitio) && logSitioInteres.Instancia.ExisteDatosSitioInteresDireccion(Sitio))
+
+                {
+                    MessageBox.Show("Tanto el nombre como la dirección ya se encuentran en uso.");
+                }
+                else if (logSitioInteres.Instancia.ExisteDatosSitioInteresNombre(Sitio))
+                {
+                    MessageBox.Show("El Nombre ya se encuentra en uso.");
+                }
+                else if (logSitioInteres.Instancia.ExisteDatosSitioInteresDireccion(Sitio))
+                {
+                    MessageBox.Show("La Dirección ya se encuentra en uso.");
+                }
+                else
+                {
+                    logSitioInteres.Instancia.RegistrarSI(Sitio);
+                    MessageBox.Show("El sitio de interes fue registrado.");
+                    limpiarVariableInterfazReg();
+                    siti.Show();
+                    this.Hide();
+                }
             }
             catch (Exception ex)
             {

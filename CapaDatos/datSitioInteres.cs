@@ -187,6 +187,58 @@ namespace CapaDatos
             finally { cmd.Connection.Close(); }
             return deshabilitar;
         }
+        public Boolean ExisteDatosSitioInteresNombre(entSitioInteres sitio)
+        {
+            Boolean existe = false;
+            SqlCommand cmd = null;
+            try
+            {
+                SqlConnection cn = Conexion.Instancia.Conectar();
+                cmd = new SqlCommand("spExisteDatosSitioInteresNombre", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@NombreSI", sitio.NombreSI);
+                cn.Open();
+
+                SqlDataReader dr = cmd.ExecuteReader();
+
+                if (dr.Read())
+                {
+                    existe = true;
+                }
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally { cmd.Connection.Close(); }
+            return existe;
+        }
+        public Boolean ExisteDatosSitioInteresDireccion(entSitioInteres sitio)
+        {
+            Boolean existe = false;
+            SqlCommand cmd = null;
+            try
+            {
+                SqlConnection cn = Conexion.Instancia.Conectar();
+                cmd = new SqlCommand("spExisteDatosSitioInteresDireccion", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@DireccionSI", sitio.DireccionSI);
+                cn.Open();
+
+                SqlDataReader dr = cmd.ExecuteReader();
+
+                if (dr.Read())
+                {
+                    existe = true;
+                }
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally { cmd.Connection.Close(); }
+            return existe;
+        }
 
     }
 }

@@ -179,5 +179,31 @@ namespace CapaDatos
             finally { cmd.Connection.Close(); }
             return deshabilitar;
         }
+        public Boolean ExisteDatosBancoNombre(entBanco banco)
+        {
+            Boolean existe = false;
+            SqlCommand cmd = null;
+            try
+            {
+                SqlConnection cn = Conexion.Instancia.Conectar();
+                cmd = new SqlCommand("spExisteDatosBancoNombre", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@Nombre", banco.Nombre);
+                cn.Open();
+
+                SqlDataReader dr = cmd.ExecuteReader();
+
+                if (dr.Read())
+                {
+                    existe = true;
+                }
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally { cmd.Connection.Close(); }
+            return existe;
+        }
     }
 }

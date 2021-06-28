@@ -82,6 +82,12 @@
     <Compile Include="ConsultarInmueble.designer.cs">
       <DependentUpon>ConsultarInmueble.cs</DependentUpon>
     </Compile>
+    <Compile Include="ConsultarSitioInmueble.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarSitioInmueble.Designer.cs">
+      <DependentUpon>ConsultarSitioInmueble.cs</DependentUpon>
+    </Compile>
     <Compile Include="ConsultarVentas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -365,6 +371,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ConsultarInmueble.resx">
       <DependentUpon>ConsultarInmueble.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarSitioInmueble.resx">
+      <DependentUpon>ConsultarSitioInmueble.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ConsultarVentas.resx">
       <DependentUpon>ConsultarVentas.cs</DependentUpon>
