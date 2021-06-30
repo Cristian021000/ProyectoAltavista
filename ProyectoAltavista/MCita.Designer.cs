@@ -67,7 +67,7 @@ namespace ProyectoAltavista
             this.btnMostrarCita.Name = "btnMostrarCita";
             this.btnMostrarCita.Size = new System.Drawing.Size(236, 68);
             this.btnMostrarCita.TabIndex = 2;
-            this.btnMostrarCita.Text = "Mostrar Cita";
+            this.btnMostrarCita.Text = "Consultar cita";
             this.btnMostrarCita.UseVisualStyleBackColor = true;
             this.btnMostrarCita.Click += new System.EventHandler(this.btnMostrarCita_Click);
             // 

@@ -56,7 +56,7 @@ namespace ProyectoAltavista
             this.btLista.Name = "btLista";
             this.btLista.Size = new System.Drawing.Size(272, 50);
             this.btLista.TabIndex = 57;
-            this.btLista.Text = "Lista";
+            this.btLista.Text = "Consultar";
             this.btLista.UseVisualStyleBackColor = true;
             this.btLista.Click += new System.EventHandler(this.btLista_Click);
             // 

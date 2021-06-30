@@ -77,7 +77,7 @@ namespace ProyectoAltavista
             this.btCliente.Name = "btCliente";
             this.btCliente.Size = new System.Drawing.Size(168, 30);
             this.btCliente.TabIndex = 32;
-            this.btCliente.Text = "Ciente";
+            this.btCliente.Text = "Cliente";
             this.btCliente.UseVisualStyleBackColor = true;
             this.btCliente.Click += new System.EventHandler(this.btCliente_Click_1);
             // 
