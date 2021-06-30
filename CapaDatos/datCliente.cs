@@ -125,16 +125,13 @@ namespace CapaDatos
                 {
                     entCliente Cli = new entCliente();
                     Cli.estadocliente = Convert.ToBoolean(dr["estadocliente"]);
-                    if (Cli.estadocliente)
-                    {
-                        Cli.ClienteID = Convert.ToInt32(dr["ClienteID"]);
-                        Cli.dnicliente = Convert.ToInt32(dr["dnicliente"]);
-                        Cli.nombrecliente = dr["nombrecliente"].ToString();
-                        Cli.apelcliente = dr["apelcliente"].ToString();
-                        Cli.Fechanacimiento = Convert.ToDateTime(dr["Fechanacimiento"]);
-                        Cli.celcliente = Convert.ToInt32(dr["celcliente"]);
-                        lista.Add(Cli);
-                    }
+                    Cli.ClienteID = Convert.ToInt32(dr["ClienteID"]);
+                    Cli.dnicliente = Convert.ToInt32(dr["dnicliente"]);
+                    Cli.nombrecliente = dr["nombrecliente"].ToString();
+                    Cli.apelcliente = dr["apelcliente"].ToString();
+                    Cli.Fechanacimiento = Convert.ToDateTime(dr["Fechanacimiento"]);
+                    Cli.celcliente = Convert.ToInt32(dr["celcliente"]);
+                    lista.Add(Cli);
                 }
             }
             catch (Exception e)

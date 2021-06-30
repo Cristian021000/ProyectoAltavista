@@ -169,21 +169,18 @@ namespace CapaDatos
                 cn.Open();
                 SqlDataReader dr = cmd.ExecuteReader();
                 while (dr.Read())
-                { 
+                {
                     entAgente Age = new entAgente();
                     Age.estado = Convert.ToBoolean(dr["estado"]);
-                    if (Age.estado)
-                    {
-                        Age.AgenteID = Convert.ToInt32(dr["AgenteID"]);
-                        Age.dni = Convert.ToInt32(dr["dni"]);
-                        Age.nombre = dr["nombre"].ToString();
-                        Age.apellido = dr["apellido"].ToString();
-                        Age.Fechanacimiento = Convert.ToDateTime(dr["Fechanacimiento"]);
-                        Age.celular = Convert.ToInt32(dr["celular"]);
-                        Age.correo = dr["correo"].ToString();
-                        Age.contraseña = dr["contraseña"].ToString();
-                        lista.Add(Age);
-                    }
+                    Age.AgenteID = Convert.ToInt32(dr["AgenteID"]);
+                    Age.dni = Convert.ToInt32(dr["dni"]);
+                    Age.nombre = dr["nombre"].ToString();
+                    Age.apellido = dr["apellido"].ToString();
+                    Age.Fechanacimiento = Convert.ToDateTime(dr["Fechanacimiento"]);
+                    Age.celular = Convert.ToInt32(dr["celular"]);
+                    Age.correo = dr["correo"].ToString();
+                    Age.contraseña = dr["contraseña"].ToString();
+                    lista.Add(Age);
                 }
             }
             catch (Exception e)

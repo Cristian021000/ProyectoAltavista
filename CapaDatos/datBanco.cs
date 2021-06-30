@@ -60,12 +60,9 @@ namespace CapaDatos
                 {
                     entBanco banco = new entBanco();
                     banco.estadoBanco = Convert.ToBoolean(dr["estadoBanco"]);
-                    if (banco.estadoBanco) { 
-                        banco.BancoID = Convert.ToInt32(dr["BancoID"]);
-                        banco.Nombre = dr["Nombre"].ToString();
-                        lista.Add(banco);
-                    }
-
+                    banco.BancoID = Convert.ToInt32(dr["BancoID"]);
+                    banco.Nombre = dr["Nombre"].ToString();
+                    lista.Add(banco);
                 }
             }
             catch (Exception e)

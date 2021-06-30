@@ -60,16 +60,13 @@ namespace CapaDatos
                 {
                     entCita cita = new entCita();
                     cita.Estadocita = Convert.ToBoolean(dr["Estadocita"]);
-                    if (cita.Estadocita)
-                    {
-                        cita.CitaID = Convert.ToInt32(dr["CitaID"]);
-                        cita.AgenteID = Convert.ToInt32(dr["AgenteID"]);
-                        cita.ClienteID = Convert.ToInt32(dr["ClienteID"]);
-                        cita.InmuebleID = Convert.ToInt32(dr["InmuebleID"]);
-                        cita.Fechacita = Convert.ToDateTime(dr["Fechacita"]);
-                        cita.Realizado = Convert.ToBoolean(dr["Realizado"]);
-                        lista.Add(cita);
-                    }
+                    cita.CitaID = Convert.ToInt32(dr["CitaID"]);
+                    cita.AgenteID = Convert.ToInt32(dr["AgenteID"]);
+                    cita.ClienteID = Convert.ToInt32(dr["ClienteID"]);
+                    cita.InmuebleID = Convert.ToInt32(dr["InmuebleID"]);
+                    cita.Fechacita = Convert.ToDateTime(dr["Fechacita"]);
+                    cita.Realizado = Convert.ToBoolean(dr["Realizado"]);
+                    lista.Add(cita);
                 }
             }
             catch (Exception e)

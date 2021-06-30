@@ -96,17 +96,15 @@ namespace CapaDatos
                 {
                     entPropietario prop = new entPropietario();
                     prop.estadoPropietario = Convert.ToBoolean(dr["estadoPropietario"]);
-                    if (prop.estadoPropietario)
-                    {
-                        prop.PropietarioID = Convert.ToInt32(dr["PropietarioID"]);
-                        prop.Dnipropietario = Convert.ToInt32(dr["Dnipropietario"]);
-                        prop.nombre = dr["nombre"].ToString();
-                        prop.apellido = dr["apellido"].ToString();
-                        prop.Fechanacimiento = Convert.ToDateTime(dr["Fechanacimiento"]);
-                        prop.celular = Convert.ToInt32(dr["celular"]);
-                        prop.direccion = dr["direccion"].ToString();
-                        lista.Add(prop);
-                    }
+                    prop.PropietarioID = Convert.ToInt32(dr["PropietarioID"]);
+                    prop.Dnipropietario = Convert.ToInt32(dr["Dnipropietario"]);
+                    prop.nombre = dr["nombre"].ToString();
+                    prop.apellido = dr["apellido"].ToString();
+                    prop.Fechanacimiento = Convert.ToDateTime(dr["Fechanacimiento"]);
+                    prop.celular = Convert.ToInt32(dr["celular"]);
+                    prop.direccion = dr["direccion"].ToString();
+                    lista.Add(prop);
+
                 }
             }
             catch (Exception e)

@@ -35,13 +35,10 @@ namespace CapaDatos
                 {
                     entSitioInteres Sitio = new entSitioInteres();
                     Sitio.estadoSI = Convert.ToBoolean(dr["EstadoSI"]);
-                    if (Sitio.estadoSI)
-                    {
-                        Sitio.SitiodeinteresID = Convert.ToInt32(dr["SitiodeinteresID"]);
-                        Sitio.NombreSI = dr["NombreSI"].ToString();
-                        Sitio.DireccionSI = dr["DireccionSI"].ToString();
-                        lista.Add(Sitio);
-                    }
+                    Sitio.SitiodeinteresID = Convert.ToInt32(dr["SitiodeinteresID"]);
+                    Sitio.NombreSI = dr["NombreSI"].ToString();
+                    Sitio.DireccionSI = dr["DireccionSI"].ToString();
+                    lista.Add(Sitio);
                 }
 
             }
