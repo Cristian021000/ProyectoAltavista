@@ -80,9 +80,9 @@ namespace ProyectoAltavista
             this.lbNombreUsuario.Font = new System.Drawing.Font("Lucida Fax", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbNombreUsuario.Location = new System.Drawing.Point(95, 103);
             this.lbNombreUsuario.Name = "lbNombreUsuario";
-            this.lbNombreUsuario.Size = new System.Drawing.Size(214, 24);
+            this.lbNombreUsuario.Size = new System.Drawing.Size(81, 24);
             this.lbNombreUsuario.TabIndex = 3;
-            this.lbNombreUsuario.Text = "Nombre de Usuario";
+            this.lbNombreUsuario.Text = "Correo";
             // 
             // txtNombreDeUsuario
             // 
@@ -107,6 +107,7 @@ namespace ProyectoAltavista
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.Size = new System.Drawing.Size(348, 20);
             this.txtContraseña.TabIndex = 6;
+            this.txtContraseña.UseSystemPasswordChar = true;
             // 
             // pictureBox1
             // 
