@@ -68,7 +68,7 @@ namespace ProyectoAltavista
                     agregar.Fechacita = agregar.Fechacita.AddHours(16);
                     break;
             }
-            if (!logCita.Instancia.ExisteCita(agregar))
+            if (!logCita.Instancia.ExisteCita(agregar) && logInmueble.Instancia.BuscarInmueble(agregar.InmuebleID))
             {
                 try
                 {
@@ -85,7 +85,7 @@ namespace ProyectoAltavista
             }
             else
             {
-                MessageBox.Show("Ya existe una cita pendiente por ese Cliente a ese Inmueble");
+                MessageBox.Show("No se pudo registrar correctamente la cita");
             }
         }
 
