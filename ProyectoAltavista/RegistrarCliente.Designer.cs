@@ -44,6 +44,8 @@ namespace ProyectoAltavista
             this.label1Bnaco = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.dateTimePickerFechaNacimiento = new System.Windows.Forms.DateTimePicker();
+            this.Trujillo = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1Fondo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -177,11 +179,32 @@ namespace ProyectoAltavista
             this.dateTimePickerFechaNacimiento.Size = new System.Drawing.Size(299, 20);
             this.dateTimePickerFechaNacimiento.TabIndex = 43;
             // 
+            // Trujillo
+            // 
+            this.Trujillo.Location = new System.Drawing.Point(183, 411);
+            this.Trujillo.Name = "Trujillo";
+            this.Trujillo.Size = new System.Drawing.Size(360, 20);
+            this.Trujillo.TabIndex = 44;
+            this.Trujillo.Text = "Trujillo";
+            this.Trujillo.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(60, 418);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(48, 13);
+            this.label6.TabIndex = 45;
+            this.label6.Text = "CIUDAD";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
+            // 
             // RegistrarCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.Trujillo);
             this.Controls.Add(this.dateTimePickerFechaNacimiento);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label1Bnaco);
@@ -220,5 +243,7 @@ namespace ProyectoAltavista
         private System.Windows.Forms.Label label1Bnaco;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DateTimePicker dateTimePickerFechaNacimiento;
+        private System.Windows.Forms.TextBox Trujillo;
+        private System.Windows.Forms.Label label6;
     }
 }
